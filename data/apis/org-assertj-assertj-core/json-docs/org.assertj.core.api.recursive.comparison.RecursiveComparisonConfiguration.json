@@ -1,0 +1,643 @@
+{
+  "name": "org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.assertj.core.api.recursive.AbstractRecursiveOperationConfiguration"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "builder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "comparatorByFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.stream.Stream<java.util.Map.Entry<java.lang.String,java.util.Comparator<?>>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "compareOnlyFields",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "compareOnlyFieldsOfTypes",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "describeIgnoreAllActualEmptyOptionalFields",
+      "parameters": [
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "describeIgnoreAllActualNullFields",
+      "parameters": [
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComparatorForField",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Comparator<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComparatorForType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Comparator<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComparedFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.assertj.core.api.recursive.comparison.FieldLocation>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComparedTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFieldComparators",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.assertj.core.api.recursive.comparison.FieldComparators",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredCollectionOrderInFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredCollectionOrderInFieldsMatchingRegexes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.util.regex.Pattern>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredOverriddenEqualsForFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredOverriddenEqualsForFieldsMatchingRegexes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.util.regex.Pattern>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredOverriddenEqualsForTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageForField",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageForType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeComparators",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.assertj.core.internal.TypeComparators",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasComparatorForField",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasComparatorForType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasCustomComparators",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasCustomMessageForField",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasCustomMessageForType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreAllOverriddenEquals",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreCollectionOrder",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreCollectionOrderInFields",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreCollectionOrderInFieldsMatchingRegexes",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreOverriddenEqualsForFields",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreOverriddenEqualsForFieldsMatchingRegexes",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreOverriddenEqualsForTypes",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInStrictTypeCheckingMode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "multiLineDescription",
+      "parameters": [
+        "org.assertj.core.presentation.Representation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerComparatorForFields",
+      "parameters": [
+        "java.util.Comparator<?>",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerComparatorForType",
+      "parameters": [
+        "java.util.Comparator<? super T>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerEqualsForFields",
+      "parameters": [
+        "java.util.function.BiPredicate<?,?>",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerEqualsForFieldsMatchingRegexes",
+      "parameters": [
+        "java.util.function.BiPredicate<?,?>",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerEqualsForType",
+      "parameters": [
+        "java.util.function.BiPredicate<? super T,? super T>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerErrorMessageForFields",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerErrorMessageForType",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreAllActualEmptyOptionalFields",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreAllActualNullFields",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreAllExpectedNullFields",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIntrospectionStrategy",
+      "parameters": [
+        "org.assertj.core.api.recursive.comparison.RecursiveComparisonIntrospectionStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "strictTypeChecking",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useOverriddenEquals",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_RECURSIVE_COMPARISON_INTROSPECTION_STRATEGY",
+      "type": "org.assertj.core.api.recursive.comparison.DefaultRecursiveComparisonIntrospectionStrategy",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INDENT_LEVEL_2",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

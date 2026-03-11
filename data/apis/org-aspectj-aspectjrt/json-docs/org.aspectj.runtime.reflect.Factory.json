@@ -1,0 +1,909 @@
+{
+  "name": "org.aspectj.runtime.reflect.Factory",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "makeAdviceSig",
+      "parameters": [
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.AdviceSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeAdviceSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.AdviceSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCatchClauseESJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class",
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCatchClauseSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.CatchClauseSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCatchClauseSJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class",
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeConstructorSig",
+      "parameters": [
+        "int",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.ConstructorSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeConstructorSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.ConstructorSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeEncSJP",
+      "parameters": [
+        "java.lang.reflect.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeESJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldESJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.FieldSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldSJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeInitializerSig",
+      "parameters": [
+        "int",
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.InitializerSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeInitializerSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.InitializerSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJP",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint.StaticPart",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJP",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint.StaticPart",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeLockESJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeLockSig",
+      "parameters": [
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.LockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeLockSJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodSig",
+      "parameters": [
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.MethodSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.MethodSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodSJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSourceLoc",
+      "parameters": [
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.SourceLocation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeUnlockSig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.UnlockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeUnlockSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.UnlockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeAdviceESJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeAdviceSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.AdviceSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeAdviceSJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCatchClauseSig",
+      "parameters": [
+        "java.lang.Class",
+        "java.lang.Class",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.CatchClauseSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCatchClauseSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.CatchClauseSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeConstructorESJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeConstructorSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.ConstructorSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeConstructorSJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeESJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeESJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "org.aspectj.lang.reflect.SourceLocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldSig",
+      "parameters": [
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.FieldSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.FieldSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeInitializerESJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeInitializerSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.InitializerSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeInitializerSJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJP",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint.StaticPart",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJP",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint.StaticPart",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeLockSig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.LockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeLockSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.LockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodESJP",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.Class",
+        "java.lang.Class[]",
+        "java.lang.String[]",
+        "java.lang.Class[]",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodSig",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.MethodSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMethodSig",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.MethodSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSJP",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.lang.Signature",
+        "org.aspectj.lang.reflect.SourceLocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeUnlockESJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.EnclosingStaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeUnlockSig",
+      "parameters": [
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.reflect.UnlockSignature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeUnlockSJP",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint.StaticPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Factory",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,384 @@
+{
+  "name": "io.restassured.internal.http.HTTPBuilder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "defaultFailureHandler",
+      "parameters": [
+        "io.restassured.internal.http.HttpResponseDecorator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doRequest",
+      "parameters": [
+        "io.restassured.internal.http.HTTPBuilder.RequestConfigDelegate"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClient",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.http.impl.client.AbstractHttpClient",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<?,groovy.lang.Closure>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "io.restassured.internal.http.HttpResponseContentTypeFinder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseResponse",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "patch",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "post",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "request",
+      "parameters": [
+        "java.lang.String",
+        "boolean",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentEncoding",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentType",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProxy",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shutdown",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildDefaultResponseHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Object,groovy.lang.Closure>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defaultSuccessHandler",
+      "parameters": [
+        "io.restassured.internal.http.HttpResponseDecorator",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doRequest",
+      "parameters": [
+        "java.net.URI",
+        "java.lang.String",
+        "java.lang.Object",
+        "boolean",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<?,?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUri",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "patch",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "post",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "request",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Object",
+        "boolean",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "request",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "boolean",
+        "groovy.lang.Closure"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentEncodingRegistry",
+      "parameters": [
+        "io.restassured.internal.http.ContentEncodingRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHeaders",
+      "parameters": [
+        "java.util.Map<?,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUri",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

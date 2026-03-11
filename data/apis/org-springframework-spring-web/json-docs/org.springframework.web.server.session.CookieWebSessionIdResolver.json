@@ -1,0 +1,119 @@
+{
+  "name": "org.springframework.web.server.session.CookieWebSessionIdResolver",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.server.session.WebSessionIdResolver"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCookieInitializer",
+      "parameters": [
+        "java.util.function.Consumer<org.springframework.http.ResponseCookie.ResponseCookieBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "expireSession",
+      "parameters": [
+        "org.springframework.web.server.ServerWebExchange"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCookieMaxAge",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.Duration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCookieName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveSessionIds",
+      "parameters": [
+        "org.springframework.web.server.ServerWebExchange"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCookieMaxAge",
+      "parameters": [
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCookieName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSessionId",
+      "parameters": [
+        "org.springframework.web.server.ServerWebExchange",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

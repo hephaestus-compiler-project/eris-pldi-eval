@@ -1,0 +1,584 @@
+{
+  "name": "org.testng.TestRunner",
+  "type_parameters": [],
+  "implements": [
+    "org.testng.ITestContext",
+    "org.testng.internal.ITestResultNotifier",
+    "org.testng.thread.IThreadWorkerFactory<org.testng.ITestNGMethod>",
+    "org.testng.internal.IConfigEavesdropper"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addFailedTest",
+      "parameters": [
+        "org.testng.ITestNGMethod",
+        "org.testng.ITestResult"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPassedTest",
+      "parameters": [
+        "org.testng.ITestNGMethod",
+        "org.testng.ITestResult"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createWorkers",
+      "parameters": [
+        "java.util.List<org.testng.ITestNGMethod>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.testng.thread.IWorker<org.testng.ITestNGMethod>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAfterTestConfigurationMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestNGMethod[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAttribute",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeforeSuiteMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestNGMethod[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfigurationListeners",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.testng.IConfigurationListener>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentXmlTest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.xml.XmlTest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExcludedGroups",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExitCodeListener",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestListener",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFailedConfigurations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFailedTests",
+      "parameters": [
+        "org.testng.ITestNGMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.testng.ITestResult>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIncludedGroups",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInvoker",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.internal.invokers.IInvoker",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOutputDirectory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPassedTests",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSkippedConfigurations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSkippedTests",
+      "parameters": [
+        "org.testng.ITestNGMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.testng.ITestResult>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSuite",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ISuite",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTestClasses",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.testng.ITestClass>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVerbose",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "run",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setOutputDirectory",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVerbose",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFailedButWithinSuccessPercentageTest",
+      "parameters": [
+        "org.testng.ITestNGMethod",
+        "org.testng.ITestResult"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addListener",
+      "parameters": [
+        "org.testng.ITestNGListener"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSkippedTest",
+      "parameters": [
+        "org.testng.ITestNGMethod",
+        "org.testng.ITestResult"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAfterSuiteMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestNGMethod[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllTestMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestNGMethod[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAttributeNames",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeforeTestConfigurationMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.ITestNGMethod[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfigurationsScheduledForInvocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEndDate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExcludedMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.testng.ITestNGMethod>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFailedButWithinSuccessPercentageTests",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFailedTests",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHost",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectorFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IInjectorFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPassedConfigurations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPassedTests",
+      "parameters": [
+        "org.testng.ITestNGMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.testng.ITestResult>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSkippedTests",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.IResultMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStartDate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.testng.xml.XmlTest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTestListeners",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.testng.ITestListener>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeAttribute",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAttribute",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTestName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

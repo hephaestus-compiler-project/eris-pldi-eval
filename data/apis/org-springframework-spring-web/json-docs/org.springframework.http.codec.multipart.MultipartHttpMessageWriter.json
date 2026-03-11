@@ -1,0 +1,71 @@
+{
+  "name": "org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.codec.HttpMessageWriter<org.springframework.util.MultiValueMap<java.lang.String,?>>"
+  ],
+  "inherits": [
+    "org.springframework.http.codec.multipart.MultipartWriterSupport"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canWrite",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormWriter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.codec.HttpMessageWriter<org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartWriters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.codec.HttpMessageWriter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.util.MultiValueMap<java.lang.String,?>>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.ReactiveHttpOutputMessage",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

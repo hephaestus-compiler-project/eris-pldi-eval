@@ -1,0 +1,86 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.std.DateDeserializers.DateBasedDeserializer",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "com.fasterxml.jackson.databind.deser.ContextualDeserializer"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withDateFormat",
+      "parameters": [
+        "java.text.DateFormat",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.std.DateDeserializers.DateBasedDeserializer<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_parseDate",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logicalType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.LogicalType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_formatString",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_customFormat",
+      "type": "java.text.DateFormat",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "protected",
+  "language": "java"
+}

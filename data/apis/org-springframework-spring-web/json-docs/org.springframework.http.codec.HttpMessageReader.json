@@ -1,0 +1,118 @@
+{
+  "name": "org.springframework.http.codec.HttpMessageReader",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "canRead",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReadableMediaTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReadableMediaTypes",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.server.reactive.ServerHttpRequest",
+        "org.springframework.http.server.reactive.ServerHttpResponse",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.ReactiveHttpInputMessage",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readMono",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.server.reactive.ServerHttpRequest",
+        "org.springframework.http.server.reactive.ServerHttpResponse",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "readMono",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.ReactiveHttpInputMessage",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,189 @@
+{
+  "name": "org.springframework.scheduling.concurrent.ExecutorConfigurationSupport",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.BeanNameAware",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.beans.factory.DisposableBean"
+  ],
+  "inherits": [
+    "org.springframework.scheduling.concurrent.CustomizableThreadFactory"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cancelRemainingTask",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "destroy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initialize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initializeExecutor",
+      "parameters": [
+        "java.util.concurrent.ThreadFactory",
+        "java.util.concurrent.RejectedExecutionHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ExecutorService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAwaitTerminationMillis",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAwaitTerminationSeconds",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRejectedExecutionHandler",
+      "parameters": [
+        "java.util.concurrent.RejectedExecutionHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThreadFactory",
+      "parameters": [
+        "java.util.concurrent.ThreadFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThreadNamePrefix",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWaitForTasksToCompleteOnShutdown",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shutdown",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

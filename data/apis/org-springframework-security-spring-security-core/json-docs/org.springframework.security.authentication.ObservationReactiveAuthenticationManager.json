@@ -1,0 +1,44 @@
+{
+  "name": "org.springframework.security.authentication.ObservationReactiveAuthenticationManager",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.authentication.ReactiveAuthenticationManager"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "authenticate",
+      "parameters": [
+        "org.springframework.security.core.Authentication"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.security.core.Authentication>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setObservationConvention",
+      "parameters": [
+        "io.micrometer.observation.ObservationConvention<org.springframework.security.authentication.AuthenticationObservationContext>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

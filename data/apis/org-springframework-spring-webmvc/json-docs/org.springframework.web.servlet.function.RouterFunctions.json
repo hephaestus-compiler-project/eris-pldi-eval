@@ -1,0 +1,135 @@
+{
+  "name": "org.springframework.web.servlet.function.RouterFunctions",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "changeParser",
+      "parameters": [
+        "org.springframework.web.servlet.function.RouterFunction<T>",
+        "org.springframework.web.util.pattern.PathPatternParser"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.RouterFunction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nest",
+      "parameters": [
+        "org.springframework.web.servlet.function.RequestPredicate",
+        "org.springframework.web.servlet.function.RouterFunction<T>"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.RouterFunction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resourceLookupFunction",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.core.io.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.function.Function<org.springframework.web.servlet.function.ServerRequest,java.util.Optional<org.springframework.core.io.Resource>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resources",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.core.io.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.RouterFunction<org.springframework.web.servlet.function.ServerResponse>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resources",
+      "parameters": [
+        "java.util.function.Function<org.springframework.web.servlet.function.ServerRequest,java.util.Optional<org.springframework.core.io.Resource>>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.RouterFunction<org.springframework.web.servlet.function.ServerResponse>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "route",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.RouterFunctions.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "route",
+      "parameters": [
+        "org.springframework.web.servlet.function.RequestPredicate",
+        "org.springframework.web.servlet.function.HandlerFunction<T>"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.RouterFunction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "MATCHING_PATTERN_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "REQUEST_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "URI_TEMPLATE_VARIABLES_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

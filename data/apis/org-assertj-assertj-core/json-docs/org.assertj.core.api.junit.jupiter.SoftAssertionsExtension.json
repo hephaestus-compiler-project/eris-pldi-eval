@@ -1,0 +1,118 @@
+{
+  "name": "org.assertj.core.api.junit.jupiter.SoftAssertionsExtension",
+  "type_parameters": [],
+  "implements": [
+    "org.junit.jupiter.api.extension.TestInstancePostProcessor",
+    "org.junit.jupiter.api.extension.BeforeEachCallback",
+    "org.junit.jupiter.api.extension.ParameterResolver",
+    "org.junit.jupiter.api.extension.AfterTestExecutionCallback"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterTestExecution",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "beforeEach",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAssertionErrorCollector",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.assertj.core.api.AssertionErrorCollector",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSoftAssertionsProvider",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ExtensionContext",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends org.assertj.core.api.SoftAssertionsProvider"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessTestInstance",
+      "parameters": [
+        "java.lang.Object",
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveParameter",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ParameterContext",
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsParameter",
+      "parameters": [
+        "org.junit.jupiter.api.extension.ParameterContext",
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,99 @@
+{
+  "name": "org.bouncycastle.jcajce.provider.symmetric.util.BaseKeyGenerator",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "javax.crypto.KeyGeneratorSpi"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "engineInit",
+      "parameters": [
+        "java.security.spec.AlgorithmParameterSpec",
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineInit",
+      "parameters": [
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineGenerateKey",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.crypto.SecretKey",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineInit",
+      "parameters": [
+        "int",
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultKeySize",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "keySize",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "algName",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "engine",
+      "type": "org.bouncycastle.crypto.CipherKeyGenerator",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "uninitialised",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

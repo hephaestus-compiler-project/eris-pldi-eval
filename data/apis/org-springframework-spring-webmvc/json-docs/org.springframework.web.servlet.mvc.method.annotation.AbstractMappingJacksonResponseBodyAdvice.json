@@ -1,0 +1,80 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.AbstractMappingJacksonResponseBodyAdvice",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice<java.lang.Object>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "beforeBodyWrite",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.http.MediaType",
+        "java.lang.Class<? extends org.springframework.http.converter.HttpMessageConverter<?>>",
+        "org.springframework.http.server.ServerHttpRequest",
+        "org.springframework.http.server.ServerHttpResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "beforeBodyWriteInternal",
+      "parameters": [
+        "org.springframework.http.converter.json.MappingJacksonValue",
+        "org.springframework.http.MediaType",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.http.server.ServerHttpRequest",
+        "org.springframework.http.server.ServerHttpResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrCreateContainer",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.converter.json.MappingJacksonValue",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "org.springframework.core.MethodParameter",
+        "java.lang.Class<? extends org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

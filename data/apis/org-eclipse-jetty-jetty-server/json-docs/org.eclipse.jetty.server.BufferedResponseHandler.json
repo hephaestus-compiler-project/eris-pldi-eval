@@ -1,0 +1,111 @@
+{
+  "name": "org.eclipse.jetty.server.BufferedResponseHandler",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.eclipse.jetty.server.Handler.Wrapper"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getMethodIncludeExclude",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.IncludeExclude<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMimeIncludeExclude",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.IncludeExclude<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathIncludeExclude",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.IncludeExclude<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handle",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Response",
+        "org.eclipse.jetty.util.Callback"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isMimeTypeBufferable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPathBufferable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shouldBuffer",
+      "parameters": [
+        "org.eclipse.jetty.server.Response",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "BUFFER_SIZE_ATTRIBUTE_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

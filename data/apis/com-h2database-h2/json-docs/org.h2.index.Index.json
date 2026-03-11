@@ -1,0 +1,573 @@
+{
+  "name": "org.h2.index.Index",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.schema.SchemaObject"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "canFindNext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canScan",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "find",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.SearchRow",
+        "org.h2.result.SearchRow"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.index.Cursor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findNext",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.SearchRow",
+        "org.h2.result.SearchRow"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.index.Cursor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumns",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.Column[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCostRangeIndex",
+      "parameters": [
+        "int[]",
+        "long",
+        "org.h2.table.TableFilter[]",
+        "int",
+        "org.h2.result.SortOrder",
+        "boolean",
+        "org.h2.command.query.AllColumnsForPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCreateSQLForCopy",
+      "parameters": [
+        "org.h2.table.Table",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDuplicateKeyException",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.message.DbException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndexColumns",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.IndexColumn[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlanSQL",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowCount",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.result.RowFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUniqueRowFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.result.RowFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isFirstColumn",
+      "parameters": [
+        "org.h2.table.Column"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRowIdIndex",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "needRebuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "truncate",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "add",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canGetFirstOrLast",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkIndexColumnTypes",
+      "parameters": [
+        "org.h2.table.IndexColumn[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "compareRows",
+      "parameters": [
+        "org.h2.result.SearchRow",
+        "org.h2.result.SearchRow"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findFirstOrLast",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.index.Cursor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumnIndex",
+      "parameters": [
+        "org.h2.table.Column"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCost",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "int[]",
+        "org.h2.table.TableFilter[]",
+        "int",
+        "org.h2.result.SortOrder",
+        "org.h2.command.query.AllColumnsForPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCreateSQL",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDiskSpaceUsed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDuplicatePrimaryKeyMessage",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.StringBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndexType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.index.IndexType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.result.Row",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowCountApproximation",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.Table",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUniqueColumnCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isFindUsingFullTableScan",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isHidden",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mayHaveNullDuplicates",
+      "parameters": [
+        "org.h2.result.SearchRow"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeChildrenAndResources",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "columns",
+      "type": "org.h2.table.Column[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "indexType",
+      "type": "org.h2.index.IndexType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "uniqueColumnColumn",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "columnIds",
+      "type": "int[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "indexColumns",
+      "type": "org.h2.table.IndexColumn[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "table",
+      "type": "org.h2.table.Table",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

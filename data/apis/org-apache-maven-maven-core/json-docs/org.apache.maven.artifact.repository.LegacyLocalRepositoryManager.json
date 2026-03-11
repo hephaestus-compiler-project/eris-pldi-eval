@@ -1,0 +1,156 @@
+{
+  "name": "org.apache.maven.artifact.repository.LegacyLocalRepositoryManager",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.aether.repository.LocalRepositoryManager"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "add",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.repository.LocalArtifactRegistration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "add",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.repository.LocalMetadataRegistration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "find",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.repository.LocalArtifactRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.repository.LocalArtifactResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "find",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.repository.LocalMetadataRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.repository.LocalMetadataResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathForLocalArtifact",
+      "parameters": [
+        "org.eclipse.aether.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathForLocalMetadata",
+      "parameters": [
+        "org.eclipse.aether.metadata.Metadata"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathForRemoteArtifact",
+      "parameters": [
+        "org.eclipse.aether.artifact.Artifact",
+        "org.eclipse.aether.repository.RemoteRepository",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathForRemoteMetadata",
+      "parameters": [
+        "org.eclipse.aether.metadata.Metadata",
+        "org.eclipse.aether.repository.RemoteRepository",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRepository",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.repository.LocalRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "overlay",
+      "parameters": [
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.RepositorySystem"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.RepositorySystemSession",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

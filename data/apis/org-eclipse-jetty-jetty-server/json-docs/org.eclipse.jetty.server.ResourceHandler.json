@@ -1,0 +1,435 @@
+{
+  "name": "org.eclipse.jetty.server.ResourceHandler",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.eclipse.jetty.server.Handler.Wrapper"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "doStart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBaseResource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.resource.Resource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getByteBufferPool",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.ByteBufferPool",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheControl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodingCacheSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGzipEquivalentFileExtensions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHttpContentFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.content.HttpContent.Factory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.MimeTypes",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPrecompressedFormats",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.eclipse.jetty.http.CompressedContentFormat>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResourceService",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ResourceService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStyleSheet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.resource.Resource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWelcomeFiles",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWelcomeMode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ResourceService.WelcomeMode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handle",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Response",
+        "org.eclipse.jetty.util.Callback"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAcceptRanges",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDirAllowed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEtags",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newHttpContentFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.content.HttpContent.Factory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newResourceService",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ResourceService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAcceptRanges",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBaseResource",
+      "parameters": [
+        "org.eclipse.jetty.util.resource.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBaseResourceAsString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheControl",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDirAllowed",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEncodingCacheSize",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEtags",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setGzipEquivalentFileExtensions",
+      "parameters": [
+        "java.util.List<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMimeTypes",
+      "parameters": [
+        "org.eclipse.jetty.http.MimeTypes"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPrecompressedFormats",
+      "parameters": [
+        "java.util.List<org.eclipse.jetty.http.CompressedContentFormat>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPrecompressedFormats",
+      "parameters": [
+        "org.eclipse.jetty.http.CompressedContentFormat..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStyleSheet",
+      "parameters": [
+        "org.eclipse.jetty.util.resource.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupWelcomeFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ResourceService.WelcomeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWelcomeFiles",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWelcomeFiles",
+      "parameters": [
+        "java.util.List<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWelcomeMode",
+      "parameters": [
+        "org.eclipse.jetty.server.ResourceService.WelcomeMode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

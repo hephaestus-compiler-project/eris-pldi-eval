@@ -1,0 +1,392 @@
+{
+  "name": "org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.orm.jpa.persistenceunit.PersistenceUnitManager",
+    "org.springframework.context.ResourceLoaderAware",
+    "org.springframework.context.weaving.LoadTimeWeaverAware",
+    "org.springframework.beans.factory.InitializingBean"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDataSourceLookup",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.datasource.lookup.DataSourceLookup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultDataSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.sql.DataSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultJtaDataSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.sql.DataSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLoadTimeWeaver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.instrument.classloading.LoadTimeWeaver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPersistenceUnitInfo",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.orm.jpa.persistenceunit.MutablePersistenceUnitInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPersistenceUnitPostProcessors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.orm.jpa.persistenceunit.PersistenceUnitPostProcessor[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPersistenceUnitOverrideAllowed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "obtainDefaultPersistenceUnitInfo",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.persistence.spi.PersistenceUnitInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "obtainPersistenceUnitInfo",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "jakarta.persistence.spi.PersistenceUnitInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessPersistenceUnitInfo",
+      "parameters": [
+        "org.springframework.orm.jpa.persistenceunit.MutablePersistenceUnitInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "preparePersistenceUnitInfos",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDataSourceLookup",
+      "parameters": [
+        "org.springframework.jdbc.datasource.lookup.DataSourceLookup"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDataSources",
+      "parameters": [
+        "java.util.Map<java.lang.String,javax.sql.DataSource>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultDataSource",
+      "parameters": [
+        "javax.sql.DataSource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultJtaDataSource",
+      "parameters": [
+        "javax.sql.DataSource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultPersistenceUnitName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultPersistenceUnitRootLocation",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLoadTimeWeaver",
+      "parameters": [
+        "org.springframework.instrument.classloading.LoadTimeWeaver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setManagedTypes",
+      "parameters": [
+        "org.springframework.orm.jpa.persistenceunit.PersistenceManagedTypes"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMappingResources",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPackagesToScan",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPersistenceUnitPostProcessors",
+      "parameters": [
+        "org.springframework.orm.jpa.persistenceunit.PersistenceUnitPostProcessor..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPersistenceXmlLocation",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPersistenceXmlLocations",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setResourceLoader",
+      "parameters": [
+        "org.springframework.core.io.ResourceLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSharedCacheMode",
+      "parameters": [
+        "jakarta.persistence.SharedCacheMode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidationMode",
+      "parameters": [
+        "jakarta.persistence.ValidationMode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_PERSISTENCE_XML_LOCATION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ORIGINAL_DEFAULT_PERSISTENCE_UNIT_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ORIGINAL_DEFAULT_PERSISTENCE_UNIT_ROOT_LOCATION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

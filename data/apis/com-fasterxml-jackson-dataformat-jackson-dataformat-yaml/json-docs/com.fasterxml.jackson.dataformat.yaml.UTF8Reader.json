@@ -1,0 +1,216 @@
+{
+  "name": "com.fasterxml.jackson.dataformat.yaml.UTF8Reader",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.io.Reader"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStream",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.io.InputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readBytes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportBounds",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canModifyBuffer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "freeBuffers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readBytesAt",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportStrangeStream",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "UTF8Reader",
+      "parameters": [
+        "java.io.InputStream",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "UTF8Reader",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_bufferRecycler",
+      "type": "java.lang.ThreadLocal<java.lang.ref.SoftReference<byte[][]>>",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_inputEnd",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_surrogate",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_bufferHolder",
+      "type": "byte[][]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_inputBuffer",
+      "type": "byte[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_inputPtr",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

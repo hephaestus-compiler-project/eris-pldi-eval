@@ -1,0 +1,114 @@
+{
+  "name": "org.eclipse.jetty.server.GzipResponseAndCallback",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.jetty.util.Callback",
+    "org.eclipse.jetty.util.thread.Invocable"
+  ],
+  "inherits": [
+    "org.eclipse.jetty.server.Response.Wrapper"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "commit",
+      "parameters": [
+        "boolean",
+        "org.eclipse.jetty.util.Callback",
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "failed",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInvocationType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.thread.Invocable.InvocationType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noCompression",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "succeeded",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "boolean",
+        "java.nio.ByteBuffer",
+        "org.eclipse.jetty.util.Callback"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "GZIP_TRAILER_SIZE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOG",
+      "type": "org.slf4j.Logger",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "VARY_ACCEPT_ENCODING",
+      "type": "org.eclipse.jetty.http.HttpField",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

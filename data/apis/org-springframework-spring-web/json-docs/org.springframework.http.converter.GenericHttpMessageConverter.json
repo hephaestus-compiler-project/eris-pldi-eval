@@ -1,0 +1,79 @@
+{
+  "name": "org.springframework.http.converter.GenericHttpMessageConverter",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.http.converter.HttpMessageConverter<T>"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "canRead",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canWrite",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "T",
+        "java.lang.reflect.Type",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

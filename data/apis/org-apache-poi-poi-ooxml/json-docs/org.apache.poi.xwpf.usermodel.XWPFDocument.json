@@ -1,0 +1,1425 @@
+{
+  "name": "org.apache.poi.xwpf.usermodel.XWPFDocument",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.xwpf.usermodel.Document",
+    "org.apache.poi.xwpf.usermodel.IBody"
+  ],
+  "inherits": [
+    "org.apache.poi.ooxml.POIXMLDocument"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addFootnote",
+      "parameters": [
+        "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFtnEdn"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFootnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPictureData",
+      "parameters": [
+        "byte[]",
+        "org.apache.poi.common.usermodel.PictureType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPictureData",
+      "parameters": [
+        "java.io.InputStream",
+        "org.apache.poi.common.usermodel.PictureType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createChart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFChart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createChart",
+      "parameters": [
+        "org.apache.poi.xwpf.usermodel.XWPFRun",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFChart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createEndnote",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFEndnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFooter",
+      "parameters": [
+        "org.apache.poi.wp.usermodel.HeaderFooterType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFooter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFootnotes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFootnotes",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createHeaderFooterPolicy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.model.XWPFHeaderFooterPolicy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParagraph",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTOC",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceCommentsProtection",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceFillingFormsProtection",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceReadonlyProtection",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceTrackedChangesProtection",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllEmbeddedParts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllPictures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFPictureData>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBodyElementsIterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xwpf.usermodel.IBodyElement>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCharts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFChart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComments",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFComment[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDocument",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDocument1",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEndnotes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFEndnote>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFooterArray",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFooter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFootnoteByID",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFootnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaderArray",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFHeader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaderList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFHeader>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHyperlinks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFHyperlink[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMirrorMargins",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNextPicNameNumber",
+      "parameters": [
+        "org.apache.poi.common.usermodel.PictureType"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraph",
+      "parameters": [
+        "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraphPos",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraphsIterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xwpf.usermodel.XWPFParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ooxml.POIXMLDocumentPart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.BodyType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPosOfParagraph",
+      "parameters": [
+        "org.apache.poi.xwpf.usermodel.XWPFParagraph"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSettings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFSettings",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStyles",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFStyles",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTableArray",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTablePos",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTablesIterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xwpf.usermodel.XWPFTable>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTblStyle",
+      "parameters": [
+        "org.apache.poi.xwpf.usermodel.XWPFTable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getZoomPercent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertNewTbl",
+      "parameters": [
+        "org.apache.xmlbeans.XmlCursor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedCommentsProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedTrackedChangesProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isTrackRevisions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onDocumentCreate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeBodyElement",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeFootnote",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEvenAndOddHeadings",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParagraph",
+      "parameters": [
+        "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTrackRevisions",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateProtectionPassword",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addEndnote",
+      "parameters": [
+        "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFtnEdn"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFEndnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPictureData",
+      "parameters": [
+        "byte[]",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPictureData",
+      "parameters": [
+        "java.io.InputStream",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "commit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createChart",
+      "parameters": [
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFChart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createComments",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFComments",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createEndnotes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFEndnotes",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFootnote",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFFootnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createHeader",
+      "parameters": [
+        "org.apache.poi.wp.usermodel.HeaderFooterType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFHeader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createNumbering",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFNumbering",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createStyles",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFStyles",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTable",
+      "parameters": [
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceCommentsProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceFillingFormsProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceReadonlyProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceTrackedChangesProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enforceUpdateFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllPackagePictures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFPictureData>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBodyElements",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.IBodyElement>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBodyElementsSpliterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Spliterator<org.apache.poi.xwpf.usermodel.IBodyElement>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCommentByID",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFComment",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDocComments",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFComments",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEndnoteByID",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFEndnote",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEvenAndOddHeadings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFooterList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFFooter>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFootnotes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFFootnote>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaderFooterPolicy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.model.XWPFHeaderFooterPolicy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHyperlinkByID",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFHyperlink",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastParagraph",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNextPicNameNumber",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNumbering",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFNumbering",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraphArray",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraphs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParagraphsSpliterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Spliterator<org.apache.poi.xwpf.usermodel.XWPFParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartById",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPictureDataByID",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFPictureData",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPosOfTable",
+      "parameters": [
+        "org.apache.poi.xwpf.usermodel.XWPFTable"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStyle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyles",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTable",
+      "parameters": [
+        "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTableCell",
+      "parameters": [
+        "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFTableCell",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFTable>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTablesSpliterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Spliterator<org.apache.poi.xwpf.usermodel.XWPFTable>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXWPFDocument",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFDocument",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertNewParagraph",
+      "parameters": [
+        "org.apache.xmlbeans.XmlCursor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xwpf.usermodel.XWPFParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertTable",
+      "parameters": [
+        "int",
+        "org.apache.poi.xwpf.usermodel.XWPFTable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedFillingFormsProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedReadonlyProtection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnforcedUpdateFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newPackage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onDocumentRead",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeEndnote",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeProtectionEnforcement",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMirrorMargins",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTable",
+      "parameters": [
+        "int",
+        "org.apache.poi.xwpf.usermodel.XWPFTable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setZoomPercent",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "charts",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFChart>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "endnotes",
+      "type": "org.apache.poi.xwpf.usermodel.XWPFEndnotes",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "footnotes",
+      "type": "org.apache.poi.xwpf.usermodel.XWPFFootnotes",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "hyperlinks",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFHyperlink>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "packagePictures",
+      "type": "java.util.Map<java.lang.Long,java.util.List<org.apache.poi.xwpf.usermodel.XWPFPictureData>>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "pictures",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFPictureData>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "tables",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFTable>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "bodyElements",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.IBodyElement>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "contentControls",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFSDT>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "footers",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFFooter>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "headers",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFHeader>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "numbering",
+      "type": "org.apache.poi.xwpf.usermodel.XWPFNumbering",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "paragraphs",
+      "type": "java.util.List<org.apache.poi.xwpf.usermodel.XWPFParagraph>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "styles",
+      "type": "org.apache.poi.xwpf.usermodel.XWPFStyles",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

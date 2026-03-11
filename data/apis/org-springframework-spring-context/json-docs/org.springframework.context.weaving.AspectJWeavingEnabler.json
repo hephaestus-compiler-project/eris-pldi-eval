@@ -1,0 +1,92 @@
+{
+  "name": "org.springframework.context.weaving.AspectJWeavingEnabler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.config.BeanFactoryPostProcessor",
+    "org.springframework.beans.factory.BeanClassLoaderAware",
+    "org.springframework.context.weaving.LoadTimeWeaverAware",
+    "org.springframework.core.Ordered"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "enableAspectJWeaving",
+      "parameters": [
+        "org.springframework.instrument.classloading.LoadTimeWeaver",
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessBeanFactory",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanClassLoader",
+      "parameters": [
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLoadTimeWeaver",
+      "parameters": [
+        "org.springframework.instrument.classloading.LoadTimeWeaver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ASPECTJ_AOP_XML_RESOURCE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,87 @@
+{
+  "name": "org.assertj.core.api.SoftAssertionsProvider",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.assertj.core.api.AssertionErrorCollector"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "assertAll",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "assertAlso",
+      "parameters": [
+        "org.assertj.core.api.AssertionErrorCollector"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "assertSoftly",
+      "parameters": [
+        "java.lang.Class<S>",
+        "java.util.function.Consumer<S>"
+      ],
+      "type_parameters": [
+        "S extends org.assertj.core.api.SoftAssertionsProvider"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "check",
+      "parameters": [
+        "org.assertj.core.api.SoftAssertionsProvider.ThrowingRunnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "proxy",
+      "parameters": [
+        "java.lang.Class<SELF>",
+        "java.lang.Class<ACTUAL>",
+        "ACTUAL"
+      ],
+      "type_parameters": [
+        "SELF extends org.assertj.core.api.Assert<? extends SELF, ? extends ACTUAL>",
+        "ACTUAL"
+      ],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

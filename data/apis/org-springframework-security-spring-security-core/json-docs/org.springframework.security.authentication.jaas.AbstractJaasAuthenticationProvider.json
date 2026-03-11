@@ -1,0 +1,207 @@
+{
+  "name": "org.springframework.security.authentication.jaas.AbstractJaasAuthenticationProvider",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.authentication.AuthenticationProvider",
+    "org.springframework.context.ApplicationEventPublisherAware",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.context.ApplicationListener<org.springframework.security.core.session.SessionDestroyedEvent>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "authenticate",
+      "parameters": [
+        "org.springframework.security.core.Authentication"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.Authentication",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createLoginContext",
+      "parameters": [
+        "javax.security.auth.callback.CallbackHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.security.auth.login.LoginContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getApplicationEventPublisher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.ApplicationEventPublisher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleLogout",
+      "parameters": [
+        "org.springframework.security.core.session.SessionDestroyedEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onApplicationEvent",
+      "parameters": [
+        "org.springframework.security.core.session.SessionDestroyedEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "publishFailureEvent",
+      "parameters": [
+        "org.springframework.security.authentication.UsernamePasswordAuthenticationToken",
+        "org.springframework.security.core.AuthenticationException"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "publishSuccessEvent",
+      "parameters": [
+        "org.springframework.security.authentication.UsernamePasswordAuthenticationToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationEventPublisher",
+      "parameters": [
+        "org.springframework.context.ApplicationEventPublisher"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAuthorityGranters",
+      "parameters": [
+        "org.springframework.security.authentication.jaas.AuthorityGranter[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCallbackHandlers",
+      "parameters": [
+        "org.springframework.security.authentication.jaas.JaasAuthenticationCallbackHandler[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLoginContextName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLoginExceptionResolver",
+      "parameters": [
+        "org.springframework.security.authentication.jaas.LoginExceptionResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "log",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

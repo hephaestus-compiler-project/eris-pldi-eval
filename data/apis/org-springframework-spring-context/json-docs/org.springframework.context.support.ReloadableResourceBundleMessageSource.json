@@ -1,0 +1,224 @@
+{
+  "name": "org.springframework.context.support.ReloadableResourceBundleMessageSource",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.ResourceLoaderAware"
+  ],
+  "inherits": [
+    "org.springframework.context.support.AbstractResourceBasedMessageSource"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "calculateAllFilenames",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateFilenamesForLocale",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearCacheIncludingAncestors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMergedProperties",
+      "parameters": [
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.support.ReloadableResourceBundleMessageSource.PropertiesHolder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProperties",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.support.ReloadableResourceBundleMessageSource.PropertiesHolder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loadProperties",
+      "parameters": [
+        "org.springframework.core.io.Resource",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Properties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Properties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "refreshProperties",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.context.support.ReloadableResourceBundleMessageSource.PropertiesHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.support.ReloadableResourceBundleMessageSource.PropertiesHolder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveCode",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.text.MessageFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveCodeWithoutArguments",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConcurrentRefresh",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFileEncodings",
+      "parameters": [
+        "java.util.Properties"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPropertiesPersister",
+      "parameters": [
+        "org.springframework.util.PropertiesPersister"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setResourceLoader",
+      "parameters": [
+        "org.springframework.core.io.ResourceLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

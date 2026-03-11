@@ -1,0 +1,57 @@
+{
+  "name": "org.springframework.orm.hibernate5.HibernateExceptionTranslator",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.dao.support.PersistenceExceptionTranslator"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "convertHibernateAccessException",
+      "parameters": [
+        "org.hibernate.HibernateException"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.dao.DataAccessException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setJdbcExceptionTranslator",
+      "parameters": [
+        "org.springframework.jdbc.support.SQLExceptionTranslator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "translateExceptionIfPossible",
+      "parameters": [
+        "java.lang.RuntimeException"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.dao.DataAccessException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

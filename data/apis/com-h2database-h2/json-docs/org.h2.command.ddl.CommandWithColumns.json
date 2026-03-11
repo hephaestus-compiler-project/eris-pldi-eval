@@ -1,0 +1,91 @@
+{
+  "name": "org.h2.command.ddl.CommandWithColumns",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.command.ddl.SchemaCommand"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addConstraintCommand",
+      "parameters": [
+        "org.h2.command.ddl.DefineCommand"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createConstraints",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPrimaryKey",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.command.ddl.AlterTableAddConstraint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addColumn",
+      "parameters": [
+        "org.h2.table.Column"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "changePrimaryKeysToNotNull",
+      "parameters": [
+        "java.util.ArrayList<org.h2.table.Column>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateSequences",
+      "parameters": [
+        "java.util.ArrayList<org.h2.table.Column>",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.h2.schema.Sequence>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

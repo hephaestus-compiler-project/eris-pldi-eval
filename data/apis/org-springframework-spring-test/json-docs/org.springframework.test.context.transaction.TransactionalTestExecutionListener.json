@@ -1,0 +1,139 @@
+{
+  "name": "org.springframework.test.context.transaction.TransactionalTestExecutionListener",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.test.context.support.AbstractTestExecutionListener"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterTestMethod",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "beforeTestMethod",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTransactionManager",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.transaction.PlatformTransactionManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTransactionManager",
+      "parameters": [
+        "org.springframework.test.context.TestContext",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.transaction.PlatformTransactionManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDefaultRollback",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRollback",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "runAfterTransactionMethods",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "runBeforeTransactionMethods",
+      "parameters": [
+        "org.springframework.test.context.TestContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "attributeSource",
+      "type": "org.springframework.transaction.interceptor.TransactionAttributeSource",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

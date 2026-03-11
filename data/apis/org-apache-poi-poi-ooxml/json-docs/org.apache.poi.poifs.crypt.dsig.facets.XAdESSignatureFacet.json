@@ -1,0 +1,219 @@
+{
+  "name": "org.apache.poi.poifs.crypt.dsig.facets.XAdESSignatureFacet",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.poifs.crypt.dsig.facets.SignatureFacet"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCommitmentType",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedPropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMimeTypes",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedPropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSigningTime",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedSignaturePropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addXadesReference",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.xml.crypto.dsig.Reference",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSignedProperties",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.QualifyingPropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.etsi.uri.x01903.v13.SignedPropertiesType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "preSign",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.w3c.dom.Document",
+        "java.util.List<javax.xml.crypto.dsig.Reference>",
+        "java.util.List<javax.xml.crypto.dsig.XMLObject>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDigestAlgAndValue",
+      "parameters": [
+        "org.etsi.uri.x01903.v13.DigestAlgAndValueType",
+        "byte[]",
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCertificate",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedSignaturePropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMimeType",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPolicy",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedSignaturePropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addXadesObject",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.w3c.dom.Document",
+        "org.etsi.uri.x01903.v13.QualifyingPropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.xml.crypto.dsig.XMLObject",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addXadesRole",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "org.etsi.uri.x01903.v13.SignedSignaturePropertiesType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertXChild",
+      "parameters": [
+        "org.apache.xmlbeans.XmlObject",
+        "org.apache.xmlbeans.XmlObject"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCertID",
+      "parameters": [
+        "org.etsi.uri.x01903.v13.CertIDType",
+        "org.apache.poi.poifs.crypt.dsig.SignatureConfig",
+        "boolean",
+        "java.security.cert.X509Certificate"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

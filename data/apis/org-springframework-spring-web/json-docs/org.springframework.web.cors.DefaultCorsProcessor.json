@@ -1,0 +1,104 @@
+{
+  "name": "org.springframework.web.cors.DefaultCorsProcessor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.cors.CorsProcessor"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "checkHeaders",
+      "parameters": [
+        "org.springframework.web.cors.CorsConfiguration",
+        "java.util.List<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkMethods",
+      "parameters": [
+        "org.springframework.web.cors.CorsConfiguration",
+        "org.springframework.http.HttpMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.HttpMethod>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkOrigin",
+      "parameters": [
+        "org.springframework.web.cors.CorsConfiguration",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleInternal",
+      "parameters": [
+        "org.springframework.http.server.ServerHttpRequest",
+        "org.springframework.http.server.ServerHttpResponse",
+        "org.springframework.web.cors.CorsConfiguration",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processRequest",
+      "parameters": [
+        "org.springframework.web.cors.CorsConfiguration",
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rejectRequest",
+      "parameters": [
+        "org.springframework.http.server.ServerHttpResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

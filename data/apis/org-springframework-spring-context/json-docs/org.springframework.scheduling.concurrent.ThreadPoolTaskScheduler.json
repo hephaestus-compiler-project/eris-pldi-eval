@@ -1,0 +1,375 @@
+{
+  "name": "org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.core.task.AsyncListenableTaskExecutor",
+    "org.springframework.scheduling.SchedulingTaskExecutor",
+    "org.springframework.scheduling.TaskScheduler"
+  ],
+  "inherits": [
+    "org.springframework.scheduling.concurrent.ExecutorConfigurationSupport"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "cancelRemainingTask",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createExecutor",
+      "parameters": [
+        "int",
+        "java.util.concurrent.ThreadFactory",
+        "java.util.concurrent.RejectedExecutionHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledExecutorService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.Runnable",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getActiveCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClock",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.Clock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPoolSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getScheduledExecutor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledExecutorService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getScheduledThreadPoolExecutor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initializeExecutor",
+      "parameters": [
+        "java.util.concurrent.ThreadFactory",
+        "java.util.concurrent.RejectedExecutionHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ExecutorService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRemoveOnCancelPolicy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "schedule",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "schedule",
+      "parameters": [
+        "java.lang.Runnable",
+        "org.springframework.scheduling.Trigger"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleAtFixedRate",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleAtFixedRate",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleWithFixedDelay",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleWithFixedDelay",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setClock",
+      "parameters": [
+        "java.time.Clock"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContinueExistingPeriodicTasksAfterShutdownPolicy",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setErrorHandler",
+      "parameters": [
+        "org.springframework.util.ErrorHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExecuteExistingDelayedTasksAfterShutdownPolicy",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPoolSize",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRemoveOnCancelPolicy",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Future<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.concurrent.Future<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitListenable",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.concurrent.ListenableFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitListenable",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.util.concurrent.ListenableFuture<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,138 @@
+{
+  "name": "org.springframework.web.server.session.InMemoryWebSessionStore",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.server.session.WebSessionStore"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createWebSession",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.web.server.WebSession>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClock",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.Clock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxSessions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSessions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.springframework.web.server.WebSession>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeExpiredSessions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeSession",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveSession",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.web.server.WebSession>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setClock",
+      "parameters": [
+        "java.time.Clock"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxSessions",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateLastAccessTime",
+      "parameters": [
+        "org.springframework.web.server.WebSession"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.web.server.WebSession>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

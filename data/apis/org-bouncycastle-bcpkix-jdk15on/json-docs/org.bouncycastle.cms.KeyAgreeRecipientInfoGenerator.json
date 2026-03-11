@@ -1,0 +1,72 @@
+{
+  "name": "org.bouncycastle.cms.KeyAgreeRecipientInfoGenerator",
+  "type_parameters": [],
+  "implements": [
+    "org.bouncycastle.cms.RecipientInfoGenerator"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "generate",
+      "parameters": [
+        "org.bouncycastle.operator.GenericKey"
+      ],
+      "type_parameters": [],
+      "return_type": "RecipientInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUserKeyingMaterial",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createOriginatorPublicKey",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.SubjectPublicKeyInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "OriginatorPublicKey",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateRecipientEncryptedKeys",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "org.bouncycastle.operator.GenericKey"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1Sequence",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

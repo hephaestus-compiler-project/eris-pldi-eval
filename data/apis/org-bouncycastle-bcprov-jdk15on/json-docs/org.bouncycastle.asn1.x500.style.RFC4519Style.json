@@ -1,0 +1,372 @@
+{
+  "name": "org.bouncycastle.asn1.x500.style.RFC4519Style",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.bouncycastle.asn1.x500.style.AbstractX500NameStyle"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "encodeStringValue",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1Encodable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "oidToAttrNames",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "org.bouncycastle.asn1.x500.X500Name"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "attrNameToOID",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.x500.RDN[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "oidToDisplayName",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "c",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "dc",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "defaultSymbols",
+      "type": "java.util.Hashtable",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "destinationIndicator",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "dnQualifier",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "facsimileTelephoneNumber",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "givenName",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "initials",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "internationalISDNNumber",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "member",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "o",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "owner",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "postalAddress",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "postOfficeBox",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "registeredAddress",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "searchGuide",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "serialNumber",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "st",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "telephoneNumber",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "telexNumber",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "uid",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "userPassword",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "x500UniqueIdentifier",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "businessCategory",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "cn",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "defaultLookUp",
+      "type": "java.util.Hashtable",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "description",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "distinguishedName",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "enhancedSearchGuide",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "generationQualifier",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "houseIdentifier",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INSTANCE",
+      "type": "org.bouncycastle.asn1.x500.X500NameStyle",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "l",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "name",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ou",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "physicalDeliveryOfficeName",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "postalCode",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "preferredDeliveryMethod",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "roleOccupant",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "seeAlso",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "sn",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "street",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "teletexTerminalIdentifier",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "title",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "uniqueMember",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "x121Address",
+      "type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

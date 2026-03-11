@@ -1,0 +1,202 @@
+{
+  "name": "org.h2.mvstore.rtree.MVRTreeMap",
+  "type_parameters": [
+    "V"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.h2.mvstore.MVMap<org.h2.mvstore.rtree.Spatial,V>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addNodeKeys",
+      "parameters": [
+        "java.util.ArrayList<org.h2.mvstore.rtree.Spatial>",
+        "org.h2.mvstore.Page<org.h2.mvstore.rtree.Spatial,V>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findContainedKeys",
+      "parameters": [
+        "org.h2.mvstore.rtree.Spatial"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.mvstore.rtree.MVRTreeMap.RTreeCursor<V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.h2.mvstore.Page<org.h2.mvstore.rtree.Spatial,V>",
+        "org.h2.mvstore.rtree.Spatial"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "operate",
+      "parameters": [
+        "org.h2.mvstore.rtree.Spatial",
+        "V",
+        "org.h2.mvstore.MVMap.DecisionMaker<? super V>"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "add",
+      "parameters": [
+        "org.h2.mvstore.rtree.Spatial",
+        "V"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cloneIt",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.mvstore.rtree.MVRTreeMap<V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findIntersectingKeys",
+      "parameters": [
+        "org.h2.mvstore.rtree.Spatial"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.mvstore.rtree.MVRTreeMap.RTreeCursor<V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChildPageCount",
+      "parameters": [
+        "org.h2.mvstore.Page<org.h2.mvstore.rtree.Spatial,V>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isQuadraticSplit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "org.h2.mvstore.rtree.Spatial",
+        "V"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setQuadraticSplit",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "MVRTreeMap",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.Object>",
+        "org.h2.mvstore.rtree.SpatialDataType",
+        "org.h2.mvstore.type.DataType<V>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

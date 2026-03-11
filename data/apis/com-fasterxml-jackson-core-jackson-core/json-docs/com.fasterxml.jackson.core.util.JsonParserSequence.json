@@ -1,0 +1,149 @@
+{
+  "name": "com.fasterxml.jackson.core.util.JsonParserSequence",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.core.util.JsonParserDelegate"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFlattened",
+      "parameters": [
+        "boolean",
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.JsonParser"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.util.JsonParserSequence",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nextToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchAndReturnNext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFlattenedActiveParsers",
+      "parameters": [
+        "java.util.List<com.fasterxml.jackson.core.JsonParser>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "containedParsersCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFlattened",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.JsonParser"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.util.JsonParserSequence",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "skipChildren",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchToNext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_hasToken",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_parsers",
+      "type": "com.fasterxml.jackson.core.JsonParser[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_checkForExistingToken",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_nextParserIndex",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

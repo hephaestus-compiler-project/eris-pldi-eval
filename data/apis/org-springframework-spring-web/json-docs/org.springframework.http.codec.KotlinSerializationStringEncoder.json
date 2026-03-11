@@ -1,0 +1,92 @@
+{
+  "name": "org.springframework.http.codec.KotlinSerializationStringEncoder",
+  "type_parameters": [
+    "T extends kotlinx.serialization.StringFormat"
+  ],
+  "implements": [
+    "org.springframework.core.codec.Encoder<java.lang.Object>"
+  ],
+  "inherits": [
+    "org.springframework.http.codec.KotlinSerializationSupport<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "canEncode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encode",
+      "parameters": [
+        "org.reactivestreams.Publisher<?>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encodeValue",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodableMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodableMimeTypes",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

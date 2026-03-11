@@ -1,0 +1,170 @@
+{
+  "name": "org.apache.poi.xdgf.usermodel.XDGFBaseContents",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.poi.xdgf.xml.XDGFXMLDocumentPart"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "draw",
+      "parameters": [
+        "java.awt.Graphics2D"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShapeById",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xdgf.usermodel.XDGFShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShapesMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Long,org.apache.poi.xdgf.usermodel.XDGFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXmlObject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.microsoft.schemas.office.visio.x2012.main.PageContentsType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addToShapeIndex",
+      "parameters": [
+        "org.apache.poi.xdgf.usermodel.XDGFShape"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConnections",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xdgf.usermodel.XDGFConnection>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShapes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.apache.poi.xdgf.usermodel.XDGFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTopLevelShapes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xdgf.usermodel.XDGFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onDocumentRead",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitShapes",
+      "parameters": [
+        "org.apache.poi.xdgf.usermodel.shape.ShapeVisitor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_pageContents",
+      "type": "com.microsoft.schemas.office.visio.x2012.main.PageContentsType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_toplevelShapes",
+      "type": "java.util.List<org.apache.poi.xdgf.usermodel.XDGFShape>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_connections",
+      "type": "java.util.List<org.apache.poi.xdgf.usermodel.XDGFConnection>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_shapes",
+      "type": "java.util.Map<java.lang.Long,org.apache.poi.xdgf.usermodel.XDGFShape>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

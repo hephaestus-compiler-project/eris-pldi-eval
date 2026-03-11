@@ -1,0 +1,240 @@
+{
+  "name": "org.aspectj.weaver.model.AsmRelationshipProvider",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAdvisedRelationship",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.Shadow",
+        "org.aspectj.weaver.ShadowMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDeclareAnnotationFieldRelationship",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.bridge.ISourceLocation",
+        "java.lang.String",
+        "org.aspectj.weaver.ResolvedMember",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDeclareAnnotationMethodRelationship",
+      "parameters": [
+        "org.aspectj.bridge.ISourceLocation",
+        "java.lang.String",
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.asm.AsmManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDeclareAnnotationRelationship",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.bridge.ISourceLocation",
+        "org.aspectj.bridge.ISourceLocation",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDeclareErrorOrWarningRelationship",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.Shadow",
+        "org.aspectj.weaver.Checker"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addRelationship",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedTypeMunger",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFileStructureNode",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IProgramElement",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createHierarchyForBinaryAspect",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.ShadowMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandle",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.Advice"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNode",
+      "parameters": [
+        "org.aspectj.asm.AsmManager",
+        "org.aspectj.weaver.Shadow"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IProgramElement",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ADVISED_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ADVISES",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ANNOTATED_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ANNOTATES",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREDY_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLARES_ON",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INTER_TYPE_DECLARED_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INTER_TYPE_DECLARES",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MATCHED_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MATCHES_DECLARE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SOFTENED_BY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SOFTENS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

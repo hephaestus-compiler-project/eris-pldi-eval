@@ -1,0 +1,1225 @@
+{
+  "name": "com.fasterxml.jackson.core.JsonFactory",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.core.Versioned",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.core.TokenStreamFactory"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_createContentReference",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.ContentReference",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createContext",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.ContentReference",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.IOContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createGenerator",
+      "parameters": [
+        "java.io.Writer",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "java.io.DataInput",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "java.io.Reader",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createWriter",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Writer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decorate",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.InputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decorate",
+      "parameters": [
+        "java.io.Reader",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Reader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_getBufferRecycler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.util.BufferRecycler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canHandleBinaryNatively",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canUseCharArrays",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.DataOutput"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.File",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonGenerator",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonGenerator",
+      "parameters": [
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createNonBlockingByteArrayParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.DataInput"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCharacterEscapes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.CharacterEscapes",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatGeneratorFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatParserFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatWriteFeatureType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<? extends com.fasterxml.jackson.core.FormatFeature>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInputDecorator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.InputDecorator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParserFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasFormat",
+      "parameters": [
+        "com.fasterxml.jackson.core.format.InputAccessor"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.format.MatchStrength",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.StreamWriteFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rebuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.TSFBuilder<?,?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requiresPropertyOrdering",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCodec",
+      "parameters": [
+        "com.fasterxml.jackson.core.ObjectCodec"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setOutputDecorator",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.OutputDecorator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStreamReadConstraints",
+      "parameters": [
+        "com.fasterxml.jackson.core.StreamReadConstraints"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "version",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.Version",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_checkInvalidCopy",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createContentReference",
+      "parameters": [
+        "java.lang.Object",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.ContentReference",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createContext",
+      "parameters": [
+        "java.lang.Object",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.IOContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createNonBlockingContext",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.IOContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "char[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.io.IOContext",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createUTF8Generator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decorate",
+      "parameters": [
+        "java.io.DataInput",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.DataInput",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decorate",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.OutputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decorate",
+      "parameters": [
+        "java.io.Writer",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Writer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "builder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.TSFBuilder<?,?>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canParseAsync",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canUseSchema",
+      "parameters": [
+        "com.fasterxml.jackson.core.FormatSchema"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.DataOutput",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonGenerator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "java.io.Reader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createJsonParser",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createNonBlockingByteBufferParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.Reader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCodec",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.ObjectCodec",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatReadFeatureType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<? extends com.fasterxml.jackson.core.FormatFeature>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGeneratorFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOutputDecorator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.io.OutputDecorator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRootValueSeparator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasJSONFormat",
+      "parameters": [
+        "com.fasterxml.jackson.core.format.InputAccessor"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.format.MatchStrength",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.StreamReadFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readResolve",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requiresCustomCodec",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCharacterEscapes",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.CharacterEscapes"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInputDecorator",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.InputDecorator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRootValueSeparator",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "streamReadConstraints",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.StreamReadConstraints",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

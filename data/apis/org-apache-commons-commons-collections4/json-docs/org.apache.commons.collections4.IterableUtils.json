@@ -1,0 +1,645 @@
+{
+  "name": "org.apache.commons.collections4.IterableUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "chainedIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>..."
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "chainedIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collatedIterable",
+      "parameters": [
+        "java.util.Comparator<? super E>",
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "contains",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "E",
+        "org.apache.commons.collections4.Equator<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "countMatches",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emptyIterable",
+      "parameters": [],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "find",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "E",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forEach",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Closure<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "frequency",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "T"
+      ],
+      "type_parameters": [
+        "E",
+        "T extends E"
+      ],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "indexOf",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loopingIterable",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchesAny",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "partition",
+      "parameters": [
+        "java.lang.Iterable<? extends O>",
+        "org.apache.commons.collections4.Predicate<? super O>..."
+      ],
+      "type_parameters": [
+        "O"
+      ],
+      "return_type": "java.util.List<java.util.List<O>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reversedIterable",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "skippingIterable",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "long"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Transformer<? super E,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uniqueIterable",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "zippingIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>..."
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "boundedIterable",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "long"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "chainedIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "chainedIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collatedIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "contains",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "java.lang.Object"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emptyIfNull",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "filteredIterable",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "first",
+      "parameters": [
+        "java.lang.Iterable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forEachButLast",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Closure<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "E",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "java.lang.Iterable<T>",
+        "int"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEmpty",
+      "parameters": [
+        "java.lang.Iterable<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchesAll",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "partition",
+      "parameters": [
+        "java.lang.Iterable<? extends O>",
+        "org.apache.commons.collections4.Factory<R>",
+        "org.apache.commons.collections4.Predicate<? super O>..."
+      ],
+      "type_parameters": [
+        "O",
+        "R extends java.util.Collection<O>"
+      ],
+      "return_type": "java.util.List<R>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "partition",
+      "parameters": [
+        "java.lang.Iterable<? extends O>",
+        "org.apache.commons.collections4.Predicate<? super O>"
+      ],
+      "type_parameters": [
+        "O"
+      ],
+      "return_type": "java.util.List<java.util.List<O>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "size",
+      "parameters": [
+        "java.lang.Iterable<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toList",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.util.List<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "java.lang.Iterable<E>",
+        "org.apache.commons.collections4.Transformer<? super E,java.lang.String>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformedIterable",
+      "parameters": [
+        "java.lang.Iterable<I>",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "java.lang.Iterable<O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmodifiableIterable",
+      "parameters": [
+        "java.lang.Iterable<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "zippingIterable",
+      "parameters": [
+        "java.lang.Iterable<? extends E>",
+        "java.lang.Iterable<? extends E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "java.lang.Iterable<E>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "IterableUtils",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

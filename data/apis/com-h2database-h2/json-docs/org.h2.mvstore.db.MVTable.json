@@ -1,0 +1,473 @@
+{
+  "name": "org.h2.mvstore.db.MVTable",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.table.TableBase"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canGetRowCount",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkDeadlock",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.engine.SessionLocal",
+        "java.util.Set<org.h2.engine.SessionLocal>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.h2.engine.SessionLocal>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContainsLargeObject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndexes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.h2.index.Index>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMapName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.result.Row",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowCountApproximation",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getScanIndex",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.index.Index",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invalidate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLockedExclusively",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRowLockable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lockRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.result.Row",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "truncate",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.result.Row",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addIndex",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "java.lang.String",
+        "int",
+        "org.h2.table.IndexColumn[]",
+        "int",
+        "org.h2.index.IndexType",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.index.Index",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canDrop",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canTruncate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkSupportAlter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "commit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDiskSpaceUsed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMainIndexColumn",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxDataModificationId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowCount",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowIdColumn",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.Column",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTableType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.TableType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDeterministic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLockedExclusivelyBy",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lock",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeChildrenAndResources",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unlock",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "MVTable",
+      "parameters": [
+        "org.h2.command.ddl.CreateTableData",
+        "org.h2.mvstore.db.Store"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "SHARED_LOCKS",
+      "type": "org.h2.util.DebuggingThreadLocal<java.util.ArrayList<java.lang.String>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EXCLUSIVE_LOCKS",
+      "type": "org.h2.util.DebuggingThreadLocal<java.util.ArrayList<java.lang.String>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WAITING_FOR_LOCK",
+      "type": "org.h2.util.DebuggingThreadLocal<java.lang.String>",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

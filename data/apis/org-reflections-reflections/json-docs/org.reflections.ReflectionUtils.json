@@ -1,0 +1,336 @@
+{
+  "name": "org.reflections.ReflectionUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.reflections.util.ReflectionUtilsPredicates"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "get",
+      "parameters": [
+        "org.reflections.util.QueryFunction<C,T>"
+      ],
+      "type_parameters": [
+        "C",
+        "T"
+      ],
+      "return_type": "java.util.Set<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllAnnotations",
+      "parameters": [
+        "T",
+        "java.util.function.Predicate<java.lang.annotation.Annotation>..."
+      ],
+      "type_parameters": [
+        "T extends java.lang.reflect.AnnotatedElement"
+      ],
+      "return_type": "java.util.Set<java.lang.annotation.Annotation>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllFields",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Field>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Field>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllSuperTypes",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.Class<?>>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructors",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Constructor>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethods",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Method>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.Object",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toAnnotation",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.Object>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends java.lang.annotation.Annotation"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toMap",
+      "parameters": [
+        "java.lang.annotation.Annotation",
+        "java.lang.reflect.AnnotatedElement"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "extendType",
+      "parameters": [],
+      "type_parameters": [
+        "T extends java.lang.reflect.AnnotatedElement"
+      ],
+      "return_type": "org.reflections.util.UtilQueryBuilder<java.lang.reflect.AnnotatedElement,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.reflections.util.QueryFunction<org.reflections.Store,T>",
+        "java.util.function.Predicate<? super T>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllConstructors",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Constructor>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllMethods",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Method>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotations",
+      "parameters": [
+        "T",
+        "java.util.function.Predicate<java.lang.annotation.Annotation>..."
+      ],
+      "type_parameters": [
+        "T extends java.lang.reflect.AnnotatedElement"
+      ],
+      "return_type": "java.util.Set<java.lang.annotation.Annotation>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFields",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Predicate<? super java.lang.reflect.Field>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Field>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSuperTypes",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toAnnotation",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.annotation.Annotation",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toMap",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "AnnotationTypes",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.reflect.AnnotatedElement,java.lang.Class<? extends java.lang.annotation.Annotation>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Fields",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.reflect.Field>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Methods",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.reflect.Method>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Resources",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.String,java.net.URL>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SuperTypes",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.Class<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Annotations",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.reflect.AnnotatedElement,java.lang.annotation.Annotation>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Constructors",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.reflect.Constructor>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "Interfaces",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.Class<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "notObjectMethod",
+      "type": "java.util.function.Predicate<java.lang.reflect.Method>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SuperClass",
+      "type": "org.reflections.util.UtilQueryBuilder<java.lang.Class<?>,java.lang.Class<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

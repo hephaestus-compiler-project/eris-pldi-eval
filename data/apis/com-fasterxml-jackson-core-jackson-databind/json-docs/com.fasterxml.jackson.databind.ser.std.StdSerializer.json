@@ -1,0 +1,408 @@
+{
+  "name": "com.fasterxml.jackson.databind.ser.std.StdSerializer",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitable",
+    "com.fasterxml.jackson.databind.jsonschema.SchemaAware",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.JsonSerializer<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "_nonEmpty",
+      "parameters": [
+        "java.util.Collection<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSchemaNode",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ObjectNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findAnnotatedContentSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findConvertingContentSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findFormatOverrides",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.annotation.JsonFormat.Value",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findPropertyFilter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.PropertyFilter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDefaultSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitArrayFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFloatFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.core.JsonParser.NumberType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitIntFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.core.JsonParser.NumberType",
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormat"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitStringFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormat"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrapAndThrow",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.Throwable",
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_neitherNull",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSchemaNode",
+      "parameters": [
+        "java.lang.String",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ObjectNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findContextualConvertingSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findFormatFeature",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.annotation.JsonFormat.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findIncludeOverrides",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.annotation.JsonInclude.Value",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handledType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "T",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitArrayFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitIntFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.core.JsonParser.NumberType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitStringFormat",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrapAndThrow",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.Throwable",
+        "java.lang.Object",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_handledType",
+      "type": "java.lang.Class<T>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

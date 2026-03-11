@@ -1,0 +1,121 @@
+{
+  "name": "javax.enterprise.inject.Instance",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "java.lang.Iterable<T>",
+    "javax.inject.Provider<T>"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "isAmbiguous",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUnsatisfied",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "select",
+      "parameters": [
+        "java.lang.Class<U>",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [
+        "U extends T"
+      ],
+      "return_type": "javax.enterprise.inject.Instance<U>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stream",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.stream.Stream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "destroy",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isResolvable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "select",
+      "parameters": [
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.Instance<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "select",
+      "parameters": [
+        "javax.enterprise.util.TypeLiteral<U>",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [
+        "U extends T"
+      ],
+      "return_type": "javax.enterprise.inject.Instance<U>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

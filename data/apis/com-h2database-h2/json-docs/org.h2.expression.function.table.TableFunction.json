@@ -1,0 +1,115 @@
+{
+  "name": "org.h2.expression.function.table.TableFunction",
+  "type_parameters": [],
+  "implements": [
+    "org.h2.util.HasSQL",
+    "org.h2.expression.function.NamedExpression",
+    "org.h2.expression.ExpressionWithVariableParameters"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "doneWithParameters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValue",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.result.ResultInterface",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDeterministic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addParameter",
+      "parameters": [
+        "org.h2.expression.Expression"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSQL",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.StringBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueTemplate",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.result.ResultInterface",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "optimize",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "args",
+      "type": "org.h2.expression.Expression[]",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

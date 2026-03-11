@@ -1,0 +1,1482 @@
+{
+  "name": "org.aspectj.weaver.ResolvedType",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.weaver.AnnotatedElement"
+  ],
+  "inherits": [
+    "org.aspectj.weaver.UnresolvedType"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addAnnotation",
+      "parameters": [
+        "org.aspectj.weaver.AnnotationAJ"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addInterTypeMunger",
+      "parameters": [
+        "org.aspectj.weaver.ConcreteTypeMunger",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addParent",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ajMembersNeedParameterization",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canAnnotationTargetType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canBeSeenBy",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkInterTypeMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkLegalOverride",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.ResolvedMember",
+        "int",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearInterTypeMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectCrosscuttingMembers",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.CrosscuttingMembers",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectDeclares",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.patterns.Declare>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectInterTypeMungers",
+      "parameters": [
+        "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "conflictingSignature",
+      "parameters": [
+        "org.aspectj.weaver.Member",
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "conflictingSignature",
+      "parameters": [
+        "org.aspectj.weaver.Member",
+        "org.aspectj.weaver.Member",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "discoverActualOccurrenceOfTypeInHierarchy",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doesNotExposeShadowMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ensureConsistent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fillInAnyTypeParameters",
+      "parameters": [
+        "org.aspectj.weaver.ConcreteTypeMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ConcreteTypeMunger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findPointcut",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedPointcutDefinition",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAjMemberParameterizationMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.aspectj.weaver.UnresolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotationOfType",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.AnnotationAJ",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.AnnotationAJ[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotationTargetKinds",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.AnnotationTargetKind[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotationTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBinaryPath",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCompilerVersion",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredAdvice",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ShadowMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredInterfaces",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredJavaFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredJavaMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredMethods",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredPointcuts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaredShadowMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ShadowMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclares",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.aspectj.weaver.patterns.Declare>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclaringType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDirectSupertypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExposedPointcuts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFields",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGenericType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ReferenceType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHierarchy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHierarchy",
+      "parameters": [
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHierarchyWithoutIterator",
+      "parameters": [
+        "boolean",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ResolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterTypeMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterTypeMungersIncludingSupers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterTypeParentMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterTypeParentMungersIncludingSupers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMemberParameterizationMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.aspectj.weaver.UnresolvedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethods",
+      "parameters": [
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsIncludingIntertypeDeclarations",
+      "parameters": [
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsWithoutIterator",
+      "parameters": [
+        "boolean",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getModifiers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOuterClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPerClause",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.PerClause",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPointcuts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPrivilegedAccesses",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.aspectj.weaver.ResolvedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRawType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResolvedComponentType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResolvedTypeParameters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignatureForAttribute",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSourceContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ISourceContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSourceLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.ISourceLocation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSuperclass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTopmostImplementor",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeMungers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWeaverState",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.WeaverStateInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWorld",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.World",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasAnnotations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAbstract",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAnnotation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAnnotationStyleAspect",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAnnotationWithRuntimeRetention",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAnonymous",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAspect",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAssignableFrom",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAssignableFrom",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCacheable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCheckedException",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCoerceableFrom",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isConvertableFrom",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnum",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isException",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExposedToWeaver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isFinal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isGroovyObject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInheritedAnnotation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInterface",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isMissing",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isMissing",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isMoreVisible",
+      "parameters": [
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNested",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isParameterizedWithTypeVariable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPrimitiveArray",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPrivilegedAspect",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSynthetic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isTopmostImplementor",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isTypeHierarchyComplete",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isVisible",
+      "parameters": [
+        "int",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupDirectlyDeclaredMemberNoSupers",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupField",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMemberIncludingITDsOnInterfaces",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMemberNoSupers",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMemberWithSupersAndITDs",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMethod",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMethodInITDs",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupResolvedMember",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupSyntheticMember",
+      "parameters": [
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeArray",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matches",
+      "parameters": [
+        "org.aspectj.weaver.Member",
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "needsNoConversionFrom",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parameterize",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.aspectj.weaver.UnresolvedType>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parameterizedWith",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBinaryPath",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "tagAsTypeHierarchyComplete",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "bits",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "crosscuttingMembers",
+      "type": "org.aspectj.weaver.CrosscuttingMembers",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_ARRAY",
+      "type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_RESOLVED_TYPE_ARRAY",
+      "type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "interTypeMungers",
+      "type": "java.util.List<org.aspectj.weaver.ConcreteTypeMunger>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MISSING",
+      "type": "org.aspectj.weaver.ResolvedType.Missing",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NONE",
+      "type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PARAMETERIZED_TYPE_IDENTIFIER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "temporaryAnnotationTypes",
+      "type": "org.aspectj.weaver.ResolvedType[]",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "validBoxing",
+      "type": "java.util.Set<java.lang.String>",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "world",
+      "type": "org.aspectj.weaver.World",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

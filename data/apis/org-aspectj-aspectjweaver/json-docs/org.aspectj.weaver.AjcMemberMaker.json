@@ -1,0 +1,929 @@
+{
+  "name": "org.aspectj.weaver.AjcMemberMaker",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "ajcPostClinitMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ajcPreClinitMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "aroundClosurePreInitializationField",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "aroundClosurePreInitializationGetter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bridgerToInterMethod",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cflowStackInit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cflowStackIsValid",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cflowStackPeekInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cflowStackPushInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initFailureCauseField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "inlineAccessMethodForFieldGet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "inlineAccessMethodForFieldSet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "inlineAccessMethodForMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedMember"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interConstructor",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interfaceConstructor",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldClassField",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldGetDispatcher",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldInitializer",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldInterfaceField",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldInterfaceGetter",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldInterfaceSetter",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interFieldSetDispatcher",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interMethod",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interMethodBody",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interMethodBridger",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "interMethodDispatcher",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedMember",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "itdAtDeclareParentsField",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noAspectBoundExceptionInit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noAspectBoundExceptionInit2",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noAspectBoundExceptionInitWithCause",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perCflowAspectOfMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perCflowField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perCflowHasAspectMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perCflowPush",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectAspectOfMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectBind",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectHasAspectMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectInterfaceGet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectInterfaceSet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perObjectInterfaceType",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perSingletonAspectOfMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perSingletonField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perSingletonHasAspectMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinAspectOfMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinCreateAspectInstance",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinGetInstance",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinGetWithinTypeNameMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinHasAspectMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinLocalAspectOf",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "perTypeWithinWithinTypeField",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postIntroducedConstructor",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "preIntroducedConstructor",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.UnresolvedType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "privilegedAccessMethodForFieldGet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.Member",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "privilegedAccessMethodForFieldSet",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.Member",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "privilegedAccessMethodForMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedMember"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "superAccessMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType",
+        "org.aspectj.weaver.ResolvedMember"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toObjectConversionMethod",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedMember",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "AFTER_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "AFTERRETURNING_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "AFTERTHROWING_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "AROUND_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "AROUND_CLOSURE_TYPE",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ASPECT_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BEFORE_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CFLOW_STACK_TYPE",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONVERSIONS_TYPE",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREERROR_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREMIXIN_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREPARENTS_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREPRECEDENCE_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECLAREWARNING_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NO_ASPECT_BOUND_EXCEPTION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "POINTCUT_ANNOTATION",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TYPEX_ENCLOSINGSTATICJOINPOINT",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TYPEX_JOINPOINT",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TYPEX_PROCEEDINGJOINPOINT",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TYPEX_STATICJOINPOINT",
+      "type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

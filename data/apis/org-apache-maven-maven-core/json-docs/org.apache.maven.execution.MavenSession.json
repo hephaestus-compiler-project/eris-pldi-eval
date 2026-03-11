@@ -1,0 +1,471 @@
+{
+  "name": "org.apache.maven.execution.MavenSession",
+  "type_parameters": [],
+  "implements": [
+    "java.lang.Cloneable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "clone",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.execution.MavenSession",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllProjects",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.project.MavenProject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContainer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.codehaus.plexus.PlexusContainer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentProject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.MavenProject",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEventDispatcher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.monitor.event.EventDispatcher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExecutionProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Properties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExecutionRootDirectory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGoals",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocalRepository",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPluginContext",
+      "parameters": [
+        "org.apache.maven.plugin.descriptor.PluginDescriptor",
+        "org.apache.maven.project.MavenProject"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPluginGroups",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProjectBuildingRequest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.ProjectBuildingRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProjectDependencyGraph",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.execution.ProjectDependencyGraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProjectMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.apache.maven.project.MavenProject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProjects",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.project.MavenProject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReactorFailureBehavior",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRepositoryCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.RepositoryCache",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRepositorySession",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.RepositorySystemSession",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRequest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.execution.MavenExecutionRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResult",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.execution.MavenExecutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSettings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.settings.Settings",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSortedProjects",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.project.MavenProject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStartTime",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSystemProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Properties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTopLevelProject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.MavenProject",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUserProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Properties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOffline",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isParallel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUsingPOMsFromFilesystem",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookup",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookup",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupList",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lookupMap",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAllProjects",
+      "parameters": [
+        "java.util.List<org.apache.maven.project.MavenProject>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCurrentProject",
+      "parameters": [
+        "org.apache.maven.project.MavenProject"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParallel",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProjectDependencyGraph",
+      "parameters": [
+        "org.apache.maven.execution.ProjectDependencyGraph"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProjectMap",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.apache.maven.project.MavenProject>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProjects",
+      "parameters": [
+        "java.util.List<org.apache.maven.project.MavenProject>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

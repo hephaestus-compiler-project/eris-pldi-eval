@@ -1,0 +1,228 @@
+{
+  "name": "org.h2.result.SortOrder",
+  "type_parameters": [],
+  "implements": [
+    "java.util.Comparator<org.h2.value.Value[]>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "compare",
+      "parameters": [
+        "org.h2.value.Value[]",
+        "org.h2.value.Value[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrderList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.h2.command.query.QueryOrderBy>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowValueComparator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Comparator<org.h2.value.Value>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSortTypesWithNullOrdering",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sort",
+      "parameters": [
+        "java.util.ArrayList<org.h2.value.Value[]>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "typeToString",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addNullOrdering",
+      "parameters": [
+        "org.h2.engine.Database",
+        "int[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumn",
+      "parameters": [
+        "int",
+        "org.h2.table.TableFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.table.Column",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getQueryColumnIndexes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSortTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSQL",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "org.h2.expression.Expression[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.StringBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sort",
+      "parameters": [
+        "java.util.ArrayList<org.h2.value.Value[]>",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SortOrder",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "int[]",
+        "int[]",
+        "java.util.ArrayList<org.h2.command.query.QueryOrderBy>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SortOrder",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "int[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DESCENDING",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NULLS_LAST",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ASCENDING",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NULLS_FIRST",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,208 @@
+{
+  "name": "org.bouncycastle.crypto.agreement.jpake.JPAKEParticipant",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createRound1PayloadToSend",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.crypto.agreement.jpake.JPAKERound1Payload",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRound3PayloadToSend",
+      "parameters": [
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.crypto.agreement.jpake.JPAKERound3Payload",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateRound1PayloadReceived",
+      "parameters": [
+        "org.bouncycastle.crypto.agreement.jpake.JPAKERound1Payload"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateRound3PayloadReceived",
+      "parameters": [
+        "org.bouncycastle.crypto.agreement.jpake.JPAKERound3Payload",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateKeyingMaterial",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRound2PayloadToSend",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.crypto.agreement.jpake.JPAKERound2Payload",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getState",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateRound2PayloadReceived",
+      "parameters": [
+        "org.bouncycastle.crypto.agreement.jpake.JPAKERound2Payload"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "JPAKEParticipant",
+      "parameters": [
+        "java.lang.String",
+        "char[]",
+        "org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "JPAKEParticipant",
+      "parameters": [
+        "java.lang.String",
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "JPAKEParticipant",
+      "parameters": [
+        "java.lang.String",
+        "char[]",
+        "org.bouncycastle.crypto.agreement.jpake.JPAKEPrimeOrderGroup",
+        "org.bouncycastle.crypto.Digest",
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "STATE_KEY_CALCULATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_1_VALIDATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_2_VALIDATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_3_VALIDATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_INITIALIZED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_1_CREATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_2_CREATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STATE_ROUND_3_CREATED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

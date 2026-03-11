@@ -1,0 +1,56 @@
+{
+  "name": "org.springframework.scheduling.quartz.LocalDataSourceJobStore",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.quartz.impl.jdbcjobstore.JobStoreCMT"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "closeConnection",
+      "parameters": [
+        "java.sql.Connection"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initialize",
+      "parameters": [
+        "org.quartz.spi.ClassLoadHelper",
+        "org.quartz.spi.SchedulerSignaler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "NON_TX_DATA_SOURCE_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TX_DATA_SOURCE_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

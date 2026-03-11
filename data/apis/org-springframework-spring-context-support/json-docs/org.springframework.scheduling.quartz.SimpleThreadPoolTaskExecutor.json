@@ -1,0 +1,139 @@
+{
+  "name": "org.springframework.scheduling.quartz.SimpleThreadPoolTaskExecutor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.core.task.AsyncListenableTaskExecutor",
+    "org.springframework.scheduling.SchedulingTaskExecutor",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.beans.factory.DisposableBean"
+  ],
+  "inherits": [
+    "org.quartz.simpl.SimpleThreadPool"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "destroy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.Runnable",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWaitForJobsToCompleteOnShutdown",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Future<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.concurrent.Future<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitListenable",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.concurrent.ListenableFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitListenable",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.util.concurrent.ListenableFuture<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

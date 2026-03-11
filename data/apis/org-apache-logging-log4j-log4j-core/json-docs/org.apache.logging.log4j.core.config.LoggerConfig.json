@@ -1,0 +1,469 @@
+{
+  "name": "org.apache.logging.log4j.core.config.LoggerConfig",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.logging.log4j.core.impl.LocationAware"
+  ],
+  "inherits": [
+    "org.apache.logging.log4j.core.filter.AbstractFilterable"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "callAppenders",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createLogger",
+      "parameters": [
+        "boolean",
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.AppenderRef[]",
+        "org.apache.logging.log4j.core.config.Property[]",
+        "org.apache.logging.log4j.core.config.Configuration",
+        "org.apache.logging.log4j.core.Filter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAppenderRefs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.logging.log4j.core.config.AppenderRef>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExplicitLevel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.Level",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLevel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.Level",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLogEventFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.LogEventFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.logging.log4j.core.config.Property>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasAppenders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeLocation",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIncludeLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newBuilder",
+      "parameters": [],
+      "type_parameters": [
+        "B extends org.apache.logging.log4j.core.config.LoggerConfig.Builder<B>"
+      ],
+      "return_type": "B",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requiresLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLevel",
+      "parameters": [
+        "org.apache.logging.log4j.Level"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParent",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.LoggerConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addAppender",
+      "parameters": [
+        "org.apache.logging.log4j.core.Appender",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.core.Filter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearAppenders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createLogger",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.AppenderRef[]",
+        "org.apache.logging.log4j.core.config.Property[]",
+        "org.apache.logging.log4j.core.config.Configuration",
+        "org.apache.logging.log4j.core.Filter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAppenders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.apache.logging.log4j.core.Appender>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFilter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.Filter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLevelAndRefs",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.core.config.AppenderRef[]",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig.LevelAndRefs",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<org.apache.logging.log4j.core.config.Property,java.lang.Boolean>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReliabilityStrategy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.ReliabilityStrategy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeLocation",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAdditive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPropertiesRequireLookup",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "org.apache.logging.log4j.core.config.LoggerConfig.LoggerConfigPredicate"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeAppender",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAdditive",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLogEventFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.impl.LogEventFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,245 @@
+{
+  "name": "org.h2.constraint.ConstraintDomain",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.constraint.Constraint"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "checkExistingData",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCheckConstraint",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.Expression",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCreateSQL",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDomain",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.schema.Domain",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReferencedColumns",
+      "parameters": [
+        "org.h2.table.Table"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.HashSet<org.h2.table.Column>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEverything",
+      "parameters": [
+        "org.h2.expression.ExpressionVisitor"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeChildrenAndResources",
+      "parameters": [
+        "org.h2.engine.SessionLocal"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIndexOwner",
+      "parameters": [
+        "org.h2.index.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "check",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkRow",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.table.Table",
+        "org.h2.result.Row",
+        "org.h2.result.Row"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstraintType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.constraint.Constraint.Type",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCreateSQLWithoutIndexes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExpression",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.Expression",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isBefore",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rebuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExpression",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.expression.Expression"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usesIndex",
+      "parameters": [
+        "org.h2.index.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ConstraintDomain",
+      "parameters": [
+        "org.h2.schema.Schema",
+        "int",
+        "java.lang.String",
+        "org.h2.schema.Domain"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

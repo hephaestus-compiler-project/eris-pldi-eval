@@ -1,0 +1,147 @@
+{
+  "name": "org.apache.logging.log4j.core.async.AsyncLoggerConfig",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.config.LoggerConfig"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createLogger",
+      "parameters": [
+        "boolean",
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.AppenderRef[]",
+        "org.apache.logging.log4j.core.config.Property[]",
+        "org.apache.logging.log4j.core.config.Configuration",
+        "org.apache.logging.log4j.core.Filter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRingBufferAdmin",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.jmx.RingBufferAdmin",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "org.apache.logging.log4j.core.config.LoggerConfig.LoggerConfigPredicate"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "start",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "callAppenders",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createLogger",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.AppenderRef[]",
+        "org.apache.logging.log4j.core.config.Property[]",
+        "org.apache.logging.log4j.core.config.Configuration",
+        "org.apache.logging.log4j.core.Filter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.LoggerConfig",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeLocation",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newAsyncBuilder",
+      "parameters": [],
+      "type_parameters": [
+        "B extends org.apache.logging.log4j.core.async.AsyncLoggerConfig.Builder<B>"
+      ],
+      "return_type": "B",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        "long",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

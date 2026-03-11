@@ -1,0 +1,137 @@
+{
+  "name": "org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.poi.poifs.crypt.Decryptor"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "generateSecretKey",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.poifs.crypt.EncryptionVerifier"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.SecretKey",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDataStream",
+      "parameters": [
+        "org.apache.poi.poifs.filesystem.DirectoryNode"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.poifs.crypt.ChunkedCipherInputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initCipherForBlock",
+      "parameters": [
+        "javax.crypto.Cipher",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.Cipher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setChunkSize",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDataStream",
+      "parameters": [
+        "java.io.InputStream",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.InputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLength",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initCipherForBlock",
+      "parameters": [
+        "javax.crypto.Cipher",
+        "int",
+        "org.apache.poi.poifs.crypt.EncryptionInfo",
+        "javax.crypto.SecretKey",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.Cipher",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyPassword",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

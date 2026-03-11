@@ -1,0 +1,200 @@
+{
+  "name": "org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.client.ClientHttpRequestFactory",
+    "org.springframework.beans.factory.DisposableBean"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createHttpContext",
+      "parameters": [
+        "org.springframework.http.HttpMethod",
+        "java.net.URI"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.hc.core5.http.protocol.HttpContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createHttpUriRequest",
+      "parameters": [
+        "org.springframework.http.HttpMethod",
+        "java.net.URI"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.hc.core5.http.ClassicHttpRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRequest",
+      "parameters": [
+        "java.net.URI",
+        "org.springframework.http.HttpMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.client.ClientHttpRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRequestConfig",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.hc.client5.http.config.RequestConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "destroy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHttpClient",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.hc.client5.http.classic.HttpClient",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mergeRequestConfig",
+      "parameters": [
+        "org.apache.hc.client5.http.config.RequestConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.hc.client5.http.config.RequestConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessHttpRequest",
+      "parameters": [
+        "org.apache.hc.core5.http.ClassicHttpRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBufferRequestBody",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConnectionRequestTimeout",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConnectTimeout",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHttpClient",
+      "parameters": [
+        "org.apache.hc.client5.http.classic.HttpClient"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHttpContextFactory",
+      "parameters": [
+        "java.util.function.BiFunction<org.springframework.http.HttpMethod,java.net.URI,org.apache.hc.core5.http.protocol.HttpContext>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReadTimeout",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

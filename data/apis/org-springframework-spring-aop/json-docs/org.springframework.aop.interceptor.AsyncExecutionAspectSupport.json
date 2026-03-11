@@ -1,0 +1,167 @@
+{
+  "name": "org.springframework.aop.interceptor.AsyncExecutionAspectSupport",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.BeanFactoryAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "configure",
+      "parameters": [
+        "java.util.function.Supplier<java.util.concurrent.Executor>",
+        "java.util.function.Supplier<org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineAsyncExecutor",
+      "parameters": [
+        "java.lang.reflect.Method"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.task.AsyncTaskExecutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doSubmit",
+      "parameters": [
+        "java.util.concurrent.Callable<java.lang.Object>",
+        "org.springframework.core.task.AsyncTaskExecutor",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findQualifiedExecutor",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Executor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultExecutor",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Executor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExecutorQualifier",
+      "parameters": [
+        "java.lang.reflect.Method"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleError",
+      "parameters": [
+        "java.lang.Throwable",
+        "java.lang.reflect.Method",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanFactory",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExceptionHandler",
+      "parameters": [
+        "org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExecutor",
+      "parameters": [
+        "java.util.concurrent.Executor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_TASK_EXECUTOR_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

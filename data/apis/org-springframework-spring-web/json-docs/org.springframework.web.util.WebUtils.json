@@ -1,0 +1,498 @@
+{
+  "name": "org.springframework.web.util.WebUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "clearErrorRequestAttributes",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exposeErrorRequestAttributes",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.Throwable",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findParameterValue",
+      "parameters": [
+        "jakarta.servlet.ServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findParameterValue",
+      "parameters": [
+        "java.util.Map<java.lang.String,?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCookie",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "jakarta.servlet.http.Cookie",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultHtmlEscape",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNativeRequest",
+      "parameters": [
+        "jakarta.servlet.ServletRequest",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNativeResponse",
+      "parameters": [
+        "jakarta.servlet.ServletResponse",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParametersStartingWith",
+      "parameters": [
+        "jakarta.servlet.ServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRealPath",
+      "parameters": [
+        "jakarta.servlet.ServletContext",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRequiredSessionAttribute",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResponseEncodedHtmlEscape",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSessionAttribute",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSessionId",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSessionMutex",
+      "parameters": [
+        "jakarta.servlet.http.HttpSession"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTempDir",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.File",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasSubmitParameter",
+      "parameters": [
+        "jakarta.servlet.ServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIncludeRequest",
+      "parameters": [
+        "jakarta.servlet.ServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSameOrigin",
+      "parameters": [
+        "org.springframework.http.HttpRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidOrigin",
+      "parameters": [
+        "org.springframework.http.HttpRequest",
+        "java.util.Collection<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseMatrixVariables",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeWebAppRootSystemProperty",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSessionAttribute",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWebAppRootSystemProperty",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CONTENT_TYPE_CHARSET_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_CHARACTER_ENCODING",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_WEB_APP_ROOT_KEY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_EXCEPTION_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_EXCEPTION_TYPE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_MESSAGE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_REQUEST_URI_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_SERVLET_NAME_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_STATUS_CODE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FORWARD_CONTEXT_PATH_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FORWARD_PATH_INFO_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FORWARD_QUERY_STRING_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FORWARD_REQUEST_URI_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FORWARD_SERVLET_PATH_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HTML_ESCAPE_CONTEXT_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INCLUDE_CONTEXT_PATH_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INCLUDE_PATH_INFO_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INCLUDE_QUERY_STRING_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INCLUDE_REQUEST_URI_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INCLUDE_SERVLET_PATH_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RESPONSE_ENCODED_HTML_ESCAPE_CONTEXT_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SESSION_MUTEX_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SUBMIT_IMAGE_SUFFIXES",
+      "type": "java.lang.String[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TEMP_DIR_CONTEXT_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WEB_APP_ROOT_KEY_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

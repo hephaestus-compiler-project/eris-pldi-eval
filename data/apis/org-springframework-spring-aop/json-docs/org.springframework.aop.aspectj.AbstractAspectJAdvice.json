@@ -1,0 +1,408 @@
+{
+  "name": "org.springframework.aop.aspectj.AbstractAspectJAdvice",
+  "type_parameters": [],
+  "implements": [
+    "org.aopalliance.aop.Advice",
+    "org.springframework.aop.aspectj.AspectJPrecedenceInformation",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "argBinding",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint",
+        "org.aspectj.weaver.tools.JoinPointMatch",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildSafePointcut",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.aop.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateArgumentBindings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParameterNameDiscoverer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ParameterNameDiscoverer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "currentJoinPoint",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectClassLoader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.ClassLoader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectInstanceFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.aop.aspectj.AspectInstanceFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectJAdviceMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Method",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeclarationOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDiscoveredReturningGenericType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Type",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDiscoveredReturningType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDiscoveredThrowingType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJoinPoint",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.lang.JoinPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJoinPointMatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.tools.JoinPointMatch",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJoinPointMatch",
+      "parameters": [
+        "org.springframework.aop.ProxyMethodInvocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.tools.JoinPointMatch",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPointcut",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeAdviceMethod",
+      "parameters": [
+        "org.aspectj.lang.JoinPoint",
+        "org.aspectj.weaver.tools.JoinPointMatch",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeAdviceMethod",
+      "parameters": [
+        "org.aspectj.weaver.tools.JoinPointMatch",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeAdviceMethodWithGivenArgs",
+      "parameters": [
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentNames",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentNamesFromStringArray",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAspectName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDeclarationOrder",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturningName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturningNameNoCheck",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThrowingName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThrowingNameNoCheck",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsProceedingJoinPoint",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "aspectJAdviceMethod",
+      "type": "java.lang.reflect.Method",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "JOIN_POINT_KEY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

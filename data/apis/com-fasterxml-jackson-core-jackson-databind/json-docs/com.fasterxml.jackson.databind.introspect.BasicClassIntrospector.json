@@ -1,0 +1,348 @@
+{
+  "name": "com.fasterxml.jackson.databind.introspect.BasicClassIntrospector",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.introspect.ClassIntrospector"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_findStdTypeDesc",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resolveAnnotatedClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectProperties",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectPropertiesWithBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver",
+        "com.fasterxml.jackson.databind.BeanDescription",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructPropertyCollector",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+        "com.fasterxml.jackson.databind.JavaType",
+        "boolean",
+        "com.fasterxml.jackson.databind.introspect.AccessorNamingStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.ClassIntrospector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forCreation",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forDeserializationWithBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forDirectClassAnnotations",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findStdJdkCollectionDesc",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_isStdJDKCollection",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resolveAnnotatedWithoutSuperTypes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectProperties",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectPropertiesWithBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructPropertyCollector",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+        "com.fasterxml.jackson.databind.JavaType",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forClassAnnotations",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forDeserialization",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forDeserializationWithBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver",
+        "com.fasterxml.jackson.databind.BeanDescription"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forSerialization",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "BasicClassIntrospector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "INT_DESC",
+      "type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "OBJECT_DESC",
+      "type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BOOLEAN_DESC",
+      "type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "LONG_DESC",
+      "type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "STRING_DESC",
+      "type": "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

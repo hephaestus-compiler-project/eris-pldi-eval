@@ -1,0 +1,123 @@
+{
+  "name": "org.bouncycastle.jcajce.provider.asymmetric.util.BaseAgreementSpi",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "javax.crypto.KeyAgreementSpi"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "engineGenerateSecret",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineGenerateSecret",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.SecretKey",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getKeySize",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calcSecret",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineGenerateSecret",
+      "parameters": [
+        "byte[]",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAlgorithm",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trimZeroes",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "kdf",
+      "type": "org.bouncycastle.crypto.DerivationFunction",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "kaAlgorithm",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ukmParameters",
+      "type": "byte[]",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

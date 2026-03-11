@@ -1,0 +1,90 @@
+{
+  "name": "org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.http.converter.AbstractHttpMessageConverter<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "readFromSource",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "org.springframework.http.HttpHeaders",
+        "javax.xml.transform.Source"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readInternal",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transform",
+      "parameters": [
+        "javax.xml.transform.Source",
+        "javax.xml.transform.Result"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeInternal",
+      "parameters": [
+        "T",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeToResult",
+      "parameters": [
+        "T",
+        "org.springframework.http.HttpHeaders",
+        "javax.xml.transform.Result"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,102 @@
+{
+  "name": "org.springframework.core.codec.Decoder",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "canDecode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.springframework.core.io.buffer.DataBuffer",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "decodeToMono",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDecodableMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDecodableMimeTypes",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

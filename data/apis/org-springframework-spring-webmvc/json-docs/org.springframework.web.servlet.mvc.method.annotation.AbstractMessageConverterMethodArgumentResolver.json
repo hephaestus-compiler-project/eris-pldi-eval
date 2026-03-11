@@ -1,0 +1,133 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.method.support.HandlerMethodArgumentResolver"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "adaptArgumentIfNecessary",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInputMessage",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.ServletServerHttpRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSupportedMediaTypes",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isBindExceptionRequired",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readWithMessageConverters",
+      "parameters": [
+        "org.springframework.http.HttpInputMessage",
+        "org.springframework.core.MethodParameter",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readWithMessageConverters",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest",
+        "org.springframework.core.MethodParameter",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateIfApplicable",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "messageConverters",
+      "type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

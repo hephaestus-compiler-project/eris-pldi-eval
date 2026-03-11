@@ -1,0 +1,77 @@
+{
+  "name": "org.apache.maven.plugin.internal.DefaultPluginValidationManager",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.plugin.PluginValidationManager"
+  ],
+  "inherits": [
+    "org.apache.maven.AbstractMavenLifecycleParticipant"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterSessionEnd",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportPluginMojoValidationIssue",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "org.apache.maven.plugin.descriptor.MojoDescriptor",
+        "java.lang.Class<?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportPluginValidationIssue",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "org.apache.maven.plugin.descriptor.MojoDescriptor",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportPluginValidationIssue",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "org.eclipse.aether.artifact.Artifact",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

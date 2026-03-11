@@ -1,0 +1,143 @@
+{
+  "name": "org.aspectj.bridge.CountingMessageHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.bridge.IMessageHandler"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "dontIgnore",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMessage",
+      "parameters": [
+        "org.aspectj.bridge.IMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasErrors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignore",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIgnoring",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeCountingMessageHandler",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.CountingMessageHandler",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "numMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "delegate",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "proxy",
+      "type": "org.aspectj.bridge.CountingMessageHandler",
+      "is_static": false,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

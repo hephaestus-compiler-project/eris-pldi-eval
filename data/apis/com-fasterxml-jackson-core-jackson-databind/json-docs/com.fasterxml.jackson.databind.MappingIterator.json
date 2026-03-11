@@ -1,0 +1,307 @@
+{
+  "name": "com.fasterxml.jackson.databind.MappingIterator",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "java.util.Iterator<T>",
+    "java.io.Closeable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_handleMappingException",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JsonMappingException"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_throwNoSuchElement",
+      "parameters": [],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emptyIterator",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.MappingIterator<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasNext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "next",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAll",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAll",
+      "parameters": [
+        "L"
+      ],
+      "type_parameters": [
+        "L extends java.util.List<? super T>"
+      ],
+      "return_type": "L",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleIOException",
+      "parameters": [
+        "java.io.IOException"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resync",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonLocation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParserSchema",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.FormatSchema",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasNextValue",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nextValue",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAll",
+      "parameters": [
+        "C"
+      ],
+      "type_parameters": [
+        "C extends java.util.Collection<? super T>"
+      ],
+      "return_type": "C",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_context",
+      "type": "com.fasterxml.jackson.databind.DeserializationContext",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_parser",
+      "type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_state",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_updatedValue",
+      "type": "T",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "STATE_CLOSED",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "STATE_MAY_HAVE_VALUE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_closeParser",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_deserializer",
+      "type": "com.fasterxml.jackson.databind.JsonDeserializer<T>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_seqContext",
+      "type": "com.fasterxml.jackson.core.JsonStreamContext",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_type",
+      "type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "EMPTY_ITERATOR",
+      "type": "com.fasterxml.jackson.databind.MappingIterator<?>",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "STATE_HAS_VALUE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "STATE_NEED_RESYNC",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

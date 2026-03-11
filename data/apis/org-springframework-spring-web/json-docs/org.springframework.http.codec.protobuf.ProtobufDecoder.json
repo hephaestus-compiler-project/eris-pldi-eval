@@ -1,0 +1,122 @@
+{
+  "name": "org.springframework.http.codec.protobuf.ProtobufDecoder",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.core.codec.Decoder<com.google.protobuf.Message>"
+  ],
+  "inherits": [
+    "org.springframework.http.codec.protobuf.ProtobufCodecSupport"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canDecode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<com.google.protobuf.Message>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.springframework.core.io.buffer.DataBuffer",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.google.protobuf.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decodeToMono",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<com.google.protobuf.Message>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDecodableMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxMessageSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxMessageSize",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_MESSAGE_MAX_SIZE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

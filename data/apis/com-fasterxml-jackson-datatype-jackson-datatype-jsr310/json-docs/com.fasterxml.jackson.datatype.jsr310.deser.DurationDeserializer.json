@@ -1,0 +1,299 @@
+{
+  "name": "com.fasterxml.jackson.datatype.jsr310.deser.DurationDeserializer",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.databind.deser.ContextualDeserializer"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_fromEmptyString",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromTimestamp",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "java.time.Duration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleUnexpectedToken",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.JsonToken..."
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_isValidTimestampString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportWrongToken",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.core.JsonToken",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "BOGUS"
+      ],
+      "return_type": "BOGUS",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserializeWithType",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.jsontype.TypeDeserializer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logicalType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.LogicalType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withLeniency",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.datatype.jsr310.deser.DurationDeserializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_failForNotLenient",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromString",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.time.Duration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleDateTimeException",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.time.DateTimeException",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleUnexpectedToken",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.core.JsonParser",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_peelDTE",
+      "parameters": [
+        "java.time.DateTimeException"
+      ],
+      "type_parameters": [],
+      "return_type": "java.time.DateTimeException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportWrongToken",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.core.JsonToken..."
+      ],
+      "type_parameters": [
+        "BOGUS"
+      ],
+      "return_type": "BOGUS",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserialize",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.time.Duration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLenient",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withConverter",
+      "parameters": [
+        "com.fasterxml.jackson.datatype.jsr310.util.DurationUnitConverter"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.datatype.jsr310.deser.DurationDeserializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_isLenient",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_durationUnitConverter",
+      "type": "com.fasterxml.jackson.datatype.jsr310.util.DurationUnitConverter",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INSTANCE",
+      "type": "com.fasterxml.jackson.datatype.jsr310.deser.DurationDeserializer",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

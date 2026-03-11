@@ -1,0 +1,64 @@
+{
+  "name": "org.springframework.core.codec.ByteArrayEncoder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.core.codec.AbstractEncoder<byte[]>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canEncode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encode",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends byte[]>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encodeValue",
+      "parameters": [
+        "byte[]",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

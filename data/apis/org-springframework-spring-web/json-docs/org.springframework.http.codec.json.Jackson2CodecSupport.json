@@ -1,0 +1,223 @@
+{
+  "name": "org.springframework.http.codec.json.Jackson2CodecSupport",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getAnnotation",
+      "parameters": [
+        "org.springframework.core.MethodParameter",
+        "java.lang.Class<A>"
+      ],
+      "type_parameters": [
+        "A extends java.lang.annotation.Annotation"
+      ],
+      "return_type": "A",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHints",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJavaType",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMediaTypesForProblemDetail",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMimeTypes",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectMapper",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectMapperRegistrations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Class<?>,java.util.Map<org.springframework.util.MimeType,com.fasterxml.jackson.databind.ObjectMapper>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectMappersForType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<org.springframework.util.MimeType,com.fasterxml.jackson.databind.ObjectMapper>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameter",
+      "parameters": [
+        "org.springframework.core.ResolvableType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.MethodParameter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logWarningIfNecessary",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerObjectMappersForType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.function.Consumer<java.util.Map<org.springframework.util.MimeType,com.fasterxml.jackson.databind.ObjectMapper>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "selectObjectMapper",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setObjectMapper",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ObjectMapper"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsMimeType",
+      "parameters": [
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "JSON_VIEW_HINT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

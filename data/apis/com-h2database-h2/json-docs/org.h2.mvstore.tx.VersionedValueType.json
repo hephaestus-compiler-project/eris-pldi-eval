@@ -1,0 +1,180 @@
+{
+  "name": "org.h2.mvstore.tx.VersionedValueType",
+  "type_parameters": [
+    "T",
+    "D"
+  ],
+  "implements": [
+    "org.h2.mvstore.type.StatefulDataType<D>"
+  ],
+  "inherits": [
+    "org.h2.mvstore.type.BasicDataType<org.h2.value.VersionedValue<T>>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createStorage",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.VersionedValue<T>[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.mvstore.tx.VersionedValueType.Factory<D>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.nio.ByteBuffer",
+        "java.lang.Object",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "java.lang.Object",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "compare",
+      "parameters": [
+        "org.h2.value.VersionedValue<T>",
+        "org.h2.value.VersionedValue<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMemory",
+      "parameters": [
+        "org.h2.value.VersionedValue<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.VersionedValue<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "org.h2.mvstore.type.MetaType<D>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "org.h2.value.VersionedValue<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "VersionedValueType",
+      "parameters": [
+        "org.h2.mvstore.type.DataType<T>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

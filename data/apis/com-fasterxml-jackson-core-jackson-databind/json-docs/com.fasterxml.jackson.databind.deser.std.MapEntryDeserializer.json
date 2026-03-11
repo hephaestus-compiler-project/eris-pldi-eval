@@ -1,0 +1,143 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.std.MapEntryDeserializer",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.databind.deser.ContextualDeserializer"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.std.ContainerDeserializerBase<java.util.Map.Entry<java.lang.Object,java.lang.Object>>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "deserialize",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map.Entry<java.lang.Object,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserializeWithType",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.jsontype.TypeDeserializer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withResolved",
+      "parameters": [
+        "com.fasterxml.jackson.databind.KeyDeserializer",
+        "com.fasterxml.jackson.databind.jsontype.TypeDeserializer",
+        "com.fasterxml.jackson.databind.JsonDeserializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.std.MapEntryDeserializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserialize",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.util.Map.Entry<java.lang.Object,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map.Entry<java.lang.Object,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentDeserializer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logicalType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.LogicalType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_valueDeserializer",
+      "type": "com.fasterxml.jackson.databind.JsonDeserializer<java.lang.Object>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_keyDeserializer",
+      "type": "com.fasterxml.jackson.databind.KeyDeserializer",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_valueTypeDeserializer",
+      "type": "com.fasterxml.jackson.databind.jsontype.TypeDeserializer",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

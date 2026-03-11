@@ -1,0 +1,498 @@
+{
+  "name": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "call",
+      "parameters": [
+        "C",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "C extends java.util.concurrent.Callable<T>",
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCommand",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSubcommands",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.apache.logging.log4j.core.tools.picocli.CommandLine>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOverwrittenOptionsAllowed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUsageHelpRequested",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.logging.log4j.core.tools.picocli.CommandLine>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseWithHandlers",
+      "parameters": [
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.IParseResultHandler",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.IExceptionHandler",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printHelpIfRequested",
+      "parameters": [
+        "java.util.List<org.apache.logging.log4j.core.tools.picocli.CommandLine>",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printVersionHelp",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerConverter",
+      "parameters": [
+        "java.lang.Class<K>",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.ITypeConverter<K>"
+      ],
+      "type_parameters": [
+        "K"
+      ],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "run",
+      "parameters": [
+        "R",
+        "java.io.PrintStream",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "R extends java.lang.Runnable"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setOverwrittenOptionsAllowed",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUnmatchedArgumentsAllowed",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.lang.Object",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.io.PrintStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.ColorScheme"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSubcommand",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "call",
+      "parameters": [
+        "C",
+        "java.io.PrintStream",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "C extends java.util.concurrent.Callable<T>",
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCommandName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSeparator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUnmatchedArguments",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUnmatchedArgumentsAllowed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isVersionHelpRequested",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseWithHandler",
+      "parameters": [
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.IParseResultHandler",
+        "java.io.PrintStream",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "populateCommand",
+      "parameters": [
+        "T",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printVersionHelp",
+      "parameters": [
+        "java.io.PrintStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printVersionHelp",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "run",
+      "parameters": [
+        "R",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "R extends java.lang.Runnable"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCommandName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSeparator",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.tools.picocli.CommandLine",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.lang.Object",
+        "java.io.PrintStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.lang.Object",
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.ColorScheme"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usage",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.apache.logging.log4j.core.tools.picocli.CommandLine.Help.Ansi"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CommandLine",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

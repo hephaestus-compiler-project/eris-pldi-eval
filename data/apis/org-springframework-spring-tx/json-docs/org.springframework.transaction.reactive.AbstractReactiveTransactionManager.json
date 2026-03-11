@@ -1,0 +1,220 @@
+{
+  "name": "org.springframework.transaction.reactive.AbstractReactiveTransactionManager",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.transaction.ReactiveTransactionManager",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "commit",
+      "parameters": [
+        "org.springframework.transaction.ReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doBegin",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "java.lang.Object",
+        "org.springframework.transaction.TransactionDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doCleanupAfterCompletion",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doCommit",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "org.springframework.transaction.reactive.GenericReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doGetTransaction",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doResume",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doRollback",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "org.springframework.transaction.reactive.GenericReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doSetRollbackOnly",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "org.springframework.transaction.reactive.GenericReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doSuspend",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReactiveTransaction",
+      "parameters": [
+        "org.springframework.transaction.TransactionDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.transaction.ReactiveTransaction>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExistingTransaction",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "prepareForCommit",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "org.springframework.transaction.reactive.GenericReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerAfterCompletionWithExistingTransaction",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionSynchronizationManager",
+        "java.lang.Object",
+        "java.util.List<org.springframework.transaction.reactive.TransactionSynchronization>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rollback",
+      "parameters": [
+        "org.springframework.transaction.ReactiveTransaction"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

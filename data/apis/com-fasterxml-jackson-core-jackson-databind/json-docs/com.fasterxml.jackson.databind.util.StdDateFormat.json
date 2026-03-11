@@ -1,0 +1,495 @@
+{
+  "name": "com.fasterxml.jackson.databind.util.StdDateFormat",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.text.DateFormat"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_equals",
+      "parameters": [
+        "T",
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_formatBCEYear",
+      "parameters": [
+        "java.lang.StringBuffer",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_parseAsISO8601",
+      "parameters": [
+        "java.lang.String",
+        "java.text.ParsePosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clone",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "format",
+      "parameters": [
+        "java.util.Date",
+        "java.lang.StringBuffer",
+        "java.text.FieldPosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.StringBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getISO8601Format",
+      "parameters": [
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.text.DateFormat",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTimeZone",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.TimeZone",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isColonIncludedInTimeZone",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "looksLikeISO8601",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "java.text.ParsePosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAsRFC1123",
+      "parameters": [
+        "java.lang.String",
+        "java.text.ParsePosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTimeZone",
+      "parameters": [
+        "java.util.TimeZone"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withLenient",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withTimeZone",
+      "parameters": [
+        "java.util.TimeZone"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_clearFormats",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_format",
+      "parameters": [
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date",
+        "java.lang.StringBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_getCalendar",
+      "parameters": [
+        "java.util.TimeZone"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Calendar",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_parseDate",
+      "parameters": [
+        "java.lang.String",
+        "java.text.ParsePosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultTimeZone",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.TimeZone",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRFC1123Format",
+      "parameters": [
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "java.text.DateFormat",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLenient",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAsISO8601",
+      "parameters": [
+        "java.lang.String",
+        "java.text.ParsePosition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLenient",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withColonInTimeZone",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withLocale",
+      "parameters": [
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_locale",
+      "type": "java.util.Locale",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ALL_FORMATS",
+      "type": "java.lang.String[]",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DATE_FORMAT_RFC1123",
+      "type": "java.text.DateFormat",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DATE_FORMAT_STR_PLAIN",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_LOCALE",
+      "type": "java.util.Locale",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "instance",
+      "type": "com.fasterxml.jackson.databind.util.StdDateFormat",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PATTERN_PLAIN",
+      "type": "java.util.regex.Pattern",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_lenient",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_timezone",
+      "type": "java.util.TimeZone",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CALENDAR",
+      "type": "java.util.Calendar",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DATE_FORMAT_STR_ISO8601",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DATE_FORMAT_STR_RFC1123",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_TIMEZONE",
+      "type": "java.util.TimeZone",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "PATTERN_ISO8601",
+      "type": "java.util.regex.Pattern",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "PATTERN_PLAIN_STR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

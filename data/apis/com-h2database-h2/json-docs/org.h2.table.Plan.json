@@ -1,0 +1,80 @@
+{
+  "name": "org.h2.table.Plan",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getFilters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.TableFilter[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeUnusableIndexConditions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateCost",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.command.query.AllColumnsForPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getItem",
+      "parameters": [
+        "org.h2.table.TableFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.table.PlanItem",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Plan",
+      "parameters": [
+        "org.h2.table.TableFilter[]",
+        "int",
+        "org.h2.expression.Expression"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

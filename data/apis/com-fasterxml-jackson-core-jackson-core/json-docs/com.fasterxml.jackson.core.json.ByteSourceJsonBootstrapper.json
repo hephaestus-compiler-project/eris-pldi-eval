@@ -1,0 +1,143 @@
+{
+  "name": "com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "constructReader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.io.Reader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ensureLoaded",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "skipUTF8BOM",
+      "parameters": [
+        "java.io.DataInput"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParser",
+      "parameters": [
+        "int",
+        "com.fasterxml.jackson.core.ObjectCodec",
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer",
+        "com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "detectEncoding",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonEncoding",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasJSONFormat",
+      "parameters": [
+        "com.fasterxml.jackson.core.format.InputAccessor"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.format.MatchStrength",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ByteSourceJsonBootstrapper",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.IOContext",
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ByteSourceJsonBootstrapper",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.IOContext",
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "UTF8_BOM_2",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "UTF8_BOM_1",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "UTF8_BOM_3",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

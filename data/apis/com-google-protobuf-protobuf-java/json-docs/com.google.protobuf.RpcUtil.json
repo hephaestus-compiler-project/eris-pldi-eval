@@ -1,0 +1,63 @@
+{
+  "name": "com.google.protobuf.RpcUtil",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "newOneTimeCallback",
+      "parameters": [
+        "com.google.protobuf.RpcCallback<ParameterType>"
+      ],
+      "type_parameters": [
+        "ParameterType"
+      ],
+      "return_type": "com.google.protobuf.RpcCallback<ParameterType>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generalizeCallback",
+      "parameters": [
+        "com.google.protobuf.RpcCallback<Type>",
+        "java.lang.Class<Type>",
+        "Type"
+      ],
+      "type_parameters": [
+        "Type extends com.google.protobuf.Message"
+      ],
+      "return_type": "com.google.protobuf.RpcCallback<com.google.protobuf.Message>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "specializeCallback",
+      "parameters": [
+        "com.google.protobuf.RpcCallback<com.google.protobuf.Message>"
+      ],
+      "type_parameters": [
+        "Type extends com.google.protobuf.Message"
+      ],
+      "return_type": "com.google.protobuf.RpcCallback<Type>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

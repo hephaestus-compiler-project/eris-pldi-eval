@@ -1,0 +1,336 @@
+{
+  "name": "org.springframework.core.io.buffer.DataBufferUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "join",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.core.io.buffer.DataBuffer>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "join",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.core.io.buffer.DataBuffer>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matcher",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBufferUtils.Matcher",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matcher",
+      "parameters": [
+        "byte[]..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBufferUtils.Matcher",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int",
+        "java.nio.file.OpenOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "org.springframework.core.io.Resource",
+        "long",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "org.springframework.core.io.Resource",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAsynchronousFileChannel",
+      "parameters": [
+        "java.util.concurrent.Callable<java.nio.channels.AsynchronousFileChannel>",
+        "long",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAsynchronousFileChannel",
+      "parameters": [
+        "java.util.concurrent.Callable<java.nio.channels.AsynchronousFileChannel>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readByteChannel",
+      "parameters": [
+        "java.util.concurrent.Callable<java.nio.channels.ReadableByteChannel>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readInputStream",
+      "parameters": [
+        "java.util.concurrent.Callable<java.io.InputStream>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "release",
+      "parameters": [
+        "org.springframework.core.io.buffer.DataBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "releaseConsumer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.function.Consumer<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retain",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.core.io.buffer.DataBuffer"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "skipUntilByteCount",
+      "parameters": [
+        "org.reactivestreams.Publisher<T>",
+        "long"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.core.io.buffer.DataBuffer"
+      ],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "takeUntilByteCount",
+      "parameters": [
+        "org.reactivestreams.Publisher<T>",
+        "long"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.core.io.buffer.DataBuffer"
+      ],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "touch",
+      "parameters": [
+        "T",
+        "java.lang.Object"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.core.io.buffer.DataBuffer"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.core.io.buffer.DataBuffer>",
+        "java.nio.channels.AsynchronousFileChannel",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "java.nio.channels.AsynchronousFileChannel"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "java.nio.channels.WritableByteChannel"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "java.nio.file.Path",
+        "java.nio.file.OpenOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

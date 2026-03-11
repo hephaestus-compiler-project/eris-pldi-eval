@@ -1,0 +1,378 @@
+{
+  "name": "org.eclipse.jetty.server.ErrorHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.jetty.server.Request.Handler"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "badMessageError",
+      "parameters": [
+        "int",
+        "java.lang.String",
+        "org.eclipse.jetty.http.HttpFields.Mutable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.ByteBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "errorPageForMethod",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateAcceptableResponse",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Response",
+        "org.eclipse.jetty.util.Callback",
+        "java.lang.String",
+        "java.util.List<java.nio.charset.Charset>",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateResponse",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Response",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable",
+        "org.eclipse.jetty.util.Callback"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheControl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrorHandler",
+      "parameters": [
+        "org.eclipse.jetty.server.Server",
+        "org.eclipse.jetty.server.handler.ContextHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.Request.Handler",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShowMessageInTitle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handle",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Response",
+        "org.eclipse.jetty.util.Callback"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isShowServlet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isShowStacks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheControl",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setShowMessageInTitle",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setShowServlet",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setShowStacks",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "java.io.Writer",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtml",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer",
+        "java.nio.charset.Charset",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtmlBody",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtmlHead",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer",
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtmlMessage",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtmlMeta",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer",
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorHtmlStacks",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeErrorPlain",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.io.PrintWriter",
+        "int",
+        "java.lang.String",
+        "java.lang.Throwable",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ERROR_CACHE_CONTROL",
+      "type": "org.eclipse.jetty.http.HttpField",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_CONTEXT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_EXCEPTION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_MESSAGE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_METHODS",
+      "type": "java.util.Set<java.lang.String>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_STATUS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "org.springframework.util.concurrent.ListenableFutureAdapter",
+  "type_parameters": [
+    "T",
+    "S"
+  ],
+  "implements": [
+    "org.springframework.util.concurrent.ListenableFuture<T>"
+  ],
+  "inherits": [
+    "org.springframework.util.concurrent.FutureAdapter<T,S>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addCallback",
+      "parameters": [
+        "org.springframework.util.concurrent.ListenableFutureCallback<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCallback",
+      "parameters": [
+        "org.springframework.util.concurrent.SuccessCallback<? super T>",
+        "org.springframework.util.concurrent.FailureCallback"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

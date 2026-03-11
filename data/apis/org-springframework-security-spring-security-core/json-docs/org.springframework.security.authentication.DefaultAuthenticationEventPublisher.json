@@ -1,0 +1,98 @@
+{
+  "name": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.authentication.AuthenticationEventPublisher",
+    "org.springframework.context.ApplicationEventPublisherAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "publishAuthenticationFailure",
+      "parameters": [
+        "org.springframework.security.core.AuthenticationException",
+        "org.springframework.security.core.Authentication"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "publishAuthenticationSuccess",
+      "parameters": [
+        "org.springframework.security.core.Authentication"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAdditionalExceptionMappings",
+      "parameters": [
+        "java.util.Map<java.lang.Class<? extends org.springframework.security.core.AuthenticationException>,java.lang.Class<? extends org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAdditionalExceptionMappings",
+      "parameters": [
+        "java.util.Properties"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationEventPublisher",
+      "parameters": [
+        "org.springframework.context.ApplicationEventPublisher"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultAuthenticationFailureEvent",
+      "parameters": [
+        "java.lang.Class<? extends org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

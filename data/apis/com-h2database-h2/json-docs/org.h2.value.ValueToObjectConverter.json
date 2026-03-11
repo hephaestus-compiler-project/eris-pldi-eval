@@ -1,0 +1,114 @@
+{
+  "name": "org.h2.value.ValueToObjectConverter",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.message.TraceObject"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "objectToValue",
+      "parameters": [
+        "org.h2.engine.Session",
+        "java.lang.Object",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.Value",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueToDefaultArray",
+      "parameters": [
+        "org.h2.value.Value",
+        "org.h2.jdbc.JdbcConnection",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueToObject",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.h2.value.Value",
+        "org.h2.jdbc.JdbcConnection"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultClass",
+      "parameters": [
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "org.h2.engine.Session",
+        "org.h2.jdbc.JdbcResultSet",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.Value",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueToDefaultObject",
+      "parameters": [
+        "org.h2.value.Value",
+        "org.h2.jdbc.JdbcConnection",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "GEOMETRY_CLASS",
+      "type": "java.lang.Class<?>",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

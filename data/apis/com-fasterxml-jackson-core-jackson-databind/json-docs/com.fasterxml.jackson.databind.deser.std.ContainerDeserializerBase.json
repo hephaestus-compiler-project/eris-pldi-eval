@@ -1,0 +1,163 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.std.ContainerDeserializerBase",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "com.fasterxml.jackson.databind.deser.ValueInstantiator.Gettable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.std.StdDeserializer<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getContentDeserializer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEmptyAccessPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.AccessPattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrapAndThrow",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.lang.Throwable",
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "BOGUS"
+      ],
+      "return_type": "BOGUS",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findBackReference",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEmptyValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsUpdate",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrapAndThrow",
+      "parameters": [
+        "java.lang.Throwable",
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "BOGUS"
+      ],
+      "return_type": "BOGUS",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_nullProvider",
+      "type": "com.fasterxml.jackson.databind.deser.NullValueProvider",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_unwrapSingle",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_containerType",
+      "type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_skipNullValues",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

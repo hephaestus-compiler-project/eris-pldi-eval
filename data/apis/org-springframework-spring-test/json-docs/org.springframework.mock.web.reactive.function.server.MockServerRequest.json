@@ -1,0 +1,318 @@
+{
+  "name": "org.springframework.mock.web.reactive.function.server.MockServerRequest",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.reactive.function.server.ServerRequest"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "attributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "body",
+      "parameters": [
+        "org.springframework.web.reactive.function.BodyExtractor<S,? super org.springframework.http.server.reactive.ServerHttpRequest>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "S",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "body",
+      "parameters": [
+        "org.springframework.web.reactive.function.BodyExtractor<S,? super org.springframework.http.server.reactive.ServerHttpRequest>",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "S",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bodyToFlux",
+      "parameters": [
+        "java.lang.Class<? extends S>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "reactor.core.publisher.Flux<S>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bodyToFlux",
+      "parameters": [
+        "org.springframework.core.ParameterizedTypeReference<S>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "reactor.core.publisher.Flux<S>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bodyToMono",
+      "parameters": [
+        "java.lang.Class<? extends S>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "reactor.core.publisher.Mono<S>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bodyToMono",
+      "parameters": [
+        "org.springframework.core.ParameterizedTypeReference<S>"
+      ],
+      "type_parameters": [
+        "S"
+      ],
+      "return_type": "reactor.core.publisher.Mono<S>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "builder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.mock.web.reactive.function.server.MockServerRequest.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cookies",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,org.springframework.http.HttpCookie>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exchange",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.server.ServerWebExchange",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "formData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "headers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.reactive.function.server.ServerRequest.Headers",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "localAddress",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.net.InetSocketAddress>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "messageReaders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.codec.HttpMessageReader<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "method",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.HttpMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "methodName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "multipartData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.util.MultiValueMap<java.lang.String,org.springframework.http.codec.multipart.Part>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "pathVariables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "principal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<? extends java.security.Principal>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryParams",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remoteAddress",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.net.InetSocketAddress>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestPath",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.RequestPath",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "session",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<org.springframework.web.server.WebSession>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uri",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.net.URI",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uriBuilder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.util.UriBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

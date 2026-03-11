@@ -1,0 +1,158 @@
+{
+  "name": "org.bouncycastle.cert.ocsp.CertificateID",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIssuerKeyHash",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSerialNumber",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchesIssuer",
+      "parameters": [
+        "org.bouncycastle.cert.X509CertificateHolder",
+        "org.bouncycastle.operator.DigestCalculatorProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deriveCertificateID",
+      "parameters": [
+        "org.bouncycastle.cert.ocsp.CertificateID",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cert.ocsp.CertificateID",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHashAlgOID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIssuerNameHash",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toASN1Primitive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ocsp.CertID",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CertificateID",
+      "parameters": [
+        "org.bouncycastle.operator.DigestCalculator",
+        "org.bouncycastle.cert.X509CertificateHolder",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CertificateID",
+      "parameters": [
+        "org.bouncycastle.asn1.ocsp.CertID"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "HASH_SHA1",
+      "type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

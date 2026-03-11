@@ -1,0 +1,283 @@
+{
+  "name": "com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.databind.ser.std.StdSerializer<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_defaultFormatter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.format.DateTimeFormatter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_useDateTimeFormatter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.annotation.JsonFormat.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "java.time.format.DateTimeFormatter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serializationShape",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serializeWithType",
+      "parameters": [
+        "java.time.LocalDateTime",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useTimestamp",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withFeatures",
+      "parameters": [
+        "java.lang.Boolean",
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.datatype.jsr310.ser.JSR310FormattedSerializerBase<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_acceptTimestampVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_integerListType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_useTimestampExplicitOnly",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTimestampsFeature",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.SerializationFeature",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "java.time.LocalDateTime",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useNanoseconds",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withFeatures",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.datatype.jsr310.ser.JSR310FormattedSerializerBase<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withFormat",
+      "parameters": [
+        "java.lang.Boolean",
+        "java.time.format.DateTimeFormatter",
+        "com.fasterxml.jackson.annotation.JsonFormat.Shape"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.datatype.jsr310.ser.JSR310FormattedSerializerBase<java.time.LocalDateTime>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_integerListType",
+      "type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_useNanoseconds",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INSTANCE",
+      "type": "com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "_formatter",
+      "type": "java.time.format.DateTimeFormatter",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_shape",
+      "type": "com.fasterxml.jackson.annotation.JsonFormat.Shape",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_useTimestamp",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

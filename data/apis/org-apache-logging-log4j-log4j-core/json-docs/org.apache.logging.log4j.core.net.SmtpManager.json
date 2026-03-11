@@ -1,0 +1,230 @@
+{
+  "name": "org.apache.logging.log4j.core.net.SmtpManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.net.MailManager"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "encodeContent",
+      "parameters": [
+        "byte[]",
+        "java.lang.String",
+        "java.io.ByteArrayOutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "formatContentToBytes",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent[]",
+        "org.apache.logging.log4j.core.LogEvent",
+        "org.apache.logging.log4j.core.Layout<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaders",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.mail.internet.InternetHeaders",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSmtpManager",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.Configuration",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "int",
+        "java.lang.String",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.net.ssl.SslConfiguration"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.SmtpManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sendMultipartMessage",
+      "parameters": [
+        "javax.mail.internet.MimeMessage",
+        "javax.mail.internet.MimeMultipart"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeBuffer",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent[]",
+        "org.apache.logging.log4j.core.LogEvent",
+        "org.apache.logging.log4j.core.Layout<?>",
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeHeader",
+      "parameters": [
+        "org.apache.logging.log4j.core.Layout<?>",
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "add",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encodeContentToBytes",
+      "parameters": [
+        "byte[]",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncoding",
+      "parameters": [
+        "byte[]",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMimeMultipart",
+      "parameters": [
+        "byte[]",
+        "javax.mail.internet.InternetHeaders"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.mail.internet.MimeMultipart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sendEvents",
+      "parameters": [
+        "org.apache.logging.log4j.core.Layout<?>",
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sendMultipartMessage",
+      "parameters": [
+        "javax.mail.internet.MimeMessage",
+        "javax.mail.internet.MimeMultipart",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeFooter",
+      "parameters": [
+        "org.apache.logging.log4j.core.Layout<?>",
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

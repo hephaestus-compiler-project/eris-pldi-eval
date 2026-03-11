@@ -1,0 +1,160 @@
+{
+  "name": "org.eclipse.jetty.server.AllowedResourceAliasChecker",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.jetty.server.AliasCheck"
+  ],
+  "inherits": [
+    "org.eclipse.jetty.util.component.AbstractLifeCycle"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "check",
+      "parameters": [
+        "java.lang.String",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkAlias",
+      "parameters": [
+        "java.lang.String",
+        "org.eclipse.jetty.util.resource.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doStart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doStop",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContextHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.handler.ContextHandler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPath",
+      "parameters": [
+        "org.eclipse.jetty.util.resource.Resource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initialize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAllowed",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSameFile",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_base",
+      "type": "java.nio.file.Path",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FOLLOW_LINKS",
+      "type": "java.nio.file.LinkOption[]",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NO_FOLLOW_LINKS",
+      "type": "java.nio.file.LinkOption[]",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

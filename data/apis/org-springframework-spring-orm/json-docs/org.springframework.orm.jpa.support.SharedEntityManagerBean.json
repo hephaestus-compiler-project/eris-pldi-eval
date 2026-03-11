@@ -1,0 +1,89 @@
+{
+  "name": "org.springframework.orm.jpa.support.SharedEntityManagerBean",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.FactoryBean<jakarta.persistence.EntityManager>",
+    "org.springframework.beans.factory.InitializingBean"
+  ],
+  "inherits": [
+    "org.springframework.orm.jpa.EntityManagerFactoryAccessor"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.persistence.EntityManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<? extends jakarta.persistence.EntityManager>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSingleton",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEntityManagerInterface",
+      "parameters": [
+        "java.lang.Class<? extends jakarta.persistence.EntityManager>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSynchronizedWithTransaction",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

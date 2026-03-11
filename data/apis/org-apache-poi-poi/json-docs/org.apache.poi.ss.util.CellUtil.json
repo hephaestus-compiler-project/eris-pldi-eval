@@ -1,0 +1,320 @@
+{
+  "name": "org.apache.poi.ss.util.CellUtil",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Row",
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Cell",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Row",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Cell",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAlignment",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.HorizontalAlignment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCellStyleProperty",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVerticalAlignment",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.VerticalAlignment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.CellCopyPolicy",
+        "org.apache.poi.ss.usermodel.CellCopyContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Row",
+        "int",
+        "java.lang.String",
+        "org.apache.poi.ss.usermodel.CellStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Cell",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRow",
+      "parameters": [
+        "int",
+        "org.apache.poi.ss.usermodel.Sheet"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Row",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCellStyleProperties",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFont",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.Font"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "translateUnicodeValues",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Cell",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "BORDER_BOTTOM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BORDER_RIGHT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BOTTOM_BORDER_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILL_BACKGROUND_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILL_FOREGROUND_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILL_PATTERN",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HIDDEN",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LEFT_BORDER_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "QUOTE_PREFIXED",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ROTATION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TOP_BORDER_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WRAP_TEXT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ALIGNMENT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BORDER_LEFT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BORDER_TOP",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DATA_FORMAT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILL_BACKGROUND_COLOR_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILL_FOREGROUND_COLOR_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FONT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INDENTION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCKED",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RIGHT_BORDER_COLOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SHRINK_TO_FIT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "VERTICAL_ALIGNMENT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

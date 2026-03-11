@@ -1,0 +1,171 @@
+{
+  "name": "org.apache.commons.collections4.map.TransformedMap",
+  "type_parameters": [
+    "K",
+    "V"
+  ],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "org.apache.commons.collections4.map.AbstractMapDecorator<K,V>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "entrySet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.util.Map.Entry<K,V>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "K",
+        "V"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformedMap",
+      "parameters": [
+        "java.util.Map<K,V>",
+        "org.apache.commons.collections4.Transformer<? super K,? extends K>",
+        "org.apache.commons.collections4.Transformer<? super V,? extends V>"
+      ],
+      "type_parameters": [
+        "K",
+        "V"
+      ],
+      "return_type": "org.apache.commons.collections4.map.TransformedMap<K,V>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformKey",
+      "parameters": [
+        "K"
+      ],
+      "type_parameters": [],
+      "return_type": "K",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformValue",
+      "parameters": [
+        "V"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkSetValue",
+      "parameters": [
+        "V"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSetValueChecking",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "putAll",
+      "parameters": [
+        "java.util.Map<? extends K,? extends V>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformingMap",
+      "parameters": [
+        "java.util.Map<K,V>",
+        "org.apache.commons.collections4.Transformer<? super K,? extends K>",
+        "org.apache.commons.collections4.Transformer<? super V,? extends V>"
+      ],
+      "type_parameters": [
+        "K",
+        "V"
+      ],
+      "return_type": "org.apache.commons.collections4.map.TransformedMap<K,V>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformMap",
+      "parameters": [
+        "java.util.Map<? extends K,? extends V>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<K,V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "valueTransformer",
+      "type": "org.apache.commons.collections4.Transformer<? super V,? extends V>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "keyTransformer",
+      "type": "org.apache.commons.collections4.Transformer<? super K,? extends K>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

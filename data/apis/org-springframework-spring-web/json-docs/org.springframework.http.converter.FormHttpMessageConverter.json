@@ -1,0 +1,246 @@
+{
+  "name": "org.springframework.http.converter.FormHttpMessageConverter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.converter.HttpMessageConverter<org.springframework.util.MultiValueMap<java.lang.String,?>>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addPartConverter",
+      "parameters": [
+        "org.springframework.http.converter.HttpMessageConverter<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSupportedMediaTypes",
+      "parameters": [
+        "org.springframework.http.MediaType..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canRead",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canWrite",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateMultipartBoundary",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFilename",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormContentType",
+      "parameters": [
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.MediaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHttpEntity",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.HttpEntity<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartConverters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSupportedMediaTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.lang.Class<? extends org.springframework.util.MultiValueMap<java.lang.String,?>>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serializeForm",
+      "parameters": [
+        "org.springframework.util.MultiValueMap<java.lang.String,java.lang.Object>",
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCharset",
+      "parameters": [
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMultipartCharset",
+      "parameters": [
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPartConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSupportedMediaTypes",
+      "parameters": [
+        "java.util.List<org.springframework.http.MediaType>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.springframework.util.MultiValueMap<java.lang.String,?>",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_CHARSET",
+      "type": "java.nio.charset.Charset",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

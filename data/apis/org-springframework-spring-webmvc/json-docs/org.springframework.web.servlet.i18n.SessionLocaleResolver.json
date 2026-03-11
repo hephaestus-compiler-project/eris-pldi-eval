@@ -1,0 +1,148 @@
+{
+  "name": "org.springframework.web.servlet.i18n.SessionLocaleResolver",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.web.servlet.i18n.AbstractLocaleContextResolver"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "determineDefaultLocale",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Locale",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineDefaultTimeZone",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.TimeZone",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveLocale",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Locale",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveLocaleContext",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.i18n.LocaleContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultLocaleFunction",
+      "parameters": [
+        "java.util.function.Function<jakarta.servlet.http.HttpServletRequest,java.util.Locale>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultTimeZoneFunction",
+      "parameters": [
+        "java.util.function.Function<jakarta.servlet.http.HttpServletRequest,java.util.TimeZone>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLocaleAttributeName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLocaleContext",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "org.springframework.context.i18n.LocaleContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTimeZoneAttributeName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "LOCALE_SESSION_ATTRIBUTE_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TIME_ZONE_SESSION_ATTRIBUTE_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

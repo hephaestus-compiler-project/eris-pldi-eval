@@ -1,0 +1,143 @@
+{
+  "name": "org.springframework.beans.factory.aot.BeanInstanceSupplier",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "org.springframework.beans.factory.support.InstanceSupplier<T>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "forConstructor",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forFactoryMethod",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.springframework.beans.factory.support.RegisteredBean"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFactoryMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Method",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerDependentBeans",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableBeanFactory",
+        "java.lang.String",
+        "java.util.Set<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withGenerator",
+      "parameters": [
+        "org.springframework.util.function.ThrowingBiFunction<org.springframework.beans.factory.support.RegisteredBean,org.springframework.beans.factory.aot.AutowiredArguments,T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withGenerator",
+      "parameters": [
+        "org.springframework.util.function.ThrowingFunction<org.springframework.beans.factory.support.RegisteredBean,T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withGenerator",
+      "parameters": [
+        "org.springframework.util.function.ThrowingSupplier<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withShortcuts",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanInstanceSupplier<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

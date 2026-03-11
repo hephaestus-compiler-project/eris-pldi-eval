@@ -1,0 +1,336 @@
+{
+  "name": "com.alibaba.fastjson.support.jaxrs.FastJsonProvider",
+  "type_parameters": [],
+  "implements": [
+    "javax.ws.rs.ext.MessageBodyReader<java.lang.Object>",
+    "javax.ws.rs.ext.MessageBodyWriter<java.lang.Object>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getCharset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.nio.charset.Charset",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDateFormat",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFastJsonConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.support.config.FastJsonConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.serializer.SerializerFeature[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFilters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.serializer.SerializeFilter[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSize",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Class<?>",
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation[]",
+        "javax.ws.rs.core.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasMatchingMediaType",
+      "parameters": [
+        "javax.ws.rs.core.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAssignableFrom",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isReadable",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation[]",
+        "javax.ws.rs.core.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.annotation.Annotation[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isWriteable",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation[]",
+        "javax.ws.rs.core.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "locateConfigProvider",
+      "parameters": [
+        "java.lang.Class<?>",
+        "javax.ws.rs.core.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.support.config.FastJsonConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readFrom",
+      "parameters": [
+        "java.lang.Class<java.lang.Object>",
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation[]",
+        "javax.ws.rs.core.MediaType",
+        "javax.ws.rs.core.MultivaluedMap<java.lang.String,java.lang.String>",
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCharset",
+      "parameters": [
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDateFormat",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFastJsonConfig",
+      "parameters": [
+        "com.alibaba.fastjson.support.config.FastJsonConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFeatures",
+      "parameters": [
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFilters",
+      "parameters": [
+        "com.alibaba.fastjson.serializer.SerializeFilter..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPretty",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.support.jaxrs.FastJsonProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeTo",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Class<?>",
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation[]",
+        "javax.ws.rs.core.MediaType",
+        "javax.ws.rs.core.MultivaluedMap<java.lang.String,java.lang.Object>",
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "charset",
+      "type": "java.nio.charset.Charset",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "dateFormat",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_UNREADABLES",
+      "type": "java.lang.Class<?>[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_UNWRITABLES",
+      "type": "java.lang.Class<?>[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "features",
+      "type": "com.alibaba.fastjson.serializer.SerializerFeature[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "filters",
+      "type": "com.alibaba.fastjson.serializer.SerializeFilter[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "providers",
+      "type": "javax.ws.rs.ext.Providers",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

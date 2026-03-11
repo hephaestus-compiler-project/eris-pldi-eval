@@ -1,0 +1,99 @@
+{
+  "name": "org.apache.maven.project.artifact.DefaultMavenMetadataCache",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.project.artifact.MavenMetadataCache"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "flush",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "boolean",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.metadata.ResolutionGroup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newCacheKey",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "boolean",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.artifact.DefaultMavenMetadataCache.CacheKey",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "boolean",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>",
+        "org.apache.maven.artifact.metadata.ResolutionGroup"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "org.apache.maven.project.artifact.DefaultMavenMetadataCache.CacheKey",
+        "org.apache.maven.artifact.metadata.ResolutionGroup"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "cache",
+      "type": "java.util.Map<org.apache.maven.project.artifact.DefaultMavenMetadataCache.CacheKey,org.apache.maven.project.artifact.DefaultMavenMetadataCache.CacheRecord>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

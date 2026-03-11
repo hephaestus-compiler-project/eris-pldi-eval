@@ -1,0 +1,99 @@
+{
+  "name": "org.apache.logging.log4j.core.appender.mom.JmsManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.appender.AbstractManager"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createMessageConsumer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.jms.MessageConsumer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJmsManager",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Properties",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "char[]",
+        "boolean",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.mom.JmsManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "releaseSub",
+      "parameters": [
+        "long",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createMessage",
+      "parameters": [
+        "java.io.Serializable"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.jms.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createMessageProducer",
+      "parameters": [
+        "javax.jms.Session",
+        "javax.jms.Destination"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.jms.MessageProducer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJmsManagerConfiguration",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.mom.JmsManager.JmsManagerConfiguration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

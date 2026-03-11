@@ -1,0 +1,188 @@
+{
+  "name": "clojure.lang.Agent",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "clojure.lang.ARef"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "dispatch",
+      "parameters": [
+        "clojure.lang.IFn",
+        "clojure.lang.ISeq",
+        "java.util.concurrent.Executor"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrorHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.IFn",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getQueueCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "restart",
+      "parameters": [
+        "java.lang.Object",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setErrorMode",
+      "parameters": [
+        "clojure.lang.Keyword"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deref",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getError",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Throwable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrorMode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Keyword",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "releasePendingSends",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setErrorHandler",
+      "parameters": [
+        "clojure.lang.IFn"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shutdown",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Agent",
+      "parameters": [
+        "java.lang.Object",
+        "clojure.lang.IPersistentMap"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Agent",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "soloExecutor",
+      "type": "java.util.concurrent.ExecutorService",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "pooledExecutor",
+      "type": "java.util.concurrent.ExecutorService",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

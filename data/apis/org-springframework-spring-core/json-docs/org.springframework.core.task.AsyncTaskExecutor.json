@@ -1,0 +1,99 @@
+{
+  "name": "org.springframework.core.task.AsyncTaskExecutor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.core.task.TaskExecutor"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.Runnable",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Future<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.concurrent.Future<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitCompletable",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.CompletableFuture<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "submitCompletable",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.concurrent.CompletableFuture<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    }
+  ],
+  "fields": [
+    {
+      "name": "TIMEOUT_IMMEDIATE",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "TIMEOUT_INDEFINITE",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

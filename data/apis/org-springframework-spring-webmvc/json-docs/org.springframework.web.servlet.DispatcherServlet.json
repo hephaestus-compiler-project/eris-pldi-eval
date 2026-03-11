@@ -1,0 +1,481 @@
+{
+  "name": "org.springframework.web.servlet.DispatcherServlet",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.web.servlet.FrameworkServlet"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "buildLocaleContext",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.i18n.LocaleContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkMultipart",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "jakarta.servlet.http.HttpServletRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cleanupMultipart",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultStrategy",
+      "parameters": [
+        "org.springframework.context.ApplicationContext",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doDispatch",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doService",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultStrategies",
+      "parameters": [
+        "org.springframework.context.ApplicationContext",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultStrategy",
+      "parameters": [
+        "org.springframework.context.ApplicationContext",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultViewName",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandler",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerExecutionChain",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandlerAdapter",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandlerMappings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.servlet.HandlerMapping>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMultipartResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.multipart.MultipartResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThemeSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.ui.context.ThemeSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initStrategies",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noHandlerFound",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onRefresh",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processHandlerException",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "java.lang.Object",
+        "java.lang.Exception"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ModelAndView",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "render",
+      "parameters": [
+        "org.springframework.web.servlet.ModelAndView",
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveViewName",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,java.lang.Object>",
+        "java.util.Locale",
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.View",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCleanupAfterInclude",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDetectAllHandlerAdapters",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDetectAllHandlerExceptionResolvers",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDetectAllHandlerMappings",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDetectAllViewResolvers",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThrowExceptionIfNoHandlerFound",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "EXCEPTION_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLASH_MAP_MANAGER_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLASH_MAP_MANAGER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HANDLER_ADAPTER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HANDLER_EXCEPTION_RESOLVER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HANDLER_MAPPING_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INPUT_FLASH_MAP_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCALE_RESOLVER_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCALE_RESOLVER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MULTIPART_RESOLVER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OUTPUT_FLASH_MAP_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PAGE_NOT_FOUND_LOG_CATEGORY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "pageNotFoundLogger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "REQUEST_TO_VIEW_NAME_TRANSLATOR_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THEME_RESOLVER_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THEME_RESOLVER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THEME_SOURCE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "VIEW_RESOLVER_BEAN_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WEB_APPLICATION_CONTEXT_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

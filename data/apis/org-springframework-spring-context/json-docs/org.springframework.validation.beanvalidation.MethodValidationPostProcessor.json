@@ -1,0 +1,94 @@
+{
+  "name": "org.springframework.validation.beanvalidation.MethodValidationPostProcessor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.InitializingBean"
+  ],
+  "inherits": [
+    "org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createMethodValidationAdvice",
+      "parameters": [
+        "java.util.function.Supplier<jakarta.validation.Validator>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aopalliance.aop.Advice",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidatedAnnotationType",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidator",
+      "parameters": [
+        "jakarta.validation.Validator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidatorFactory",
+      "parameters": [
+        "jakarta.validation.ValidatorFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidatorProvider",
+      "parameters": [
+        "org.springframework.beans.factory.ObjectProvider<jakarta.validation.Validator>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

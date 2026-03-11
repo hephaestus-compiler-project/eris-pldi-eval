@@ -1,0 +1,260 @@
+{
+  "name": "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.databind.ser.ContextualSerializer",
+    "com.fasterxml.jackson.databind.ser.ResolvableSerializer",
+    "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.ser.std.StdSerializer<java.lang.Object>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDelegatee",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolve",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serializeWithType",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findSerializer",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertValue",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConverter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.Converter<java.lang.Object,?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEmpty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withDelegate",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.Converter<java.lang.Object,?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StdDelegatingSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.Converter<?,?>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StdDelegatingSerializer",
+      "parameters": [
+        "java.lang.Class<T>",
+        "com.fasterxml.jackson.databind.util.Converter<T,?>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StdDelegatingSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.Converter<java.lang.Object,?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_delegateSerializer",
+      "type": "com.fasterxml.jackson.databind.JsonSerializer<java.lang.Object>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_converter",
+      "type": "com.fasterxml.jackson.databind.util.Converter<java.lang.Object,?>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_delegateType",
+      "type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

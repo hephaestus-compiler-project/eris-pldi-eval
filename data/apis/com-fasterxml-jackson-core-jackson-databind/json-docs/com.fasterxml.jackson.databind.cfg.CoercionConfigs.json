@@ -1,0 +1,136 @@
+{
+  "name": "com.fasterxml.jackson.databind.cfg.CoercionConfigs",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.CoercionConfigs",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findCoercion",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.type.LogicalType",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.cfg.CoercionInputShape"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.CoercionAction",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findOrCreateCoercion",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_isScalarType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.LogicalType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defaultCoercions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findCoercionFromBlankString",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.type.LogicalType",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.cfg.CoercionAction"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.CoercionAction",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findOrCreateCoercion",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.LogicalType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_defaultCoercions",
+      "type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_perTypeCoercions",
+      "type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_defaultAction",
+      "type": "com.fasterxml.jackson.databind.cfg.CoercionAction",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_perClassCoercions",
+      "type": "java.util.Map<java.lang.Class<?>,com.fasterxml.jackson.databind.cfg.MutableCoercionConfig>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

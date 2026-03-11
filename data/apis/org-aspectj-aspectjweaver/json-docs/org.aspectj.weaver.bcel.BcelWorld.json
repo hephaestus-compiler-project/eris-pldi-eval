@@ -1,0 +1,660 @@
+{
+  "name": "org.aspectj.weaver.bcel.BcelWorld",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.apache.bcel.util.Repository"
+  ],
+  "inherits": [
+    "org.aspectj.weaver.World"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAspectRequires",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPath",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addScopedAspect",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSourceObjectType",
+      "parameters": [
+        "java.lang.String",
+        "byte[]",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelObjectType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSourceObjectType",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.apache.bcel.classfile.JavaClass",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelObjectType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSourceObjectType",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.JavaClass",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelObjectType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTypeDelegateResolver",
+      "parameters": [
+        "org.aspectj.weaver.bcel.TypeDelegateResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildBcelDelegate",
+      "parameters": [
+        "org.aspectj.weaver.ReferenceType",
+        "org.aspectj.apache.bcel.classfile.JavaClass",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelObjectType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "classWriteEvent",
+      "parameters": [
+        "char[][]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clear",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "demote",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineRelKind",
+      "parameters": [
+        "org.aspectj.weaver.ShadowMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IRelationship.Kind",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ensureRepositorySetup",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findClass",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.JavaClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromBcel",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.UnresolvedType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectScope",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBcelObjectType",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelObjectType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassLoaderRepositoryFor",
+      "parameters": [
+        "org.aspectj.apache.bcel.util.ClassLoaderReference"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.util.Repository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getModelAsAsmManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.AsmManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.World.TypeMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWeavingSupport",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.IWeavingSupport",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXmlConfiguration",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.bcel.BcelWorld.WeavingXmlConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasUnsatisfiedDependency",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAspectIncluded",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLoadtimeWeaving",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isXmlConfigured",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loadClass",
+      "parameters": [
+        "java.lang.Class"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.JavaClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loadClass",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.JavaClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeBcelType",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeBcelType",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeBcelTypes",
+      "parameters": [
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeFieldJoinPointSignature",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyClassGen",
+        "org.aspectj.apache.bcel.generic.FieldInstruction"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJoinPointSignatureForArrayConstruction",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyClassGen",
+        "org.aspectj.apache.bcel.generic.InstructionHandle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJoinPointSignatureForMethodInvocation",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyClassGen",
+        "org.aspectj.apache.bcel.generic.InvokeInstruction"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJoinPointSignatureForMonitorEnter",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyClassGen",
+        "org.aspectj.apache.bcel.generic.InstructionHandle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJoinPointSignatureForMonitorExit",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyClassGen",
+        "org.aspectj.apache.bcel.generic.InstructionHandle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeJoinPointSignatureFromMethod",
+      "parameters": [
+        "org.aspectj.weaver.bcel.LazyMethodGen",
+        "org.aspectj.weaver.MemberKind"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.Member",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeClass",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.JavaClass"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportCheckerMatch",
+      "parameters": [
+        "org.aspectj.weaver.Checker",
+        "org.aspectj.weaver.Shadow"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportMatch",
+      "parameters": [
+        "org.aspectj.weaver.ShadowMunger",
+        "org.aspectj.weaver.Shadow"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolve",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveDelegate",
+      "parameters": [
+        "org.aspectj.weaver.ReferenceType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ReferenceTypeDelegate",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setXmlConfigured",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setXmlFiles",
+      "parameters": [
+        "java.util.List<java.io.File>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "storeClass",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.JavaClass"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "tidyUp",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateType",
+      "parameters": [
+        "org.aspectj.weaver.UnresolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "weaveInterTypeDeclarations",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "delegate",
+      "type": "org.aspectj.apache.bcel.util.Repository",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

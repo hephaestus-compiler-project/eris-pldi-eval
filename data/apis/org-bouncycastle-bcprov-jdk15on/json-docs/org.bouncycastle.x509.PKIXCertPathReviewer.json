@@ -1,0 +1,756 @@
+{
+  "name": "org.bouncycastle.x509.PKIXCertPathReviewer",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addError",
+      "parameters": [
+        "org.bouncycastle.i18n.ErrorBundle",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addNotification",
+      "parameters": [
+        "org.bouncycastle.i18n.ErrorBundle",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkRevocation",
+      "parameters": [
+        "java.security.cert.PKIXParameters",
+        "java.security.cert.X509Certificate",
+        "java.util.Date",
+        "java.security.cert.X509Certificate",
+        "java.security.PublicKey",
+        "java.util.Vector",
+        "java.util.Vector",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findCertificates",
+      "parameters": [
+        "org.bouncycastle.jcajce.PKIXCertStoreSelector",
+        "java.util.List"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findCertificates",
+      "parameters": [
+        "org.bouncycastle.x509.X509CertStoreSelector",
+        "java.util.List"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCertPath",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.security.cert.CertPath",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCertStatus",
+      "parameters": [
+        "java.util.Date",
+        "java.security.cert.X509CRL",
+        "java.lang.Object",
+        "org.bouncycastle.x509.CertStatus"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodedIssuerPrincipal",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.security.auth.x500.X500Principal",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrors",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIssuerPrincipal",
+      "parameters": [
+        "java.security.cert.X509CRL"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.security.auth.x500.X500Principal",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNotifications",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOCSPUrls",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AuthorityInformationAccess"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Vector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getQualifierSet",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1Sequence"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSubjectPublicKey",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.security.PublicKey",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTrustAnchors",
+      "parameters": [
+        "java.security.cert.X509Certificate",
+        "java.util.Set"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "init",
+      "parameters": [
+        "java.security.cert.CertPath",
+        "java.security.cert.PKIXParameters"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSelfIssued",
+      "parameters": [
+        "java.security.cert.X509Certificate"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "prepareNextCertB1",
+      "parameters": [
+        "int",
+        "java.util.List[]",
+        "java.lang.String",
+        "java.util.Map",
+        "java.security.cert.X509Certificate"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processCertD1i",
+      "parameters": [
+        "int",
+        "java.util.List[]",
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "java.util.Set"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removePolicyNode",
+      "parameters": [
+        "org.bouncycastle.jce.provider.PKIXPolicyNode",
+        "java.util.List[]",
+        "org.bouncycastle.jce.provider.PKIXPolicyNode"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.jce.provider.PKIXPolicyNode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addError",
+      "parameters": [
+        "org.bouncycastle.i18n.ErrorBundle"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addNotification",
+      "parameters": [
+        "org.bouncycastle.i18n.ErrorBundle"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkCRLs",
+      "parameters": [
+        "java.security.cert.PKIXParameters",
+        "java.security.cert.X509Certificate",
+        "java.util.Date",
+        "java.security.cert.X509Certificate",
+        "java.security.PublicKey",
+        "java.util.Vector",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doChecks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findCertificates",
+      "parameters": [
+        "org.bouncycastle.x509.X509AttributeCertStoreSelector",
+        "java.util.List"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAlgorithmIdentifier",
+      "parameters": [
+        "java.security.PublicKey"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCertPathSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCRLDistUrls",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.CRLDistPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Vector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExtensionValue",
+      "parameters": [
+        "java.security.cert.X509Extension",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1Primitive",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNextWorkingKey",
+      "parameters": [
+        "java.util.List",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.security.PublicKey",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNotifications",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPolicyTree",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.security.cert.PolicyNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSubjectPrincipal",
+      "parameters": [
+        "java.security.cert.X509Certificate"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.security.auth.x500.X500Principal",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTrustAnchor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.security.cert.TrustAnchor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValidityDate",
+      "parameters": [
+        "java.security.cert.PKIXParameters",
+        "java.util.Date"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Date",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAnyPolicy",
+      "parameters": [
+        "java.util.Set"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidCertPath",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "prepareNextCertB2",
+      "parameters": [
+        "int",
+        "java.util.List[]",
+        "java.lang.String",
+        "org.bouncycastle.jce.provider.PKIXPolicyNode"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.jce.provider.PKIXPolicyNode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processCertD1ii",
+      "parameters": [
+        "int",
+        "java.util.List[]",
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "java.util.Set"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyX509Certificate",
+      "parameters": [
+        "java.security.cert.X509Certificate",
+        "java.security.PublicKey",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "PKIXCertPathReviewer",
+      "parameters": [
+        "java.security.cert.CertPath",
+        "java.security.cert.PKIXParameters"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "PKIXCertPathReviewer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "BASIC_CONSTRAINTS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "certPath",
+      "type": "java.security.cert.CertPath",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CRL_NUMBER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "crlReasons",
+      "type": "java.lang.String[]",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DELTA_CRL_INDICATOR",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INHIBIT_ANY_POLICY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "KEY_CERT_SIGN",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "n",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "notifications",
+      "type": "java.util.List[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "POLICY_CONSTRAINTS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "policyTree",
+      "type": "java.security.cert.PolicyNode",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "subjectPublicKey",
+      "type": "java.security.PublicKey",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "validDate",
+      "type": "java.util.Date",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ANY_POLICY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CERTIFICATE_POLICIES",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "certs",
+      "type": "java.util.List",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CRL_SIGN",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "currentDate",
+      "type": "java.util.Date",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "errors",
+      "type": "java.util.List[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ISSUING_DISTRIBUTION_POINT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "KEY_USAGE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NAME_CONSTRAINTS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "pkixParams",
+      "type": "java.security.cert.PKIXParameters",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "POLICY_MAPPINGS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "SUBJECT_ALTERNATIVE_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "trustAnchor",
+      "type": "java.security.cert.TrustAnchor",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

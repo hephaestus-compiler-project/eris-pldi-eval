@@ -1,0 +1,382 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.MessageSourceAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "createProblemDetail",
+      "parameters": [
+        "java.lang.Exception",
+        "org.springframework.http.HttpStatusCode",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.Object[]",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ProblemDetail",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createResponseEntity",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.MessageSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleAsyncRequestTimeoutException",
+      "parameters": [
+        "org.springframework.web.context.request.async.AsyncRequestTimeoutException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleBindException",
+      "parameters": [
+        "org.springframework.validation.BindException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleConversionNotSupported",
+      "parameters": [
+        "org.springframework.beans.ConversionNotSupportedException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleErrorResponseException",
+      "parameters": [
+        "org.springframework.web.ErrorResponseException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleException",
+      "parameters": [
+        "java.lang.Exception",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleExceptionInternal",
+      "parameters": [
+        "java.lang.Exception",
+        "java.lang.Object",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleHttpMediaTypeNotAcceptable",
+      "parameters": [
+        "org.springframework.web.HttpMediaTypeNotAcceptableException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleHttpMediaTypeNotSupported",
+      "parameters": [
+        "org.springframework.web.HttpMediaTypeNotSupportedException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleHttpMessageNotReadable",
+      "parameters": [
+        "org.springframework.http.converter.HttpMessageNotReadableException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleHttpMessageNotWritable",
+      "parameters": [
+        "org.springframework.http.converter.HttpMessageNotWritableException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleHttpRequestMethodNotSupported",
+      "parameters": [
+        "org.springframework.web.HttpRequestMethodNotSupportedException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMethodArgumentNotValid",
+      "parameters": [
+        "org.springframework.web.bind.MethodArgumentNotValidException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMissingPathVariable",
+      "parameters": [
+        "org.springframework.web.bind.MissingPathVariableException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMissingServletRequestParameter",
+      "parameters": [
+        "org.springframework.web.bind.MissingServletRequestParameterException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMissingServletRequestPart",
+      "parameters": [
+        "org.springframework.web.multipart.support.MissingServletRequestPartException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleNoHandlerFoundException",
+      "parameters": [
+        "org.springframework.web.servlet.NoHandlerFoundException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleServletRequestBindingException",
+      "parameters": [
+        "org.springframework.web.bind.ServletRequestBindingException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleTypeMismatch",
+      "parameters": [
+        "org.springframework.beans.TypeMismatchException",
+        "org.springframework.http.HttpHeaders",
+        "org.springframework.http.HttpStatusCode",
+        "org.springframework.web.context.request.WebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.ResponseEntity<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMessageSource",
+      "parameters": [
+        "org.springframework.context.MessageSource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "PAGE_NOT_FOUND_LOG_CATEGORY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "pageNotFoundLogger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

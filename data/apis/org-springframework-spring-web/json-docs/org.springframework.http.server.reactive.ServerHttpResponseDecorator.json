@@ -1,0 +1,210 @@
+{
+  "name": "org.springframework.http.server.reactive.ServerHttpResponseDecorator",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.server.reactive.ServerHttpResponse"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCookie",
+      "parameters": [
+        "org.springframework.http.ResponseCookie"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "beforeCommit",
+      "parameters": [
+        "java.util.function.Supplier<? extends reactor.core.publisher.Mono<java.lang.Void>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bufferFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBufferFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCookies",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,org.springframework.http.ResponseCookie>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDelegate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.reactive.ServerHttpResponse",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.HttpHeaders",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNativeResponse",
+      "parameters": [
+        "org.springframework.http.server.reactive.ServerHttpResponse"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRawStatusCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Integer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStatusCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.HttpStatusCode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCommitted",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setComplete",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRawStatusCode",
+      "parameters": [
+        "java.lang.Integer"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStatusCode",
+      "parameters": [
+        "org.springframework.http.HttpStatusCode"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeAndFlushWith",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.reactivestreams.Publisher<? extends org.springframework.core.io.buffer.DataBuffer>>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeWith",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.core.io.buffer.DataBuffer>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

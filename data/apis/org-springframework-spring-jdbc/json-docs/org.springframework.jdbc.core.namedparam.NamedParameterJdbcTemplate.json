@@ -1,0 +1,628 @@
+{
+  "name": "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "batchUpdate",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "batchUpdate",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.PreparedStatementCallback<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.PreparedStatementCallback<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.PreparedStatementCallback<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheLimit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJdbcOperations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.JdbcOperations",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJdbcTemplate",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.JdbcTemplate",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParsedSql",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.namedparam.ParsedSql",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreparedStatementCreator",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.PreparedStatementCreator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreparedStatementCreator",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "java.util.function.Consumer<org.springframework.jdbc.core.PreparedStatementCreatorFactory>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.PreparedStatementCreator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreparedStatementCreatorFactory",
+      "parameters": [
+        "org.springframework.jdbc.core.namedparam.ParsedSql",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.core.PreparedStatementCreatorFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.ResultSetExtractor<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.RowCallbackHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.ResultSetExtractor<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.RowCallbackHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.ResultSetExtractor<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.RowCallbackHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "query",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForList",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.util.Map<java.lang.String,java.lang.Object>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForList",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForList",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.util.Map<java.lang.String,java.lang.Object>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForList",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForMap",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForMap",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForObject",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForObject",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForObject",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForObject",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForRowSet",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.support.rowset.SqlRowSet",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForRowSet",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.support.rowset.SqlRowSet",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForStream",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.stream.Stream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "queryForStream",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.core.RowMapper<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.stream.Stream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheLimit",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [
+        "java.lang.String",
+        "java.util.Map<java.lang.String,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.support.KeyHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+        "org.springframework.jdbc.support.KeyHolder",
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_CACHE_LIMIT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

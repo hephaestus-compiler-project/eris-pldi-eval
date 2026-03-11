@@ -1,0 +1,157 @@
+{
+  "name": "org.apache.logging.log4j.core.config.plugins.visitors.AbstractPluginVisitor",
+  "type_parameters": [
+    "A extends java.lang.annotation.Annotation"
+  ],
+  "implements": [
+    "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "removeAttributeValue",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAnnotation",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMember",
+      "parameters": [
+        "java.lang.reflect.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convert",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAliases",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConversionType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrSubstitutor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitor<A>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "annotation",
+      "type": "A",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "conversionType",
+      "type": "java.lang.Class<?>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "member",
+      "type": "java.lang.reflect.Member",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "aliases",
+      "type": "java.lang.String[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "clazz",
+      "type": "java.lang.Class<A>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "LOGGER",
+      "type": "org.apache.logging.log4j.Logger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "substitutor",
+      "type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

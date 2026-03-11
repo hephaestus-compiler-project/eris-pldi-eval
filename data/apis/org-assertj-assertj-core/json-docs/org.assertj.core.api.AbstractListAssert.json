@@ -1,0 +1,595 @@
+{
+  "name": "org.assertj.core.api.AbstractListAssert",
+  "type_parameters": [
+    "SELF extends org.assertj.core.api.AbstractListAssert<SELF,ACTUAL,ELEMENT,ELEMENT_ASSERT>",
+    "ACTUAL extends java.util.List<? extends ELEMENT>",
+    "ELEMENT",
+    "ELEMENT_ASSERT extends org.assertj.core.api.AbstractAssert<ELEMENT_ASSERT,ELEMENT>"
+  ],
+  "implements": [
+    "org.assertj.core.api.IndexedObjectEnumerableAssert<SELF,ELEMENT>"
+  ],
+  "inherits": [
+    "org.assertj.core.api.AbstractCollectionAssert<SELF,ACTUAL,ELEMENT,ELEMENT_ASSERT>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "as",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "as",
+      "parameters": [
+        "org.assertj.core.description.Description"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "contains",
+      "parameters": [
+        "ELEMENT",
+        "org.assertj.core.data.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "describedAs",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "describedAs",
+      "parameters": [
+        "org.assertj.core.description.Description"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doesNotContain",
+      "parameters": [
+        "ELEMENT",
+        "org.assertj.core.data.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doesNotHave",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ACTUAL>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doesNotHaveSameClassAs",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "has",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ACTUAL>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "has",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ELEMENT>",
+        "org.assertj.core.data.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasSameClassAs",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasToString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "is",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ACTUAL>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "is",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ELEMENT>",
+        "org.assertj.core.data.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEqualTo",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExactlyInstanceOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIn",
+      "parameters": [
+        "java.lang.Iterable<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIn",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInstanceOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInstanceOfAny",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNot",
+      "parameters": [
+        "org.assertj.core.api.Condition<? super ACTUAL>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotEqualTo",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotExactlyInstanceOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotIn",
+      "parameters": [
+        "java.lang.Iterable<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotIn",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotInstanceOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotInstanceOfAny",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotNull",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotOfAnyClassIn",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNotSameAs",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOfAnyClassIn",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSameAs",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSorted",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSortedAccordingTo",
+      "parameters": [
+        "java.util.Comparator<? super ELEMENT>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "overridingErrorMessage",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "satisfies",
+      "parameters": [
+        "java.util.function.Consumer<? super ELEMENT>",
+        "org.assertj.core.data.Index"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingComparator",
+      "parameters": [
+        "java.util.Comparator<? super ACTUAL>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingComparator",
+      "parameters": [
+        "java.util.Comparator<? super ACTUAL>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingComparisonStrategy",
+      "parameters": [
+        "org.assertj.core.internal.ComparisonStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingDefaultComparator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingDefaultElementComparator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "usingElementComparator",
+      "parameters": [
+        "java.util.Comparator<? super ELEMENT>"
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withFailMessage",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withThreadDumpOnError",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SELF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

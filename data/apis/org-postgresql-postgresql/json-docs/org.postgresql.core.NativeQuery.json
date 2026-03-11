@@ -1,0 +1,135 @@
+{
+  "name": "org.postgresql.core.NativeQuery",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "bindName",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCommand",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.core.SqlCommand",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendBindName",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.StringBuilder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateBindLength",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "@Nullable org.postgresql.core.ParameterList"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "NativeQuery",
+      "parameters": [
+        "java.lang.String",
+        "org.postgresql.core.SqlCommand"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "NativeQuery",
+      "parameters": [
+        "java.lang.String",
+        "int[]",
+        "boolean",
+        "org.postgresql.core.SqlCommand"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "command",
+      "type": "org.postgresql.core.SqlCommand",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "nativeSql",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "bindPositions",
+      "type": "int[]",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "multiStatement",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

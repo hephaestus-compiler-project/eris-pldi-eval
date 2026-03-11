@@ -1,0 +1,117 @@
+{
+  "name": "org.aspectj.weaver.patterns.PerClause",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.aspectj.weaver.patterns.Pointcut"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "concretize",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.PerClause",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "concretize1",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.IntMap"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getKind",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readPerClause",
+      "parameters": [
+        "org.aspectj.weaver.VersionedDataInputStream",
+        "org.aspectj.weaver.ISourceContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.PerClause",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toDeclarationString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "FROMSUPER",
+      "type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "inAspect",
+      "type": "org.aspectj.weaver.ResolvedType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "PERCFLOW",
+      "type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PEROBJECT",
+      "type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PERTYPEWITHIN",
+      "type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SINGLETON",
+      "type": "org.aspectj.weaver.patterns.PerClause.Kind",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

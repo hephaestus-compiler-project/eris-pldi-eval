@@ -1,0 +1,275 @@
+{
+  "name": "org.apache.logging.log4j.core.config.ConfigurationFactory",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.config.builder.api.ConfigurationBuilderFactory"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getAuthorizationProvider",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.util.AuthorizationProvider",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfiguration",
+      "parameters": [
+        "org.apache.logging.log4j.core.LoggerContext",
+        "java.lang.String",
+        "java.net.URI"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.Configuration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultPrefix",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.ConfigurationFactory",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTestPrefix",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isActive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resetConfigurationFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "authorizationProvider",
+      "parameters": [
+        "org.apache.logging.log4j.util.PropertiesUtil"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.util.AuthorizationProvider",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfiguration",
+      "parameters": [
+        "org.apache.logging.log4j.core.LoggerContext",
+        "org.apache.logging.log4j.core.config.ConfigurationSource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.Configuration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfiguration",
+      "parameters": [
+        "org.apache.logging.log4j.core.LoggerContext",
+        "java.lang.String",
+        "java.net.URI",
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.Configuration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInputFromString",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.config.ConfigurationSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSupportedTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVersion",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeConfigurationFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.ConfigurationFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConfigurationFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.ConfigurationFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CATEGORY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONFIGURATION_FILE_PROPERTY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOG4J1_CONFIGURATION_FILE_PROPERTY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOG4J1_VERSION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "LOGGER",
+      "type": "org.apache.logging.log4j.Logger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "TEST_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "AUTHORIZATION_PROVIDER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONFIGURATION_FACTORY_PROPERTY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "LOG4J1_EXPERIMENTAL",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOG4J2_VERSION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "substitutor",
+      "type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

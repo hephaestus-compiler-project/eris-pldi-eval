@@ -1,0 +1,123 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.method.support.HandlerMethodReturnValueHandler"
+  ],
+  "inherits": [
+    "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "createOutputMessage",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.ServletServerHttpResponse",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProducibleMediaTypes",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProducibleMediaTypes",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.Class<?>",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReturnValueType",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isResourceType",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeWithMessageConverters",
+      "parameters": [
+        "T",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.http.server.ServletServerHttpRequest",
+        "org.springframework.http.server.ServletServerHttpResponse"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeWithMessageConverters",
+      "parameters": [
+        "T",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

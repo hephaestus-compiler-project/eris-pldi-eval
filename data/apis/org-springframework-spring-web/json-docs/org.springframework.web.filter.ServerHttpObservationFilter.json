@@ -1,0 +1,62 @@
+{
+  "name": "org.springframework.web.filter.ServerHttpObservationFilter",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.web.filter.OncePerRequestFilter"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "doFilterInternal",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "jakarta.servlet.FilterChain"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findObservationContext",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<org.springframework.http.server.observation.ServerRequestObservationContext>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shouldNotFilterAsyncDispatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CURRENT_OBSERVATION_CONTEXT_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

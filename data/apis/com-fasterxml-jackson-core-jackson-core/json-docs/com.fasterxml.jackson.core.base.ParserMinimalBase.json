@@ -1,0 +1,1130 @@
+{
+  "name": "com.fasterxml.jackson.core.base.ParserMinimalBase",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.core.JsonParser"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "_asciiBytes",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_decodeBase64",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.util.ByteArrayBuilder",
+        "com.fasterxml.jackson.core.Base64Variant"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleEOF",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_longIntegerDesc",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportError",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportError",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInvalidEOF",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInvalidEOF",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInvalidEOFInValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportUnexpectedChar",
+      "parameters": [
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_throwInternal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_wrapError",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "currentTokenId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentTokenId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParsingContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonStreamContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextCharacters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "char[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextOffset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsDouble",
+      "parameters": [
+        "double"
+      ],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsInt",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsLong",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasTextCharacters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasTokenId",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExpectedNumberIntToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExpectedStartObjectToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nextValue",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportInvalidNumber",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowInt",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowLong",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowLong",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "skipChildren",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_ascii",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_constructError",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParseException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_getCharDesc",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_hasTextualNull",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_longNumberDesc",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportError",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInputCoercion",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.JsonToken",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInvalidEOF",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportInvalidEOFInValue",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportMissingRootWS",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_reportUnexpectedNumberChar",
+      "parameters": [
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_throwInvalidSpace",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearCurrentToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "currentToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBinaryValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.Base64Variant"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastClearedToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextLength",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsBoolean",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsInt",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsLong",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueAsString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasCurrentToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasToken",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isClosed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExpectedStartArrayToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nextToken",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "overrideCurrentName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowInt",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowInt",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.JsonToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportOverflowLong",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportUnexpectedNumberChar",
+      "parameters": [
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_lastClearedToken",
+      "type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BD_MAX_LONG",
+      "type": "java.math.BigDecimal",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BD_MIN_LONG",
+      "type": "java.math.BigDecimal",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BI_MAX_LONG",
+      "type": "java.math.BigInteger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BI_MIN_LONG",
+      "type": "java.math.BigInteger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_0",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_APOS",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_BACKSLASH",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_COMMA",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_e",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_HASH",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_LCURLY",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_MINUS",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_PLUS",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_RBRACKET",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_SLASH",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_TAB",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MAX_INT_D",
+      "type": "double",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MAX_LONG_D",
+      "type": "double",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MIN_INT_L",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NO_BYTES",
+      "type": "byte[]",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_BIGDECIMAL",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_DOUBLE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_INT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_UNKNOWN",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_currToken",
+      "type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BD_MAX_INT",
+      "type": "java.math.BigDecimal",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BD_MIN_INT",
+      "type": "java.math.BigDecimal",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BI_MAX_INT",
+      "type": "java.math.BigInteger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BI_MIN_INT",
+      "type": "java.math.BigInteger",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CHAR_NULL",
+      "type": "char",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_9",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_ASTERISK",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_COLON",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_CR",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_E",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_LBRACKET",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_LF",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_PERIOD",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_QUOTE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_RCURLY",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "INT_SPACE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MAX_ERROR_TOKEN_LENGTH",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MAX_INT_L",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MIN_INT_D",
+      "type": "double",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MIN_LONG_D",
+      "type": "double",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NO_INTS",
+      "type": "int[]",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_BIGINT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_FLOAT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NR_LONG",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

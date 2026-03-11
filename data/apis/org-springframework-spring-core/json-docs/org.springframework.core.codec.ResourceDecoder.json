@@ -1,0 +1,69 @@
+{
+  "name": "org.springframework.core.codec.ResourceDecoder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.core.codec.AbstractDataBufferDecoder<org.springframework.core.io.Resource>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canDecode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.reactivestreams.Publisher<org.springframework.core.io.buffer.DataBuffer>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.Resource>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decode",
+      "parameters": [
+        "org.springframework.core.io.buffer.DataBuffer",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.Resource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "FILENAME_HINT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

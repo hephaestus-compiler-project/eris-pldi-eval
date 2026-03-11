@@ -1,0 +1,336 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.std.StdDeserializer<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_deserializeAnyScalar",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_deserializeObjectAtName",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+        "com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.ContainerStack"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ObjectNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromBigDecimal",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+        "java.math.BigDecimal"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromFloat",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromInt",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "int",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserializeWithType",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.jsontype.TypeDeserializer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeserializer",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<? extends com.fasterxml.jackson.databind.JsonNode>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCachable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsUpdate",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createWithMerge",
+      "parameters": [
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_deserializeContainerNoRecursion",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+        "com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.ContainerStack",
+        "com.fasterxml.jackson.databind.node.ContainerNode<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ContainerNode<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_deserializeRareScalar",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromEmbedded",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromInt",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleDuplicateField",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+        "java.lang.String",
+        "com.fasterxml.jackson.databind.node.ObjectNode",
+        "com.fasterxml.jackson.databind.JsonNode",
+        "com.fasterxml.jackson.databind.JsonNode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserialize",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAbsentValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNullValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logicalType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.LogicalType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateObject",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.node.ObjectNode",
+        "com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.ContainerStack"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_mergeObjects",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_mergeArrays",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_supportsUpdates",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

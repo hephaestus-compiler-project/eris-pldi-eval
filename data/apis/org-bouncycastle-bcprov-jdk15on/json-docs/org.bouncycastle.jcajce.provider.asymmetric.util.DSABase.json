@@ -1,0 +1,130 @@
+{
+  "name": "org.bouncycastle.jcajce.provider.asymmetric.util.DSABase",
+  "type_parameters": [],
+  "implements": [
+    "org.bouncycastle.asn1.pkcs.PKCSObjectIdentifiers",
+    "org.bouncycastle.asn1.x509.X509ObjectIdentifiers"
+  ],
+  "inherits": [
+    "java.security.SignatureSpi"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "engineSetParameter",
+      "parameters": [
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineSign",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineUpdate",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineGetParameter",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineSetParameter",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineUpdate",
+      "parameters": [
+        "byte"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "engineVerify",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "encoding",
+      "type": "org.bouncycastle.crypto.signers.DSAEncoding",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "digest",
+      "type": "org.bouncycastle.crypto.Digest",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "signer",
+      "type": "org.bouncycastle.crypto.DSAExt",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

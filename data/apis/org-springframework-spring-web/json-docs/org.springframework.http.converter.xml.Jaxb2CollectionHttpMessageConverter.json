@@ -1,0 +1,176 @@
+{
+  "name": "org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter",
+  "type_parameters": [
+    "T extends java.util.Collection"
+  ],
+  "implements": [
+    "org.springframework.http.converter.GenericHttpMessageConverter<T>"
+  ],
+  "inherits": [
+    "org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canRead",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canRead",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canWrite",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canWrite",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCollection",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createXmlInputFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.stream.XMLInputFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readFromSource",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "org.springframework.http.HttpHeaders",
+        "javax.xml.transform.Source"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "T",
+        "java.lang.reflect.Type",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeToResult",
+      "parameters": [
+        "T",
+        "org.springframework.http.HttpHeaders",
+        "javax.xml.transform.Result"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

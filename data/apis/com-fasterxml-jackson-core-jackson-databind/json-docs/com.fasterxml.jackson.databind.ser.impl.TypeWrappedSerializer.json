@@ -1,0 +1,123 @@
+{
+  "name": "com.fasterxml.jackson.databind.ser.impl.TypeWrappedSerializer",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.databind.ser.ContextualSerializer"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.JsonSerializer<java.lang.Object>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "handledType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serializeWithType",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueSerializer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "typeSerializer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "TypeWrappedSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_typeSerializer",
+      "type": "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_serializer",
+      "type": "com.fasterxml.jackson.databind.JsonSerializer<java.lang.Object>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

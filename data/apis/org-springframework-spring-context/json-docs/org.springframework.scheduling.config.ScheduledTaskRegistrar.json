@@ -1,0 +1,455 @@
+{
+  "name": "org.springframework.scheduling.config.ScheduledTaskRegistrar",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.scheduling.config.ScheduledTaskHolder",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.beans.factory.DisposableBean"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCronTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCronTask",
+      "parameters": [
+        "org.springframework.scheduling.config.CronTask"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedDelayTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedDelayTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedDelayTask",
+      "parameters": [
+        "org.springframework.scheduling.config.IntervalTask"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedRateTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedRateTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedRateTask",
+      "parameters": [
+        "org.springframework.scheduling.config.IntervalTask"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTriggerTask",
+      "parameters": [
+        "java.lang.Runnable",
+        "org.springframework.scheduling.Trigger"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTriggerTask",
+      "parameters": [
+        "org.springframework.scheduling.config.TriggerTask"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "destroy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCronTaskList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.scheduling.config.CronTask>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFixedDelayTaskList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.scheduling.config.IntervalTask>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFixedRateTaskList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.scheduling.config.IntervalTask>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getScheduledTasks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.springframework.scheduling.config.ScheduledTask>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getScheduler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.scheduling.TaskScheduler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTriggerTaskList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.scheduling.config.TriggerTask>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasTasks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleCronTask",
+      "parameters": [
+        "org.springframework.scheduling.config.CronTask"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.scheduling.config.ScheduledTask",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleFixedDelayTask",
+      "parameters": [
+        "org.springframework.scheduling.config.FixedDelayTask"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.scheduling.config.ScheduledTask",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleFixedRateTask",
+      "parameters": [
+        "org.springframework.scheduling.config.FixedRateTask"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.scheduling.config.ScheduledTask",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleTasks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleTriggerTask",
+      "parameters": [
+        "org.springframework.scheduling.config.TriggerTask"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.scheduling.config.ScheduledTask",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCronTasks",
+      "parameters": [
+        "java.util.Map<java.lang.Runnable,java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCronTasksList",
+      "parameters": [
+        "java.util.List<org.springframework.scheduling.config.CronTask>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFixedDelayTasks",
+      "parameters": [
+        "java.util.Map<java.lang.Runnable,java.lang.Long>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFixedDelayTasksList",
+      "parameters": [
+        "java.util.List<org.springframework.scheduling.config.IntervalTask>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFixedRateTasks",
+      "parameters": [
+        "java.util.Map<java.lang.Runnable,java.lang.Long>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFixedRateTasksList",
+      "parameters": [
+        "java.util.List<org.springframework.scheduling.config.IntervalTask>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setScheduler",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTaskScheduler",
+      "parameters": [
+        "org.springframework.scheduling.TaskScheduler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTriggerTasks",
+      "parameters": [
+        "java.util.Map<java.lang.Runnable,org.springframework.scheduling.Trigger>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTriggerTasksList",
+      "parameters": [
+        "java.util.List<org.springframework.scheduling.config.TriggerTask>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CRON_DISABLED",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

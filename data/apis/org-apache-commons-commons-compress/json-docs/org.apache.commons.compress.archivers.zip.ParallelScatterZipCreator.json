@@ -1,0 +1,173 @@
+{
+  "name": "org.apache.commons.compress.archivers.zip.ParallelScatterZipCreator",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addArchiveEntry",
+      "parameters": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntryRequestSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCallable",
+      "parameters": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntryRequestSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Callable<org.apache.commons.compress.archivers.zip.ScatterZipOutputStream>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submit",
+      "parameters": [
+        "java.util.concurrent.Callable<? extends java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeTo",
+      "parameters": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addArchiveEntry",
+      "parameters": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "org.apache.commons.compress.parallel.InputStreamSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCallable",
+      "parameters": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+        "org.apache.commons.compress.parallel.InputStreamSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Callable<org.apache.commons.compress.archivers.zip.ScatterZipOutputStream>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStatisticsMessage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.compress.archivers.zip.ScatterStatistics",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "submitStreamAwareCallable",
+      "parameters": [
+        "java.util.concurrent.Callable<? extends org.apache.commons.compress.archivers.zip.ScatterZipOutputStream>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ParallelScatterZipCreator",
+      "parameters": [
+        "java.util.concurrent.ExecutorService"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ParallelScatterZipCreator",
+      "parameters": [
+        "java.util.concurrent.ExecutorService",
+        "org.apache.commons.compress.parallel.ScatterGatherBackingStoreSupplier",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ParallelScatterZipCreator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ParallelScatterZipCreator",
+      "parameters": [
+        "java.util.concurrent.ExecutorService",
+        "org.apache.commons.compress.parallel.ScatterGatherBackingStoreSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

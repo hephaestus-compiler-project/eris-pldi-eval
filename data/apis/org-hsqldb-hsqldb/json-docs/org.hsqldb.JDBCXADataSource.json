@@ -1,0 +1,84 @@
+{
+  "name": "org.hsqldb.JDBCXADataSource",
+  "type_parameters": [],
+  "implements": [
+    "javax.sql.XADataSource",
+    "java.io.Serializable",
+    "javax.naming.Referenceable",
+    "javax.sql.CommonDataSource"
+  ],
+  "inherits": [
+    "org.hsqldb.jdbc.JDBCCommonDataSource"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getReference",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.naming.Reference",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXAConnection",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.sql.XAConnection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addResource",
+      "parameters": [
+        "javax.transaction.xa.Xid",
+        "org.hsqldb.jdbc.pool.JDBCXAResource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXAConnection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.sql.XAConnection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeResource",
+      "parameters": [
+        "javax.transaction.xa.Xid"
+      ],
+      "type_parameters": [],
+      "return_type": "org.hsqldb.jdbc.pool.JDBCXAResource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

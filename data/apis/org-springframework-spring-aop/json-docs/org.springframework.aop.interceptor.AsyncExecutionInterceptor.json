@@ -1,0 +1,69 @@
+{
+  "name": "org.springframework.aop.interceptor.AsyncExecutionInterceptor",
+  "type_parameters": [],
+  "implements": [
+    "org.aopalliance.intercept.MethodInterceptor",
+    "org.springframework.core.Ordered"
+  ],
+  "inherits": [
+    "org.springframework.aop.interceptor.AsyncExecutionAspectSupport"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getDefaultExecutor",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Executor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExecutorQualifier",
+      "parameters": [
+        "java.lang.reflect.Method"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "org.aopalliance.intercept.MethodInvocation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

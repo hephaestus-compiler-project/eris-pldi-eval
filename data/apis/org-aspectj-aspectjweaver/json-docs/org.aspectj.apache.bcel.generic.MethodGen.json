@@ -1,0 +1,675 @@
+{
+  "name": "org.aspectj.apache.bcel.generic.MethodGen",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.aspectj.apache.bcel.generic.FieldGenOrMethodGen"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCodeAttribute",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.Attribute"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addException",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addExceptionHandler",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "org.aspectj.apache.bcel.generic.ObjectType"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.CodeExceptionGen",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addLineNumber",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.LineNumberGen",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addLocalVariable",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.apache.bcel.generic.Type",
+        "int",
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "org.aspectj.apache.bcel.generic.InstructionHandle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.LocalVariableGen",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addLocalVariable",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.apache.bcel.generic.Type",
+        "org.aspectj.apache.bcel.generic.InstructionHandle",
+        "org.aspectj.apache.bcel.generic.InstructionHandle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.LocalVariableGen",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addParameterAnnotation",
+      "parameters": [
+        "int",
+        "org.aspectj.apache.bcel.classfile.annotation.AnnotationGen"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addParameterAnnotationsAsAttribute",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.ConstantPool"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotationsOnParameter",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.apache.bcel.classfile.annotation.AnnotationGen>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentName",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentNames",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentType",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCodeAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.Attribute[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExceptionHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.CodeExceptionGen[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHighestlinenumber",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstructionList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.InstructionList",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLineNumbers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.LineNumberGen[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLineNumberTable",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.ConstantPool"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.LineNumberTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocalVariables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.LocalVariableGen[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocalVariableTable",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.ConstantPool"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.LocalVariableTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxLocals",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxStack",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxStack",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.ConstantPool",
+        "org.aspectj.apache.bcel.generic.InstructionList",
+        "org.aspectj.apache.bcel.generic.CodeExceptionGen[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.classfile.Method",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReturnType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.apache.bcel.generic.Type",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignature",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeCodeAttribute",
+      "parameters": [
+        "org.aspectj.apache.bcel.classfile.Attribute"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeCodeAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeException",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeExceptionHandler",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.CodeExceptionGen"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeExceptionHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeLineNumber",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.LineNumberGen"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeLineNumbers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeLocalVariable",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.LocalVariableGen"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeLocalVariables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentName",
+      "parameters": [
+        "int",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentNames",
+      "parameters": [
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentType",
+      "parameters": [
+        "int",
+        "org.aspectj.apache.bcel.generic.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentTypes",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.Type[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setClassName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInstructionList",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.InstructionList"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxLocals",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxLocals",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxLocals",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxStack",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxStack",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturnType",
+      "parameters": [
+        "org.aspectj.apache.bcel.generic.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stripAttributes",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

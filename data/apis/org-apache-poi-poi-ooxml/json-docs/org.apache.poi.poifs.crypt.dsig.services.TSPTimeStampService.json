@@ -1,0 +1,104 @@
+{
+  "name": "org.apache.poi.poifs.crypt.dsig.services.TSPTimeStampService",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.poifs.crypt.dsig.services.TimeStampService"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "mapDigestAlgoToOID",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.HashAlgorithm"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchCRLbyUrl",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureConfig.CRLEntry",
+        "java.security.cert.X509Certificate",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "timeStamp",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureInfo",
+        "byte[]",
+        "org.apache.poi.poifs.crypt.dsig.services.RevocationData"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "downloadCRL",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureConfig",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.poifs.crypt.dsig.SignatureConfig.CRLEntry",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchCRLbyCN",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureConfig.CRLEntry",
+        "java.security.cert.X509Certificate",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveCRL",
+      "parameters": [
+        "org.apache.poi.poifs.crypt.dsig.SignatureConfig",
+        "java.security.cert.X509Certificate"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<byte[]>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

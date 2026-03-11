@@ -1,0 +1,229 @@
+{
+  "name": "org.springframework.core.convert.support.GenericConversionService",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.core.convert.support.ConfigurableConversionService"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addConverter",
+      "parameters": [
+        "java.lang.Class<S>",
+        "java.lang.Class<T>",
+        "org.springframework.core.convert.converter.Converter<? super S,? extends T>"
+      ],
+      "type_parameters": [
+        "S",
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addConverter",
+      "parameters": [
+        "org.springframework.core.convert.converter.Converter<?,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addConverter",
+      "parameters": [
+        "org.springframework.core.convert.converter.GenericConverter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addConverterFactory",
+      "parameters": [
+        "org.springframework.core.convert.converter.ConverterFactory<?,?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canBypassConvert",
+      "parameters": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canConvert",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canConvert",
+      "parameters": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convert",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convert",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convert",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertNullSource",
+      "parameters": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConverter",
+      "parameters": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.convert.converter.GenericConverter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultConverter",
+      "parameters": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.convert.converter.GenericConverter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeConvertible",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

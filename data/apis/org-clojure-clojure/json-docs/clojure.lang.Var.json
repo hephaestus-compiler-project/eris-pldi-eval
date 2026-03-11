@@ -1,0 +1,1051 @@
+{
+  "name": "clojure.lang.Var",
+  "type_parameters": [],
+  "implements": [
+    "clojure.lang.IFn",
+    "clojure.lang.IRef",
+    "clojure.lang.Settable",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "clojure.lang.ARef"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "alterRoot",
+      "parameters": [
+        "clojure.lang.IFn",
+        "clojure.lang.ISeq"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindRoot",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cloneThreadBindingFrame",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deref",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doSet",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fn",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.IFn",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRawRoot",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadBinding",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var.TBox",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadBindings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Associative",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "intern",
+      "parameters": [
+        "clojure.lang.Namespace",
+        "clojure.lang.Symbol"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "intern",
+      "parameters": [
+        "clojure.lang.Namespace",
+        "clojure.lang.Symbol",
+        "java.lang.Object",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "internPrivate",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDynamic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPublic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "pushThreadBindings",
+      "parameters": [
+        "clojure.lang.Associative"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "run",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDynamic",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMacro",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTag",
+      "parameters": [
+        "clojure.lang.Symbol"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unbindRoot",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "alter",
+      "parameters": [
+        "clojure.lang.IFn",
+        "clojure.lang.ISeq"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyTo",
+      "parameters": [
+        "clojure.lang.ISeq"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "call",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "commuteRoot",
+      "parameters": [
+        "clojure.lang.IFn"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doReset",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "find",
+      "parameters": [
+        "clojure.lang.Symbol"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTag",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadBindingFrame",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasRoot",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "intern",
+      "parameters": [
+        "clojure.lang.Namespace",
+        "clojure.lang.Symbol",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "intern",
+      "parameters": [
+        "clojure.lang.Symbol",
+        "clojure.lang.Symbol"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invoke",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isBound",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isMacro",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "popThreadBindings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resetThreadBindingFrame",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "set",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDynamic",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Var",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMeta",
+      "parameters": [
+        "clojure.lang.IPersistentMap"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidator",
+      "parameters": [
+        "clojure.lang.IFn"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toSymbol",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "clojure.lang.Symbol",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

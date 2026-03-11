@@ -1,0 +1,46 @@
+{
+  "name": "org.springframework.security.task.DelegatingSecurityContextTaskExecutor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.core.task.TaskExecutor"
+  ],
+  "inherits": [
+    "org.springframework.security.concurrent.DelegatingSecurityContextExecutor"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "wrap",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Runnable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrap",
+      "parameters": [
+        "java.util.concurrent.Callable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.concurrent.Callable<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

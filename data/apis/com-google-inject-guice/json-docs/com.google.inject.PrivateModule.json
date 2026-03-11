@@ -1,0 +1,397 @@
+{
+  "name": "com.google.inject.PrivateModule",
+  "type_parameters": [],
+  "implements": [
+    "com.google.inject.Module"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addError",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bind",
+      "parameters": [
+        "com.google.inject.Key<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.binder.LinkedBindingBuilder<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bind",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.binder.AnnotatedBindingBuilder<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "binder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.google.inject.PrivateBinder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindListener",
+      "parameters": [
+        "com.google.inject.matcher.Matcher<? super com.google.inject.Binding<?>>",
+        "com.google.inject.spi.ProvisionListener..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindScope",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>",
+        "com.google.inject.Scope"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.google.inject.Binder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "currentStage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.google.inject.Stage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "expose",
+      "parameters": [
+        "com.google.inject.TypeLiteral<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.google.inject.binder.AnnotatedElementBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMembersInjector",
+      "parameters": [
+        "com.google.inject.TypeLiteral<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.MembersInjector<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProvider",
+      "parameters": [
+        "com.google.inject.Key<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.Provider<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "install",
+      "parameters": [
+        "com.google.inject.Module"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestStaticInjection",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requireBinding",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addError",
+      "parameters": [
+        "com.google.inject.spi.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addError",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bind",
+      "parameters": [
+        "com.google.inject.TypeLiteral<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.binder.AnnotatedBindingBuilder<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindConstant",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.google.inject.binder.AnnotatedConstantBindingBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindInterceptor",
+      "parameters": [
+        "com.google.inject.matcher.Matcher<? super java.lang.Class<?>>",
+        "com.google.inject.matcher.Matcher<? super java.lang.reflect.Method>",
+        "org.aopalliance.intercept.MethodInterceptor..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bindListener",
+      "parameters": [
+        "com.google.inject.matcher.Matcher<? super com.google.inject.TypeLiteral<?>>",
+        "com.google.inject.spi.TypeListener"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertToTypes",
+      "parameters": [
+        "com.google.inject.matcher.Matcher<? super com.google.inject.TypeLiteral<?>>",
+        "com.google.inject.spi.TypeConverter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "expose",
+      "parameters": [
+        "com.google.inject.Key<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "expose",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.google.inject.binder.AnnotatedElementBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMembersInjector",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.MembersInjector<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProvider",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.google.inject.Provider<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestInjection",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requireBinding",
+      "parameters": [
+        "com.google.inject.Key<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

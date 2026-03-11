@@ -1,0 +1,204 @@
+{
+  "name": "org.springframework.web.method.annotation.ModelAttributeMethodProcessor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.method.support.HandlerMethodArgumentResolver",
+    "org.springframework.web.method.support.HandlerMethodReturnValueHandler"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "bindRequestParameters",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructAttribute",
+      "parameters": [
+        "java.lang.reflect.Constructor<?>",
+        "java.lang.String",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.web.bind.support.WebDataBinderFactory",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAttribute",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.web.bind.support.WebDataBinderFactory",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleReturnValue",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.core.MethodParameter",
+        "org.springframework.web.method.support.ModelAndViewContainer",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isBindExceptionRequired",
+      "parameters": [
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isBindExceptionRequired",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveArgument",
+      "parameters": [
+        "org.springframework.core.MethodParameter",
+        "org.springframework.web.method.support.ModelAndViewContainer",
+        "org.springframework.web.context.request.NativeWebRequest",
+        "org.springframework.web.bind.support.WebDataBinderFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveConstructorArgument",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<?>",
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsParameter",
+      "parameters": [
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsReturnType",
+      "parameters": [
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateIfApplicable",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.core.MethodParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateValueIfApplicable",
+      "parameters": [
+        "org.springframework.web.bind.WebDataBinder",
+        "org.springframework.core.MethodParameter",
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

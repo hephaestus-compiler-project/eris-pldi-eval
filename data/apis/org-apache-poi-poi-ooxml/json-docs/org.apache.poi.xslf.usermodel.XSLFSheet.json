@@ -1,0 +1,493 @@
+{
+  "name": "org.apache.poi.xslf.usermodel.XSLFSheet",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.xslf.usermodel.XSLFShapeContainer",
+    "org.apache.poi.sl.usermodel.Sheet<org.apache.poi.xslf.usermodel.XSLFShape,org.apache.poi.xslf.usermodel.XSLFTextParagraph>"
+  ],
+  "inherits": [
+    "org.apache.poi.ooxml.POIXMLDocumentPart"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addChart",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFChart",
+        "java.awt.geom.Rectangle2D"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "allocateShapeId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildShapes",
+      "parameters": [
+        "org.openxmlformats.schemas.presentationml.x2006.main.CTGroupShape",
+        "org.apache.poi.xslf.usermodel.XSLFShapeContainer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xslf.usermodel.XSLFShape>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "commit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createConnector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFConnectorShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGroup",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFGroupShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPicture",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.PictureData"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFPictureShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTable",
+      "parameters": [
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deregisterShapeId",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBackground",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFBackground",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlaceholder",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlaceholder",
+      "parameters": [
+        "org.openxmlformats.schemas.presentationml.x2006.main.CTPlaceholder"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFSimpleShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlaceholders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextShape[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShapes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xslf.usermodel.XSLFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSpTree",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.presentationml.x2006.main.CTGroupShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTheme",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTheme",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "importContent",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFSheet"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFSheet",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mapSchemeColor",
+      "parameters": [
+        "org.openxmlformats.schemas.drawingml.x2006.main.CTColorMappingOverride",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerShapeId",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addChart",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFChart"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addShape",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFShape"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendContent",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFSheet"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFSheet",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clear",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAutoShape",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFAutoShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createFreeform",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFFreeformShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createOleShape",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.PictureData"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFObjectShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createTextBox",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextBox",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "draw",
+      "parameters": [
+        "java.awt.Graphics2D"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFollowMasterGraphics",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlaceholder",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.Placeholder"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFSimpleShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPlaceholderDetails",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.Placeholder"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFPlaceholderDetails",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRootElementName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSlideShow",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XMLSlideShow",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextShapeByType",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.Placeholder"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextShape",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXmlObject",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.xmlbeans.XmlObject",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "iterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xslf.usermodel.XSLFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mapSchemeColor",
+      "parameters": [
+        "org.openxmlformats.schemas.drawingml.x2006.main.CTColorMapping",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeShape",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFShape"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

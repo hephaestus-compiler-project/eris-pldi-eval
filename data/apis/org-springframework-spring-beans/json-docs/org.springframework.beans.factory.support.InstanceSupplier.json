@@ -1,0 +1,114 @@
+{
+  "name": "org.springframework.beans.factory.support.InstanceSupplier",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.util.function.ThrowingSupplier<T>"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "andThen",
+      "parameters": [
+        "org.springframework.util.function.ThrowingBiFunction<org.springframework.beans.factory.support.RegisteredBean,? super T,? extends V>"
+      ],
+      "type_parameters": [
+        "V"
+      ],
+      "return_type": "org.springframework.beans.factory.support.InstanceSupplier<V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.springframework.beans.factory.support.RegisteredBean"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFactoryMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Method",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getWithException",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "of",
+      "parameters": [
+        "org.springframework.beans.factory.support.InstanceSupplier<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.beans.factory.support.InstanceSupplier<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "using",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "org.springframework.util.function.ThrowingSupplier<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.beans.factory.support.InstanceSupplier<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "using",
+      "parameters": [
+        "org.springframework.util.function.ThrowingSupplier<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.beans.factory.support.InstanceSupplier<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": true,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,337 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.servlet.handler.MatchableHandlerMapping",
+    "org.springframework.context.EmbeddedValueResolverAware"
+  ],
+  "inherits": [
+    "org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRequestMappingInfo",
+      "parameters": [
+        "org.springframework.web.bind.annotation.RequestMapping",
+        "org.springframework.web.servlet.mvc.condition.RequestCondition<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.RequestMappingInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBuilderConfiguration",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.RequestMappingInfo.BuilderConfiguration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentNegotiationManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.accept.ContentNegotiationManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomMethodCondition",
+      "parameters": [
+        "java.lang.reflect.Method"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.condition.RequestCondition<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomTypeCondition",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.condition.RequestCondition<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFileExtensions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMappingForMethod",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.RequestMappingInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathPrefixes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.util.function.Predicate<java.lang.Class<?>>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initCorsConfiguration",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.reflect.Method",
+        "org.springframework.web.servlet.mvc.method.RequestMappingInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.cors.CorsConfiguration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isHandler",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "match",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.handler.RequestMatchResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerHandlerMethod",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.reflect.Method",
+        "org.springframework.web.servlet.mvc.method.RequestMappingInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerMapping",
+      "parameters": [
+        "org.springframework.web.servlet.mvc.method.RequestMappingInfo",
+        "java.lang.Object",
+        "java.lang.reflect.Method"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveEmbeddedValuesInPatterns",
+      "parameters": [
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentNegotiationManager",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEmbeddedValueResolver",
+      "parameters": [
+        "org.springframework.util.StringValueResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPathPrefixes",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.util.function.Predicate<java.lang.Class<?>>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPatternParser",
+      "parameters": [
+        "org.springframework.web.util.pattern.PathPatternParser"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUseRegisteredSuffixPatternMatch",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUseSuffixPatternMatch",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUseTrailingSlashMatch",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useRegisteredSuffixPatternMatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useSuffixPatternMatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useTrailingSlashMatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

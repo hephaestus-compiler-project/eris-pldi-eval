@@ -1,0 +1,225 @@
+{
+  "name": "org.springframework.context.annotation.ConfigurationClassPostProcessor",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor",
+    "org.springframework.beans.factory.aot.BeanRegistrationAotProcessor",
+    "org.springframework.beans.factory.aot.BeanFactoryInitializationAotProcessor",
+    "org.springframework.core.PriorityOrdered",
+    "org.springframework.context.ResourceLoaderAware",
+    "org.springframework.context.ApplicationStartupAware",
+    "org.springframework.beans.factory.BeanClassLoaderAware",
+    "org.springframework.context.EnvironmentAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "enhanceConfigurationClasses",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessBeanDefinitionRegistry",
+      "parameters": [
+        "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessBeanFactory",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processAheadOfTime",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanFactoryInitializationAotContribution",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processAheadOfTime",
+      "parameters": [
+        "org.springframework.beans.factory.support.RegisteredBean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.aot.BeanRegistrationAotContribution",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processConfigBeanDefinitions",
+      "parameters": [
+        "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationStartup",
+      "parameters": [
+        "org.springframework.core.metrics.ApplicationStartup"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanClassLoader",
+      "parameters": [
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanNameGenerator",
+      "parameters": [
+        "org.springframework.beans.factory.support.BeanNameGenerator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEnvironment",
+      "parameters": [
+        "org.springframework.core.env.Environment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMetadataReaderFactory",
+      "parameters": [
+        "org.springframework.core.type.classreading.MetadataReaderFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProblemReporter",
+      "parameters": [
+        "org.springframework.beans.factory.parsing.ProblemReporter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setResourceLoader",
+      "parameters": [
+        "org.springframework.core.io.ResourceLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSourceExtractor",
+      "parameters": [
+        "org.springframework.beans.factory.parsing.SourceExtractor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "IMPORT_BEAN_NAME_GENERATOR",
+      "type": "org.springframework.context.annotation.AnnotationBeanNameGenerator",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

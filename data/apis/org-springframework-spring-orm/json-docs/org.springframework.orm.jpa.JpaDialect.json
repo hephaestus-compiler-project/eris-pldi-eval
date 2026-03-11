@@ -1,0 +1,86 @@
+{
+  "name": "org.springframework.orm.jpa.JpaDialect",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.dao.support.PersistenceExceptionTranslator"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "beginTransaction",
+      "parameters": [
+        "jakarta.persistence.EntityManager",
+        "org.springframework.transaction.TransactionDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cleanupTransaction",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJdbcConnection",
+      "parameters": [
+        "jakarta.persistence.EntityManager",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.jdbc.datasource.ConnectionHandle",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "prepareTransaction",
+      "parameters": [
+        "jakarta.persistence.EntityManager",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "releaseJdbcConnection",
+      "parameters": [
+        "org.springframework.jdbc.datasource.ConnectionHandle",
+        "jakarta.persistence.EntityManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

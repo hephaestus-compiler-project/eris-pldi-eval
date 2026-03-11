@@ -1,0 +1,167 @@
+{
+  "name": "org.bouncycastle.cms.jcajce.EnvelopedDataHelper",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createAsymmetricUnwrapper",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "java.security.PrivateKey",
+        "byte[]",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.operator.jcajce.JceKTSKeyUnwrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createKeyFactory",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "java.security.KeyFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSymmetricUnwrapper",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "javax.crypto.SecretKey"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.operator.SymmetricKeyUnwrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJceKey",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "org.bouncycastle.operator.GenericKey"
+      ],
+      "type_parameters": [],
+      "return_type": "java.security.Key",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAsymmetricUnwrapper",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "java.security.PrivateKey"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.operator.jcajce.JceAsymmetricKeyUnwrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContentCipher",
+      "parameters": [
+        "java.security.Key",
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.Cipher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createKeyGenerator",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.crypto.KeyGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAlgorithmIdentifier",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "java.security.spec.AlgorithmParameterSpec"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "keySizeCheck",
+      "parameters": [
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "java.security.Key"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CIPHER_ALG_NAMES",
+      "type": "java.util.Map",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "MAC_ALG_NAMES",
+      "type": "java.util.Map",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "BASE_CIPHER_NAMES",
+      "type": "java.util.Map",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "KEY_SIZE_PROVIDER",
+      "type": "org.bouncycastle.operator.SecretKeySizeProvider",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

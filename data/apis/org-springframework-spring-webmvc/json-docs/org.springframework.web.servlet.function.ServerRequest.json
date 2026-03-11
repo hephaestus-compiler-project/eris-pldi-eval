@@ -1,0 +1,348 @@
+{
+  "name": "org.springframework.web.servlet.function.ServerRequest",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "attribute",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "attributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "body",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "body",
+      "parameters": [
+        "org.springframework.core.ParameterizedTypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkNotModified",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<org.springframework.web.servlet.function.ServerResponse>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "checkNotModified",
+      "parameters": [
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<org.springframework.web.servlet.function.ServerResponse>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "checkNotModified",
+      "parameters": [
+        "java.time.Instant",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<org.springframework.web.servlet.function.ServerResponse>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "cookies",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,jakarta.servlet.http.Cookie>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.ServerRequest",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "from",
+      "parameters": [
+        "org.springframework.web.servlet.function.ServerRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.ServerRequest.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "headers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.ServerRequest.Headers",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "messageConverters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "method",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.HttpMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "methodName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "multipartData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,jakarta.servlet.http.Part>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "param",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "params",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.MultiValueMap<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "path",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "pathContainer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.PathContainer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "pathVariable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "pathVariables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "principal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.security.Principal>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remoteAddress",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<java.net.InetSocketAddress>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestPath",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.server.RequestPath",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "servletRequest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.servlet.http.HttpServletRequest",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "session",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.servlet.http.HttpSession",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uri",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.net.URI",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uriBuilder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.util.UriBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

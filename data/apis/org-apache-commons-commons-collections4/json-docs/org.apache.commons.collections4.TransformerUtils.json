@@ -1,0 +1,373 @@
+{
+  "name": "org.apache.commons.collections4.TransformerUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "asTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Factory<? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "chainedTransformer",
+      "parameters": [
+        "java.util.Collection<? extends org.apache.commons.collections4.Transformer<? super T,? extends T>>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cloneTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exceptionTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ifTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super T>",
+        "org.apache.commons.collections4.Transformer<? super T,? extends T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "instantiateTransformer",
+      "parameters": [
+        "java.lang.Class<?>[]",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<java.lang.Class<? extends T>,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokerTransformer",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<?>[]",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nopTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stringValueTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,java.lang.String>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchTransformer",
+      "parameters": [
+        "java.util.Map<org.apache.commons.collections4.Predicate<I>,org.apache.commons.collections4.Transformer<I,O>>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super I>[]",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>[]",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "asTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Closure<? super T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "asTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,java.lang.Boolean>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "chainedTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Transformer<? super T,? extends T>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constantTransformer",
+      "parameters": [
+        "O"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ifTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super I>",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "instantiateTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<java.lang.Class<? extends T>,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokerTransformer",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mapTransformer",
+      "parameters": [
+        "java.util.Map<? super I,? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nullTransformer",
+      "parameters": [],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchMapTransformer",
+      "parameters": [
+        "java.util.Map<I,org.apache.commons.collections4.Transformer<I,O>>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super I>[]",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>[]"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "switchTransformer",
+      "parameters": [
+        "org.apache.commons.collections4.Predicate<? super I>",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>",
+        "org.apache.commons.collections4.Transformer<? super I,? extends O>"
+      ],
+      "type_parameters": [
+        "I",
+        "O"
+      ],
+      "return_type": "org.apache.commons.collections4.Transformer<I,O>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

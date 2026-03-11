@@ -1,0 +1,234 @@
+{
+  "name": "org.h2.util.LegacyDateTimeUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "fromDate",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "java.sql.Date"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.ValueDate",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromTimestamp",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "long",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.ValueTimestamp",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMillis",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "long",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "legacyClassToType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.TypeInfo",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nanosFromLocalMillis",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toTime",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "java.sql.Time",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueToLegacyType",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.h2.value.Value",
+        "org.h2.engine.CastDataProvider"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dateValueFromLocalMillis",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromTime",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "java.sql.Time"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.ValueTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromTimestamp",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "java.sql.Timestamp"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.ValueTimestamp",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTimeZoneOffsetMillis",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "legacyObjectToValue",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.Value",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toDate",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "java.sql.Date",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toTimestamp",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "java.util.TimeZone",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "java.sql.Timestamp",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "UTC",
+      "type": "java.util.TimeZone",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PROLEPTIC_GREGORIAN_CHANGE",
+      "type": "java.sql.Date",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

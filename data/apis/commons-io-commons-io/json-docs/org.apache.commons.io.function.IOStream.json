@@ -1,0 +1,556 @@
+{
+  "name": "org.apache.commons.io.function.IOStream",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.apache.commons.io.function.IOBaseStream<T,org.apache.commons.io.function.IOStream<T>,java.util.stream.Stream<T>>"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "allMatch",
+      "parameters": [
+        "org.apache.commons.io.function.IOPredicate<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "collect",
+      "parameters": [
+        "java.util.stream.Collector<? super T,A,R>"
+      ],
+      "type_parameters": [
+        "R",
+        "A"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "count",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "empty",
+      "parameters": [],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findAny",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "flatMap",
+      "parameters": [
+        "org.apache.commons.io.function.IOFunction<? super T,? extends org.apache.commons.io.function.IOStream<? extends R>>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "flatMapToInt",
+      "parameters": [
+        "org.apache.commons.io.function.IOFunction<? super T,? extends java.util.stream.IntStream>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.IntStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "forAll",
+      "parameters": [
+        "org.apache.commons.io.function.IOConsumer<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "forEach",
+      "parameters": [
+        "org.apache.commons.io.function.IOConsumer<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "iterate",
+      "parameters": [
+        "T",
+        "org.apache.commons.io.function.IOUnaryOperator<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "map",
+      "parameters": [
+        "org.apache.commons.io.function.IOFunction<? super T,? extends R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "mapToInt",
+      "parameters": [
+        "java.util.function.ToIntFunction<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.IntStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "max",
+      "parameters": [
+        "org.apache.commons.io.function.IOComparator<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "noneMatch",
+      "parameters": [
+        "org.apache.commons.io.function.IOPredicate<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "of",
+      "parameters": [
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "peek",
+      "parameters": [
+        "org.apache.commons.io.function.IOConsumer<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "reduce",
+      "parameters": [
+        "T",
+        "org.apache.commons.io.function.IOBinaryOperator<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "skip",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "sorted",
+      "parameters": [
+        "org.apache.commons.io.function.IOComparator<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "toArray",
+      "parameters": [
+        "java.util.function.IntFunction<A[]>"
+      ],
+      "type_parameters": [
+        "A"
+      ],
+      "return_type": "A[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "adapt",
+      "parameters": [
+        "java.util.stream.Stream<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "anyMatch",
+      "parameters": [
+        "org.apache.commons.io.function.IOPredicate<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "collect",
+      "parameters": [
+        "org.apache.commons.io.function.IOSupplier<R>",
+        "org.apache.commons.io.function.IOBiConsumer<R,? super T>",
+        "org.apache.commons.io.function.IOBiConsumer<R,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "distinct",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "filter",
+      "parameters": [
+        "org.apache.commons.io.function.IOPredicate<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "findFirst",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "flatMapToDouble",
+      "parameters": [
+        "org.apache.commons.io.function.IOFunction<? super T,? extends java.util.stream.DoubleStream>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.DoubleStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "flatMapToLong",
+      "parameters": [
+        "org.apache.commons.io.function.IOFunction<? super T,? extends java.util.stream.LongStream>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.LongStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "forAll",
+      "parameters": [
+        "org.apache.commons.io.function.IOConsumer<T>",
+        "java.util.function.BiFunction<java.lang.Integer,java.io.IOException,java.io.IOException>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "forEachOrdered",
+      "parameters": [
+        "org.apache.commons.io.function.IOConsumer<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "limit",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "mapToDouble",
+      "parameters": [
+        "java.util.function.ToDoubleFunction<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.DoubleStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "mapToLong",
+      "parameters": [
+        "java.util.function.ToLongFunction<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.LongStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "min",
+      "parameters": [
+        "org.apache.commons.io.function.IOComparator<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "of",
+      "parameters": [
+        "java.lang.Iterable<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "of",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reduce",
+      "parameters": [
+        "org.apache.commons.io.function.IOBinaryOperator<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "reduce",
+      "parameters": [
+        "U",
+        "org.apache.commons.io.function.IOBiFunction<U,? super T,U>",
+        "org.apache.commons.io.function.IOBinaryOperator<U>"
+      ],
+      "type_parameters": [
+        "U"
+      ],
+      "return_type": "U",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "sorted",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.function.IOStream<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "toArray",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

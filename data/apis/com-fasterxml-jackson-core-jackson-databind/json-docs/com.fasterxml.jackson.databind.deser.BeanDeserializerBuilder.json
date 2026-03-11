@@ -1,0 +1,494 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.BeanDeserializerBuilder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_findCaseInsensitivity",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_handleBadAccess",
+      "parameters": [
+        "java.lang.IllegalArgumentException"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCreatorProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addIncludable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addOrReplaceProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "build",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildBuilderBased",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyName"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBuilderConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder.Value",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<com.fasterxml.jackson.databind.deser.impl.ValueInjector>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<com.fasterxml.jackson.databind.deser.SettableBeanProperty>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasIgnorable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyName"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreUnknownProperties",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPOJOBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+        "com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_collectAliases",
+      "parameters": [
+        "java.util.Collection<com.fasterxml.jackson.databind.deser.SettableBeanProperty>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.util.List<com.fasterxml.jackson.databind.PropertyName>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fixAccess",
+      "parameters": [
+        "java.util.Collection<com.fasterxml.jackson.databind.deser.SettableBeanProperty>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addBackReferenceProperty",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addIgnorable",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addInjectable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyName",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.util.Annotations",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildAbstract",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.AbstractDeserializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBuilderBasedDeserializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnySetter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.SettableAnyProperty",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBuildMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectIdReader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.impl.ObjectIdReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueInstantiator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.ValueInstantiator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyName"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAnySetter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableAnyProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setObjectIdReader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdReader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueInstantiator",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_backRefProperties",
+      "type": "java.util.HashMap<java.lang.String,com.fasterxml.jackson.databind.deser.SettableBeanProperty>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_builderConfig",
+      "type": "com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder.Value",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_config",
+      "type": "com.fasterxml.jackson.databind.DeserializationConfig",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_ignorableProps",
+      "type": "java.util.HashSet<java.lang.String>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_includableProps",
+      "type": "java.util.HashSet<java.lang.String>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_objectIdReader",
+      "type": "com.fasterxml.jackson.databind.deser.impl.ObjectIdReader",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_valueInstantiator",
+      "type": "com.fasterxml.jackson.databind.deser.ValueInstantiator",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_anySetter",
+      "type": "com.fasterxml.jackson.databind.deser.SettableAnyProperty",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_beanDesc",
+      "type": "com.fasterxml.jackson.databind.BeanDescription",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_buildMethod",
+      "type": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_context",
+      "type": "com.fasterxml.jackson.databind.DeserializationContext",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_ignoreAllUnknown",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_injectables",
+      "type": "java.util.List<com.fasterxml.jackson.databind.deser.impl.ValueInjector>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_properties",
+      "type": "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.deser.SettableBeanProperty>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

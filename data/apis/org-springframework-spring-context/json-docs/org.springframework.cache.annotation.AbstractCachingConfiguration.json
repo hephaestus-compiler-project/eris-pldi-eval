@@ -1,0 +1,75 @@
+{
+  "name": "org.springframework.cache.annotation.AbstractCachingConfiguration",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.annotation.ImportAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "setImportMetadata",
+      "parameters": [
+        "org.springframework.core.type.AnnotationMetadata"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "useCachingConfigurer",
+      "parameters": [
+        "org.springframework.cache.annotation.AbstractCachingConfiguration.CachingConfigurerSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "cacheManager",
+      "type": "java.util.function.Supplier<org.springframework.cache.CacheManager>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "cacheResolver",
+      "type": "java.util.function.Supplier<org.springframework.cache.interceptor.CacheResolver>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "enableCaching",
+      "type": "org.springframework.core.annotation.AnnotationAttributes",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "errorHandler",
+      "type": "java.util.function.Supplier<org.springframework.cache.interceptor.CacheErrorHandler>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "keyGenerator",
+      "type": "java.util.function.Supplier<org.springframework.cache.interceptor.KeyGenerator>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

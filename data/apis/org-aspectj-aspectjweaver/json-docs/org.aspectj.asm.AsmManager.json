@@ -1,0 +1,521 @@
+{
+  "name": "org.aspectj.asm.AsmManager",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.util.IStructureModel"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAspectInEffectThisBuild",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addListener",
+      "parameters": [
+        "org.aspectj.asm.IHierarchyListener"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createNewStructureModel",
+      "parameters": [
+        "java.util.Map<java.io.File,java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.AsmManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dumprels",
+      "parameters": [
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dumptree",
+      "parameters": [
+        "java.io.Writer",
+        "org.aspectj.asm.IProgramElement",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dumptree",
+      "parameters": [
+        "org.aspectj.asm.IProgramElement",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fireModelUpdated",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectsWeavingFilesOnLastBuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.io.File>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCanonicalFilePath",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCanonicalFilePathMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.AsmManager.CanonicalFilePathMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandleElementForInpath",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHandleProvider",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IElementHandleProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHierarchy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IHierarchy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInlineAnnotations",
+      "parameters": [
+        "java.lang.String",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.HashMap<java.lang.Integer,java.util.List<org.aspectj.asm.IProgramElement>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getModelChangesOnLastBuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.io.File>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRelationshipMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.IRelationshipMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCompletingTypeBindings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isReporting",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processDelta",
+      "parameters": [
+        "java.util.Collection<java.io.File>",
+        "java.util.Set<java.io.File>",
+        "java.util.Set<java.io.File>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readStructureModel",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeAllListeners",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeRelationshipsTargettingThisType",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeStructureListener",
+      "parameters": [
+        "org.aspectj.asm.IHierarchyListener"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeStructureModelForFiles",
+      "parameters": [
+        "java.io.Writer",
+        "java.util.Collection<java.io.File>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportModelInfo",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resetDeltaProcessing",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCompletingTypeBindings",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDontReport",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHandleProvider",
+      "parameters": [
+        "org.aspectj.asm.IElementHandleProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLastActiveStructureModel",
+      "parameters": [
+        "org.aspectj.asm.AsmManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReporting",
+      "parameters": [
+        "java.lang.String",
+        "boolean",
+        "boolean",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReporting",
+      "parameters": [
+        "java.lang.String",
+        "boolean",
+        "boolean",
+        "boolean",
+        "boolean",
+        "org.aspectj.asm.IModelFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "summarizeModel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.asm.AsmManager.ModelInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyAssumption",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyAssumption",
+      "parameters": [
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeStructureModel",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "attemptIncrementalModelRepairs",
+      "type": "boolean",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "dumpModelPostBuild",
+      "type": "boolean",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "forceSingletonBehaviour",
+      "type": "boolean",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "hierarchy",
+      "type": "org.aspectj.asm.IHierarchy",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "inpathMap",
+      "type": "java.util.Map<java.io.File,java.lang.String>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "lastActiveStructureModel",
+      "type": "org.aspectj.asm.AsmManager",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "recordingLastActiveStructureModel",
+      "type": "boolean",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

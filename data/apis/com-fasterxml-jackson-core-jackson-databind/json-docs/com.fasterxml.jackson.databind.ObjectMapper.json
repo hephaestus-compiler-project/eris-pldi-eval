@@ -1,0 +1,3484 @@
+{
+  "name": "com.fasterxml.jackson.databind.ObjectMapper",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.core.Versioned",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.core.ObjectCodec"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_checkInvalidCopy",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_constructDefaultTypeResolverBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping",
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findRootDeserializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonDeserializer<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newReader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newWriter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newWriter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.core.PrettyPrinter"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_readTreeAndClose",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_serializerProvider",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.DefaultSerializerProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_verifySchemaType",
+      "parameters": [
+        "com.fasterxml.jackson.core.FormatSchema"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "activateDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "activateDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator",
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping",
+        "com.fasterxml.jackson.annotation.JsonTypeInfo.As"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addHandler",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.DeserializationProblemHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMixInAnnotations",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canDeserialize",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.util.concurrent.atomic.AtomicReference<java.lang.Throwable>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canSerialize",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.concurrent.atomic.AtomicReference<java.lang.Throwable>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "coercionConfigDefaults",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "coercionConfigFor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.LogicalType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.DatatypeFeature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.databind.MapperFeature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertValue",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertValue",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyWith",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDeserializationContext",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.DefaultDeserializationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.File",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createNonBlockingByteArrayParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.DataInput"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deactivateDefaultTyping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.MapperFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature",
+        "com.fasterxml.jackson.databind.SerializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.MapperFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature",
+        "com.fasterxml.jackson.databind.SerializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enableDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enableDefaultTypingAsProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findMixInClassFor",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findModules",
+      "parameters": [
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<com.fasterxml.jackson.databind.Module>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDateFormat",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.text.DateFormat",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeserializationContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.DeserializationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectableValues",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.InjectableValues",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPolymorphicTypeValidator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRegisteredModuleIds",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSerializerFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.SerializerFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSerializerProviderInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.SerializerProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.databind.MapperFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.StreamReadFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "missingNode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nullNode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.core.Base64Variant"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.ContextAttributes"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature",
+        "com.fasterxml.jackson.databind.DeserializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.InjectableValues"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerFor",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerFor",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerForListOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerForUpdating",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser"
+      ],
+      "type_parameters": [
+        "T extends com.fasterxml.jackson.core.TreeNode"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.DataInput",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.File",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.File",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.type.ResolvedType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.Reader",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.Reader",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.net.URL",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.net.URL",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValues",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.MappingIterator<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValues",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.MappingIterator<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerModules",
+      "parameters": [
+        "java.lang.Iterable<? extends com.fasterxml.jackson.databind.Module>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.NamedType..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAnnotationIntrospector",
+      "parameters": [
+        "com.fasterxml.jackson.databind.AnnotationIntrospector"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBase64Variant",
+      "parameters": [
+        "com.fasterxml.jackson.core.Base64Variant"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConfig",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDateFormat",
+      "parameters": [
+        "java.text.DateFormat"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultLeniency",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultPrettyPrinter",
+      "parameters": [
+        "com.fasterxml.jackson.core.PrettyPrinter"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultPropertyInclusion",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonInclude.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFilterProvider",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.FilterProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHandlerInstantiator",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.HandlerInstantiator"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLocale",
+      "parameters": [
+        "java.util.Locale"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMixInResolver",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.ClassIntrospector.MixInResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setNodeFactory",
+      "parameters": [
+        "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPropertyInclusion",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonInclude.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSerializationInclusion",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonInclude.Include"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSerializerProvider",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.DefaultSerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTimeZone",
+      "parameters": [
+        "java.util.TimeZone"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVisibility",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.PropertyAccessor",
+        "com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVisibilityChecker",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.VisibilityChecker<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "treeAsTokens",
+      "parameters": [
+        "com.fasterxml.jackson.core.TreeNode"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "treeToValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.TreeNode",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "valueToTree",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [
+        "T extends com.fasterxml.jackson.databind.JsonNode"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.core.io.CharacterEscapes"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "java.text.DateFormat"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.core.FormatSchema"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerFor",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerFor",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerWithType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerWithType",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeTree",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.JsonNode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValue",
+      "parameters": [
+        "java.io.DataOutput",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValue",
+      "parameters": [
+        "java.io.Writer",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValueAsString",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_assertNotNull",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_configAndWriteValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_convert",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_initForReading",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonToken",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newReader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.Object",
+        "com.fasterxml.jackson.core.FormatSchema",
+        "com.fasterxml.jackson.databind.InjectableValues"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newWriter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "com.fasterxml.jackson.core.FormatSchema"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_readMapAndClose",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_readValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_verifyNoTrailingTokens",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_writeValueAndClose",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "activateDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator",
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "activateDefaultTypingAsProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator",
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMixIn",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canDeserialize",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canSerialize",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearProblemHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "coercionConfigFor",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableCoercionConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configOverride",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MutableConfigOverride",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "convertValue",
+      "parameters": [
+        "java.lang.Object",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createArrayNode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ArrayNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.DataOutput"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createObjectNode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.ObjectNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.Reader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defaultClassIntrospector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.ClassIntrospector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature",
+        "com.fasterxml.jackson.databind.DeserializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disableDefaultTyping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature",
+        "com.fasterxml.jackson.databind.DeserializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enableDefaultTyping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enableDefaultTyping",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ObjectMapper.DefaultTyping",
+        "com.fasterxml.jackson.annotation.JsonTypeInfo.As"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findAndRegisterModules",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findModules",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<com.fasterxml.jackson.databind.Module>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateJsonSchema",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsonschema.JsonSchema",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDeserializationConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.DeserializationConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNodeFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyNamingStrategy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.PropertyNamingStrategy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSerializationConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.SerializationConfig",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSerializerProvider",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.SerializerProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSubtypeResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.SubtypeResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVisibilityChecker",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.VisibilityChecker<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonFactory.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.core.StreamWriteFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mixInCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationFeature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.core.FormatSchema"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reader",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerFor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerForArrayOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerForMapOf",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readerWithView",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "java.io.Reader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTree",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "byte[]",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.DataInput",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.File",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.InputStream",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.io.Reader",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.type.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValue",
+      "parameters": [
+        "java.net.URL",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValues",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.MappingIterator<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readValues",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.core.type.ResolvedType"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.MappingIterator<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerModule",
+      "parameters": [
+        "com.fasterxml.jackson.databind.Module"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerModules",
+      "parameters": [
+        "com.fasterxml.jackson.databind.Module..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.util.Collection<java.lang.Class<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAccessorNaming",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.AccessorNamingStrategy.Provider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAnnotationIntrospectors",
+      "parameters": [
+        "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "com.fasterxml.jackson.databind.AnnotationIntrospector"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConfig",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConstructorDetector",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.ConstructorDetector"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultAttributes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.ContextAttributes"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultMergeable",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultPropertyInclusion",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonInclude.Include"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultSetterInfo",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonSetter.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultVisibility",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JsonAutoDetect.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFilters",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.FilterProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInjectableValues",
+      "parameters": [
+        "com.fasterxml.jackson.databind.InjectableValues"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMixInAnnotations",
+      "parameters": [
+        "java.util.Map<java.lang.Class<?>,java.lang.Class<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMixIns",
+      "parameters": [
+        "java.util.Map<java.lang.Class<?>,java.lang.Class<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPolymorphicTypeValidator",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPropertyNamingStrategy",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyNamingStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSerializerFactory",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.SerializerFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSubtypeResolver",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.SubtypeResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTypeFactory",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVisibility",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.VisibilityChecker<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectMapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "tokenStreamFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "treeToValue",
+      "parameters": [
+        "com.fasterxml.jackson.core.TreeNode",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateValue",
+      "parameters": [
+        "T",
+        "java.lang.Object"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "version",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.Version",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.core.Base64Variant"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.ContextAttributes"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.FilterProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.core.PrettyPrinter"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationFeature",
+        "com.fasterxml.jackson.databind.SerializationFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerFor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerWithDefaultPrettyPrinter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerWithType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writerWithView",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ObjectWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeTree",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.core.TreeNode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValue",
+      "parameters": [
+        "java.io.File",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValue",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeValueAsBytes",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

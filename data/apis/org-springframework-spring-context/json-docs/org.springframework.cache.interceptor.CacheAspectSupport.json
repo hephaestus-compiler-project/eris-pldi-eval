@@ -1,0 +1,292 @@
+{
+  "name": "org.springframework.cache.interceptor.CacheAspectSupport",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.BeanFactoryAware",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.beans.factory.SmartInitializingSingleton"
+  ],
+  "inherits": [
+    "org.springframework.cache.interceptor.AbstractCacheInvoker"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "afterSingletonsInstantiated",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearMetadataCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "java.util.function.Supplier<org.springframework.cache.interceptor.CacheErrorHandler>",
+        "java.util.function.Supplier<org.springframework.cache.interceptor.KeyGenerator>",
+        "java.util.function.Supplier<org.springframework.cache.interceptor.CacheResolver>",
+        "java.util.function.Supplier<org.springframework.cache.CacheManager>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperationInvoker",
+        "java.lang.Object",
+        "java.lang.reflect.Method",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBean",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheOperationMetadata",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperation",
+        "java.lang.reflect.Method",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.cache.interceptor.CacheAspectSupport.CacheOperationMetadata",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheOperationSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.cache.interceptor.CacheOperationSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCacheResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.cache.interceptor.CacheResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCaches",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperationInvocationContext<org.springframework.cache.interceptor.CacheOperation>",
+        "org.springframework.cache.interceptor.CacheResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<? extends org.springframework.cache.Cache>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getKeyGenerator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.cache.interceptor.KeyGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOperationContext",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperation",
+        "java.lang.reflect.Method",
+        "java.lang.Object[]",
+        "java.lang.Object",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.cache.interceptor.CacheAspectSupport.CacheOperationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeOperation",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperationInvoker"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "methodIdentification",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanFactory",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheManager",
+      "parameters": [
+        "org.springframework.cache.CacheManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheOperationSource",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperationSource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheOperationSources",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheOperationSource..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheResolver",
+      "parameters": [
+        "org.springframework.cache.interceptor.CacheResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setKeyGenerator",
+      "parameters": [
+        "org.springframework.cache.interceptor.KeyGenerator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

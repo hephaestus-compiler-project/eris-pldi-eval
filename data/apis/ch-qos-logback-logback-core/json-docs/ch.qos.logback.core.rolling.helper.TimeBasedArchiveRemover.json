@@ -1,0 +1,145 @@
+{
+  "name": "ch.qos.logback.core.rolling.helper.TimeBasedArchiveRemover",
+  "type_parameters": [],
+  "implements": [
+    "ch.qos.logback.core.rolling.helper.ArchiveRemover"
+  ],
+  "inherits": [
+    "ch.qos.logback.core.spi.ContextAwareBase"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "clean",
+      "parameters": [
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cleanAsynchronously",
+      "parameters": [
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.Future<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cleanPeriod",
+      "parameters": [
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "descendingSort",
+      "parameters": [
+        "java.io.File[]",
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFilesInPeriod",
+      "parameters": [
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.File[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPeriodOffsetForDeletionTarget",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxHistory",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTotalSizeCap",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "INACTIVITY_TOLERANCE_IN_MILLIS",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "UNINITIALIZED",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

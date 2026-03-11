@@ -1,0 +1,65 @@
+{
+  "name": "com.fasterxml.jackson.databind.module.SimpleValueInstantiators",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.deser.ValueInstantiators.Base"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "findValueInstantiator",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.BeanDescription",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.ValueInstantiator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addValueInstantiator",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleValueInstantiators",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleValueInstantiators",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_classMappings",
+      "type": "java.util.HashMap<com.fasterxml.jackson.databind.type.ClassKey,com.fasterxml.jackson.databind.deser.ValueInstantiator>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

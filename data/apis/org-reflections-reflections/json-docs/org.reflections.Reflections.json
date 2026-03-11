@@ -1,0 +1,495 @@
+{
+  "name": "org.reflections.Reflections",
+  "type_parameters": [],
+  "implements": [
+    "org.reflections.util.NameHelper"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "collect",
+      "parameters": [
+        "java.io.File",
+        "org.reflections.serializers.Serializer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collect",
+      "parameters": [
+        "java.lang.String",
+        "java.util.function.Predicate<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "expandSuperTypes",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.util.Set<java.lang.String>>",
+        "java.util.Map<java.lang.String,java.util.Set<java.lang.String>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAll",
+      "parameters": [
+        "org.reflections.scanners.Scanner"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfiguration",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.reflections.Configuration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructorsAnnotatedWith",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructorsWithSignature",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFieldsAnnotatedWith",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Field>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMemberUsage",
+      "parameters": [
+        "java.lang.reflect.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<java.lang.reflect.Member>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsAnnotatedWith",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsWithParameter",
+      "parameters": [
+        "java.lang.reflect.AnnotatedElement"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResources",
+      "parameters": [
+        "java.util.regex.Pattern"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStore",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.reflections.Store",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypesAnnotatedWith",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypesAnnotatedWith",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "merge",
+      "parameters": [
+        "org.reflections.Reflections"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "java.lang.String",
+        "org.reflections.serializers.Serializer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.File",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collect",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collect",
+      "parameters": [
+        "java.io.InputStream",
+        "org.reflections.serializers.Serializer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collect",
+      "parameters": [
+        "java.lang.String",
+        "java.util.function.Predicate<java.lang.String>",
+        "org.reflections.serializers.Serializer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.Reflections",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.reflections.util.QueryFunction<org.reflections.Store,T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructorsAnnotatedWith",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructorsWithParameter",
+      "parameters": [
+        "java.lang.reflect.AnnotatedElement"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Constructor>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFieldsAnnotatedWith",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Field>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMemberParameterNames",
+      "parameters": [
+        "java.lang.reflect.Member"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsAnnotatedWith",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsReturn",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodsWithSignature",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.reflect.Method>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResources",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSubTypesOf",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<java.lang.Class<? extends T>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypesAnnotatedWith",
+      "parameters": [
+        "java.lang.annotation.Annotation",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypesAnnotatedWith",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.File",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scan",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.util.Set<java.lang.String>>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "log",
+      "type": "org.slf4j.Logger",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "configuration",
+      "type": "org.reflections.Configuration",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "store",
+      "type": "org.reflections.Store",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,7164 @@
+{
+  "name": "org.apache.logging.log4j.spi.AbstractLogger",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.logging.log4j.spi.ExtendedLogger",
+    "org.apache.logging.log4j.spi.LocationAwareLogger",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "atDebug",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atFatal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atLevel",
+      "parameters": [
+        "org.apache.logging.log4j.Level"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atWarn",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "catching",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "catchingMsg",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enter",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enter",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.MessageSupplier..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enter",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entry",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entryMsg",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.MessageSupplier..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entryMsg",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exit",
+      "parameters": [
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exit",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFlowMessageFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.FlowMessageFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageFactory",
+      "parameters": [],
+      "type_parameters": [
+        "MF extends org.apache.logging.log4j.message.MessageFactory"
+      ],
+      "return_type": "MF",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRecursionDepth",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDebugEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isErrorEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isFatalEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInfoEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isTraceEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isWarnEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Marker"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printf",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requiresLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "throwing",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "T"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Throwable"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "throwingMsg",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceEntry",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceEntry",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [
+        "org.apache.logging.log4j.message.EntryMessage",
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "always",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atError",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atInfo",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atTrace",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "catching",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "catching",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkMessageFactory",
+      "parameters": [
+        "org.apache.logging.log4j.spi.ExtendedLogger",
+        "org.apache.logging.log4j.message.MessageFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enter",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enter",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entry",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entry",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "entryMsg",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exit",
+      "parameters": [
+        "java.lang.String",
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "exitMsg",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fatal",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLogBuilder",
+      "parameters": [
+        "org.apache.logging.log4j.Level"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.LogBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDebugEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "org.apache.logging.log4j.Level"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isErrorEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isFatalEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInfoEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isTraceEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isWarnEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logIfEnabled",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printf",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "throwing",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "T"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Throwable"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "throwing",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Throwable"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "trace",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceEntry",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceEntry",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceEntry",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.EntryMessage",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [
+        "org.apache.logging.log4j.message.EntryMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "traceExit",
+      "parameters": [
+        "java.lang.String",
+        "R"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.CharSequence",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.util.MessageSupplier"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.apache.logging.log4j.util.Supplier<?>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_FLOW_MESSAGE_FACTORY_CLASS",
+      "type": "java.lang.Class<? extends org.apache.logging.log4j.message.FlowMessageFactory>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENTRY_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EXIT_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "name",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CATCHING_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_MESSAGE_FACTORY_CLASS",
+      "type": "java.lang.Class<? extends org.apache.logging.log4j.message.MessageFactory>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EXCEPTION_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLOW_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THROWING_MARKER",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

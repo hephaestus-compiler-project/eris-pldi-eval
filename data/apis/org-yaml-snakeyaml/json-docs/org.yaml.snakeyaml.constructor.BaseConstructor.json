@@ -1,0 +1,613 @@
+{
+  "name": "org.yaml.snakeyaml.constructor.BaseConstructor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "checkData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructArrayStep2",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapping",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.MappingNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Object,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructObject",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructScalar",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.ScalarNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSequenceStep2",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode",
+        "java.util.Collection<java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSet",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<? extends java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createArray",
+      "parameters": [
+        "java.lang.Class<?>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultMap",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Object,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "finalizeConstruction",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyUtils",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.introspector.PropertyUtils",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAllowDuplicateKeys",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExplicitPropertyUtils",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newInstance",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newInstance",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newMap",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.MappingNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Object,java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postponeMapFilling",
+      "parameters": [
+        "java.util.Map<java.lang.Object,java.lang.Object>",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAllowDuplicateKeys",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEnumCaseSensitive",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWrappedToRootException",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTypeDescription",
+      "parameters": [
+        "org.yaml.snakeyaml.TypeDescription"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.TypeDescription",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructArray",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructDocument",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapping2ndStep",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.MappingNode",
+        "java.util.Map<java.lang.Object,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructObjectNoCheck",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSequence",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<? extends java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSet",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.MappingNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSet2ndStep",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.MappingNode",
+        "java.util.Set<java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultList",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultSet",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstructor",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.constructor.Construct",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLoadingConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.LoaderOptions",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSingleData",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnumCaseSensitive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isWrappedToRootException",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newInstance",
+      "parameters": [
+        "java.lang.Class<?>",
+        "org.yaml.snakeyaml.nodes.Node",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newList",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.SequenceNode"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newSet",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.CollectionNode<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postponeSetFilling",
+      "parameters": [
+        "java.util.Set<java.lang.Object>",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setComposer",
+      "parameters": [
+        "org.yaml.snakeyaml.composer.Composer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPropertyUtils",
+      "parameters": [
+        "org.yaml.snakeyaml.introspector.PropertyUtils"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "loadingConfig",
+      "type": "org.yaml.snakeyaml.LoaderOptions",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "rootTag",
+      "type": "org.yaml.snakeyaml.nodes.Tag",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "typeTags",
+      "type": "java.util.Map<org.yaml.snakeyaml.nodes.Tag,java.lang.Class<? extends java.lang.Object>>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "yamlConstructors",
+      "type": "java.util.Map<org.yaml.snakeyaml.nodes.Tag,org.yaml.snakeyaml.constructor.Construct>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "composer",
+      "type": "org.yaml.snakeyaml.composer.Composer",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "NOT_INSTANTIATED_OBJECT",
+      "type": "java.lang.Object",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "typeDefinitions",
+      "type": "java.util.Map<java.lang.Class<? extends java.lang.Object>,org.yaml.snakeyaml.TypeDescription>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "yamlClassConstructors",
+      "type": "java.util.Map<org.yaml.snakeyaml.nodes.NodeId,org.yaml.snakeyaml.constructor.Construct>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "yamlMultiConstructors",
+      "type": "java.util.Map<java.lang.String,org.yaml.snakeyaml.constructor.Construct>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

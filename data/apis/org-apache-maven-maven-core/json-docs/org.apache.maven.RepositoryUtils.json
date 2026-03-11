@@ -1,0 +1,218 @@
+{
+  "name": "org.apache.maven.RepositoryUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getLayout",
+      "parameters": [
+        "org.apache.maven.artifact.repository.ArtifactRepository"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWorkspace",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.repository.WorkspaceRepository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newArtifactType",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.maven.artifact.handler.ArtifactHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.artifact.ArtifactType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newArtifactTypeRegistry",
+      "parameters": [
+        "org.apache.maven.artifact.handler.manager.ArtifactHandlerManager"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.artifact.ArtifactTypeRegistry",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newHandler",
+      "parameters": [
+        "org.eclipse.aether.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.handler.ArtifactHandler",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "repositoriesEquals",
+      "parameters": [
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "repositoriesHashCode",
+      "parameters": [
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toArtifact",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.artifact.Artifact",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toArtifact",
+      "parameters": [
+        "org.eclipse.aether.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toArtifacts",
+      "parameters": [
+        "java.util.Collection<org.apache.maven.artifact.Artifact>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.eclipse.aether.artifact.Artifact>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toArtifacts",
+      "parameters": [
+        "java.util.Collection<org.apache.maven.artifact.Artifact>",
+        "java.util.Collection<? extends org.eclipse.aether.graph.DependencyNode>",
+        "java.util.List<java.lang.String>",
+        "org.eclipse.aether.graph.DependencyFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toDependency",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "java.util.Collection<org.apache.maven.model.Exclusion>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.graph.Dependency",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toDependency",
+      "parameters": [
+        "org.apache.maven.model.Dependency",
+        "org.eclipse.aether.artifact.ArtifactTypeRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.graph.Dependency",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toRepo",
+      "parameters": [
+        "org.apache.maven.artifact.repository.ArtifactRepository"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.repository.RemoteRepository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toRepos",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

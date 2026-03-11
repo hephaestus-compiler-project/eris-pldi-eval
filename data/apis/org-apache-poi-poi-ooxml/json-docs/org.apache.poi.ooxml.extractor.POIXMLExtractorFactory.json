@@ -1,0 +1,158 @@
+{
+  "name": "org.apache.poi.ooxml.extractor.POIXMLExtractorFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.extractor.ExtractorProvider"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.extractor.POITextExtractor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.OPCPackage"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ooxml.extractor.POIXMLTextExtractor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "org.apache.poi.poifs.filesystem.POIFSFileSystem"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.extractor.POITextExtractor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreferEventExtractor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAllThreadsPreferEventExtractors",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "accepts",
+      "parameters": [
+        "org.apache.poi.poifs.filesystem.FileMagic"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.InputStream",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.extractor.POITextExtractor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "org.apache.poi.poifs.filesystem.DirectoryNode",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.extractor.POITextExtractor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllThreadsPreferEventExtractors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadPrefersEventExtractors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setThreadPrefersEventExtractors",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

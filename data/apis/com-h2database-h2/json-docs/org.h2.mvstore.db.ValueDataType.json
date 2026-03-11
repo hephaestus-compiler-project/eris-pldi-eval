@@ -1,0 +1,228 @@
+{
+  "name": "org.h2.mvstore.db.ValueDataType",
+  "type_parameters": [],
+  "implements": [
+    "org.h2.mvstore.type.StatefulDataType<org.h2.engine.Database>"
+  ],
+  "inherits": [
+    "org.h2.mvstore.type.BasicDataType<org.h2.value.Value>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "compareValues",
+      "parameters": [
+        "org.h2.value.Value",
+        "org.h2.value.Value",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMemory",
+      "parameters": [
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "org.h2.mvstore.type.MetaType<org.h2.engine.Database>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "compare",
+      "parameters": [
+        "org.h2.value.Value",
+        "org.h2.value.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createStorage",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.Value[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.mvstore.db.ValueDataType.Factory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRowFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.result.RowFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.value.Value",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRowFactory",
+      "parameters": [
+        "org.h2.result.RowFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeLong",
+      "parameters": [
+        "org.h2.mvstore.WriteBuffer",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ValueDataType",
+      "parameters": [
+        "org.h2.engine.CastDataProvider",
+        "org.h2.value.CompareMode",
+        "org.h2.store.DataHandler",
+        "int[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ValueDataType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ValueDataType",
+      "parameters": [
+        "org.h2.engine.Database",
+        "int[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

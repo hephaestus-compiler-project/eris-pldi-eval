@@ -1,0 +1,73 @@
+{
+  "name": "org.apache.maven.plugin.BuildPluginManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "executeMojo",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "org.apache.maven.plugin.MojoExecution"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMojoDescriptor",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "java.lang.String",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.plugin.descriptor.MojoDescriptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPluginRealm",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "org.apache.maven.plugin.descriptor.PluginDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "org.codehaus.plexus.classworlds.realm.ClassRealm",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loadPlugin",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.plugin.descriptor.PluginDescriptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

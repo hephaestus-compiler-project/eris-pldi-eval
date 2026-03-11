@@ -1,0 +1,275 @@
+{
+  "name": "org.apache.logging.log4j.core.impl.Log4jContextFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.logging.log4j.spi.LoggerContextFactory",
+    "org.apache.logging.log4j.core.util.ShutdownCallbackRegistry"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.util.Map.Entry<java.lang.String,java.lang.Object>",
+        "boolean",
+        "java.net.URI",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.lang.Object",
+        "boolean",
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.lang.Object",
+        "boolean",
+        "java.util.List<java.net.URI>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSelector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.selector.ContextSelector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isShutdownHookEnabled",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shutdown",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addShutdownCallback",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.util.Cancellable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.lang.Object",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.lang.Object",
+        "boolean",
+        "org.apache.logging.log4j.core.config.ConfigurationSource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.ClassLoader",
+        "java.lang.Object",
+        "boolean",
+        "java.net.URI",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LoggerContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShutdownCallbackRegistry",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.util.ShutdownCallbackRegistry",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isClassLoaderDependent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeContext",
+      "parameters": [
+        "org.apache.logging.log4j.spi.LoggerContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jContextFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.selector.ContextSelector"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jContextFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.util.ShutdownCallbackRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jContextFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jContextFactory",
+      "parameters": [
+        "org.apache.logging.log4j.core.selector.ContextSelector",
+        "org.apache.logging.log4j.core.util.ShutdownCallbackRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

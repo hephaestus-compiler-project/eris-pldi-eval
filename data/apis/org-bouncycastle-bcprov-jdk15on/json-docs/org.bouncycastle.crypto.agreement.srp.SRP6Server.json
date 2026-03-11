@@ -1,0 +1,209 @@
+{
+  "name": "org.bouncycastle.crypto.agreement.srp.SRP6Server",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "calculateServerEvidenceMessage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateServerCredentials",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "init",
+      "parameters": [
+        "org.bouncycastle.crypto.params.SRP6GroupParameters",
+        "java.math.BigInteger",
+        "org.bouncycastle.crypto.Digest",
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyClientEvidenceMessage",
+      "parameters": [
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateSecret",
+      "parameters": [
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateSessionKey",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "init",
+      "parameters": [
+        "java.math.BigInteger",
+        "java.math.BigInteger",
+        "java.math.BigInteger",
+        "org.bouncycastle.crypto.Digest",
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "selectPrivateValue",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SRP6Server",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "b",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "digest",
+      "type": "org.bouncycastle.crypto.Digest",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "Key",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "M2",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "random",
+      "type": "java.security.SecureRandom",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "u",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "A",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "B",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "g",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "M1",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "N",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "S",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "v",
+      "type": "java.math.BigInteger",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

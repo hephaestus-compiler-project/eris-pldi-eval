@@ -1,0 +1,576 @@
+{
+  "name": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.logging.log4j.core.LogEvent"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canDeserialize",
+      "parameters": [
+        "java.io.Serializable"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createMemento",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.LogEvent",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deserialize",
+      "parameters": [
+        "java.io.Serializable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContextData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.util.ReadOnlyStringMap",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContextStack",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.ThreadContext.ContextStack",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLevel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.Level",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLoggerName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.message.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNanoTime",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadPriority",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThrownProxy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIncludeLocation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newBuilder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Serializable",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIncludeLocation",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toImmutable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeReplace",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "asBuilder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent.Builder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createEvent",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable",
+        "org.apache.logging.log4j.core.impl.ThrowableProxy",
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "org.apache.logging.log4j.ThreadContext.ContextStack",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createMemento",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContextMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstant",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.time.Instant",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLoggerFqcn",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMarker",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.Marker",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNanoClock",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.util.NanoClock",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.StackTraceElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThreadName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getThrown",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Throwable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTimeMillis",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEndOfBatch",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMessageImmutable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "org.apache.logging.log4j.core.impl.Log4jLogEvent",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Serializable",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEndOfBatch",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setNanoClock",
+      "parameters": [
+        "org.apache.logging.log4j.core.util.NanoClock"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.util.List<org.apache.logging.log4j.core.config.Property>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.util.List<org.apache.logging.log4j.core.config.Property>",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Log4jLogEvent",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable",
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "org.apache.logging.log4j.ThreadContext.ContextStack",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

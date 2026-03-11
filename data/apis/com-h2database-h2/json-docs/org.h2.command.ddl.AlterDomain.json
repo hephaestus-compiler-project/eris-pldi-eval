@@ -1,0 +1,70 @@
+{
+  "name": "org.h2.command.ddl.AlterDomain",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.h2.command.ddl.SchemaCommand"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "setDomainName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "update",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forAllDependencies",
+      "parameters": [
+        "org.h2.engine.SessionLocal",
+        "org.h2.schema.Domain",
+        "java.util.function.BiPredicate<org.h2.schema.Domain,org.h2.table.Column>",
+        "java.util.function.BiPredicate<org.h2.schema.Domain,org.h2.schema.Domain>",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIfDomainExists",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

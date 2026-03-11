@@ -1,0 +1,329 @@
+{
+  "name": "org.h2.expression.ExpressionVisitor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addDependency",
+      "parameters": [
+        "org.h2.engine.DbObject"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumnResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.HashSet<org.h2.table.ColumnResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumnsVisitor",
+      "parameters": [
+        "java.util.HashSet<org.h2.table.Column>",
+        "org.h2.table.Table"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDependencies",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.HashSet<org.h2.engine.DbObject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxDataModificationId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNotFromResolverVisitor",
+      "parameters": [
+        "org.h2.table.ColumnResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.ColumnResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDataModificationId",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "allColumnsForTableFilters",
+      "parameters": [
+        "org.h2.table.TableFilter[]",
+        "org.h2.command.query.AllColumnsForPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getColumnsVisitor",
+      "parameters": [
+        "org.h2.command.query.AllColumnsForPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDecrementQueryLevelVisitor",
+      "parameters": [
+        "java.util.HashSet<org.h2.table.ColumnResolver>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDependenciesVisitor",
+      "parameters": [
+        "java.util.HashSet<org.h2.engine.DbObject>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxModificationIdVisitor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOptimizableVisitor",
+      "parameters": [
+        "org.h2.table.Table"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.table.Table",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "incrementQueryLevel",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.h2.expression.ExpressionVisitor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DETERMINISTIC",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EVALUATABLE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "GET_COLUMNS1",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "GET_DEPENDENCIES",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INDEPENDENT_VISITOR",
+      "type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OPTIMIZABLE_AGGREGATE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "QUERY_COMPARABLE_VISITOR",
+      "type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "READONLY_VISITOR",
+      "type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DECREMENT_QUERY_LEVEL",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DETERMINISTIC_VISITOR",
+      "type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EVALUATABLE_VISITOR",
+      "type": "org.h2.expression.ExpressionVisitor",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "GET_COLUMNS2",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INDEPENDENT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NOT_FROM_RESOLVER",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "QUERY_COMPARABLE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "READONLY",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SET_MAX_DATA_MODIFICATION_ID",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

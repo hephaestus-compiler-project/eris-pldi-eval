@@ -1,0 +1,520 @@
+{
+  "name": "org.eclipse.jetty.server.Request",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.eclipse.jetty.util.Attributes",
+    "org.eclipse.jetty.io.Content.Source"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "addErrorListener",
+      "parameters": [
+        "java.util.function.Predicate<java.lang.Throwable>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addHttpStreamWrapper",
+      "parameters": [
+        "java.util.function.Function<org.eclipse.jetty.server.HttpStream,org.eclipse.jetty.server.HttpStream>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "as",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends org.eclipse.jetty.server.Request.Wrapper"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "asInputStream",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.InputStream",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "consumeAvailable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "demand",
+      "parameters": [
+        "java.lang.Runnable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "extractQueryParameters",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.Fields",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "extractQueryParameters",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.Fields",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.lang.Class<T>",
+        "java.util.function.Function<T,R>"
+      ],
+      "type_parameters": [
+        "T extends org.eclipse.jetty.server.Request.Wrapper",
+        "R"
+      ],
+      "return_type": "R",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getComponents",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.Components",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConnectionMetaData",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ConnectionMetaData",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentBytesRead",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.Context",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContextPath",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCookies",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.eclipse.jetty.http.HttpCookie>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHeaders",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.HttpFields",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getHttpURI",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.HttpURI",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocalAddr",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocales",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.util.Locale>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLocalPort",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNanoTime",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameters",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.Fields",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathInContext",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRemoteAddr",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRemotePort",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getServerName",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getServerPort",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSession",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.Session",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTimeStamp",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTrailers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.HttpFields",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTunnelSupport",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.TunnelSupport",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSecure",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newHttpURIFrom",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.http.HttpURI",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "push",
+      "parameters": [
+        "org.eclipse.jetty.http.MetaData.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "read",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.Content.Chunk",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toRedirectURI",
+      "parameters": [
+        "org.eclipse.jetty.server.Request",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unWrap",
+      "parameters": [
+        "org.eclipse.jetty.server.Request"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.Request",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CACHE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "COOKIE_ATTRIBUTE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

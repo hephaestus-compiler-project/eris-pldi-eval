@@ -1,0 +1,246 @@
+{
+  "name": "org.apache.poi.ss.formula.BaseFormulaEvaluator",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.ss.usermodel.FormulaEvaluator",
+    "org.apache.poi.ss.formula.WorkbookEvaluatorProvider"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "clearAllCachedResultValues",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluate",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.CellValue",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluateAllFormulaCells",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Workbook",
+        "org.apache.poi.ss.usermodel.FormulaEvaluator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluateFormulaCellValue",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.CellValue",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEvaluationWorkbook",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.formula.EvaluationWorkbook",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCellType",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.CellValue"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDebugEvaluationOutputForNextEval",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupEnvironment",
+      "parameters": [
+        "java.lang.String[]",
+        "org.apache.poi.ss.formula.BaseFormulaEvaluator[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_getWorkbookEvaluator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.formula.WorkbookEvaluator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRichTextString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.RichTextString",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluateAllFormulaCells",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Workbook"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluateFormulaCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.CellType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "evaluateInCell",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.usermodel.Cell",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCellType",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.CellType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCellValue",
+      "parameters": [
+        "org.apache.poi.ss.usermodel.Cell",
+        "org.apache.poi.ss.usermodel.CellValue"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreMissingWorkbooks",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupReferencedWorkbooks",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.apache.poi.ss.usermodel.FormulaEvaluator>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_bookEvaluator",
+      "type": "org.apache.poi.ss.formula.WorkbookEvaluator",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,114 @@
+{
+  "name": "org.springframework.cache.interceptor.LoggingCacheErrorHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.cache.interceptor.CacheErrorHandler"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getLogger",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleCacheClearError",
+      "parameters": [
+        "java.lang.RuntimeException",
+        "org.springframework.cache.Cache"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleCacheEvictError",
+      "parameters": [
+        "java.lang.RuntimeException",
+        "org.springframework.cache.Cache",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleCacheGetError",
+      "parameters": [
+        "java.lang.RuntimeException",
+        "org.springframework.cache.Cache",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleCachePutError",
+      "parameters": [
+        "java.lang.RuntimeException",
+        "org.springframework.cache.Cache",
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isLogStackTraces",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logCacheError",
+      "parameters": [
+        "java.util.function.Supplier<java.lang.String>",
+        "java.lang.RuntimeException"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

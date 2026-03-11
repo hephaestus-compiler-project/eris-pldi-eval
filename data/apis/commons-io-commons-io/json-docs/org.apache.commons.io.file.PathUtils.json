@@ -1,0 +1,1187 @@
+{
+  "name": "org.apache.commons.io.file.PathUtils",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "cleanDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyFileToDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "countDirectory",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParentDirectories",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.attribute.FileAttribute<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "current",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "delete",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteDirectory",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption[]",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteFile",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteOnExit",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "directoryAndFileContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption[]",
+        "java.nio.file.OpenOption[]",
+        "java.nio.file.FileVisitOption[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "directoryContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "int",
+        "java.nio.file.LinkOption[]",
+        "java.nio.file.FileVisitOption[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fileContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption[]",
+        "java.nio.file.OpenOption[]"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAclEntryList",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.nio.file.attribute.AclEntry>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDosFileAttributeView",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.DosFileAttributeView",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedFileTime",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.attribute.FileTime",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.FileTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedFileTime",
+      "parameters": [
+        "java.net.URI"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.FileTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPosixFileAttributeView",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.PosixFileAttributeView",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEmptyDirectory",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNewer",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.time.chrono.ChronoZonedDateTime<?>",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNewer",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.time.Instant",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNewer",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOlder",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.time.Instant",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOlder",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRegularFile",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newOutputStream",
+      "parameters": [
+        "java.nio.file.Path",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.OutputStream",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readAttributes",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.lang.Class<A>",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [
+        "A extends java.nio.file.attribute.BasicFileAttributes"
+      ],
+      "return_type": "A",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readBasicFileAttributes",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.BasicFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readDosFileAttributes",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.DosFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readPosixFileAttributes",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.PosixFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLastModifiedTime",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sizeOf",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sizeOfDirectory",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "touch",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFileTree",
+      "parameters": [
+        "T",
+        "java.nio.file.Path",
+        "java.util.Set<java.nio.file.FileVisitOption>",
+        "int"
+      ],
+      "type_parameters": [
+        "T extends java.nio.file.FileVisitor<? super java.nio.file.Path>"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFileTree",
+      "parameters": [
+        "T",
+        "java.net.URI"
+      ],
+      "type_parameters": [
+        "T extends java.nio.file.FileVisitor<? super java.nio.file.Path>"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "walk",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.PathFilter",
+        "int",
+        "boolean",
+        "java.nio.file.FileVisitOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.stream.Stream<java.nio.file.Path>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cleanDirectory",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [
+        "org.apache.commons.io.function.IOSupplier<java.io.InputStream>",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyFile",
+      "parameters": [
+        "java.net.URL",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyFileToDirectory",
+      "parameters": [
+        "java.net.URL",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "countDirectoryAsBigInteger",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParentDirectories",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption",
+        "java.nio.file.attribute.FileAttribute<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "delete",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "delete",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption[]",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteDirectory",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteFile",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteFile",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption[]",
+        "org.apache.commons.io.file.DeleteOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.file.Counters.PathCounters",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "directoryAndFileContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "directoryContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fileContentEquals",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "filter",
+      "parameters": [
+        "org.apache.commons.io.file.PathFilter",
+        "java.nio.file.Path..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAclFileAttributeView",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.AclFileAttributeView",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedFileTime",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.FileTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedFileTime",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.FileTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedFileTime",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.FileTime",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTempDirectory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEmpty",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEmptyFile",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNewer",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.attribute.FileTime",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNewer",
+      "parameters": [
+        "java.nio.file.Path",
+        "long",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOlder",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.attribute.FileTime",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isOlder",
+      "parameters": [
+        "java.nio.file.Path",
+        "long",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPosix",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newDirectoryStream",
+      "parameters": [
+        "java.nio.file.Path",
+        "org.apache.commons.io.file.PathFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.DirectoryStream<java.nio.file.Path>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "noFollowLinkOptionArray",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.nio.file.LinkOption[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readBasicFileAttributes",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.BasicFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readBasicFileAttributesUnchecked",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.BasicFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readOsFileAttributes",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.attribute.BasicFileAttributes",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readString",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.charset.Charset"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReadOnly",
+      "parameters": [
+        "java.nio.file.Path",
+        "boolean",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sizeOfAsBigInteger",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "sizeOfDirectoryAsBigInteger",
+      "parameters": [
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFileTree",
+      "parameters": [
+        "T",
+        "java.nio.file.Path"
+      ],
+      "type_parameters": [
+        "T extends java.nio.file.FileVisitor<? super java.nio.file.Path>"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFileTree",
+      "parameters": [
+        "T",
+        "java.lang.String",
+        "java.lang.String..."
+      ],
+      "type_parameters": [
+        "T extends java.nio.file.FileVisitor<? super java.nio.file.Path>"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "waitFor",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.time.Duration",
+        "java.nio.file.LinkOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeString",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.lang.CharSequence",
+        "java.nio.charset.Charset",
+        "java.nio.file.OpenOption..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.Path",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "EMPTY_DELETE_OPTION_ARRAY",
+      "type": "org.apache.commons.io.file.DeleteOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_FILE_VISIT_OPTION_ARRAY",
+      "type": "java.nio.file.FileVisitOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_OPEN_OPTION_ARRAY",
+      "type": "java.nio.file.OpenOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NOFOLLOW_LINK_OPTION_ARRAY",
+      "type": "java.nio.file.LinkOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_COPY_OPTIONS",
+      "type": "java.nio.file.CopyOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_FILE_ATTRIBUTE_ARRAY",
+      "type": "java.nio.file.attribute.FileAttribute<?>[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_LINK_OPTION_ARRAY",
+      "type": "java.nio.file.LinkOption[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_PATH_ARRAY",
+      "type": "java.nio.file.Path[]",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

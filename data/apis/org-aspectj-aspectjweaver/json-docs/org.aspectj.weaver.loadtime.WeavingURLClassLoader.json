@@ -1,0 +1,98 @@
+{
+  "name": "org.aspectj.weaver.loadtime.WeavingURLClassLoader",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.weaver.tools.WeavingClassLoader"
+  ],
+  "inherits": [
+    "org.aspectj.weaver.bcel.ExtensibleURLClassLoader"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "acceptClass",
+      "parameters": [
+        "java.lang.String",
+        "byte[]",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addURL",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defineClass",
+      "parameters": [
+        "java.lang.String",
+        "byte[]",
+        "java.security.CodeSource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAspectURLs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.net.URL[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBytes",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "WEAVING_ASPECT_PATH",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WEAVING_CLASS_PATH",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

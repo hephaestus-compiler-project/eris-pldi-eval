@@ -1,0 +1,285 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.ApplicationContextAware",
+    "org.springframework.beans.factory.InitializingBean"
+  ],
+  "inherits": [
+    "org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doResolveHandlerMethodException",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "org.springframework.web.method.HandlerMethod",
+        "java.lang.Exception"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ModelAndView",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getApplicationContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.ApplicationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.method.support.HandlerMethodArgumentResolverComposite",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentNegotiationManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.accept.ContentNegotiationManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExceptionHandlerAdviceCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<org.springframework.web.method.ControllerAdviceBean,org.springframework.web.method.annotation.ExceptionHandlerMethodResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExceptionHandlerMethod",
+      "parameters": [
+        "org.springframework.web.method.HandlerMethod",
+        "java.lang.Exception"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageConverters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasGlobalExceptionHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationContext",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentNegotiationManager",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCustomArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCustomReturnValueHandlers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setResponseBodyAdvice",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturnValueHandlers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

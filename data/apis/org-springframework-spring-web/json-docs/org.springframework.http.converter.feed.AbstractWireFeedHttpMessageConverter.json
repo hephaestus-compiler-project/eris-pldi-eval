@@ -1,0 +1,53 @@
+{
+  "name": "org.springframework.http.converter.feed.AbstractWireFeedHttpMessageConverter",
+  "type_parameters": [
+    "T extends com.rometools.rome.feed.WireFeed"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.http.converter.AbstractHttpMessageConverter<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "readInternal",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeInternal",
+      "parameters": [
+        "T",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_CHARSET",
+      "type": "java.nio.charset.Charset",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

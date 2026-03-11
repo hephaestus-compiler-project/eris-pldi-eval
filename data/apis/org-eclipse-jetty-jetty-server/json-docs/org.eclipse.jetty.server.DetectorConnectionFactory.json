@@ -1,0 +1,75 @@
+{
+  "name": "org.eclipse.jetty.server.DetectorConnectionFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.jetty.server.ConnectionFactory.Detecting"
+  ],
+  "inherits": [
+    "org.eclipse.jetty.server.AbstractConnectionFactory"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "detect",
+      "parameters": [
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ConnectionFactory.Detecting.Detection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newConnection",
+      "parameters": [
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.Connection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "nextProtocol",
+      "parameters": [
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint",
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "upgradeToConnectionFactory",
+      "parameters": [
+        "org.eclipse.jetty.server.ConnectionFactory",
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

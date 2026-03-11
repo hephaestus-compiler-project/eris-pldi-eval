@@ -1,0 +1,522 @@
+{
+  "name": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.BeanFactoryAware",
+    "org.springframework.beans.factory.InitializingBean"
+  ],
+  "inherits": [
+    "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDataBinderFactory",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.InvocableHandlerMethod>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.method.annotation.InitBinderDataBinderFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInvocableHandlerMethod",
+      "parameters": [
+        "org.springframework.web.method.HandlerMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeanFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.config.ConfigurableBeanFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCustomReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInitBinderArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastModifiedInternal",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "org.springframework.web.method.HandlerMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageConverters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getModelAndViewResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReactiveAdapterRegistry",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ReactiveAdapterRegistry",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWebBindingInitializer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.bind.support.WebBindingInitializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleInternal",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "org.springframework.web.method.HandlerMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ModelAndView",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeHandlerMethod",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "org.springframework.web.method.HandlerMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ModelAndView",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAsyncRequestTimeout",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanFactory",
+      "parameters": [
+        "org.springframework.beans.factory.BeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCacheSecondsForSessionAttributeHandlers",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCallableInterceptors",
+      "parameters": [
+        "java.util.List<org.springframework.web.context.request.async.CallableProcessingInterceptor>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContentNegotiationManager",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCustomArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCustomReturnValueHandlers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDeferredResultInterceptors",
+      "parameters": [
+        "java.util.List<org.springframework.web.context.request.async.DeferredResultProcessingInterceptor>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreDefaultModelOnRedirect",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInitBinderArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setModelAndViewResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParameterNameDiscoverer",
+      "parameters": [
+        "org.springframework.core.ParameterNameDiscoverer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReactiveAdapterRegistry",
+      "parameters": [
+        "org.springframework.core.ReactiveAdapterRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRequestBodyAdvice",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdvice>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setResponseBodyAdvice",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturnValueHandlers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSessionAttributeStore",
+      "parameters": [
+        "org.springframework.web.bind.support.SessionAttributeStore"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSynchronizeOnSession",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTaskExecutor",
+      "parameters": [
+        "org.springframework.core.task.AsyncTaskExecutor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWebBindingInitializer",
+      "parameters": [
+        "org.springframework.web.bind.support.WebBindingInitializer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsInternal",
+      "parameters": [
+        "org.springframework.web.method.HandlerMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "INIT_BINDER_METHODS",
+      "type": "org.springframework.util.ReflectionUtils.MethodFilter",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MODEL_ATTRIBUTE_METHODS",
+      "type": "org.springframework.util.ReflectionUtils.MethodFilter",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,229 @@
+{
+  "name": "org.aspectj.bridge.MessageHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.aspectj.bridge.IMessageHolder"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "clearMessages",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dontIgnore",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrors",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUnmodifiableListView",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.bridge.IMessage>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWarnings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMessage",
+      "parameters": [
+        "org.aspectj.bridge.IMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasAnyMessage",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignore",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "init",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "init",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIgnoring",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "numMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInterceptor",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "handleMessageResult",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ignoring",
+      "type": "java.util.List<org.aspectj.bridge.IMessage.Kind>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "interceptor",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "messages",
+      "type": "java.util.ArrayList<org.aspectj.bridge.IMessage>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

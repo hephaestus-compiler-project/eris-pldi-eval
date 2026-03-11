@@ -1,0 +1,541 @@
+{
+  "name": "com.sun.xml.bind.UnmarshallerImpl",
+  "type_parameters": [],
+  "implements": [
+    "javax.xml.bind.ValidationEventHandler",
+    "java.io.Closeable"
+  ],
+  "inherits": [
+    "javax.xml.bind.helpers.AbstractUnmarshallerImpl"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createUnmarshalException",
+      "parameters": [
+        "org.xml.sax.SAXException"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.xml.bind.UnmarshalException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "finalize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAttachmentUnmarshaller",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.bind.attachment.AttachmentUnmarshaller",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getListener",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.bind.Unmarshaller.Listener",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.validation.Schema",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getXMLReader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.xml.sax.XMLReader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasEventHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "needsInterning",
+      "parameters": [
+        "org.xml.sax.XMLReader"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAttachmentUnmarshaller",
+      "parameters": [
+        "javax.xml.bind.attachment.AttachmentUnmarshaller"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setProperty",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValidating",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.stream.XMLEventReader",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.xml.bind.JAXBElement<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.stream.XMLStreamReader",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.xml.bind.JAXBElement<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.transform.Source",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.xml.bind.JAXBElement<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "org.w3c.dom.Node",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.xml.bind.JAXBElement<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "org.xml.sax.XMLReader",
+        "org.xml.sax.InputSource",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.xml.bind.JAXBElement<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal0",
+      "parameters": [
+        "javax.xml.stream.XMLStreamReader",
+        "com.sun.xml.bind.v2.runtime.JaxBeanInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal0",
+      "parameters": [
+        "org.w3c.dom.Node",
+        "com.sun.xml.bind.v2.runtime.JaxBeanInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createUnmarshallerHandler",
+      "parameters": [
+        "com.sun.xml.bind.unmarshaller.InfosetScanner",
+        "boolean",
+        "com.sun.xml.bind.v2.runtime.JaxBeanInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "com.sun.xml.bind.v2.runtime.unmarshaller.XmlVisitor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAdapter",
+      "parameters": [
+        "java.lang.Class<A>"
+      ],
+      "type_parameters": [
+        "A extends javax.xml.bind.annotation.adapters.XmlAdapter"
+      ],
+      "return_type": "A",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeanInfo",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.sun.xml.bind.v2.runtime.JaxBeanInfo<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEventHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.bind.ValidationEventHandler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProperty",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUnmarshallerHandler",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.xml.bind.UnmarshallerHandler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleEvent",
+      "parameters": [
+        "javax.xml.bind.ValidationEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidating",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAdapter",
+      "parameters": [
+        "java.lang.Class<A>",
+        "A"
+      ],
+      "type_parameters": [
+        "A extends javax.xml.bind.annotation.adapters.XmlAdapter"
+      ],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setListener",
+      "parameters": [
+        "javax.xml.bind.Unmarshaller.Listener"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSchema",
+      "parameters": [
+        "javax.xml.validation.Schema"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.stream.XMLEventReader"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.stream.XMLStreamReader"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "javax.xml.transform.sax.SAXSource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "org.w3c.dom.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal",
+      "parameters": [
+        "org.xml.sax.XMLReader",
+        "org.xml.sax.InputSource"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal0",
+      "parameters": [
+        "java.io.InputStream",
+        "com.sun.xml.bind.v2.runtime.JaxBeanInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unmarshal0",
+      "parameters": [
+        "javax.xml.transform.Source",
+        "com.sun.xml.bind.v2.runtime.JaxBeanInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "coordinator",
+      "type": "com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallingContext",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "context",
+      "type": "com.sun.xml.bind.v2.runtime.JAXBContextImpl",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FACTORY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

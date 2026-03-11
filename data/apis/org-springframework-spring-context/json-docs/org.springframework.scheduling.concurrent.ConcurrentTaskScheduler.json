@@ -1,0 +1,154 @@
+{
+  "name": "org.springframework.scheduling.concurrent.ConcurrentTaskScheduler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.scheduling.TaskScheduler"
+  ],
+  "inherits": [
+    "org.springframework.scheduling.concurrent.ConcurrentTaskExecutor"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getClock",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.Clock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "schedule",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "schedule",
+      "parameters": [
+        "java.lang.Runnable",
+        "org.springframework.scheduling.Trigger"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleAtFixedRate",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleAtFixedRate",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleWithFixedDelay",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "scheduleWithFixedDelay",
+      "parameters": [
+        "java.lang.Runnable",
+        "java.time.Instant",
+        "java.time.Duration"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.ScheduledFuture<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setClock",
+      "parameters": [
+        "java.time.Clock"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setErrorHandler",
+      "parameters": [
+        "org.springframework.util.ErrorHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setScheduledExecutor",
+      "parameters": [
+        "java.util.concurrent.ScheduledExecutorService"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

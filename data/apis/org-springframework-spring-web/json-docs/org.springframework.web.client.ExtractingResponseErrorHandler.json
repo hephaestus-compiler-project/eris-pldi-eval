@@ -1,0 +1,82 @@
+{
+  "name": "org.springframework.web.client.ExtractingResponseErrorHandler",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.web.client.DefaultResponseErrorHandler"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "handleError",
+      "parameters": [
+        "org.springframework.http.client.ClientHttpResponse",
+        "org.springframework.http.HttpStatusCode"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasError",
+      "parameters": [
+        "org.springframework.http.HttpStatusCode"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSeriesMapping",
+      "parameters": [
+        "java.util.Map<org.springframework.http.HttpStatus.Series,java.lang.Class<? extends org.springframework.web.client.RestClientException>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStatusMapping",
+      "parameters": [
+        "java.util.Map<org.springframework.http.HttpStatusCode,java.lang.Class<? extends org.springframework.web.client.RestClientException>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

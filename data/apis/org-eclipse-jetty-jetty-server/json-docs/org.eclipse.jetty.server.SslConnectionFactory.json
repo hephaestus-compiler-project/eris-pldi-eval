@@ -1,0 +1,205 @@
+{
+  "name": "org.eclipse.jetty.server.SslConnectionFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.eclipse.jetty.server.ConnectionFactory.Detecting",
+    "org.eclipse.jetty.server.ConnectionFactory.Configuring"
+  ],
+  "inherits": [
+    "org.eclipse.jetty.server.AbstractConnectionFactory"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "configure",
+      "parameters": [
+        "org.eclipse.jetty.io.AbstractConnection",
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.AbstractConnection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "org.eclipse.jetty.server.Connector"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "detect",
+      "parameters": [
+        "java.nio.ByteBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.server.ConnectionFactory.Detecting.Detection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doStart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNextProtocol",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSslContextFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.util.ssl.SslContextFactory.Server",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDirectBuffersForDecryption",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDirectBuffersForEncryption",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnsureSecureRequestCustomizer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newConnection",
+      "parameters": [
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.Connection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newSslConnection",
+      "parameters": [
+        "org.eclipse.jetty.server.Connector",
+        "org.eclipse.jetty.io.EndPoint",
+        "javax.net.ssl.SSLEngine"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.ssl.SslConnection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDirectBuffersForDecryption",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDirectBuffersForEncryption",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEnsureSecureRequestCustomizer",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

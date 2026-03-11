@@ -1,0 +1,264 @@
+{
+  "name": "org.bouncycastle.cms.SignerInformation",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getContentDigest",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCounterSignatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.SignerInformationStore",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDigestAlgorithmID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodedSignedAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncryptionAlgParams",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignature",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUnsignedAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "AttributeTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCounterSignature",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toASN1Structure",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "SignerInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCounterSigners",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformation",
+        "org.bouncycastle.cms.SignerInformationStore"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.SignerInformation",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDigestAlgOID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDigestAlgParams",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncryptionAlgOID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.SignerId",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignedAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "AttributeTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVersion",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceUnsignedAttributes",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformation",
+        "AttributeTable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.SignerInformation",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verify",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformationVerifier"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "encryptionAlgorithm",
+      "type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "signedAttributeSet",
+      "type": "org.bouncycastle.asn1.ASN1Set",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "digestAlgorithm",
+      "type": "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "info",
+      "type": "SignerInfo",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "unsignedAttributeSet",
+      "type": "org.bouncycastle.asn1.ASN1Set",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

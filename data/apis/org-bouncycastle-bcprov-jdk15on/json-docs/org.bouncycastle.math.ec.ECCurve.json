@@ -1,0 +1,483 @@
+{
+  "name": "org.bouncycastle.math.ec.ECCurve",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "checkPoints",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "cloneCurve",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECCurve",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCacheSafeLookupTable",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECLookupTable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPoint",
+      "parameters": [
+        "java.math.BigInteger",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRawPoint",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECFieldElement",
+        "org.bouncycastle.math.ec.ECFieldElement",
+        "org.bouncycastle.math.ec.ECFieldElement[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decompressPoint",
+      "parameters": [
+        "int",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getA",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECFieldElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getB",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECFieldElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCoordinateSystem",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getField",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.field.FiniteField",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInfinity",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hashCode",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidFieldElement",
+      "parameters": [
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "normalizeAll",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint[]",
+        "int",
+        "int",
+        "org.bouncycastle.math.ec.ECFieldElement"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "randomFieldElement",
+      "parameters": [
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECFieldElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supportsCoordinateSystem",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkPoint",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkPoints",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECCurve.Config",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultMultiplier",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECMultiplier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRawPoint",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECFieldElement",
+        "org.bouncycastle.math.ec.ECFieldElement"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "decodePoint",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "equals",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECCurve"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromBigInteger",
+      "parameters": [
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECFieldElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllCoordinateSystems",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCofactor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.math.BigInteger",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEndomorphism",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.endo.ECEndomorphism",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFieldSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMultiplier",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECMultiplier",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreCompInfo",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.PreCompInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "importPoint",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "normalizeAll",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "precompute",
+      "parameters": [
+        "org.bouncycastle.math.ec.ECPoint",
+        "java.lang.String",
+        "org.bouncycastle.math.ec.PreCompCallback"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.PreCompInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "randomFieldElementMult",
+      "parameters": [
+        "java.security.SecureRandom"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECFieldElement",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validatePoint",
+      "parameters": [
+        "java.math.BigInteger",
+        "java.math.BigInteger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.math.ec.ECPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

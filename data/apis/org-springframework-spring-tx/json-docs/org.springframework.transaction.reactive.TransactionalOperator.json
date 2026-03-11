@@ -1,0 +1,86 @@
+{
+  "name": "org.springframework.transaction.reactive.TransactionalOperator",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "create",
+      "parameters": [
+        "org.springframework.transaction.ReactiveTransactionManager"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.transaction.reactive.TransactionalOperator",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "org.springframework.transaction.ReactiveTransactionManager",
+        "org.springframework.transaction.TransactionDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.transaction.reactive.TransactionalOperator",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "org.springframework.transaction.reactive.TransactionCallback<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transactional",
+      "parameters": [
+        "reactor.core.publisher.Flux<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "reactor.core.publisher.Flux<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "transactional",
+      "parameters": [
+        "reactor.core.publisher.Mono<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "reactor.core.publisher.Mono<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

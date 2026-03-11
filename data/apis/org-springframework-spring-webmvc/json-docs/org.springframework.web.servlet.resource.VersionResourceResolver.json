@@ -1,0 +1,125 @@
+{
+  "name": "org.springframework.web.servlet.resource.VersionResourceResolver",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.web.servlet.resource.AbstractResourceResolver"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addContentVersionStrategy",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.resource.VersionResourceResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFixedVersionStrategy",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.resource.VersionResourceResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addVersionStrategy",
+      "parameters": [
+        "org.springframework.web.servlet.resource.VersionStrategy",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.resource.VersionResourceResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStrategyForPath",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.resource.VersionStrategy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStrategyMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.springframework.web.servlet.resource.VersionStrategy>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveResourceInternal",
+      "parameters": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "java.lang.String",
+        "java.util.List<? extends org.springframework.core.io.Resource>",
+        "org.springframework.web.servlet.resource.ResourceResolverChain"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.Resource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveUrlPathInternal",
+      "parameters": [
+        "java.lang.String",
+        "java.util.List<? extends org.springframework.core.io.Resource>",
+        "org.springframework.web.servlet.resource.ResourceResolverChain"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setStrategyMap",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.springframework.web.servlet.resource.VersionStrategy>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

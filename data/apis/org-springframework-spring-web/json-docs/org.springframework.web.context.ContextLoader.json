@@ -1,0 +1,177 @@
+{
+  "name": "org.springframework.web.context.ContextLoader",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "closeWebApplicationContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureAndRefreshWebApplicationContext",
+      "parameters": [
+        "org.springframework.web.context.ConfigurableWebApplicationContext",
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createWebApplicationContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.context.WebApplicationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "customizeContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext",
+        "org.springframework.web.context.ConfigurableWebApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineContextClass",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineContextInitializerClasses",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Class<org.springframework.context.ApplicationContextInitializer<org.springframework.context.ConfigurableApplicationContext>>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCurrentWebApplicationContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.context.WebApplicationContext",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initWebApplicationContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.context.WebApplicationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "loadParentContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.ApplicationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setContextInitializers",
+      "parameters": [
+        "org.springframework.context.ApplicationContextInitializer<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "CONFIG_LOCATION_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONTEXT_CLASS_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONTEXT_ID_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONTEXT_INITIALIZER_CLASSES_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "GLOBAL_INITIALIZER_CLASSES_PARAM",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

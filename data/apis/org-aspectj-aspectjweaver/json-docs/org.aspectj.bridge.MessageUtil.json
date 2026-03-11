@@ -1,0 +1,860 @@
+{
+  "name": "org.aspectj.bridge.MessageUtil",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "abort",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "abort",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "abort",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "abort",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addExtraSourceLocations",
+      "parameters": [
+        "org.aspectj.bridge.IMessage",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "debug",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.bridge.ISourceLocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fail",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fail",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fail",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fail",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getKind",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage.Kind",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessages",
+      "parameters": [
+        "java.util.List<org.aspectj.bridge.IMessage>",
+        "org.aspectj.bridge.IMessage.Kind"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.bridge.IMessage>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHolder",
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.bridge.IMessage>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessagesExcept",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHolder",
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleAll",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "org.aspectj.bridge.IMessage[]",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleAll",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "org.aspectj.bridge.IMessageHolder",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleAll",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "org.aspectj.bridge.IMessageHolder",
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleAllExcept",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "org.aspectj.bridge.IMessageHolder",
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handlerPrintStream",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "org.aspectj.bridge.IMessage.Kind",
+        "java.io.OutputStream",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.PrintStream",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "info",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeSelector",
+      "parameters": [
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "numMessages",
+      "parameters": [
+        "java.util.List<org.aspectj.bridge.IMessage>",
+        "org.aspectj.bridge.IMessage.Kind",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "print",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "print",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "print",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder",
+        "java.lang.String",
+        "org.aspectj.bridge.MessageUtil.IMessageRenderer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "print",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder",
+        "java.lang.String",
+        "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+        "org.aspectj.bridge.IMessageHandler"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "print",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder",
+        "java.lang.String",
+        "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+        "org.aspectj.bridge.IMessageHandler",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printMessageCounts",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "printMessageCounts",
+      "parameters": [
+        "java.io.PrintStream",
+        "org.aspectj.bridge.IMessageHolder",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "renderCounts",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "renderMessage",
+      "parameters": [
+        "org.aspectj.bridge.IMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "renderMessage",
+      "parameters": [
+        "org.aspectj.bridge.IMessage",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "renderMessageLine",
+      "parameters": [
+        "org.aspectj.bridge.IMessage",
+        "int",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "renderSourceLocation",
+      "parameters": [
+        "org.aspectj.bridge.ISourceLocation"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toShortString",
+      "parameters": [
+        "org.aspectj.bridge.IMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitMessages",
+      "parameters": [
+        "java.util.Collection<org.aspectj.bridge.IMessage>",
+        "org.aspectj.bridge.IMessageHandler",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessage[]",
+        "org.aspectj.bridge.IMessageHandler",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitMessages",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHolder",
+        "org.aspectj.bridge.IMessageHandler",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "java.lang.String",
+        "org.aspectj.bridge.ISourceLocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "warn",
+      "parameters": [
+        "org.aspectj.bridge.IMessageHandler",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ABORT_NOMESSAGE",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ABORT_NOTHING_TO_RUN",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ERROR_NOMESSAGE",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FAIL_INCOMPLETE",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FAIL_NOMESSAGE",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_ALL",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_LABEL",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_LABEL_NOLOC",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_LINE",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_LINE_FORCE_LOC",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_MOST",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_SCALED",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_SHORT",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_TOSTRING",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MESSAGE_WIDELINE",
+      "type": "org.aspectj.bridge.MessageUtil.IMessageRenderer",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_ABORT",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_ABORT_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_ALL",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_DEBUG",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_DEBUG_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_ERROR",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_ERROR_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_FAIL",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_FAIL_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_INFO",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_INFO_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_WARNING",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PICK_WARNING_PLUS",
+      "type": "org.aspectj.bridge.IMessageHandler",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WARNING_NOMESSAGE",
+      "type": "org.aspectj.bridge.IMessage",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

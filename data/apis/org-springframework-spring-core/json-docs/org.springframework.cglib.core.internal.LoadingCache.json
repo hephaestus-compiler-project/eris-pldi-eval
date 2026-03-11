@@ -1,0 +1,86 @@
+{
+  "name": "org.springframework.cglib.core.internal.LoadingCache",
+  "type_parameters": [
+    "K",
+    "KK",
+    "V"
+  ],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createEntry",
+      "parameters": [
+        "K",
+        "KK",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "K"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "identity",
+      "parameters": [],
+      "type_parameters": [
+        "K"
+      ],
+      "return_type": "org.springframework.cglib.core.internal.Function<K,K>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "IDENTITY",
+      "type": "org.springframework.cglib.core.internal.Function",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "keyMapper",
+      "type": "org.springframework.cglib.core.internal.Function<K,KK>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "loader",
+      "type": "org.springframework.cglib.core.internal.Function<K,V>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "map",
+      "type": "java.util.concurrent.ConcurrentMap<KK,java.lang.Object>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

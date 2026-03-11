@@ -1,0 +1,942 @@
+{
+  "name": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.logging.log4j.core.config.ConfigurationAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getEscapeChar",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "char",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVariablePrefixMatcher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVariableSuffixMatcher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.String",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.Object",
+        "java.util.Map<java.lang.String,java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.Object",
+        "java.util.Properties"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.StringBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "java.lang.StringBuffer"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "java.lang.StringBuilder"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveVariable",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.String",
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.LookupResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEnableSubstitutionInVariables",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueDelimiter",
+      "parameters": [
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueDelimiterMatcher",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrMatcher"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariablePrefix",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariableResolver",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariableSuffix",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "substitute",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendWithSeparators",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "java.lang.Iterable<?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValueDelimiterMatcher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVariableResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrLookup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnableSubstitutionInVariables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuffer",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.Object",
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.StringBuffer",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replace",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuffer",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "java.lang.StringBuffer",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceIn",
+      "parameters": [
+        "java.lang.StringBuilder",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setConfiguration",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEscapeChar",
+      "parameters": [
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueDelimiter",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariablePrefix",
+      "parameters": [
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariablePrefixMatcher",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrMatcher"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariableSuffix",
+      "parameters": [
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVariableSuffixMatcher",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrMatcher"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.lookup.StrSubstitutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String",
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "java.util.Properties"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup",
+        "java.lang.String",
+        "java.lang.String",
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "char"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "char",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "org.apache.logging.log4j.core.lookup.StrMatcher"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "java.util.Map<java.lang.String,java.lang.String>",
+        "java.lang.String",
+        "java.lang.String",
+        "char",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup",
+        "java.lang.String",
+        "java.lang.String",
+        "char",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "StrSubstitutor",
+      "parameters": [
+        "org.apache.logging.log4j.core.lookup.StrLookup",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "org.apache.logging.log4j.core.lookup.StrMatcher",
+        "char",
+        "org.apache.logging.log4j.core.lookup.StrMatcher"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_PREFIX",
+      "type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_VALUE_DELIMITER",
+      "type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_VALUE_ESCAPE_DELIMITER",
+      "type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_ESCAPE",
+      "type": "char",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_SUFFIX",
+      "type": "org.apache.logging.log4j.core.lookup.StrMatcher",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_VALUE_DELIMITER_STRING",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ESCAPE_DELIMITER_STRING",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

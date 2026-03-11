@@ -1,0 +1,141 @@
+{
+  "name": "org.springframework.web.accept.AbstractMappingContentNegotiationStrategy",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.web.accept.ContentNegotiationStrategy"
+  ],
+  "inherits": [
+    "org.springframework.web.accept.MappingMediaTypeFileExtensionResolver"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getMediaTypeKey",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleMatch",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleNoMatch",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.MediaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isIgnoreUnknownExtensions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUseRegisteredExtensionsOnly",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveMediaTypeKey",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveMediaTypes",
+      "parameters": [
+        "org.springframework.web.context.request.NativeWebRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoreUnknownExtensions",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUseRegisteredExtensionsOnly",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,221 @@
+{
+  "name": "org.reflections.util.QueryFunction",
+  "type_parameters": [
+    "C",
+    "T"
+  ],
+  "implements": [],
+  "inherits": [
+    "java.util.function.Function<C,java.util.Set<T>>",
+    "org.reflections.util.NameHelper"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "apply",
+      "parameters": [
+        "C"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "as",
+      "parameters": [
+        "java.lang.Class<? extends R>",
+        "java.lang.ClassLoader..."
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "asString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.reflections.util.QueryFunction<C,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "filter",
+      "parameters": [
+        "java.util.function.Predicate<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.util.QueryFunction<C,T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getAll",
+      "parameters": [
+        "java.util.function.Function<T,org.reflections.util.QueryFunction<C,R>>",
+        "java.util.function.Function<R,T>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "map",
+      "parameters": [
+        "java.util.function.Function<? super T,? extends R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "single",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "C",
+        "T"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<org.reflections.Store,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "add",
+      "parameters": [
+        "org.reflections.util.QueryFunction<C,T>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "as",
+      "parameters": [],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,java.lang.Class<? extends R>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "asClass",
+      "parameters": [
+        "java.lang.ClassLoader..."
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,java.lang.Class<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "empty",
+      "parameters": [],
+      "type_parameters": [
+        "C",
+        "T"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<org.reflections.Store,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "flatMap",
+      "parameters": [
+        "java.util.function.Function<T,? extends java.util.function.Function<C,java.util.Set<R>>>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<C,R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getAll",
+      "parameters": [
+        "java.util.function.Function<T,org.reflections.util.QueryFunction<C,T>>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.reflections.util.QueryFunction<C,T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "set",
+      "parameters": [
+        "java.util.Collection<T>"
+      ],
+      "type_parameters": [
+        "C",
+        "T"
+      ],
+      "return_type": "org.reflections.util.QueryFunction<org.reflections.Store,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

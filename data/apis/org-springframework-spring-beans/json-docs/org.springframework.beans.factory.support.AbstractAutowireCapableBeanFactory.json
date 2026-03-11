@@ -1,0 +1,807 @@
+{
+  "name": "org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.config.AutowireCapableBeanFactory"
+  ],
+  "inherits": [
+    "org.springframework.beans.factory.support.AbstractBeanFactory"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "applyBeanPostProcessorsAfterInitialization",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyBeanPostProcessorsBeforeInitialization",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyBeanPostProcessorsBeforeInstantiation",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyBeanPropertyValues",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyMergedBeanDefinitionPostProcessors",
+      "parameters": [
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Class<?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyPropertyValues",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.config.BeanDefinition",
+        "org.springframework.beans.BeanWrapper",
+        "org.springframework.beans.PropertyValues"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowire",
+      "parameters": [
+        "java.lang.Class<?>",
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowireBean",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowireBeanProperties",
+      "parameters": [
+        "java.lang.Object",
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowireByName",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.AbstractBeanDefinition",
+        "org.springframework.beans.BeanWrapper",
+        "org.springframework.beans.MutablePropertyValues"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowireByType",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.AbstractBeanDefinition",
+        "org.springframework.beans.BeanWrapper",
+        "org.springframework.beans.MutablePropertyValues"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "autowireConstructor",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.reflect.Constructor<?>[]",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.BeanWrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkDependencies",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.AbstractBeanDefinition",
+        "java.beans.PropertyDescriptor[]",
+        "org.springframework.beans.PropertyValues"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearSingletonCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureBean",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copyConfigurationFrom",
+      "parameters": [
+        "org.springframework.beans.factory.config.ConfigurableBeanFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBean",
+      "parameters": [
+        "java.lang.Class<?>",
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBean",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBean",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBeanInstance",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.BeanWrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "destroyBean",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineConstructorsFromBeanPostProcessors",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Constructor<?>[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineTargetType",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doCreateBean",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "filterPropertyDescriptorsForDependencyCheck",
+      "parameters": [
+        "org.springframework.beans.BeanWrapper"
+      ],
+      "type_parameters": [],
+      "return_type": "java.beans.PropertyDescriptor[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "filterPropertyDescriptorsForDependencyCheck",
+      "parameters": [
+        "org.springframework.beans.BeanWrapper",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.beans.PropertyDescriptor[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEarlyBeanReference",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstantiationStrategy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.factory.support.InstantiationStrategy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectForBeanInstance",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameterNameDiscoverer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ParameterNameDiscoverer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeForFactoryBean",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ResolvableType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeForFactoryMethod",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreDependencyInterface",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreDependencyType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initializeBean",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initializeBean",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "instantiateBean",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.BeanWrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "instantiateUsingFactoryMethod",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Object[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.beans.BeanWrapper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeCustomInitMethod",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "invokeInitMethods",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAllowCircularReferences",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isAllowRawInjectionDespiteWrapping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExcludedFromDependencyCheck",
+      "parameters": [
+        "java.beans.PropertyDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "obtainInstanceFromSupplier",
+      "parameters": [
+        "java.util.function.Supplier<?>",
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "populateBean",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "org.springframework.beans.BeanWrapper"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postProcessObjectFromFactoryBean",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "predictBeanType",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeSingleton",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveBeanByName",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.config.DependencyDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveBeforeInstantiation",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.beans.factory.support.RootBeanDefinition"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveDependency",
+      "parameters": [
+        "org.springframework.beans.factory.config.DependencyDescriptor",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAllowCircularReferences",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAllowRawInjectionDespiteWrapping",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInstantiationStrategy",
+      "parameters": [
+        "org.springframework.beans.factory.support.InstantiationStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParameterNameDiscoverer",
+      "parameters": [
+        "org.springframework.core.ParameterNameDiscoverer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unsatisfiedNonSimpleProperties",
+      "parameters": [
+        "org.springframework.beans.factory.support.AbstractBeanDefinition",
+        "org.springframework.beans.BeanWrapper"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

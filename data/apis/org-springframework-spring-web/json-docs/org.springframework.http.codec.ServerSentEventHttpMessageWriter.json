@@ -1,0 +1,90 @@
+{
+  "name": "org.springframework.http.codec.ServerSentEventHttpMessageWriter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.codec.HttpMessageWriter<java.lang.Object>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canWrite",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncoder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.codec.Encoder<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWritableMediaTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<?>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.server.reactive.ServerHttpRequest",
+        "org.springframework.http.server.reactive.ServerHttpResponse",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "org.reactivestreams.Publisher<?>",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.http.MediaType",
+        "org.springframework.http.ReactiveHttpOutputMessage",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Mono<java.lang.Void>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,396 @@
+{
+  "name": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addArtifact",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCircularDependencyException",
+      "parameters": [
+        "org.apache.maven.artifact.resolver.CyclicDependencyException"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addErrorArtifactException",
+      "parameters": [
+        "org.apache.maven.artifact.resolver.ArtifactResolutionException"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMetadataResolutionException",
+      "parameters": [
+        "org.apache.maven.artifact.resolver.ArtifactResolutionException"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMissingArtifact",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addVersionRangeViolation",
+      "parameters": [
+        "java.lang.Exception"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArtifactResolutionNodes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.apache.maven.artifact.resolver.ResolutionNode>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArtifacts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.apache.maven.artifact.Artifact>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCircularDependencyException",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.CyclicDependencyException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCircularDependencyExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.resolver.CyclicDependencyException>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getErrorArtifactExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.resolver.ArtifactResolutionException>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Exception>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMetadataResolutionException",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMetadataResolutionExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.resolver.ArtifactResolutionException>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMissingArtifacts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.Artifact>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOriginatingArtifact",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRepositories",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVersionRangeViolation",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.versioning.OverConstrainedVersionException",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVersionRangeViolations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Exception>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasCircularDependencyExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasErrorArtifactExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasMetadataResolutionExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasMissingArtifacts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasVersionRangeViolations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isSuccess",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArtifactResolutionNodes",
+      "parameters": [
+        "java.util.Set<org.apache.maven.artifact.resolver.ResolutionNode>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setArtifacts",
+      "parameters": [
+        "java.util.Set<org.apache.maven.artifact.Artifact>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setOriginatingArtifact",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRepositories",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUnresolvedArtifacts",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.Artifact>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.resolver.ArtifactResolutionResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

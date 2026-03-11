@@ -1,0 +1,159 @@
+{
+  "name": "org.springframework.security.access.expression.AbstractSecurityExpressionHandler",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "org.springframework.security.access.expression.SecurityExpressionHandler<T>",
+    "org.springframework.context.ApplicationContextAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "createEvaluationContext",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "T"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.EvaluationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createEvaluationContextInternal",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "T"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.spel.support.StandardEvaluationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSecurityExpressionRoot",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "T"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.access.expression.SecurityExpressionOperations",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeanResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.BeanResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExpressionParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.ExpressionParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPermissionEvaluator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.access.PermissionEvaluator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRoleHierarchy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.access.hierarchicalroles.RoleHierarchy",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationContext",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExpressionParser",
+      "parameters": [
+        "org.springframework.expression.ExpressionParser"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPermissionEvaluator",
+      "parameters": [
+        "org.springframework.security.access.PermissionEvaluator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRoleHierarchy",
+      "parameters": [
+        "org.springframework.security.access.hierarchicalroles.RoleHierarchy"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

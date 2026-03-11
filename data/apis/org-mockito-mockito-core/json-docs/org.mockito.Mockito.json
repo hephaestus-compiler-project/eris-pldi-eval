@@ -1,0 +1,845 @@
+{
+  "name": "org.mockito.Mockito",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.mockito.ArgumentMatchers"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "atLeast",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atMost",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calls",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearInvocations",
+      "parameters": [
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doAnswer",
+      "parameters": [
+        "org.mockito.stubbing.Answer"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doNothing",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doReturn",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doThrow",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.Throwable>",
+        "java.lang.Class<? extends java.lang.Throwable>..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "framework",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.MockitoFramework",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "inOrder",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.InOrder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.MockSettings"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "java.lang.String",
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "org.mockito.stubbing.Answer",
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.util.function.Function<org.mockito.MockedConstruction.Context,org.mockito.MockSettings>",
+        "org.mockito.MockedConstruction.MockInitializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.MockSettings"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstructionWithAnswer",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.stubbing.Answer",
+        "org.mockito.stubbing.Answer..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockitoSession",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.session.MockitoSessionBuilder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockStatic",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedStatic<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockStatic",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.stubbing.Answer"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedStatic<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "only",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spy",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spy",
+      "parameters": [
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "times",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verify",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyNoInteractions",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "when",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.stubbing.OngoingStubbing<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "after",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationAfterDelay",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atLeastOnce",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atMostOnce",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearAllCaches",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "description",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doCallRealMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doReturn",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doThrow",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.Throwable>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doThrow",
+      "parameters": [
+        "java.lang.Throwable..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.Stubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ignoreStubs",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "lenient",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.stubbing.LenientStubber",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.lang.String"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.stubbing.Answer"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "org.mockito.MockSettings",
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mock",
+      "parameters": [
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.util.function.Function<org.mockito.MockedConstruction.Context,org.mockito.MockSettings>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.MockedConstruction.MockInitializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockConstruction",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.MockSettings",
+        "org.mockito.MockedConstruction.MockInitializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedConstruction<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockingDetails",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.MockingDetails",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockStatic",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedStatic<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mockStatic",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.MockSettings"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.MockedStatic<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "never",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationMode",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reset",
+      "parameters": [
+        "T..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spy",
+      "parameters": [
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "timeout",
+      "parameters": [
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.verification.VerificationWithTimeout",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateMockitoUsage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verify",
+      "parameters": [
+        "T",
+        "org.mockito.verification.VerificationMode"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifyNoMoreInteractions",
+      "parameters": [
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withSettings",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.mockito.MockSettings",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "RETURNS_DEEP_STUBS",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RETURNS_MOCKS",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RETURNS_SMART_NULLS",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CALLS_REAL_METHODS",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RETURNS_DEFAULTS",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RETURNS_SELF",
+      "type": "org.mockito.stubbing.Answer<java.lang.Object>",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

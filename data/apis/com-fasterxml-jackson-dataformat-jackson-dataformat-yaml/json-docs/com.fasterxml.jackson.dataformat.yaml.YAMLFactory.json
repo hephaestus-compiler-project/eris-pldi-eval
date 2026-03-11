@@ -1,0 +1,622 @@
+{
+  "name": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.core.JsonFactory"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_createParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createReader",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.JsonEncoding",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Reader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createUTF8Generator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "builder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactoryBuilder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.Writer"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatGeneratorFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatParserFeatures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatWriteFeatureType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<com.fasterxml.jackson.dataformat.yaml.YAMLGenerator.Feature>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readResolve",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "version",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.Version",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createGenerator",
+      "parameters": [
+        "java.io.Writer",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "char[]",
+        "int",
+        "int",
+        "com.fasterxml.jackson.core.io.IOContext",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createParser",
+      "parameters": [
+        "java.io.Reader",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createReader",
+      "parameters": [
+        "java.io.InputStream",
+        "com.fasterxml.jackson.core.JsonEncoding",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Reader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_createWriter",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding",
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.io.Writer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canUseCharArrays",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configure",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLParser.Feature",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.File",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.JsonGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createGenerator",
+      "parameters": [
+        "java.io.OutputStream",
+        "com.fasterxml.jackson.core.JsonEncoding"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLGenerator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "char[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.io.Reader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParser",
+      "parameters": [
+        "java.net.URL"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "disable",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "enable",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormatReadFeatureType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<com.fasterxml.jackson.dataformat.yaml.YAMLParser.Feature>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasFormat",
+      "parameters": [
+        "com.fasterxml.jackson.core.format.InputAccessor"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.format.MatchStrength",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEnabled",
+      "parameters": [
+        "com.fasterxml.jackson.dataformat.yaml.YAMLParser.Feature"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rebuild",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.dataformat.yaml.YAMLFactoryBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_loaderOptions",
+      "type": "org.yaml.snakeyaml.LoaderOptions",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_version",
+      "type": "org.yaml.snakeyaml.DumperOptions.Version",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_yamlParserFeatures",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_YAML_PARSER_FEATURE_FLAGS",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_dumperOptions",
+      "type": "org.yaml.snakeyaml.DumperOptions",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_quotingChecker",
+      "type": "com.fasterxml.jackson.dataformat.yaml.util.StringQuotingChecker",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_yamlGeneratorFeatures",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_YAML_GENERATOR_FEATURE_FLAGS",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FORMAT_NAME_YAML",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

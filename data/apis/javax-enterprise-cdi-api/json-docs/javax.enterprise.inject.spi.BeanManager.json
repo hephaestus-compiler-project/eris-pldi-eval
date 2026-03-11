@@ -1,0 +1,598 @@
+{
+  "name": "javax.enterprise.inject.spi.BeanManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "areQualifiersEquivalent",
+      "parameters": [
+        "java.lang.annotation.Annotation",
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBean",
+      "parameters": [
+        "javax.enterprise.inject.spi.BeanAttributes<T>",
+        "java.lang.Class<T>",
+        "javax.enterprise.inject.spi.InjectionTargetFactory<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.Bean<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBeanAttributes",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedMember<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.BeanAttributes<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCreationalContext",
+      "parameters": [
+        "javax.enterprise.context.spi.Contextual<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.context.spi.CreationalContext<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInjectionPoint",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedParameter<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.InjectionPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.Instance<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fireEvent",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeans",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<javax.enterprise.inject.spi.Bean<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getELResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.el.ELResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getExtension",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends javax.enterprise.inject.spi.Extension"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectionTargetFactory",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedType<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.InjectionTargetFactory<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterceptorBindingHashCode",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProducerFactory",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedField<? super X>",
+        "javax.enterprise.inject.spi.Bean<X>"
+      ],
+      "type_parameters": [
+        "X"
+      ],
+      "return_type": "javax.enterprise.inject.spi.ProducerFactory<X>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getQualifierHashCode",
+      "parameters": [
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStereotypeDefinition",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.annotation.Annotation>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isNormalScope",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isQualifier",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isStereotype",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveDecorators",
+      "parameters": [
+        "java.util.Set<java.lang.reflect.Type>",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<javax.enterprise.inject.spi.Decorator<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveObserverMethods",
+      "parameters": [
+        "T",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<javax.enterprise.inject.spi.ObserverMethod<? super T>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "wrapExpressionFactory",
+      "parameters": [
+        "javax.el.ExpressionFactory"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.el.ExpressionFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "areInterceptorBindingsEquivalent",
+      "parameters": [
+        "java.lang.annotation.Annotation",
+        "java.lang.annotation.Annotation"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAnnotatedType",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.AnnotatedType<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBean",
+      "parameters": [
+        "javax.enterprise.inject.spi.BeanAttributes<T>",
+        "java.lang.Class<X>",
+        "javax.enterprise.inject.spi.ProducerFactory<X>"
+      ],
+      "type_parameters": [
+        "T",
+        "X"
+      ],
+      "return_type": "javax.enterprise.inject.spi.Bean<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBeanAttributes",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedType<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.BeanAttributes<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInjectionPoint",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedField<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.InjectionPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInjectionTarget",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedType<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.InjectionTarget<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createInterceptionFactory",
+      "parameters": [
+        "javax.enterprise.context.spi.CreationalContext<T>",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "javax.enterprise.inject.spi.InterceptionFactory<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBeans",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<javax.enterprise.inject.spi.Bean<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContext",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.context.spi.Context",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEvent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.event.Event<java.lang.Object>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectableReference",
+      "parameters": [
+        "javax.enterprise.inject.spi.InjectionPoint",
+        "javax.enterprise.context.spi.CreationalContext<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterceptorBindingDefinition",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.annotation.Annotation>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPassivationCapableBean",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.Bean<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProducerFactory",
+      "parameters": [
+        "javax.enterprise.inject.spi.AnnotatedMethod<? super X>",
+        "javax.enterprise.inject.spi.Bean<X>"
+      ],
+      "type_parameters": [
+        "X"
+      ],
+      "return_type": "javax.enterprise.inject.spi.ProducerFactory<X>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReference",
+      "parameters": [
+        "javax.enterprise.inject.spi.Bean<?>",
+        "java.lang.reflect.Type",
+        "javax.enterprise.context.spi.CreationalContext<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isInterceptorBinding",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPassivatingScope",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isScope",
+      "parameters": [
+        "java.lang.Class<? extends java.lang.annotation.Annotation>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolve",
+      "parameters": [
+        "java.util.Set<javax.enterprise.inject.spi.Bean<? extends X>>"
+      ],
+      "type_parameters": [
+        "X"
+      ],
+      "return_type": "javax.enterprise.inject.spi.Bean<? extends X>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveInterceptors",
+      "parameters": [
+        "javax.enterprise.inject.spi.InterceptionType",
+        "java.lang.annotation.Annotation..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<javax.enterprise.inject.spi.Interceptor<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validate",
+      "parameters": [
+        "javax.enterprise.inject.spi.InjectionPoint"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

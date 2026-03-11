@@ -1,0 +1,110 @@
+{
+  "name": "org.apache.logging.log4j.core.async.AsyncLogger",
+  "type_parameters": [],
+  "implements": [
+    "com.lmax.disruptor.EventTranslatorVararg<org.apache.logging.log4j.core.async.RingBufferLogEvent>"
+  ],
+  "inherits": [
+    "org.apache.logging.log4j.core.Logger"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "log",
+      "parameters": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "translateTo",
+      "parameters": [
+        "org.apache.logging.log4j.core.async.RingBufferLogEvent",
+        "long",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "actualAsyncLog",
+      "parameters": [
+        "org.apache.logging.log4j.core.async.RingBufferLogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "logMessage",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.Marker",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateConfiguration",
+      "parameters": [
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "AsyncLogger",
+      "parameters": [
+        "org.apache.logging.log4j.core.LoggerContext",
+        "java.lang.String",
+        "org.apache.logging.log4j.message.MessageFactory",
+        "org.apache.logging.log4j.core.async.AsyncLoggerDisruptor"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

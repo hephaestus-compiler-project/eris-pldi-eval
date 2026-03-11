@@ -1,0 +1,118 @@
+{
+  "name": "org.springframework.beans.factory.aot.BeanRegistrationCodeFragments",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "generateInstanceSupplierCode",
+      "parameters": [
+        "org.springframework.aot.generate.GenerationContext",
+        "org.springframework.beans.factory.aot.BeanRegistrationCode",
+        "java.lang.reflect.Executable",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.CodeBlock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateNewBeanDefinitionCode",
+      "parameters": [
+        "org.springframework.aot.generate.GenerationContext",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.beans.factory.aot.BeanRegistrationCode"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.CodeBlock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateReturnCode",
+      "parameters": [
+        "org.springframework.aot.generate.GenerationContext",
+        "org.springframework.beans.factory.aot.BeanRegistrationCode"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.CodeBlock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateSetBeanDefinitionPropertiesCode",
+      "parameters": [
+        "org.springframework.aot.generate.GenerationContext",
+        "org.springframework.beans.factory.aot.BeanRegistrationCode",
+        "org.springframework.beans.factory.support.RootBeanDefinition",
+        "java.util.function.Predicate<java.lang.String>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.CodeBlock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "generateSetBeanInstanceSupplierCode",
+      "parameters": [
+        "org.springframework.aot.generate.GenerationContext",
+        "org.springframework.beans.factory.aot.BeanRegistrationCode",
+        "org.springframework.javapoet.CodeBlock",
+        "java.util.List<org.springframework.aot.generate.MethodReference>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.CodeBlock",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTarget",
+      "parameters": [
+        "org.springframework.beans.factory.support.RegisteredBean",
+        "java.lang.reflect.Executable"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.javapoet.ClassName",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "BEAN_DEFINITION_VARIABLE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INSTANCE_SUPPLIER_VARIABLE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

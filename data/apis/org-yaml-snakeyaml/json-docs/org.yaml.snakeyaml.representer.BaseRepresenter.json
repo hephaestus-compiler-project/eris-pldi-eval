@@ -1,0 +1,227 @@
+{
+  "name": "org.yaml.snakeyaml.representer.BaseRepresenter",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getDefaultScalarStyle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.DumperOptions.ScalarStyle",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExplicitPropertyUtils",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "representData",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "representScalar",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Tag",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "representSequence",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Tag",
+        "java.lang.Iterable<?>",
+        "org.yaml.snakeyaml.DumperOptions.FlowStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultScalarStyle",
+      "parameters": [
+        "org.yaml.snakeyaml.DumperOptions.ScalarStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultFlowStyle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.DumperOptions.FlowStyle",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyUtils",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.introspector.PropertyUtils",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "represent",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "representMapping",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Tag",
+        "java.util.Map<?,?>",
+        "org.yaml.snakeyaml.DumperOptions.FlowStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "representScalar",
+      "parameters": [
+        "org.yaml.snakeyaml.nodes.Tag",
+        "java.lang.String",
+        "org.yaml.snakeyaml.DumperOptions.ScalarStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "org.yaml.snakeyaml.nodes.Node",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultFlowStyle",
+      "parameters": [
+        "org.yaml.snakeyaml.DumperOptions.FlowStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPropertyUtils",
+      "parameters": [
+        "org.yaml.snakeyaml.introspector.PropertyUtils"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultScalarStyle",
+      "type": "org.yaml.snakeyaml.DumperOptions.ScalarStyle",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "nullRepresenter",
+      "type": "org.yaml.snakeyaml.representer.Represent",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "representedObjects",
+      "type": "java.util.Map<java.lang.Object,org.yaml.snakeyaml.nodes.Node>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "defaultFlowStyle",
+      "type": "org.yaml.snakeyaml.DumperOptions.FlowStyle",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "multiRepresenters",
+      "type": "java.util.Map<java.lang.Class<?>,org.yaml.snakeyaml.representer.Represent>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "objectToRepresent",
+      "type": "java.lang.Object",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "representers",
+      "type": "java.util.Map<java.lang.Class<?>,org.yaml.snakeyaml.representer.Represent>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

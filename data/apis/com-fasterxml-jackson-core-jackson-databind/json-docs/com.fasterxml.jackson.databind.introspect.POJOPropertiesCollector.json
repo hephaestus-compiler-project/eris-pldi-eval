@@ -1,0 +1,660 @@
+{
+  "name": "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_addCreators",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addGetterMethod",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+        "com.fasterxml.jackson.databind.AnnotationIntrospector"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addMethods",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_collectIgnorals",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_property",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "com.fasterxml.jackson.databind.PropertyName"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_removeUnwantedAccessor",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_renameProperties",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_renameWithWrappers",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resolveFieldVsGetter",
+      "parameters": [
+        "java.util.List<com.fasterxml.jackson.databind.introspect.AnnotatedMember>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_updateCreatorProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder",
+        "java.util.List<com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findPOJOBuilderClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnyGetter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnyGetterMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnySetterMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfig",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInjectables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Object,com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJsonValueAccessor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getObjectIdInfo",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.ObjectIdInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRecordType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addCreatorParam",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedParameter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addFields",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addInjectables",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_addSetterMethod",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+        "com.fasterxml.jackson.databind.AnnotationIntrospector"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_doAddInjectable",
+      "parameters": [
+        "com.fasterxml.jackson.annotation.JacksonInject.Value",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_property",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_removeUnwantedProperties",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_renameUsing",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+        "com.fasterxml.jackson.databind.PropertyNamingStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_replaceCreatorProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder",
+        "java.util.List<com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_sortProperties",
+      "parameters": [
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectAll",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnnotationIntrospector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnyGetterField",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAnySetterField",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassDef",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIgnoredPropertyNames",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJsonKeyAccessor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJsonValueMethod",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "reportProblem",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_annotationIntrospector",
+      "type": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_anyGetters",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_anySetters",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMethod>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_collected",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_creatorProperties",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_forSerialization",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_injectables",
+      "type": "java.util.LinkedHashMap<java.lang.Object,com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_jsonKeyAccessors",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_mutatorPrefix",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_stdBeanNaming",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_useAnnotations",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_accessorNaming",
+      "type": "com.fasterxml.jackson.databind.introspect.AccessorNamingStrategy",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_anyGetterField",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_anySetterField",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_classDef",
+      "type": "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_config",
+      "type": "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_fieldRenameMappings",
+      "type": "java.util.Map<com.fasterxml.jackson.databind.PropertyName,com.fasterxml.jackson.databind.PropertyName>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_ignoredPropertyNames",
+      "type": "java.util.HashSet<java.lang.String>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_isRecordType",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_jsonValueAccessors",
+      "type": "java.util.LinkedList<com.fasterxml.jackson.databind.introspect.AnnotatedMember>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_properties",
+      "type": "java.util.LinkedHashMap<java.lang.String,com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_type",
+      "type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_visibilityChecker",
+      "type": "com.fasterxml.jackson.databind.introspect.VisibilityChecker<?>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

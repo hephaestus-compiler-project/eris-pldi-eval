@@ -1,0 +1,104 @@
+{
+  "name": "org.springframework.web.servlet.function.HandlerFilterFunction",
+  "type_parameters": [
+    "T extends org.springframework.web.servlet.function.ServerResponse",
+    "R extends org.springframework.web.servlet.function.ServerResponse"
+  ],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "andThen",
+      "parameters": [
+        "org.springframework.web.servlet.function.HandlerFilterFunction<T,T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.HandlerFilterFunction<T,R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "apply",
+      "parameters": [
+        "org.springframework.web.servlet.function.HandlerFunction<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.HandlerFunction<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "filter",
+      "parameters": [
+        "org.springframework.web.servlet.function.ServerRequest",
+        "org.springframework.web.servlet.function.HandlerFunction<T>"
+      ],
+      "type_parameters": [],
+      "return_type": "R",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ofErrorHandler",
+      "parameters": [
+        "java.util.function.Predicate<java.lang.Throwable>",
+        "java.util.function.BiFunction<java.lang.Throwable,org.springframework.web.servlet.function.ServerRequest,T>"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.HandlerFilterFunction<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ofRequestProcessor",
+      "parameters": [
+        "java.util.function.Function<org.springframework.web.servlet.function.ServerRequest,org.springframework.web.servlet.function.ServerRequest>"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.HandlerFilterFunction<T,T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ofResponseProcessor",
+      "parameters": [
+        "java.util.function.BiFunction<org.springframework.web.servlet.function.ServerRequest,T,R>"
+      ],
+      "type_parameters": [
+        "T extends org.springframework.web.servlet.function.ServerResponse",
+        "R extends org.springframework.web.servlet.function.ServerResponse"
+      ],
+      "return_type": "org.springframework.web.servlet.function.HandlerFilterFunction<T,R>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": true,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

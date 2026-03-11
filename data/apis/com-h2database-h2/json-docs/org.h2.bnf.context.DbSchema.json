@@ -1,0 +1,101 @@
+{
+  "name": "org.h2.bnf.context.DbSchema",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getProcedures",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.bnf.context.DbProcedure[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readProcedures",
+      "parameters": [
+        "java.sql.DatabaseMetaData"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContents",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.bnf.context.DbContents",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.h2.bnf.context.DbTableOrView[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readTables",
+      "parameters": [
+        "java.sql.DatabaseMetaData",
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "isSystem",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "quotedName",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "isDefault",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "name",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

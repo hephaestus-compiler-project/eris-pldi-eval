@@ -1,0 +1,91 @@
+{
+  "name": "org.springframework.security.access.vote.AuthenticatedVoter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.access.AccessDecisionVoter<java.lang.Object>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "setAuthenticationTrustResolver",
+      "parameters": [
+        "org.springframework.security.authentication.AuthenticationTrustResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "org.springframework.security.access.ConfigAttribute"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "vote",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "java.lang.Object",
+        "java.util.Collection<org.springframework.security.access.ConfigAttribute>"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "IS_AUTHENTICATED_ANONYMOUSLY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "IS_AUTHENTICATED_FULLY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "IS_AUTHENTICATED_REMEMBERED",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

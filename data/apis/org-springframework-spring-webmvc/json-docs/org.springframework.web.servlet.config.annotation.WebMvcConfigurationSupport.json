@@ -1,0 +1,765 @@
+{
+  "name": "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.ApplicationContextAware",
+    "org.springframework.web.context.ServletContextAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addArgumentResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCorsMappings",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.CorsRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDefaultHandlerExceptionResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.HandlerExceptionResolver>",
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDefaultHttpMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addFormatters",
+      "parameters": [
+        "org.springframework.format.FormatterRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addInterceptors",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.InterceptorRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addResourceHandlers",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addReturnValueHandlers",
+      "parameters": [
+        "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addViewControllers",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.ViewControllerRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "beanNameHandlerMapping",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureAsyncSupport",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureContentNegotiation",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureDefaultServletHandling",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureHandlerExceptionResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.HandlerExceptionResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configurePathMatch",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.PathMatchConfigurer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configureViewResolvers",
+      "parameters": [
+        "org.springframework.web.servlet.config.annotation.ViewResolverRegistry"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createExceptionHandlerExceptionResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRequestMappingHandlerAdapter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRequestMappingHandlerMapping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defaultServletHandlerMapping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "extendHandlerExceptionResolvers",
+      "parameters": [
+        "java.util.List<org.springframework.web.servlet.HandlerExceptionResolver>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "extendMessageConverters",
+      "parameters": [
+        "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "flashMapManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.FlashMapManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getApplicationContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.ApplicationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentResolvers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodArgumentResolver>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAsyncSupportConfigurer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfigurableWebBindingInitializer",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.validation.Validator"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.bind.support.ConfigurableWebBindingInitializer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCorsConfigurations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.springframework.web.cors.CorsConfiguration>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultMediaTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInterceptors",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageCodesResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.validation.MessageCodesResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMessageConverters",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPathMatchConfigurer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.config.annotation.PathMatchConfigurer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReturnValueHandlers",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.web.method.support.HandlerMethodReturnValueHandler>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getServletContext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.servlet.ServletContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getValidator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.validation.Validator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handlerExceptionResolver",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerExceptionResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handlerFunctionAdapter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.support.HandlerFunctionAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "httpRequestHandlerAdapter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "localeResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.LocaleResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcContentNegotiationManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.accept.ContentNegotiationManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcConversionService",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.format.support.FormattingConversionService",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcHandlerMappingIntrospector",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.handler.HandlerMappingIntrospector",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcPathMatcher",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.util.PathMatcher",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcPatternParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.util.pattern.PathPatternParser",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcResourceUrlProvider",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.resource.ResourceUrlProvider",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcUriComponentsContributor",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.method.support.CompositeUriComponentsContributor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcUrlPathHelper",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.util.UrlPathHelper",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcValidator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.validation.Validator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mvcViewResolver",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ViewResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestMappingHandlerAdapter",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager",
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.validation.Validator"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requestMappingHandlerMapping",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager",
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resourceHandlerMapping",
+      "parameters": [
+        "org.springframework.web.accept.ContentNegotiationManager",
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "routerFunctionMapping",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.function.support.RouterFunctionMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationContext",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setServletContext",
+      "parameters": [
+        "jakarta.servlet.ServletContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "simpleControllerHandlerAdapter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "themeResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.ThemeResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "viewControllerHandlerMapping",
+      "parameters": [
+        "org.springframework.format.support.FormattingConversionService",
+        "org.springframework.web.servlet.resource.ResourceUrlProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.HandlerMapping",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "viewNameTranslator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.web.servlet.RequestToViewNameTranslator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

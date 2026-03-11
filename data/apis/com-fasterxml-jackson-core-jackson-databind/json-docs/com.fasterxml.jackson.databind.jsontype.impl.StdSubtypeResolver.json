@@ -1,0 +1,182 @@
+{
+  "name": "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.jsontype.SubtypeResolver"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_collectAndResolveByTypeId",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+        "com.fasterxml.jackson.databind.jsontype.NamedType",
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "java.util.Set<java.lang.Class<?>>",
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.jsontype.NamedType>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectAndResolveSubtypesByClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectAndResolveSubtypesByTypeId",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.SubtypeResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.util.Collection<java.lang.Class<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_collectAndResolve",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass",
+        "com.fasterxml.jackson.databind.jsontype.NamedType",
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "java.util.HashMap<com.fasterxml.jackson.databind.jsontype.NamedType,com.fasterxml.jackson.databind.jsontype.NamedType>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_combineNamedAndUnnamed",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.util.Set<java.lang.Class<?>>",
+        "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.jsontype.NamedType>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectAndResolveSubtypesByClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collectAndResolveSubtypesByTypeId",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.NamedType..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_registeredSubtypes",
+      "type": "java.util.LinkedHashSet<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

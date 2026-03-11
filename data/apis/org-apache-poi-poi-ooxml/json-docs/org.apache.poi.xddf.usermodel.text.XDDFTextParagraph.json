@@ -1,0 +1,775 @@
+{
+  "name": "org.apache.poi.xddf.usermodel.text.XDDFTextParagraph",
+  "type_parameters": [],
+  "implements": [
+    "java.lang.Iterable<org.apache.poi.xddf.usermodel.text.XDDFTextRun>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addDefaultRunProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFRunProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendField",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextRun",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendRegularRun",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextRun",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedParagraphProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAfterLastRunProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFRunProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBulletFont",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFFont",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBulletSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFBulletSize",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultRunProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFRunProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFontAlignment",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.FontAlignment",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndentationLevel",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMarginLeft",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrCreateBulletProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFParagraphBulletProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSpaceAfter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFSpacing",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTabStop",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTabStop",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextRuns",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xddf.usermodel.text.XDDFTextRun>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasHangingPunctuation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertTabStop",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTabStop",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "iterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xddf.usermodel.text.XDDFTextRun>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAfterLastRunProperties",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFRunProperties"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletColorFollowText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletFontFollowText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletStyle",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFBulletStyle"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultTabSize",
+      "parameters": [
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFontAlignment",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.FontAlignment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIndentation",
+      "parameters": [
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLatinLineBreak",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMarginLeft",
+      "parameters": [
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRightToLeft",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSpaceBefore",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFSpacing"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTextAlignment",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.TextAlignment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addAfterLastRunProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFRunProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTabStop",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTabStop",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "appendLineBreak",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextRun",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "countTabStops",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedRunProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBulletColor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.XDDFColor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBulletProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFParagraphBulletProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBulletStyle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFBulletStyle",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultTabSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndentation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLineSpacing",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFSpacing",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMarginRight",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParentBody",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextBody",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSpaceBefore",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFSpacing",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTabStops",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xddf.usermodel.text.XDDFTabStop>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextAlignment",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.TextAlignment",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasEastAsianLineBreak",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasLatinLineBreak",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRightToLeft",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeTabStop",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletColor",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.XDDFColor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletFont",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFFont"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBulletSize",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFBulletSize"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultRunProperties",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFRunProperties"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setEastAsianLineBreak",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHangingPunctuation",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIndentationLevel",
+      "parameters": [
+        "java.lang.Integer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLineSpacing",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFSpacing"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMarginRight",
+      "parameters": [
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSpaceAfter",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.text.XDDFSpacing"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setText",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spliterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Spliterator<org.apache.poi.xddf.usermodel.text.XDDFTextRun>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

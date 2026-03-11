@@ -1,0 +1,276 @@
+{
+  "name": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.authentication.AuthenticationProvider",
+    "org.springframework.beans.factory.InitializingBean",
+    "org.springframework.context.MessageSourceAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "additionalAuthenticationChecks",
+      "parameters": [
+        "org.springframework.security.core.userdetails.UserDetails",
+        "org.springframework.security.authentication.UsernamePasswordAuthenticationToken"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "afterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "authenticate",
+      "parameters": [
+        "org.springframework.security.core.Authentication"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.Authentication",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSuccessAuthentication",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.security.core.Authentication",
+        "org.springframework.security.core.userdetails.UserDetails"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.Authentication",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "doAfterPropertiesSet",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPostAuthenticationChecks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.userdetails.UserDetailsChecker",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPreAuthenticationChecks",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.userdetails.UserDetailsChecker",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUserCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.userdetails.UserCache",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isForcePrincipalAsString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isHideUserNotFoundExceptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveUser",
+      "parameters": [
+        "java.lang.String",
+        "org.springframework.security.authentication.UsernamePasswordAuthenticationToken"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.core.userdetails.UserDetails",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAuthoritiesMapper",
+      "parameters": [
+        "org.springframework.security.core.authority.mapping.GrantedAuthoritiesMapper"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setForcePrincipalAsString",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHideUserNotFoundExceptions",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMessageSource",
+      "parameters": [
+        "org.springframework.context.MessageSource"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPostAuthenticationChecks",
+      "parameters": [
+        "org.springframework.security.core.userdetails.UserDetailsChecker"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPreAuthenticationChecks",
+      "parameters": [
+        "org.springframework.security.core.userdetails.UserDetailsChecker"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUserCache",
+      "parameters": [
+        "org.springframework.security.core.userdetails.UserCache"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "hideUserNotFoundExceptions",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "messages",
+      "type": "org.springframework.context.support.MessageSourceAccessor",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

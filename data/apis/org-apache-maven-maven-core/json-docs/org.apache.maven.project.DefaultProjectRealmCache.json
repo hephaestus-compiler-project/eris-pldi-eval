@@ -1,0 +1,104 @@
+{
+  "name": "org.apache.maven.project.DefaultProjectRealmCache",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.project.ProjectRealmCache",
+    "org.codehaus.plexus.personality.plexus.lifecycle.phase.Disposable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createKey",
+      "parameters": [
+        "java.util.List<? extends org.codehaus.plexus.classworlds.realm.ClassRealm>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.ProjectRealmCache.Key",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "dispose",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "flush",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.apache.maven.project.ProjectRealmCache.Key"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.ProjectRealmCache.CacheRecord",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "org.apache.maven.project.ProjectRealmCache.Key",
+        "org.codehaus.plexus.classworlds.realm.ClassRealm",
+        "org.eclipse.aether.graph.DependencyFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.project.ProjectRealmCache.CacheRecord",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "register",
+      "parameters": [
+        "org.apache.maven.project.MavenProject",
+        "org.apache.maven.project.ProjectRealmCache.Key",
+        "org.apache.maven.project.ProjectRealmCache.CacheRecord"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "cache",
+      "type": "java.util.Map<org.apache.maven.project.ProjectRealmCache.Key,org.apache.maven.project.ProjectRealmCache.CacheRecord>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

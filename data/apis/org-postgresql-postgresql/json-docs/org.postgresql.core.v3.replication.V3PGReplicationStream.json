@@ -1,0 +1,155 @@
+{
+  "name": "org.postgresql.core.v3.replication.V3PGReplicationStream",
+  "type_parameters": [],
+  "implements": [
+    "org.postgresql.replication.PGReplicationStream"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "forceUpdateStatus",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastFlushedLSN",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.LogSequenceNumber",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isClosed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readPending",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "@Nullable java.nio.ByteBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFlushedLSN",
+      "parameters": [
+        "org.postgresql.replication.LogSequenceNumber"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastAppliedLSN",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.LogSequenceNumber",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLastReceiveLSN",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.LogSequenceNumber",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "@Nullable java.nio.ByteBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAppliedLSN",
+      "parameters": [
+        "org.postgresql.replication.LogSequenceNumber"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "V3PGReplicationStream",
+      "parameters": [
+        "org.postgresql.copy.CopyDual",
+        "org.postgresql.replication.LogSequenceNumber",
+        "long",
+        "org.postgresql.replication.ReplicationType"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "POSTGRES_EPOCH_2000_01_01",
+      "type": "long",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

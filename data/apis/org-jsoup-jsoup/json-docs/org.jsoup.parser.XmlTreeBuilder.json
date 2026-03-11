@@ -1,0 +1,284 @@
+{
+  "name": "org.jsoup.parser.XmlTreeBuilder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "currentElement",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.jsoup.nodes.Element",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "currentElementIs",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "error",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "initialiseParse",
+      "parameters": [
+        "java.io.Reader",
+        "java.lang.String",
+        "org.jsoup.parser.Parser"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertNode",
+      "parameters": [
+        "org.jsoup.nodes.Node"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "insertNode",
+      "parameters": [
+        "org.jsoup.nodes.Node",
+        "org.jsoup.parser.Token"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isContentForTagData",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onNodeClosed",
+      "parameters": [
+        "org.jsoup.nodes.Node",
+        "org.jsoup.parser.Token"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onNodeInserted",
+      "parameters": [
+        "org.jsoup.nodes.Node",
+        "org.jsoup.parser.Token"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "popStackToClose",
+      "parameters": [
+        "org.jsoup.parser.Token.EndTag"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "process",
+      "parameters": [
+        "org.jsoup.parser.Token"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processEndTag",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processStartTag",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processStartTag",
+      "parameters": [
+        "java.lang.String",
+        "org.jsoup.nodes.Attributes"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "runParser",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "tagFor",
+      "parameters": [
+        "java.lang.String",
+        "org.jsoup.parser.ParseSettings"
+      ],
+      "type_parameters": [],
+      "return_type": "org.jsoup.parser.Tag",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "baseUri",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "currentToken",
+      "type": "org.jsoup.parser.Token",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "doc",
+      "type": "org.jsoup.nodes.Document",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "parser",
+      "type": "org.jsoup.parser.Parser",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "seenTags",
+      "type": "java.util.Map<java.lang.String,org.jsoup.parser.Tag>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "settings",
+      "type": "org.jsoup.parser.ParseSettings",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "stack",
+      "type": "java.util.ArrayList<org.jsoup.nodes.Element>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

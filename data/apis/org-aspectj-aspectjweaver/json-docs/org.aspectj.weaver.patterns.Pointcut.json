@@ -1,0 +1,516 @@
+{
+  "name": "org.aspectj.weaver.patterns.Pointcut",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.aspectj.weaver.patterns.PatternNode"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "assertState",
+      "parameters": [
+        "org.aspectj.weaver.patterns.Pointcut.State"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "check",
+      "parameters": [
+        "org.aspectj.weaver.ISourceContext",
+        "org.aspectj.weaver.World"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "concretize",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "concretize",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType",
+        "int",
+        "org.aspectj.weaver.ShadowMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "concretize",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.IntMap"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "concretize1",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.ResolvedType",
+        "org.aspectj.weaver.IntMap"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "couldMatchKinds",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fastMatch",
+      "parameters": [
+        "org.aspectj.weaver.patterns.FastMatchInfo"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.util.FuzzyBoolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findResidue",
+      "parameters": [
+        "org.aspectj.weaver.Shadow",
+        "org.aspectj.weaver.patterns.ExposedState"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ast.Test",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findResidueInternal",
+      "parameters": [
+        "org.aspectj.weaver.Shadow",
+        "org.aspectj.weaver.patterns.ExposedState"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.ast.Test",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromString",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPointcutKind",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeVariablesInScope",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDeclare",
+      "parameters": [
+        "org.aspectj.weaver.ShadowMunger"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "makeMatchesNothing",
+      "parameters": [
+        "org.aspectj.weaver.patterns.Pointcut.State"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "match",
+      "parameters": [
+        "org.aspectj.weaver.Shadow"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.util.FuzzyBoolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matchInternal",
+      "parameters": [
+        "org.aspectj.weaver.Shadow"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.util.FuzzyBoolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parameterizeWith",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.aspectj.weaver.UnresolvedType>",
+        "org.aspectj.weaver.World"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postRead",
+      "parameters": [
+        "org.aspectj.weaver.ResolvedType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "read",
+      "parameters": [
+        "org.aspectj.weaver.VersionedDataInputStream",
+        "org.aspectj.weaver.ISourceContext"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolve",
+      "parameters": [
+        "org.aspectj.weaver.patterns.IScope"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveBindings",
+      "parameters": [
+        "org.aspectj.weaver.patterns.IScope",
+        "org.aspectj.weaver.patterns.Bindings"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTypeVariablesInScope",
+      "parameters": [
+        "java.lang.String[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shouldCopyLocationForConcretize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "AND",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ANNOTATION",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ARGS",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATARGS",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATTHIS_OR_TARGET",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATWITHIN",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATWITHINCODE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CFLOW",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CONCRETE",
+      "type": "org.aspectj.weaver.patterns.Pointcut.State",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "EMPTY_STRING_ARRAY",
+      "type": "java.lang.String[]",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "HANDLER",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "hasBeenParameterized",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "IF",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "IF_FALSE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "IF_TRUE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "KINDED",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "lastMatchedShadowId",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "m_ignoreUnboundBindingForNames",
+      "type": "java.lang.String[]",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "NONE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "NOT",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OR",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "pointcutKind",
+      "type": "byte",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "REFERENCE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "RESOLVED",
+      "type": "org.aspectj.weaver.patterns.Pointcut.State",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "state",
+      "type": "org.aspectj.weaver.patterns.Pointcut.State",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "SYMBOLIC",
+      "type": "org.aspectj.weaver.patterns.Pointcut.State",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THIS_OR_TARGET",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "USER_EXTENSION",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WITHIN",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "WITHINCODE",
+      "type": "byte",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

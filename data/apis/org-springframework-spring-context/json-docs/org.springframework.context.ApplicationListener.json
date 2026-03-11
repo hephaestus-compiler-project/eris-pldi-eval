@@ -1,0 +1,46 @@
+{
+  "name": "org.springframework.context.ApplicationListener",
+  "type_parameters": [
+    "E extends org.springframework.context.ApplicationEvent"
+  ],
+  "implements": [],
+  "inherits": [
+    "java.util.EventListener"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "forPayload",
+      "parameters": [
+        "java.util.function.Consumer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.context.ApplicationListener<org.springframework.context.PayloadApplicationEvent<T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "onApplicationEvent",
+      "parameters": [
+        "E"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": true,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

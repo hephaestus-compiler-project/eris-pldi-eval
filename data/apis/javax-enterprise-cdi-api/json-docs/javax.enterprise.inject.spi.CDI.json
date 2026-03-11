@@ -1,0 +1,68 @@
+{
+  "name": "javax.enterprise.inject.spi.CDI",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "javax.enterprise.inject.Instance<T>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "getBeanManager",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.BeanManager",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "current",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "javax.enterprise.inject.spi.CDI<java.lang.Object>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setCDIProvider",
+      "parameters": [
+        "javax.enterprise.inject.spi.CDIProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "discoveredProviders",
+      "type": "java.util.Set<javax.enterprise.inject.spi.CDIProvider>",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "configuredProvider",
+      "type": "javax.enterprise.inject.spi.CDIProvider",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

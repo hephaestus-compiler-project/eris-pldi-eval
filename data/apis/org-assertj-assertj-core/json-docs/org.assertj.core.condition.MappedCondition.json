@@ -1,0 +1,95 @@
+{
+  "name": "org.assertj.core.condition.MappedCondition",
+  "type_parameters": [
+    "FROM",
+    "TO"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.assertj.core.api.Condition<FROM>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "buildMappingDescription",
+      "parameters": [
+        "FROM",
+        "TO"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "conditionDescriptionWithStatus",
+      "parameters": [
+        "FROM"
+      ],
+      "type_parameters": [],
+      "return_type": "org.assertj.core.description.Description",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mappedCondition",
+      "parameters": [
+        "java.util.function.Function<FROM,TO>",
+        "org.assertj.core.api.Condition<TO>"
+      ],
+      "type_parameters": [
+        "FROM",
+        "TO"
+      ],
+      "return_type": "org.assertj.core.condition.MappedCondition<FROM,TO>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mappedCondition",
+      "parameters": [
+        "java.util.function.Function<FROM,TO>",
+        "org.assertj.core.api.Condition<TO>",
+        "java.lang.String",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [
+        "FROM",
+        "TO"
+      ],
+      "return_type": "org.assertj.core.condition.MappedCondition<FROM,TO>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "matches",
+      "parameters": [
+        "FROM"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,350 @@
+{
+  "name": "org.apache.commons.io.input.Tailer",
+  "type_parameters": [],
+  "implements": [
+    "java.lang.Runnable",
+    "java.lang.AutoCloseable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDelay",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFile",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.io.File",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTailable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer.Tailable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stop",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "builder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "java.nio.charset.Charset",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.commons.io.input.Tailer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDelayDuration",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.time.Duration",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRun",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "run",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "java.nio.charset.Charset",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "Tailer",
+      "parameters": [
+        "java.io.File",
+        "org.apache.commons.io.input.TailerListener",
+        "long",
+        "boolean",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

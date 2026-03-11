@@ -1,0 +1,87 @@
+{
+  "name": "org.postgresql.replication.fluent.physical.PhysicalStreamBuilder",
+  "type_parameters": [],
+  "implements": [
+    "org.postgresql.replication.fluent.physical.ChainedPhysicalStreamBuilder",
+    "org.postgresql.replication.fluent.physical.PhysicalReplicationOptions"
+  ],
+  "inherits": [
+    "org.postgresql.replication.fluent.AbstractStreamBuilder<org.postgresql.replication.fluent.physical.ChainedPhysicalStreamBuilder>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getStartLSNPosition",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.LogSequenceNumber",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "self",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.fluent.physical.ChainedPhysicalStreamBuilder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSlotName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "@Nullable java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStatusInterval",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "start",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.replication.PGReplicationStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "PhysicalStreamBuilder",
+      "parameters": [
+        "org.postgresql.replication.fluent.physical.StartPhysicalReplicationCallback"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

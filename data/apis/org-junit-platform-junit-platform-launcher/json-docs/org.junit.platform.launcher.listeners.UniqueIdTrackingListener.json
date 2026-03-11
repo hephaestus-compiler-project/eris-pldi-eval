@@ -1,0 +1,97 @@
+{
+  "name": "org.junit.platform.launcher.listeners.UniqueIdTrackingListener",
+  "type_parameters": [],
+  "implements": [
+    "org.junit.platform.launcher.TestExecutionListener"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "executionFinished",
+      "parameters": [
+        "org.junit.platform.launcher.TestIdentifier",
+        "org.junit.platform.engine.TestExecutionResult"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executionSkipped",
+      "parameters": [
+        "org.junit.platform.launcher.TestIdentifier",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "testPlanExecutionFinished",
+      "parameters": [
+        "org.junit.platform.launcher.TestPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "testPlanExecutionStarted",
+      "parameters": [
+        "org.junit.platform.launcher.TestPlan"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_OUTPUT_FILE_PREFIX",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LISTENER_ENABLED_PROPERTY_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OUTPUT_DIR_PROPERTY_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OUTPUT_FILE_PREFIX_PROPERTY_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

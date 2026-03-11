@@ -1,0 +1,218 @@
+{
+  "name": "clojure.lang.Compiler.CaseExpr",
+  "type_parameters": [],
+  "implements": [
+    "clojure.lang.Compiler.MaybePrimitiveExpr"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "doEmit",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emitUnboxed",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJavaClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canEmitPrimitive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emit",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "eval",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasJavaClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CaseExpr",
+      "parameters": [
+        "int",
+        "int",
+        "clojure.lang.Compiler.LocalBindingExpr",
+        "int",
+        "int",
+        "int",
+        "int",
+        "clojure.lang.Compiler.Expr",
+        "java.util.SortedMap<java.lang.Integer,clojure.lang.Compiler.Expr>",
+        "java.util.HashMap<java.lang.Integer,clojure.lang.Compiler.Expr>",
+        "clojure.lang.Keyword",
+        "clojure.lang.Keyword",
+        "java.util.Set<java.lang.Integer>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultExpr",
+      "type": "clojure.lang.Compiler.Expr",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "high",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "low",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "returnType",
+      "type": "java.lang.Class",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "skipCheck",
+      "type": "java.util.Set<java.lang.Integer>",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "tests",
+      "type": "java.util.SortedMap<java.lang.Integer,clojure.lang.Compiler.Expr>",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "thens",
+      "type": "java.util.HashMap<java.lang.Integer,clojure.lang.Compiler.Expr>",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "column",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "expr",
+      "type": "clojure.lang.Compiler.LocalBindingExpr",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "line",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "mask",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "shift",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "switchType",
+      "type": "clojure.lang.Keyword",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "testType",
+      "type": "clojure.lang.Keyword",
+      "is_static": false,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,99 @@
+{
+  "name": "org.objenesis.ObjenesisBase",
+  "type_parameters": [],
+  "implements": [
+    "org.objenesis.Objenesis"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "newInstance",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstantiatorOf",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.objenesis.instantiator.ObjectInstantiator<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ObjenesisBase",
+      "parameters": [
+        "org.objenesis.strategy.InstantiatorStrategy",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ObjenesisBase",
+      "parameters": [
+        "org.objenesis.strategy.InstantiatorStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "strategy",
+      "type": "org.objenesis.strategy.InstantiatorStrategy",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "cache",
+      "type": "java.util.concurrent.ConcurrentHashMap<java.lang.String,org.objenesis.instantiator.ObjectInstantiator<?>>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

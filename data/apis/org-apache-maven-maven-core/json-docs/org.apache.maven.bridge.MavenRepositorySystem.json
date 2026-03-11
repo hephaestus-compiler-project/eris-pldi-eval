@@ -1,0 +1,345 @@
+{
+  "name": "org.apache.maven.bridge.MavenRepositorySystem",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "buildArtifactRepository",
+      "parameters": [
+        "org.apache.maven.model.Repository"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildArtifactRepository",
+      "parameters": [
+        "org.apache.maven.settings.Repository"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildArtifactRepositoryPolicy",
+      "parameters": [
+        "org.apache.maven.model.RepositoryPolicy"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepositoryPolicy",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createArtifact",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createArtifactRepository",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.maven.artifact.repository.ArtifactRepositoryPolicy",
+        "org.apache.maven.artifact.repository.ArtifactRepositoryPolicy"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createArtifactRepository",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.maven.artifact.repository.layout.ArtifactRepositoryLayout",
+        "org.apache.maven.artifact.repository.ArtifactRepositoryPolicy",
+        "org.apache.maven.artifact.repository.ArtifactRepositoryPolicy"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDefaultRemoteRepository",
+      "parameters": [
+        "org.apache.maven.execution.MavenExecutionRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDependencyArtifact",
+      "parameters": [
+        "org.apache.maven.model.Dependency"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createExtensionArtifact",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createLocalRepository",
+      "parameters": [
+        "org.apache.maven.execution.MavenExecutionRequest",
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createParentArtifact",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPluginArtifact",
+      "parameters": [
+        "org.apache.maven.model.Plugin"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createProjectArtifact",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRepository",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.repository.ArtifactRepository",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromSettingsRepository",
+      "parameters": [
+        "org.apache.maven.settings.Repository"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.model.Repository",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fromSettingsRepositoryPolicy",
+      "parameters": [
+        "org.apache.maven.settings.RepositoryPolicy"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.model.RepositoryPolicy",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEffectiveRepositories",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMirror",
+      "parameters": [
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.settings.Mirror>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.settings.Mirror",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRepoIds",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "injectAuthentication",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "injectMirror",
+      "parameters": [
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>",
+        "java.util.List<org.apache.maven.settings.Mirror>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "injectMirror",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "injectProxy",
+      "parameters": [
+        "org.eclipse.aether.RepositorySystemSession",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

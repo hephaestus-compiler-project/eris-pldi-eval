@@ -1,0 +1,69 @@
+{
+  "name": "org.springframework.util.concurrent.ListenableFutureTask",
+  "type_parameters": [
+    "T"
+  ],
+  "implements": [
+    "org.springframework.util.concurrent.ListenableFuture<T>"
+  ],
+  "inherits": [
+    "java.util.concurrent.FutureTask<T>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addCallback",
+      "parameters": [
+        "org.springframework.util.concurrent.ListenableFutureCallback<? super T>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCallback",
+      "parameters": [
+        "org.springframework.util.concurrent.SuccessCallback<? super T>",
+        "org.springframework.util.concurrent.FailureCallback"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "completable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.concurrent.CompletableFuture<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "done",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

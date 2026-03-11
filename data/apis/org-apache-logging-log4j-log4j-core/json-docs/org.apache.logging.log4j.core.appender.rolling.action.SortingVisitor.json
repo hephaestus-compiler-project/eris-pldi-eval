@@ -1,0 +1,68 @@
+{
+  "name": "org.apache.logging.log4j.core.appender.rolling.action.SortingVisitor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.nio.file.SimpleFileVisitor<java.nio.file.Path>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "visitFile",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.nio.file.attribute.BasicFileAttributes"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.FileVisitResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSortedPaths",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.logging.log4j.core.appender.rolling.action.PathWithAttributes>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "visitFileFailed",
+      "parameters": [
+        "java.nio.file.Path",
+        "java.io.IOException"
+      ],
+      "type_parameters": [],
+      "return_type": "java.nio.file.FileVisitResult",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SortingVisitor",
+      "parameters": [
+        "org.apache.logging.log4j.core.appender.rolling.action.PathSorter"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

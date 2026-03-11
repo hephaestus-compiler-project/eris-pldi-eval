@@ -1,0 +1,325 @@
+{
+  "name": "org.bouncycastle.cms.CMSSignedGenerator",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAttributeCertificates",
+      "parameters": [
+        "org.bouncycastle.util.Store"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCertificates",
+      "parameters": [
+        "org.bouncycastle.util.Store"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCRLs",
+      "parameters": [
+        "org.bouncycastle.util.Store"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addOtherRevocationInfo",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "org.bouncycastle.util.Store"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSigners",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformationStore"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGeneratedDigests",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addAttributeCertificate",
+      "parameters": [
+        "org.bouncycastle.cert.X509AttributeCertificateHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCertificate",
+      "parameters": [
+        "org.bouncycastle.cert.X509CertificateHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addCRL",
+      "parameters": [
+        "org.bouncycastle.cert.X509CRLHolder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addOtherRevocationInfo",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "org.bouncycastle.asn1.ASN1Encodable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSignerInfoGenerator",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInfoGenerator"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBaseParameters",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier",
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "certs",
+      "type": "java.util.List",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DATA",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_MD5",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_RIPEMD160",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_SHA1",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_SHA256",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_SHA512",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "digests",
+      "type": "java.util.Map",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ENCRYPTION_ECDSA",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_ECGOST3410_2012_256",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_GOST3410",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_RSA_PSS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "_signers",
+      "type": "java.util.List",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "crls",
+      "type": "java.util.List",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DIGEST_GOST3411",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_RIPEMD128",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_RIPEMD256",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_SHA224",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DIGEST_SHA384",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "digestAlgIdFinder",
+      "type": "org.bouncycastle.operator.DigestAlgorithmIdentifierFinder",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ENCRYPTION_DSA",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_ECGOST3410",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_ECGOST3410_2012_512",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ENCRYPTION_RSA",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "signerGens",
+      "type": "java.util.List",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,151 @@
+{
+  "name": "org.apache.poi.xssf.eventusermodel.XSSFReader.SheetIterator",
+  "type_parameters": [],
+  "implements": [
+    "java.util.Iterator<java.io.InputStream>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getShapes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xssf.usermodel.XSSFShape>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSheetName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSheetRelationships",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "next",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.io.InputStream",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSheetIteratorFromWB",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePart"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xssf.eventusermodel.XSSFReader.XSSFSheetRef>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSheetComments",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xssf.model.Comments",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSheetPart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasNext",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseComments",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePart"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xssf.model.Comments",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "sheetMap",
+      "type": "java.util.Map<java.lang.String,org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "sheetIterator",
+      "type": "java.util.Iterator<org.apache.poi.xssf.eventusermodel.XSSFReader.XSSFSheetRef>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "xssfSheetRef",
+      "type": "org.apache.poi.xssf.eventusermodel.XSSFReader.XSSFSheetRef",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

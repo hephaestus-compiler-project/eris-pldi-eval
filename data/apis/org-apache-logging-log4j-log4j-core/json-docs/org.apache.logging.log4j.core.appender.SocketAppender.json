@@ -1,0 +1,151 @@
+{
+  "name": "org.apache.logging.log4j.core.appender.SocketAppender",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender<org.apache.logging.log4j.core.net.AbstractSocketManager>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createAppender",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.net.ssl.SslConfiguration",
+        "int",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "org.apache.logging.log4j.core.Filter",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.SocketAppender",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.core.net.Protocol",
+        "java.lang.String",
+        "int",
+        "int",
+        "org.apache.logging.log4j.core.net.ssl.SslConfiguration",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int",
+        "org.apache.logging.log4j.core.net.SocketOptions"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.AbstractSocketManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newBuilder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.SocketAppender.Builder",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAppender",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.net.Protocol",
+        "org.apache.logging.log4j.core.net.ssl.SslConfiguration",
+        "int",
+        "int",
+        "boolean",
+        "java.lang.String",
+        "boolean",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "org.apache.logging.log4j.core.Filter",
+        "boolean",
+        "org.apache.logging.log4j.core.config.Configuration"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.SocketAppender",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.logging.log4j.core.net.Protocol",
+        "java.lang.String",
+        "int",
+        "int",
+        "org.apache.logging.log4j.core.net.ssl.SslConfiguration",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.AbstractSocketManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "directEncodeEvent",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        "long",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

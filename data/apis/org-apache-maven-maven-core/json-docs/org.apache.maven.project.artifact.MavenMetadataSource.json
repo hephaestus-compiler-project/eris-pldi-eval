@@ -1,0 +1,122 @@
+{
+  "name": "org.apache.maven.project.artifact.MavenMetadataSource",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.artifact.metadata.ArtifactMetadataSource"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createArtifacts",
+      "parameters": [
+        "org.apache.maven.artifact.factory.ArtifactFactory",
+        "java.util.List<org.apache.maven.model.Dependency>",
+        "java.lang.String",
+        "org.apache.maven.artifact.resolver.filter.ArtifactFilter",
+        "org.apache.maven.project.MavenProject"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.apache.maven.artifact.Artifact>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieve",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.metadata.ResolutionGroup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieve",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.metadata.ResolutionGroup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieve",
+      "parameters": [
+        "org.apache.maven.repository.legacy.metadata.MetadataResolutionRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.artifact.metadata.ResolutionGroup",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveAvailableVersions",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "java.util.List<org.apache.maven.artifact.repository.ArtifactRepository>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.versioning.ArtifactVersion>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveAvailableVersions",
+      "parameters": [
+        "org.apache.maven.repository.legacy.metadata.MetadataResolutionRequest"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.versioning.ArtifactVersion>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "retrieveAvailableVersionsFromDeploymentRepository",
+      "parameters": [
+        "org.apache.maven.artifact.Artifact",
+        "org.apache.maven.artifact.repository.ArtifactRepository",
+        "org.apache.maven.artifact.repository.ArtifactRepository"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.artifact.versioning.ArtifactVersion>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

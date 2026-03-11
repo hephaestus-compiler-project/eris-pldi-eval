@@ -1,0 +1,236 @@
+{
+  "name": "org.apache.logging.log4j.core.net.TcpSocketManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.net.AbstractSocketManager"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createSocket",
+      "parameters": [
+        "java.net.InetSocketAddress"
+      ],
+      "type_parameters": [],
+      "return_type": "java.net.Socket",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConnectTimeoutMillis",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getReconnectionDelayMillis",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "int",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.TcpSocketManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSocketOptions",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.SocketOptions",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "closeOutputStream",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSocket",
+      "parameters": [
+        "java.net.InetSocketAddress",
+        "org.apache.logging.log4j.core.net.SocketOptions",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.net.Socket",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getContentFormat",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSocket",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.net.Socket",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "int",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int",
+        "org.apache.logging.log4j.core.net.SocketOptions"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.net.TcpSocketManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHostResolver",
+      "parameters": [
+        "org.apache.logging.log4j.core.net.TcpSocketManager.HostResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "write",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "TcpSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "java.io.OutputStream",
+        "java.net.Socket",
+        "java.net.InetAddress",
+        "java.lang.String",
+        "int",
+        "int",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int",
+        "org.apache.logging.log4j.core.net.SocketOptions"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "TcpSocketManager",
+      "parameters": [
+        "java.lang.String",
+        "java.io.OutputStream",
+        "java.net.Socket",
+        "java.net.InetAddress",
+        "java.lang.String",
+        "int",
+        "int",
+        "int",
+        "boolean",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

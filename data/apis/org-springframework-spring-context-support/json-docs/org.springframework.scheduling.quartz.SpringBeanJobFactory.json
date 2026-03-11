@@ -1,0 +1,84 @@
+{
+  "name": "org.springframework.scheduling.quartz.SpringBeanJobFactory",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.context.ApplicationContextAware",
+    "org.springframework.scheduling.quartz.SchedulerContextAware"
+  ],
+  "inherits": [
+    "org.springframework.scheduling.quartz.AdaptableJobFactory"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createJobInstance",
+      "parameters": [
+        "org.quartz.spi.TriggerFiredBundle"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isEligibleForPropertyPopulation",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setApplicationContext",
+      "parameters": [
+        "org.springframework.context.ApplicationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setIgnoredUnknownProperties",
+      "parameters": [
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSchedulerContext",
+      "parameters": [
+        "org.quartz.SchedulerContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

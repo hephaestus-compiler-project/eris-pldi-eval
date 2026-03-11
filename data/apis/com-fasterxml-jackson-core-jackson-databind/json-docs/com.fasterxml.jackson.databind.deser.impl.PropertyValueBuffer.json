@@ -1,0 +1,245 @@
+{
+  "name": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "assignParameter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buffered",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.deser.impl.PropertyValue",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bufferProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameters",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasParameter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readIdProperty",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findMissing",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bufferAnyProperty",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableAnyProperty",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "bufferMapProperty",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "handleIdValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isComplete",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "PropertyValueBuffer",
+      "parameters": [
+        "com.fasterxml.jackson.core.JsonParser",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "int",
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdReader"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_context",
+      "type": "com.fasterxml.jackson.databind.DeserializationContext",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_idValue",
+      "type": "java.lang.Object",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_paramsNeeded",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_paramsSeenBig",
+      "type": "java.util.BitSet",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_buffered",
+      "type": "com.fasterxml.jackson.databind.deser.impl.PropertyValue",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_creatorParameters",
+      "type": "java.lang.Object[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_objectIdReader",
+      "type": "com.fasterxml.jackson.databind.deser.impl.ObjectIdReader",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_paramsSeen",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_parser",
+      "type": "com.fasterxml.jackson.core.JsonParser",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

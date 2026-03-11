@@ -1,0 +1,883 @@
+{
+  "name": "org.assertj.core.api.InstanceOfAssertFactories",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "array",
+      "parameters": [
+        "java.lang.Class<ELEMENT[]>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<ELEMENT[],org.assertj.core.api.ObjectArrayAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "array2D",
+      "parameters": [
+        "java.lang.Class<ELEMENT[][]>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<ELEMENT[][],org.assertj.core.api.Object2DArrayAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicIntegerFieldUpdater",
+      "parameters": [
+        "java.lang.Class<OBJECT>"
+      ],
+      "type_parameters": [
+        "OBJECT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicIntegerFieldUpdater,org.assertj.core.api.AtomicIntegerFieldUpdaterAssert<OBJECT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicLongFieldUpdater",
+      "parameters": [
+        "java.lang.Class<OBJECT>"
+      ],
+      "type_parameters": [
+        "OBJECT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicLongFieldUpdater,org.assertj.core.api.AtomicLongFieldUpdaterAssert<OBJECT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicMarkableReference",
+      "parameters": [
+        "java.lang.Class<VALUE>"
+      ],
+      "type_parameters": [
+        "VALUE"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicMarkableReference,org.assertj.core.api.AtomicMarkableReferenceAssert<VALUE>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicReference",
+      "parameters": [
+        "java.lang.Class<VALUE>"
+      ],
+      "type_parameters": [
+        "VALUE"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReference,org.assertj.core.api.AtomicReferenceAssert<VALUE>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicReferenceArray",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReferenceArray,org.assertj.core.api.AtomicReferenceArrayAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicReferenceFieldUpdater",
+      "parameters": [
+        "java.lang.Class<FIELD>",
+        "java.lang.Class<OBJECT>"
+      ],
+      "type_parameters": [
+        "FIELD",
+        "OBJECT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReferenceFieldUpdater,org.assertj.core.api.AtomicReferenceFieldUpdaterAssert<FIELD,OBJECT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "atomicStampedReference",
+      "parameters": [
+        "java.lang.Class<VALUE>"
+      ],
+      "type_parameters": [
+        "VALUE"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicStampedReference,org.assertj.core.api.AtomicStampedReferenceAssert<VALUE>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "collection",
+      "parameters": [
+        "java.lang.Class<E>"
+      ],
+      "type_parameters": [
+        "E"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Collection,org.assertj.core.api.AbstractCollectionAssert<?,java.util.Collection<? extends E>,E,org.assertj.core.api.ObjectAssert<E>>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "comparable",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Comparable<? super T>"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<T,org.assertj.core.api.AbstractComparableAssert<?,T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "completableFuture",
+      "parameters": [
+        "java.lang.Class<RESULT>"
+      ],
+      "type_parameters": [
+        "RESULT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.CompletableFuture,org.assertj.core.api.CompletableFutureAssert<RESULT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "completionStage",
+      "parameters": [
+        "java.lang.Class<RESULT>"
+      ],
+      "type_parameters": [
+        "RESULT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.CompletionStage,org.assertj.core.api.CompletableFutureAssert<RESULT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "future",
+      "parameters": [
+        "java.lang.Class<RESULT>"
+      ],
+      "type_parameters": [
+        "RESULT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.Future,org.assertj.core.api.FutureAssert<RESULT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "iterable",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Iterable,org.assertj.core.api.IterableAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "iterator",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Iterator,org.assertj.core.api.IteratorAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "list",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.List,org.assertj.core.api.ListAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "map",
+      "parameters": [
+        "java.lang.Class<K>",
+        "java.lang.Class<V>"
+      ],
+      "type_parameters": [
+        "K",
+        "V"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Map,org.assertj.core.api.MapAssert<K,V>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "optional",
+      "parameters": [
+        "java.lang.Class<VALUE>"
+      ],
+      "type_parameters": [
+        "VALUE"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Optional,org.assertj.core.api.OptionalAssert<VALUE>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "predicate",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.function.Predicate,org.assertj.core.api.PredicateAssert<T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spliterator",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Spliterator,org.assertj.core.api.SpliteratorAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "stream",
+      "parameters": [
+        "java.lang.Class<ELEMENT>"
+      ],
+      "type_parameters": [
+        "ELEMENT"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.stream.Stream,org.assertj.core.api.ListAssert<ELEMENT>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "throwable",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Throwable"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<T,org.assertj.core.api.AbstractThrowableAssert<?,T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "type",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.assertj.core.api.InstanceOfAssertFactory<T,org.assertj.core.api.ObjectAssert<T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Object[],org.assertj.core.api.ObjectArrayAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ARRAY_2D",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Object[][],org.assertj.core.api.Object2DArrayAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_BOOLEAN",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicBoolean,org.assertj.core.api.AtomicBooleanAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_INTEGER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicInteger,org.assertj.core.api.AtomicIntegerAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_INTEGER_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicIntegerArray,org.assertj.core.api.AtomicIntegerArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_INTEGER_FIELD_UPDATER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicIntegerFieldUpdater,org.assertj.core.api.AtomicIntegerFieldUpdaterAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_LONG",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicLong,org.assertj.core.api.AtomicLongAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_LONG_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicLongArray,org.assertj.core.api.AtomicLongArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_LONG_FIELD_UPDATER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicLongFieldUpdater,org.assertj.core.api.AtomicLongFieldUpdaterAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_MARKABLE_REFERENCE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicMarkableReference,org.assertj.core.api.AtomicMarkableReferenceAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_REFERENCE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReference,org.assertj.core.api.AtomicReferenceAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_REFERENCE_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReferenceArray,org.assertj.core.api.AtomicReferenceArrayAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_REFERENCE_FIELD_UPDATER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicReferenceFieldUpdater,org.assertj.core.api.AtomicReferenceFieldUpdaterAssert<java.lang.Object,java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ATOMIC_STAMPED_REFERENCE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.AtomicStampedReference,org.assertj.core.api.AtomicStampedReferenceAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BIG_DECIMAL",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.math.BigDecimal,org.assertj.core.api.AbstractBigDecimalAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BIG_INTEGER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.math.BigInteger,org.assertj.core.api.AbstractBigIntegerAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BOOLEAN",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Boolean,org.assertj.core.api.AbstractBooleanAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BOOLEAN_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<boolean[][],org.assertj.core.api.Boolean2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BOOLEAN_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<boolean[],org.assertj.core.api.AbstractBooleanArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BYTE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Byte,org.assertj.core.api.AbstractByteAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BYTE_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<byte[][],org.assertj.core.api.Byte2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "BYTE_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<byte[],org.assertj.core.api.AbstractByteArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CHAR_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<char[][],org.assertj.core.api.Char2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CHAR_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<char[],org.assertj.core.api.AbstractCharArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CHAR_SEQUENCE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.CharSequence,org.assertj.core.api.AbstractCharSequenceAssert<?,? extends java.lang.CharSequence>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CHARACTER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Character,org.assertj.core.api.AbstractCharacterAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "CLASS",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Class,org.assertj.core.api.ClassAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "COLLECTION",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Collection,org.assertj.core.api.AbstractCollectionAssert<?,java.util.Collection<?>,java.lang.Object,org.assertj.core.api.ObjectAssert<java.lang.Object>>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "COMPLETABLE_FUTURE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.CompletableFuture,org.assertj.core.api.CompletableFutureAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "COMPLETION_STAGE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.CompletionStage,org.assertj.core.api.CompletableFutureAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Date,org.assertj.core.api.AbstractDateAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DOUBLE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Double,org.assertj.core.api.AbstractDoubleAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DOUBLE_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<double[][],org.assertj.core.api.Double2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DOUBLE_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<double[],org.assertj.core.api.AbstractDoubleArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DOUBLE_PREDICATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.function.DoublePredicate,org.assertj.core.api.DoublePredicateAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DOUBLE_STREAM",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.stream.DoubleStream,org.assertj.core.api.ListAssert<java.lang.Double>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DURATION",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.Duration,org.assertj.core.api.AbstractDurationAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FILE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.io.File,org.assertj.core.api.AbstractFileAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLOAT",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Float,org.assertj.core.api.AbstractFloatAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLOAT_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<float[][],org.assertj.core.api.Float2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FLOAT_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<float[],org.assertj.core.api.AbstractFloatArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "FUTURE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.Future,org.assertj.core.api.FutureAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INPUT_STREAM",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.io.InputStream,org.assertj.core.api.AbstractInputStreamAssert<?,?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INSTANT",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.Instant,org.assertj.core.api.AbstractInstantAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INT_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<int[][],org.assertj.core.api.Int2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INT_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<int[],org.assertj.core.api.AbstractIntArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INT_PREDICATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.function.IntPredicate,org.assertj.core.api.IntPredicateAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INT_STREAM",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.stream.IntStream,org.assertj.core.api.ListAssert<java.lang.Integer>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "INTEGER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Integer,org.assertj.core.api.AbstractIntegerAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ITERABLE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Iterable,org.assertj.core.api.IterableAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ITERATOR",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Iterator,org.assertj.core.api.IteratorAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LIST",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.List,org.assertj.core.api.ListAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCAL_DATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.LocalDate,org.assertj.core.api.AbstractLocalDateAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCAL_DATE_TIME",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.LocalDateTime,org.assertj.core.api.AbstractLocalDateTimeAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LOCAL_TIME",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.LocalTime,org.assertj.core.api.AbstractLocalTimeAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Long,org.assertj.core.api.AbstractLongAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<long[][],org.assertj.core.api.Long2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG_ADDER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.concurrent.atomic.LongAdder,org.assertj.core.api.LongAdderAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<long[],org.assertj.core.api.AbstractLongArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG_PREDICATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.function.LongPredicate,org.assertj.core.api.LongPredicateAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "LONG_STREAM",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.stream.LongStream,org.assertj.core.api.ListAssert<java.lang.Long>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MAP",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Map,org.assertj.core.api.MapAssert<java.lang.Object,java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "MATCHER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.regex.Matcher,org.assertj.core.api.MatcherAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OFFSET_DATE_TIME",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.OffsetDateTime,org.assertj.core.api.AbstractOffsetDateTimeAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OFFSET_TIME",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.OffsetTime,org.assertj.core.api.AbstractOffsetTimeAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OPTIONAL",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Optional,org.assertj.core.api.OptionalAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OPTIONAL_DOUBLE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.OptionalDouble,org.assertj.core.api.OptionalDoubleAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OPTIONAL_INT",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.OptionalInt,org.assertj.core.api.OptionalIntAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "OPTIONAL_LONG",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.OptionalLong,org.assertj.core.api.OptionalLongAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PATH",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.nio.file.Path,org.assertj.core.api.AbstractPathAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PERIOD",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.Period,org.assertj.core.api.AbstractPeriodAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PREDICATE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.function.Predicate,org.assertj.core.api.PredicateAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SHORT",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Short,org.assertj.core.api.AbstractShortAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SHORT_2D_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<short[][],org.assertj.core.api.Short2DArrayAssert>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SHORT_ARRAY",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<short[],org.assertj.core.api.AbstractShortArrayAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "SPLITERATOR",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.Spliterator,org.assertj.core.api.SpliteratorAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STREAM",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.util.stream.Stream,org.assertj.core.api.ListAssert<java.lang.Object>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STRING",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.String,org.assertj.core.api.AbstractStringAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STRING_BUFFER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.StringBuffer,org.assertj.core.api.AbstractCharSequenceAssert<?,? extends java.lang.CharSequence>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "STRING_BUILDER",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.StringBuilder,org.assertj.core.api.AbstractCharSequenceAssert<?,? extends java.lang.CharSequence>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "THROWABLE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.lang.Throwable,org.assertj.core.api.AbstractThrowableAssert<?,java.lang.Throwable>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "URI_TYPE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.net.URI,org.assertj.core.api.AbstractUriAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "URL_TYPE",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.net.URL,org.assertj.core.api.AbstractUrlAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ZONED_DATE_TIME",
+      "type": "org.assertj.core.api.InstanceOfAssertFactory<java.time.ZonedDateTime,org.assertj.core.api.AbstractZonedDateTimeAssert<?>>",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

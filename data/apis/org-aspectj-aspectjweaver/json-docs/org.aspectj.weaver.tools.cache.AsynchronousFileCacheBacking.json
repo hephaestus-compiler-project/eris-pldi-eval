@@ -1,0 +1,278 @@
+{
+  "name": "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "clear",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createBacking",
+      "parameters": [
+        "java.io.File",
+        "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking.AsynchronousFileCacheBackingCreator<T>"
+      ],
+      "type_parameters": [
+        "T extends org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeClearCommand",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeCommand",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking.AsyncCommand"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeInsertCommand",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking.InsertCommand"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeRemoveCommand",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking.RemoveCommand"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeUpdateIndexCommand",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "get",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.CachedClassReference",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.tools.cache.CachedClassEntry",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBytesMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,byte[]>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndex",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndexEntries",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getIndexMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "postCacheCommand",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.AsynchronousFileCacheBacking.AsyncCommand"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.CachedClassEntry",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readClassBytes",
+      "parameters": [
+        "java.util.Map<java.lang.String,org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,byte[]>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "remove",
+      "parameters": [
+        "org.aspectj.weaver.tools.cache.CachedClassReference"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeClassBytes",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "bytesMap",
+      "type": "java.util.Map<java.lang.String,byte[]>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "exposedBytes",
+      "type": "java.util.Map<java.lang.String,byte[]>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "exposedIndex",
+      "type": "java.util.Map<java.lang.String,org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "index",
+      "type": "java.util.Map<java.lang.String,org.aspectj.weaver.tools.cache.AbstractIndexedFileCacheBacking.IndexEntry>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

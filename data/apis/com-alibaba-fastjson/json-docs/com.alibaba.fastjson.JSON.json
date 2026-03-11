@@ -1,0 +1,1551 @@
+{
+  "name": "com.alibaba.fastjson.JSON",
+  "type_parameters": [],
+  "implements": [
+    "com.alibaba.fastjson.JSONAware"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addMixInAnnotations",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearMixInAnnotations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "configFilter",
+      "parameters": [
+        "com.alibaba.fastjson2.JSONWriter.Context",
+        "com.alibaba.fastjson.serializer.SerializeFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createReadContext",
+      "parameters": [
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson2.JSONReader.Context",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createWriteContext",
+      "parameters": [
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson2.JSONWriter.Context",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMixInAnnotations",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.reflect.Type",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValid",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidArray",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isValidObject",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.nio.charset.CharsetDecoder",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.nio.charset.CharsetDecoder",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "byte[]",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.ParserConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.JSONArray",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.JSONArray",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.ParserConfig"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.List<T>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArray",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type[]"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.Object>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.nio.charset.CharsetDecoder",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "int",
+        "int",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.alibaba.fastjson.JSONObject",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "byte[]",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "char[]",
+        "int",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "char[]",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.io.InputStream",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.io.InputStream",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.io.InputStream",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.io.InputStream",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.io.InputStream",
+        "java.nio.charset.Charset",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.JSONObject",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.alibaba.fastjson.JSONObject",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "com.alibaba.fastjson.TypeReference<T>",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.Class<T>",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.deserializer.ParseProcess",
+        "int",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseObject",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.reflect.Type",
+        "com.alibaba.fastjson.parser.ParserConfig",
+        "com.alibaba.fastjson.parser.Feature..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeMixInAnnotations",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJavaObject",
+      "parameters": [
+        "com.alibaba.fastjson.JSON",
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJavaObject",
+      "parameters": [
+        "com.alibaba.fastjson.TypeReference<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJavaObject",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJavaObject",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSON",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSON",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.parser.ParserConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSON",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "java.lang.String",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONBytes",
+      "parameters": [
+        "java.nio.charset.Charset",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "java.lang.String",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "java.lang.String",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializeFilter..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONString",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONStringWithDateFormat",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toJSONStringZ",
+      "parameters": [
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.lang.Object",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.nio.charset.Charset",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializeConfig",
+        "com.alibaba.fastjson.serializer.SerializeFilter[]",
+        "java.lang.String",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.OutputStream",
+        "java.nio.charset.Charset",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.Writer",
+        "java.lang.Object",
+        "int",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.io.Writer",
+        "java.lang.Object",
+        "com.alibaba.fastjson.serializer.SerializerFeature..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeJSONString",
+      "parameters": [
+        "java.lang.Appendable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_GENERATE_FEATURE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_PARSER_FEATURE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_TYPE_KEY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "defaultLocale",
+      "type": "java.util.Locale",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "defaultTimeZone",
+      "type": "java.util.TimeZone",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFFAULT_DATE_FORMAT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "VERSION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

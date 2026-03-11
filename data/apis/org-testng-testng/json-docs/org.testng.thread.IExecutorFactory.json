@@ -1,0 +1,56 @@
+{
+  "name": "org.testng.thread.IExecutorFactory",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "newTestMethodExecutor",
+      "parameters": [
+        "java.lang.String",
+        "org.testng.IDynamicGraph<org.testng.ITestNGMethod>",
+        "org.testng.thread.IThreadWorkerFactory<org.testng.ITestNGMethod>",
+        "int",
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.BlockingQueue<java.lang.Runnable>",
+        "java.util.Comparator<org.testng.ITestNGMethod>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.testng.thread.ITestNGThreadPoolExecutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newSuiteExecutor",
+      "parameters": [
+        "java.lang.String",
+        "org.testng.IDynamicGraph<org.testng.ISuite>",
+        "org.testng.thread.IThreadWorkerFactory<org.testng.ISuite>",
+        "int",
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.BlockingQueue<java.lang.Runnable>",
+        "java.util.Comparator<org.testng.ISuite>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.testng.thread.ITestNGThreadPoolExecutor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

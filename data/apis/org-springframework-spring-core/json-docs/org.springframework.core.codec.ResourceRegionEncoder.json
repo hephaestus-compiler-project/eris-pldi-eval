@@ -1,0 +1,60 @@
+{
+  "name": "org.springframework.core.codec.ResourceRegionEncoder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.core.codec.AbstractEncoder<org.springframework.core.io.support.ResourceRegion>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canEncode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encode",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends org.springframework.core.io.support.ResourceRegion>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "BOUNDARY_STRING_HINT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_BUFFER_SIZE",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

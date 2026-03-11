@@ -1,0 +1,213 @@
+{
+  "name": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.logging.log4j.core.appender.db.AbstractDatabaseManager"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "commitAndClose",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConnectionSource",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig[]",
+        "org.apache.logging.log4j.core.appender.db.ColumnMapping[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig[]",
+        "org.apache.logging.log4j.core.appender.db.ColumnMapping[]",
+        "boolean",
+        "long",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTableName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "startupInternal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeThrough",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.io.Serializable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "closeResources",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "connectAndStart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJDBCDatabaseManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig[]"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getManager",
+      "parameters": [
+        "java.lang.String",
+        "int",
+        "org.apache.logging.log4j.core.Layout<? extends java.io.Serializable>",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ConnectionSource",
+        "java.lang.String",
+        "org.apache.logging.log4j.core.appender.db.jdbc.ColumnConfig[]",
+        "org.apache.logging.log4j.core.appender.db.ColumnMapping[]",
+        "boolean",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcDatabaseManager",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSqlStatement",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "shutdownInternal",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeInternal",
+      "parameters": [
+        "org.apache.logging.log4j.core.LogEvent",
+        "java.io.Serializable"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

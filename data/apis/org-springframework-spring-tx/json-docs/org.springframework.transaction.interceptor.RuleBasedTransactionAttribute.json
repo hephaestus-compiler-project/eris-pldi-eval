@@ -1,0 +1,79 @@
+{
+  "name": "org.springframework.transaction.interceptor.RuleBasedTransactionAttribute",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "org.springframework.transaction.interceptor.DefaultTransactionAttribute"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getRollbackRules",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.transaction.interceptor.RollbackRuleAttribute>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rollbackOn",
+      "parameters": [
+        "java.lang.Throwable"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRollbackRules",
+      "parameters": [
+        "java.util.List<org.springframework.transaction.interceptor.RollbackRuleAttribute>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "PREFIX_COMMIT_RULE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PREFIX_ROLLBACK_RULE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

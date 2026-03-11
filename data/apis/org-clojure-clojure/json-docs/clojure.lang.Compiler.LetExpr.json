@@ -1,0 +1,142 @@
+{
+  "name": "clojure.lang.Compiler.LetExpr",
+  "type_parameters": [],
+  "implements": [
+    "clojure.lang.Compiler.MaybePrimitiveExpr"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "doEmit",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emitUnboxed",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getJavaClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Class",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "canEmitPrimitive",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "emit",
+      "parameters": [
+        "clojure.lang.Compiler.C",
+        "clojure.lang.Compiler.ObjExpr",
+        "clojure.asm.commons.GeneratorAdapter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "eval",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasJavaClass",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "LetExpr",
+      "parameters": [
+        "clojure.lang.PersistentVector",
+        "clojure.lang.Compiler.Expr",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "body",
+      "type": "clojure.lang.Compiler.Expr",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "bindingInits",
+      "type": "clojure.lang.PersistentVector",
+      "is_static": false,
+      "access_mod": "public"
+    },
+    {
+      "name": "isLoop",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

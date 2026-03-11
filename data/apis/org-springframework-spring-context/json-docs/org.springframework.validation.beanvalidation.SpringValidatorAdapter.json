@@ -1,0 +1,265 @@
+{
+  "name": "org.springframework.validation.beanvalidation.SpringValidatorAdapter",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.validation.SmartValidator",
+    "jakarta.validation.Validator"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "determineErrorCode",
+      "parameters": [
+        "jakarta.validation.metadata.ConstraintDescriptor<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "determineField",
+      "parameters": [
+        "jakarta.validation.ConstraintViolation<java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forExecutables",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "jakarta.validation.executable.ExecutableValidator",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getArgumentsForConstraint",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "jakarta.validation.metadata.ConstraintDescriptor<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConstraintsForClass",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "jakarta.validation.metadata.BeanDescriptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRejectedValue",
+      "parameters": [
+        "java.lang.String",
+        "jakarta.validation.ConstraintViolation<java.lang.Object>",
+        "org.springframework.validation.BindingResult"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getResolvableField",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.context.MessageSourceResolvable",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "processConstraintViolations",
+      "parameters": [
+        "java.util.Set<jakarta.validation.ConstraintViolation<java.lang.Object>>",
+        "org.springframework.validation.Errors"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "requiresMessageFormat",
+      "parameters": [
+        "jakarta.validation.ConstraintViolation<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unwrap",
+      "parameters": [
+        "java.lang.Class<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validate",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.validation.Errors"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validate",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.validation.Errors",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validate",
+      "parameters": [
+        "T",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<jakarta.validation.ConstraintViolation<T>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateProperty",
+      "parameters": [
+        "T",
+        "java.lang.String",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<jakarta.validation.ConstraintViolation<T>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateValue",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "java.lang.Object",
+        "org.springframework.validation.Errors",
+        "java.lang.Object..."
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validateValue",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.lang.String",
+        "java.lang.Object",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Set<jakarta.validation.ConstraintViolation<T>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

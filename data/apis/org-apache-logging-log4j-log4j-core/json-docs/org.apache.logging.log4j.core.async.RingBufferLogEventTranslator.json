@@ -1,0 +1,108 @@
+{
+  "name": "org.apache.logging.log4j.core.async.RingBufferLogEventTranslator",
+  "type_parameters": [],
+  "implements": [
+    "com.lmax.disruptor.EventTranslator<org.apache.logging.log4j.core.async.RingBufferLogEvent>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "translateTo",
+      "parameters": [
+        "org.apache.logging.log4j.core.async.RingBufferLogEvent",
+        "long"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBasicValues",
+      "parameters": [
+        "org.apache.logging.log4j.core.async.AsyncLogger",
+        "java.lang.String",
+        "org.apache.logging.log4j.Marker",
+        "java.lang.String",
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.message.Message",
+        "java.lang.Throwable",
+        "org.apache.logging.log4j.ThreadContext.ContextStack",
+        "java.lang.StackTraceElement",
+        "org.apache.logging.log4j.core.util.Clock",
+        "org.apache.logging.log4j.core.util.NanoClock"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "updateThreadValues",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "RingBufferLogEventTranslator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "level",
+      "type": "org.apache.logging.log4j.Level",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "message",
+      "type": "org.apache.logging.log4j.message.Message",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "fqcn",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "marker",
+      "type": "org.apache.logging.log4j.Marker",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "thrown",
+      "type": "java.lang.Throwable",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

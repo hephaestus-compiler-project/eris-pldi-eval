@@ -1,0 +1,79 @@
+{
+  "name": "org.postgresql.util.LazyCleaner",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getWatchedCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "register",
+      "parameters": [
+        "java.lang.Object",
+        "org.postgresql.util.LazyCleaner.CleaningAction<T>"
+      ],
+      "type_parameters": [
+        "T extends java.lang.Throwable"
+      ],
+      "return_type": "org.postgresql.util.LazyCleaner.Cleanable<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.postgresql.util.LazyCleaner",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isThreadRunning",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "LazyCleaner",
+      "parameters": [
+        "java.time.Duration",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

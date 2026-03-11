@@ -1,0 +1,171 @@
+{
+  "name": "com.fasterxml.jackson.databind.jsontype.impl.TypeNameIdResolver",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_typeFromId",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDescForKnownTypeIds",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "idFromClass",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "idFromValueAndType",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "typeFromId",
+      "parameters": [
+        "com.fasterxml.jackson.databind.DatabindContext",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_defaultTypeId",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "construct",
+      "parameters": [
+        "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType>",
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.jsontype.impl.TypeNameIdResolver",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMechanism",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.annotation.JsonTypeInfo.Id",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "idFromValue",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_config",
+      "type": "com.fasterxml.jackson.databind.cfg.MapperConfig<?>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_typeToId",
+      "type": "java.util.concurrent.ConcurrentHashMap<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_caseInsensitive",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_idToType",
+      "type": "java.util.Map<java.lang.String,com.fasterxml.jackson.databind.JavaType>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

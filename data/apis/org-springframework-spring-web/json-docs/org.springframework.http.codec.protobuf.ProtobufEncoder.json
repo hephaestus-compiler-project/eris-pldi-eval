@@ -1,0 +1,88 @@
+{
+  "name": "org.springframework.http.codec.protobuf.ProtobufEncoder",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.http.codec.HttpMessageEncoder<com.google.protobuf.Message>"
+  ],
+  "inherits": [
+    "org.springframework.http.codec.protobuf.ProtobufCodecSupport"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canEncode",
+      "parameters": [
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encode",
+      "parameters": [
+        "org.reactivestreams.Publisher<? extends com.google.protobuf.Message>",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "reactor.core.publisher.Flux<org.springframework.core.io.buffer.DataBuffer>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "encodeValue",
+      "parameters": [
+        "com.google.protobuf.Message",
+        "org.springframework.core.io.buffer.DataBufferFactory",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.util.MimeType",
+        "java.util.Map<java.lang.String,java.lang.Object>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.io.buffer.DataBuffer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncodableMimeTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.util.MimeType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getStreamingMediaTypes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.springframework.http.MediaType>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

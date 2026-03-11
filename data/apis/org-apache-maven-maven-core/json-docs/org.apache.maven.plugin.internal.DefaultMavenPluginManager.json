@@ -1,0 +1,132 @@
+{
+  "name": "org.apache.maven.plugin.internal.DefaultMavenPluginManager",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.plugin.MavenPluginManager"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "checkRequiredMavenVersion",
+      "parameters": [
+        "org.apache.maven.plugin.descriptor.PluginDescriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getConfiguredMojo",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.apache.maven.execution.MavenSession",
+        "org.apache.maven.plugin.MojoExecution"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMojoDescriptor",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "java.lang.String",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.plugin.descriptor.MojoDescriptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPluginDescriptor",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.plugin.descriptor.PluginDescriptor",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "releaseMojo",
+      "parameters": [
+        "java.lang.Object",
+        "org.apache.maven.plugin.MojoExecution"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupExtensionsRealm",
+      "parameters": [
+        "org.apache.maven.project.MavenProject",
+        "org.apache.maven.model.Plugin",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.plugin.ExtensionRealmCache.CacheRecord",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupPluginRealm",
+      "parameters": [
+        "org.apache.maven.plugin.descriptor.PluginDescriptor",
+        "org.apache.maven.execution.MavenSession",
+        "java.lang.ClassLoader",
+        "java.util.List<java.lang.String>",
+        "org.eclipse.aether.graph.DependencyFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "KEY_EXTENSIONS_REALMS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

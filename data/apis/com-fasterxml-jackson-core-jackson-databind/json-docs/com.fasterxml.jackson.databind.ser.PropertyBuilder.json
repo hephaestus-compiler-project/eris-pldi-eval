@@ -1,0 +1,189 @@
+{
+  "name": "com.fasterxml.jackson.databind.ser.PropertyBuilder",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_throwWrapped",
+      "parameters": [
+        "java.lang.Exception",
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findSerializationType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.Annotated",
+        "boolean",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultBean",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPropertyDefaultValue",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_constructPropertyWriter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "com.fasterxml.jackson.databind.util.Annotations",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+        "com.fasterxml.jackson.databind.JavaType",
+        "boolean",
+        "java.lang.Object",
+        "java.lang.Class<?>[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "buildWriter",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JsonSerializer<?>",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+        "com.fasterxml.jackson.databind.jsontype.TypeSerializer",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedMember",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassAnnotations",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.Annotations",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultValue",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "PropertyBuilder",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "com.fasterxml.jackson.databind.BeanDescription"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_beanDesc",
+      "type": "com.fasterxml.jackson.databind.BeanDescription",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_defaultBean",
+      "type": "java.lang.Object",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_useRealPropertyDefaults",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_annotationIntrospector",
+      "type": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_config",
+      "type": "com.fasterxml.jackson.databind.SerializationConfig",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_defaultInclusion",
+      "type": "com.fasterxml.jackson.annotation.JsonInclude.Value",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

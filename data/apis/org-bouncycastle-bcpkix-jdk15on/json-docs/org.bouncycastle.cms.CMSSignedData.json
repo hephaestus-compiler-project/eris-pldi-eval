@@ -1,0 +1,356 @@
+{
+  "name": "org.bouncycastle.cms.CMSSignedData",
+  "type_parameters": [],
+  "implements": [
+    "org.bouncycastle.util.Encodable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "getAttributeCertificates",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.util.Store<org.bouncycastle.cert.X509AttributeCertificateHolder>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCRLs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.util.Store<org.bouncycastle.cert.X509CRLHolder>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncoded",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOtherRevocationInfo",
+      "parameters": [
+        "org.bouncycastle.asn1.ASN1ObjectIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.util.Store",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignedContentTypeOID",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVersion",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isDetachedSignature",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceSigners",
+      "parameters": [
+        "org.bouncycastle.cms.CMSSignedData",
+        "org.bouncycastle.cms.SignerInformationStore"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.CMSSignedData",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifySignatures",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformationVerifierProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDigestAlgorithm",
+      "parameters": [
+        "org.bouncycastle.cms.CMSSignedData",
+        "org.bouncycastle.asn1.x509.AlgorithmIdentifier"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.CMSSignedData",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCertificates",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.util.Store<org.bouncycastle.cert.X509CertificateHolder>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDigestAlgorithmIDs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.bouncycastle.asn1.x509.AlgorithmIdentifier>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEncoded",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "byte[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignedContent",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.CMSTypedData",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSignerInfos",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.SignerInformationStore",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isCertificateManagementMessage",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceCertificatesAndCRLs",
+      "parameters": [
+        "org.bouncycastle.cms.CMSSignedData",
+        "org.bouncycastle.util.Store",
+        "org.bouncycastle.util.Store",
+        "org.bouncycastle.util.Store"
+      ],
+      "type_parameters": [],
+      "return_type": "org.bouncycastle.cms.CMSSignedData",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toASN1Structure",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "ContentInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "verifySignatures",
+      "parameters": [
+        "org.bouncycastle.cms.SignerInformationVerifierProvider",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "org.bouncycastle.cms.CMSProcessable",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "org.bouncycastle.cms.CMSProcessable",
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "java.util.Map",
+        "ContentInfo"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "org.bouncycastle.cms.CMSProcessable",
+        "ContentInfo"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "ContentInfo"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "CMSSignedData",
+      "parameters": [
+        "java.util.Map",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

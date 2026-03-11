@@ -1,0 +1,1007 @@
+{
+  "name": "com.fasterxml.jackson.databind.type.TypeFactory",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_constructSimple",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findWellKnownSimple",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromArrayType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.reflect.GenericArrayType",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromParamType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.reflect.ParameterizedType",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromWellKnownClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromWildcard",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.reflect.WildcardType",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resolveSuperClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_unknownType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "classForName",
+      "parameters": [
+        "java.lang.String",
+        "boolean",
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructArrayType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.ArrayType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructCollectionLikeType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructCollectionType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Collection>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructFromCanonical",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapLikeType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Map>",
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParametricType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParametricType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParametrizedType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructRawCollectionType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Collection>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructRawMapType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Map>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSimpleType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSpecializedType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findClass",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findTypeParameters",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassLoader",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.ClassLoader",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "rawClass",
+      "parameters": [
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "uncheckedSimpleType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withCache",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.LookupCache<java.lang.Object,com.fasterxml.jackson.databind.JavaType>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withClassLoader",
+      "parameters": [
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_applyModifiers",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_findPrimitive",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromAny",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.reflect.Type",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromClass",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromVariable",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.reflect.TypeVariable<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_fromWellKnownInterface",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_newSimpleType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_resolveSuperInterfaces",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.ClassStack",
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "classForName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearCache",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructArrayType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.ArrayType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructCollectionLikeType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructCollectionType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Collection>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructGeneralizedType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapLikeType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructMapType",
+      "parameters": [
+        "java.lang.Class<? extends java.util.Map>",
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParametricType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructParametrizedType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>",
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructRawCollectionLikeType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.CollectionLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructRawMapLikeType",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.MapLikeType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructReferenceType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSimpleType",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.JavaType[]"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructSpecializedType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.Class<?>",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructType",
+      "parameters": [
+        "com.fasterxml.jackson.core.type.TypeReference<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "defaultInstance",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findTypeParameters",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findTypeParameters",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "moreSpecificType",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveMemberType",
+      "parameters": [
+        "java.lang.reflect.Type",
+        "com.fasterxml.jackson.databind.type.TypeBindings"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unknownType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JavaType",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withCache",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.LRUMap<java.lang.Object,com.fasterxml.jackson.databind.JavaType>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withModifier",
+      "parameters": [
+        "com.fasterxml.jackson.databind.type.TypeModifier"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_modifiers",
+      "type": "com.fasterxml.jackson.databind.type.TypeModifier[]",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_typeCache",
+      "type": "com.fasterxml.jackson.databind.util.LookupCache<java.lang.Object,com.fasterxml.jackson.databind.JavaType>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_COMPARABLE",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_INT",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_LONG",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_STRING",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "instance",
+      "type": "com.fasterxml.jackson.databind.type.TypeFactory",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_classLoader",
+      "type": "java.lang.ClassLoader",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_parser",
+      "type": "com.fasterxml.jackson.databind.type.TypeParser",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_BOOL",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_ENUM",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_JSON_NODE",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "CORE_TYPE_OBJECT",
+      "type": "com.fasterxml.jackson.databind.type.SimpleType",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "EMPTY_BINDINGS",
+      "type": "com.fasterxml.jackson.databind.type.TypeBindings",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

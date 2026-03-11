@@ -1,0 +1,112 @@
+{
+  "name": "org.apache.maven.lifecycle.DefaultLifecycleExecutor",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.lifecycle.LifecycleExecutor"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "calculateExecutionPlan",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "boolean",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.lifecycle.MavenExecutionPlan",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateExecutionPlan",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession",
+        "java.lang.String..."
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.maven.lifecycle.MavenExecutionPlan",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "calculateForkedExecutions",
+      "parameters": [
+        "org.apache.maven.plugin.MojoExecution",
+        "org.apache.maven.execution.MavenSession"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "execute",
+      "parameters": [
+        "org.apache.maven.execution.MavenSession"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "executeForkedExecutions",
+      "parameters": [
+        "org.apache.maven.plugin.MojoExecution",
+        "org.apache.maven.execution.MavenSession"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.maven.project.MavenProject>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPhaseToLifecycleMap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,org.apache.maven.lifecycle.Lifecycle>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPluginsBoundByDefaultToAllLifecycles",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Set<org.apache.maven.model.Plugin>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

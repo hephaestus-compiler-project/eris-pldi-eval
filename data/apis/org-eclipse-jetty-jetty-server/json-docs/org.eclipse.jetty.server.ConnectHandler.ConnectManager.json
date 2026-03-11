@@ -1,0 +1,61 @@
+{
+  "name": "org.eclipse.jetty.server.ConnectHandler.ConnectManager",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.eclipse.jetty.io.SelectorManager"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "connectionFailed",
+      "parameters": [
+        "java.nio.channels.SelectableChannel",
+        "java.lang.Throwable",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newConnection",
+      "parameters": [
+        "java.nio.channels.SelectableChannel",
+        "org.eclipse.jetty.io.EndPoint",
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.Connection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newEndPoint",
+      "parameters": [
+        "java.nio.channels.SelectableChannel",
+        "org.eclipse.jetty.io.ManagedSelector",
+        "java.nio.channels.SelectionKey"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.jetty.io.EndPoint",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": "org.eclipse.jetty.server.ConnectHandler",
+  "access_mod": "protected",
+  "language": "java"
+}

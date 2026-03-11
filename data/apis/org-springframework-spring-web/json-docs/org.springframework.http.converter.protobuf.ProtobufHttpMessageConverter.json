@@ -1,0 +1,108 @@
+{
+  "name": "org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.http.converter.AbstractHttpMessageConverter<com.google.protobuf.Message>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "canWrite",
+      "parameters": [
+        "org.springframework.http.MediaType"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultContentType",
+      "parameters": [
+        "com.google.protobuf.Message"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.http.MediaType",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "readInternal",
+      "parameters": [
+        "java.lang.Class<? extends com.google.protobuf.Message>",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "com.google.protobuf.Message",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "supports",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeInternal",
+      "parameters": [
+        "com.google.protobuf.Message",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "DEFAULT_CHARSET",
+      "type": "java.nio.charset.Charset",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "PROTOBUF",
+      "type": "org.springframework.http.MediaType",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "X_PROTOBUF_MESSAGE_HEADER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "X_PROTOBUF_SCHEMA_HEADER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

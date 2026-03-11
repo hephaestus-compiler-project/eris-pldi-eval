@@ -1,0 +1,910 @@
+{
+  "name": "org.apache.poi.openxml4j.opc.OPCPackage",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.openxml4j.opc.RelationshipSource",
+    "java.io.Closeable"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "addExternalRelationship",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addPackagePart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePart"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addRelationship",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName",
+        "org.apache.poi.openxml4j.opc.TargetMode",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addThumbnail",
+      "parameters": [
+        "java.lang.String",
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearRelationships",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "closeImpl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName",
+        "java.lang.String",
+        "java.io.ByteArrayOutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deletePart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "ensureRelationships",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "flushImpl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPackageProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackageRelationship"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartsByContentType",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartsByRelationshipType",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRelationship",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRelationshipsByType",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationshipCollection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "hasRelationships",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isRelationshipExists",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackageRelationship"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "java.io.InputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.openxml4j.opc.PackageAccess"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "openOrCreate",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeMarshaller",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removePart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removePartRecursive",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeUnmarshaller",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "revert",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "java.io.File"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "saveImpl",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "unregisterPartAndContentType",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addExternalRelationship",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addMarshaller",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.openxml4j.opc.internal.PartMarshaller"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addRelationship",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName",
+        "org.apache.poi.openxml4j.opc.TargetMode",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addThumbnail",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addUnmarshaller",
+      "parameters": [
+        "java.lang.String",
+        "org.apache.poi.openxml4j.opc.internal.PartUnmarshaller"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "close",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "containPart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "create",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createPartImpl",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName",
+        "java.lang.String",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deletePartRecursive",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "flush",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPackageAccess",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageAccess",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParts",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.ArrayList<org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartsByName",
+      "parameters": [
+        "java.util.regex.Pattern"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.openxml4j.opc.PackagePart>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPartsImpl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackagePartCollection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRelationships",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationshipCollection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getUnusedPartIndex",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isClosed",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isStrictOoxmlFormat",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "java.io.File",
+        "org.apache.poi.openxml4j.opc.PackageAccess"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "open",
+      "parameters": [
+        "org.apache.poi.openxml4j.util.ZipEntrySource"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.OPCPackage",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerPartAndContentType",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePart"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removePart",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePart"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removePartImpl",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.PackagePartName"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeRelationship",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceContentType",
+      "parameters": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "revertImpl",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "save",
+      "parameters": [
+        "java.io.OutputStream"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toString",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "validatePackage",
+      "parameters": [
+        "org.apache.poi.openxml4j.opc.OPCPackage"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "defaultPackageAccess",
+      "type": "org.apache.poi.openxml4j.opc.PackageAccess",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "isDirty",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "output",
+      "type": "java.io.OutputStream",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "partMarshallers",
+      "type": "java.util.Map<org.apache.poi.openxml4j.opc.internal.ContentType,org.apache.poi.openxml4j.opc.internal.PartMarshaller>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "relationships",
+      "type": "org.apache.poi.openxml4j.opc.PackageRelationshipCollection",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "contentTypeManager",
+      "type": "org.apache.poi.openxml4j.opc.internal.ContentTypeManager",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "defaultPartMarshaller",
+      "type": "org.apache.poi.openxml4j.opc.internal.PartMarshaller",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "originalPackagePath",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "packageProperties",
+      "type": "org.apache.poi.openxml4j.opc.internal.PackagePropertiesPart",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "partUnmarshallers",
+      "type": "java.util.Map<org.apache.poi.openxml4j.opc.internal.ContentType,org.apache.poi.openxml4j.opc.internal.PartUnmarshaller>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

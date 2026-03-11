@@ -1,0 +1,194 @@
+{
+  "name": "com.fasterxml.jackson.databind.ser.std.EnumSerializer",
+  "type_parameters": [],
+  "implements": [
+    "com.fasterxml.jackson.databind.ser.ContextualSerializer"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.ser.std.StdScalarSerializer<java.lang.Enum<?>>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "_serializeAsIndex",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "construct",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "com.fasterxml.jackson.databind.BeanDescription",
+        "com.fasterxml.jackson.annotation.JsonFormat.Value"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.ser.std.EnumSerializer",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createContextual",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.BeanProperty"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonSerializer<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSchema",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "java.lang.reflect.Type"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.JsonNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_isShapeWrittenUsingIndex",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.annotation.JsonFormat.Value",
+        "boolean",
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "acceptJsonFormatVisitor",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper",
+        "com.fasterxml.jackson.databind.JavaType"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "constructEnumNamingStrategyValues",
+      "parameters": [
+        "com.fasterxml.jackson.databind.SerializationConfig",
+        "java.lang.Class<java.lang.Enum<?>>",
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.EnumValues",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getEnumValues",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.util.EnumValues",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "java.lang.Enum<?>",
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.databind.SerializerProvider"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "EnumSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.EnumValues",
+        "java.lang.Boolean",
+        "com.fasterxml.jackson.databind.util.EnumValues"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "EnumSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.util.EnumValues",
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_values",
+      "type": "com.fasterxml.jackson.databind.util.EnumValues",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_serializeAsIndex",
+      "type": "java.lang.Boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_valuesByEnumNaming",
+      "type": "com.fasterxml.jackson.databind.util.EnumValues",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

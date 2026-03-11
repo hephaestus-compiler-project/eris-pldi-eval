@@ -1,0 +1,452 @@
+{
+  "name": "org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.springframework.jmx.export.assembler.AbstractMBeanInfoAssembler"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "applyCurrencyTimeLimit",
+      "parameters": [
+        "javax.management.Descriptor",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "applyDefaultCurrencyTimeLimit",
+      "parameters": [
+        "javax.management.Descriptor"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createModelMBeanOperationInfo",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.management.modelmbean.ModelMBeanOperationInfo",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAttributeDescription",
+      "parameters": [
+        "java.beans.PropertyDescriptor",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAttributeInfo",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.management.modelmbean.ModelMBeanAttributeInfo[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getClassForDescriptor",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Class<?>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultCurrencyTimeLimit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Integer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOperationDescription",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOperationInfo",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.management.modelmbean.ModelMBeanOperationInfo[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOperationParameters",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "javax.management.MBeanParameterInfo[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameterNameDiscoverer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ParameterNameDiscoverer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeOperation",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeReadAttribute",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "includeWriteAttribute",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isExposeClassDescriptor",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isUseStrictCasing",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "populateAttributeDescriptor",
+      "parameters": [
+        "javax.management.Descriptor",
+        "java.lang.reflect.Method",
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "populateMBeanDescriptor",
+      "parameters": [
+        "javax.management.Descriptor",
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "populateOperationDescriptor",
+      "parameters": [
+        "javax.management.Descriptor",
+        "java.lang.reflect.Method",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultCurrencyTimeLimit",
+      "parameters": [
+        "java.lang.Integer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExposeClassDescriptor",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParameterNameDiscoverer",
+      "parameters": [
+        "org.springframework.core.ParameterNameDiscoverer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setUseStrictCasing",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ATTRIBUTE_OPERATION_VISIBILITY",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_CLASS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_CURRENCY_TIME_LIMIT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_DEFAULT",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_DISPLAY_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_GET_METHOD",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_LOG",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_LOG_FILE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_METRIC_CATEGORY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_METRIC_TYPE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_PERSIST_LOCATION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_PERSIST_NAME",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_PERSIST_PERIOD",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_PERSIST_POLICY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_ROLE",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_SET_METHOD",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_UNITS",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "FIELD_VISIBILITY",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ROLE_GETTER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ROLE_OPERATION",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    },
+    {
+      "name": "ROLE_SETTER",
+      "type": "java.lang.String",
+      "is_static": true,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

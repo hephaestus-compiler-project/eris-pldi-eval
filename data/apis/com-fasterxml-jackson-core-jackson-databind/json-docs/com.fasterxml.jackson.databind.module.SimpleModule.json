@@ -1,0 +1,535 @@
+{
+  "name": "com.fasterxml.jackson.databind.module.SimpleModule",
+  "type_parameters": [],
+  "implements": [
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "com.fasterxml.jackson.databind.Module"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAbstractTypeMapping",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.lang.Class<? extends T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addKeyDeserializer",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.KeyDeserializer"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSerializer",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "com.fasterxml.jackson.databind.JsonSerializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addValueInstantiator",
+      "parameters": [
+        "java.lang.Class<?>",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTypeId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.util.Collection<java.lang.Class<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAbstractTypes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleAbstractTypeResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDeserializers",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleDeserializers"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setKeySerializers",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleSerializers"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setNamingStrategy",
+      "parameters": [
+        "com.fasterxml.jackson.databind.PropertyNamingStrategy"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSerializers",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleSerializers"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueInstantiators",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleValueInstantiators"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "_checkNotNull",
+      "parameters": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addDeserializer",
+      "parameters": [
+        "java.lang.Class<T>",
+        "com.fasterxml.jackson.databind.JsonDeserializer<? extends T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addKeySerializer",
+      "parameters": [
+        "java.lang.Class<? extends T>",
+        "com.fasterxml.jackson.databind.JsonSerializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSerializer",
+      "parameters": [
+        "com.fasterxml.jackson.databind.JsonSerializer<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getModuleName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "java.lang.Class<?>..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "registerSubtypes",
+      "parameters": [
+        "com.fasterxml.jackson.databind.jsontype.NamedType..."
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDeserializerModifier",
+      "parameters": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerModifier"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setKeyDeserializers",
+      "parameters": [
+        "com.fasterxml.jackson.databind.module.SimpleKeyDeserializers"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMixInAnnotation",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSerializerModifier",
+      "parameters": [
+        "com.fasterxml.jackson.databind.ser.BeanSerializerModifier"
+      ],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.databind.module.SimpleModule",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setupModule",
+      "parameters": [
+        "com.fasterxml.jackson.databind.Module.SetupContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "version",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "com.fasterxml.jackson.core.Version",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.Version",
+        "java.util.List<com.fasterxml.jackson.databind.JsonSerializer<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.Version",
+        "java.util.Map<java.lang.Class<?>,com.fasterxml.jackson.databind.JsonDeserializer<?>>",
+        "java.util.List<com.fasterxml.jackson.databind.JsonSerializer<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.Version"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "java.lang.String",
+        "com.fasterxml.jackson.core.Version",
+        "java.util.Map<java.lang.Class<?>,com.fasterxml.jackson.databind.JsonDeserializer<?>>"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "SimpleModule",
+      "parameters": [
+        "com.fasterxml.jackson.core.Version"
+      ],
+      "type_parameters": [],
+      "return_type": null,
+      "is_static": false,
+      "is_constructor": true,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "_deserializerModifier",
+      "type": "com.fasterxml.jackson.databind.deser.BeanDeserializerModifier",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_hasExplicitName",
+      "type": "boolean",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_keySerializers",
+      "type": "com.fasterxml.jackson.databind.module.SimpleSerializers",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_name",
+      "type": "java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_serializerModifier",
+      "type": "com.fasterxml.jackson.databind.ser.BeanSerializerModifier",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_subtypes",
+      "type": "java.util.LinkedHashSet<com.fasterxml.jackson.databind.jsontype.NamedType>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_version",
+      "type": "com.fasterxml.jackson.core.Version",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_abstractTypes",
+      "type": "com.fasterxml.jackson.databind.module.SimpleAbstractTypeResolver",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_deserializers",
+      "type": "com.fasterxml.jackson.databind.module.SimpleDeserializers",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_keyDeserializers",
+      "type": "com.fasterxml.jackson.databind.module.SimpleKeyDeserializers",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_mixins",
+      "type": "java.util.HashMap<java.lang.Class<?>,java.lang.Class<?>>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_namingStrategy",
+      "type": "com.fasterxml.jackson.databind.PropertyNamingStrategy",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_serializers",
+      "type": "com.fasterxml.jackson.databind.module.SimpleSerializers",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "_valueInstantiators",
+      "type": "com.fasterxml.jackson.databind.module.SimpleValueInstantiators",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

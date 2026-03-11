@@ -1,0 +1,134 @@
+{
+  "name": "org.apache.commons.collections4.splitmap.TransformedSplitMap",
+  "type_parameters": [
+    "J",
+    "K",
+    "U",
+    "V"
+  ],
+  "implements": [
+    "org.apache.commons.collections4.Put<J,U>",
+    "java.io.Serializable"
+  ],
+  "inherits": [
+    "org.apache.commons.collections4.splitmap.AbstractIterableGetMapDecorator<K,V>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "clear",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "putAll",
+      "parameters": [
+        "java.util.Map<? extends J,? extends U>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformKey",
+      "parameters": [
+        "J"
+      ],
+      "type_parameters": [],
+      "return_type": "K",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformValue",
+      "parameters": [
+        "U"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "checkSetValue",
+      "parameters": [
+        "U"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "put",
+      "parameters": [
+        "J",
+        "U"
+      ],
+      "type_parameters": [],
+      "return_type": "V",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformingMap",
+      "parameters": [
+        "java.util.Map<K,V>",
+        "org.apache.commons.collections4.Transformer<? super J,? extends K>",
+        "org.apache.commons.collections4.Transformer<? super U,? extends V>"
+      ],
+      "type_parameters": [
+        "J",
+        "K",
+        "U",
+        "V"
+      ],
+      "return_type": "org.apache.commons.collections4.splitmap.TransformedSplitMap<J,K,U,V>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "transformMap",
+      "parameters": [
+        "java.util.Map<? extends J,? extends U>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Map<K,V>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,134 @@
+{
+  "name": "org.mockito.plugins.MockMaker",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "createConstructionMock",
+      "parameters": [
+        "java.lang.Class<T>",
+        "java.util.function.Function<org.mockito.MockedConstruction.Context,org.mockito.mock.MockCreationSettings<T>>",
+        "java.util.function.Function<org.mockito.MockedConstruction.Context,org.mockito.invocation.MockHandler<T>>",
+        "org.mockito.MockedConstruction.MockInitializer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.plugins.MockMaker.ConstructionMockControl<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "createSpy",
+      "parameters": [
+        "org.mockito.mock.MockCreationSettings<T>",
+        "org.mockito.invocation.MockHandler",
+        "T"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "java.util.Optional<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getHandler",
+      "parameters": [
+        "java.lang.Object"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.invocation.MockHandler",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resetMock",
+      "parameters": [
+        "java.lang.Object",
+        "org.mockito.invocation.MockHandler",
+        "org.mockito.mock.MockCreationSettings"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearAllCaches",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "createMock",
+      "parameters": [
+        "org.mockito.mock.MockCreationSettings<T>",
+        "org.mockito.invocation.MockHandler"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createStaticMock",
+      "parameters": [
+        "java.lang.Class<T>",
+        "org.mockito.mock.MockCreationSettings<T>",
+        "org.mockito.invocation.MockHandler"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.mockito.plugins.MockMaker.StaticMockControl<T>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "isTypeMockable",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "org.mockito.plugins.MockMaker.TypeMockability",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.maven.plugin.internal.PluginDependenciesResolver"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "resolve",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.artifact.Artifact",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolve",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "org.eclipse.aether.artifact.Artifact",
+        "org.eclipse.aether.graph.DependencyFilter",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.graph.DependencyNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resolveCoreExtension",
+      "parameters": [
+        "org.apache.maven.model.Plugin",
+        "org.eclipse.aether.graph.DependencyFilter",
+        "java.util.List<org.eclipse.aether.repository.RemoteRepository>",
+        "org.eclipse.aether.RepositorySystemSession"
+      ],
+      "type_parameters": [],
+      "return_type": "org.eclipse.aether.graph.DependencyNode",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

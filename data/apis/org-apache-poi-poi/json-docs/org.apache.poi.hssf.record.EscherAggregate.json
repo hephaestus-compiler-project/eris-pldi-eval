@@ -1,0 +1,1498 @@
+{
+  "name": "org.apache.poi.hssf.record.EscherAggregate",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "org.apache.poi.hssf.record.AbstractEscherHolderRecord"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "associateShapeToObjRecord",
+      "parameters": [
+        "org.apache.poi.ddf.EscherRecord",
+        "org.apache.poi.hssf.record.Record"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createAggregate",
+      "parameters": [
+        "java.util.List<org.apache.poi.hssf.record.RecordBase>",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.hssf.record.EscherAggregate",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGenericRecordType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.hssf.record.HSSFRecordTypes",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getNoteRecordByObj",
+      "parameters": [
+        "org.apache.poi.hssf.record.ObjRecord"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.hssf.record.NoteRecord",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRecordSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getSid",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "short",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeShapeToObjRecord",
+      "parameters": [
+        "org.apache.poi.ddf.EscherRecord"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "serialize",
+      "parameters": [
+        "int",
+        "byte[]"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMainSpRecordId",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "toXml",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addTailRecord",
+      "parameters": [
+        "org.apache.poi.hssf.record.NoteRecord"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "copy",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.hssf.record.EscherAggregate",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getGenericProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.util.function.Supplier<?>>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMaxRecordLength",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRecordName",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getShapeToObjMapping",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<org.apache.poi.ddf.EscherRecord,org.apache.poi.hssf.record.Record>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTailRecords",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.Integer,org.apache.poi.hssf.record.NoteRecord>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeTailRecord",
+      "parameters": [
+        "org.apache.poi.hssf.record.NoteRecord"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDgId",
+      "parameters": [
+        "short"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setMaxRecordLength",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "ST_ACCENTBORDERCALLOUT1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTBORDERCALLOUT3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTCALLOUT1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTCALLOUT3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONBACKPREVIOUS",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONBLANK",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONEND",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONHELP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONINFORMATION",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONRETURN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ARC",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BALLOON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTCONNECTOR2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTCONNECTOR4",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTUPARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BLOCKARC",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BORDERCALLOUT2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BORDERCALLOUT90",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BRACKETPAIR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CALLOUT2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CALLOUT90",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CHEVRON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CLOUDCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDCONNECTOR2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDCONNECTOR4",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDDOWNARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDRIGHTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_DIAMOND",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_DOUBLEWAVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_DOWNARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ELLIPSERIBBON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTALTERNATEPROCESS",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTCONNECTOR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTDELAY",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTDOCUMENT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTINPUTOUTPUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMAGNETICDISK",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMAGNETICTAPE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMANUALOPERATION",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMULTIDOCUMENT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTOFFPAGECONNECTOR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTOR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTPREPARATION",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTPUNCHEDCARD",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTSORT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTTERMINATOR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_HEART",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_HOMEPLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_HOSTCONTROL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_IRREGULARSEAL2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTBRACE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTRIGHTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTRIGHTUPARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LIGHTNINGBOLT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_MIN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_NIL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_NOT_PRIMATIVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_NOTCHEDRIGHTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_PARALLELOGRAM",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_PICTUREFRAME",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_PLUS",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_QUADARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIBBON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIGHTARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIGHTBRACKET",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ROUNDRECTANGLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL16",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL32",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL8",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_STAR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_STRIPEDRIGHTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTARCHDOWNCURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTARCHUPCURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTBOX",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTBUTTONPOUR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCANUP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCASCADEUP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCHEVRONINVERTED",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCIRCLEPOUR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCURVEDOWN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTDEFLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTDEFLATEINFLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTDEFLATETOP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTFADELEFT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTFADEUP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTINFLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTINFLATETOP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTONCURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTPLAINTEXT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTRINGINSIDE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTSIMPLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTSLANTUP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTTRIANGLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTWAVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTWAVE2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTWAVE4",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TRAPEZOID",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_UPARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_UPDOWNARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_VERTICALSCROLL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_WEDGEELLIPSECALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_WEDGERRECTCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "sid",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTBORDERCALLOUT2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTBORDERCALLOUT90",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTCALLOUT2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACCENTCALLOUT90",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONBEGINNING",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONDOCUMENT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONFORWARDNEXT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONHOME",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONMOVIE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ACTIONBUTTONSOUND",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTCONNECTOR3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BENTCONNECTOR5",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BEVEL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BORDERCALLOUT1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BORDERCALLOUT3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_BRACEPAIR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CALLOUT1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CALLOUT3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CAN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CIRCULARARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CUBE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDCONNECTOR3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDCONNECTOR5",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDLEFTARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_CURVEDUPARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_DONUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_DOWNARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ELLIPSE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ELLIPSERIBBON2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTCOLLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTDECISION",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTDISPLAY",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTEXTRACT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTINTERNALSTORAGE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMAGNETICDRUM",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMANUALINPUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTMERGE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTOFFLINESTORAGE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTONLINESTORAGE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTPREDEFINEDPROCESS",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTPROCESS",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTPUNCHEDTAPE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FLOWCHARTSUMMINGJUNCTION",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_FOLDEDCORNER",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_HEXAGON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_HORIZONTALSCROLL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_IRREGULARSEAL1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_ISOCELESTRIANGLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTBRACKET",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTRIGHTARROWCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LEFTUPARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_LINE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_MOON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_NOSMOKING",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_NOTCHEDCIRCULARARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_OCTAGON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_PENTAGON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_PLAQUE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_QUADARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RECTANGLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIBBON2",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIGHTBRACE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_RIGHTTRIANGLE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL24",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SEAL4",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SMILEYFACE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_STRAIGHTCONNECTOR1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_SUN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTARCHDOWNPOUR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTARCHUPPOUR",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTBUTTONCURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCANDOWN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCASCADEDOWN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCHEVRON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCIRCLECURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCURVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTCURVEUP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTDEFLATEBOTTOM",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTDEFLATEINFLATEDEFLATE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTFADEDOWN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTFADERIGHT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTHEXAGON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTINFLATEBOTTOM",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTOCTAGON",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTONRING",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTRING",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTRINGOUTSIDE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTSLANTDOWN",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTSTOP",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTTRIANGLEINVERTED",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTWAVE1",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_TEXTWAVE3",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_THICKARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_UPARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_UPDOWNARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_UTURNARROW",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_WAVE",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "ST_WEDGERECTCALLOUT",
+      "type": "short",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

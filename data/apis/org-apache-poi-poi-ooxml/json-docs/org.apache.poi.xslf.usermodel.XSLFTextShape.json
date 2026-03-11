@@ -1,0 +1,578 @@
+{
+  "name": "org.apache.poi.xslf.usermodel.XSLFTextShape",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.xddf.usermodel.text.TextContainer",
+    "org.apache.poi.sl.usermodel.TextShape<org.apache.poi.xslf.usermodel.XSLFShape,org.apache.poi.xslf.usermodel.XSLFTextParagraph>"
+  ],
+  "inherits": [
+    "org.apache.poi.xslf.usermodel.XSLFSimpleShape"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "appendText",
+      "parameters": [
+        "java.lang.String",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextRun",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedParagraphProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getBottomInset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getLeftInset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextBody",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextBody",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextBodyPr",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBodyProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextDirection",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.TextShape.TextDirection",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextHeight",
+      "parameters": [
+        "java.awt.Graphics2D"
+      ],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextPlaceholder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.TextShape.TextPlaceholder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.Placeholder",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getVerticalAlignment",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.VerticalAlignment",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isHorizontalCentered",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "newTextParagraph",
+      "parameters": [
+        "org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraph"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resizeToFitText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.awt.geom.Rectangle2D",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBottomInset",
+      "parameters": [
+        "double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setInsets",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.Insets2D"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPlaceholder",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.Placeholder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setText",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextRun",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTextDirection",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.TextShape.TextDirection"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTextRotation",
+      "parameters": [
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setVerticalAlignment",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.VerticalAlignment"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "spliterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Spliterator<org.apache.poi.xslf.usermodel.XSLFTextParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addNewTextParagraph",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xslf.usermodel.XSLFTextParagraph",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clearText",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedRunProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getInsets",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.Insets2D",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getRightInset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextAutofit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.sl.usermodel.TextShape.TextAutofit",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextBody",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBody",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextBodyPr",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBodyProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextHeight",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextParagraphs",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xslf.usermodel.XSLFTextParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTextRotation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTopInset",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "double",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWordWrap",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "iterator",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Iterator<org.apache.poi.xslf.usermodel.XSLFTextParagraph>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeTextParagraph",
+      "parameters": [
+        "org.apache.poi.xslf.usermodel.XSLFTextParagraph"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "resizeToFitText",
+      "parameters": [
+        "java.awt.Graphics2D"
+      ],
+      "type_parameters": [],
+      "return_type": "java.awt.geom.Rectangle2D",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setHorizontalCentered",
+      "parameters": [
+        "java.lang.Boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setLeftInset",
+      "parameters": [
+        "double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setRightInset",
+      "parameters": [
+        "double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTextAutofit",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.TextShape.TextAutofit"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTextPlaceholder",
+      "parameters": [
+        "org.apache.poi.sl.usermodel.TextShape.TextPlaceholder"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTopInset",
+      "parameters": [
+        "double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWordWrap",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

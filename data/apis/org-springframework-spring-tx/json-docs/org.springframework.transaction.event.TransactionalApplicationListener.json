@@ -1,0 +1,109 @@
+{
+  "name": "org.springframework.transaction.event.TransactionalApplicationListener",
+  "type_parameters": [
+    "E extends org.springframework.context.ApplicationEvent"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.context.ApplicationListener<E>",
+    "org.springframework.core.Ordered"
+  ],
+  "class_type": 1,
+  "methods": [
+    {
+      "name": "addCallback",
+      "parameters": [
+        "org.springframework.transaction.event.TransactionalApplicationListener.SynchronizationCallback"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forPayload",
+      "parameters": [
+        "java.util.function.Consumer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.transaction.event.TransactionalApplicationListener<org.springframework.context.PayloadApplicationEvent<T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "forPayload",
+      "parameters": [
+        "org.springframework.transaction.event.TransactionPhase",
+        "java.util.function.Consumer<T>"
+      ],
+      "type_parameters": [
+        "T"
+      ],
+      "return_type": "org.springframework.transaction.event.TransactionalApplicationListener<org.springframework.context.PayloadApplicationEvent<T>>",
+      "is_static": true,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getListenerId",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getOrder",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "getTransactionPhase",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.transaction.event.TransactionPhase",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": true
+    },
+    {
+      "name": "processEvent",
+      "parameters": [
+        "E"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

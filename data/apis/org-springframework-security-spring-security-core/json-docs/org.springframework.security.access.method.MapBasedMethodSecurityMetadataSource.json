@@ -1,0 +1,117 @@
+{
+  "name": "org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.beans.factory.BeanClassLoaderAware"
+  ],
+  "inherits": [
+    "org.springframework.security.access.method.AbstractFallbackMethodSecurityMetadataSource"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addSecureMethod",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.reflect.Method",
+        "java.util.List<org.springframework.security.access.ConfigAttribute>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addSecureMethod",
+      "parameters": [
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "java.util.List<org.springframework.security.access.ConfigAttribute>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findAttributes",
+      "parameters": [
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.springframework.security.access.ConfigAttribute>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findAttributes",
+      "parameters": [
+        "java.lang.reflect.Method",
+        "java.lang.Class<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.springframework.security.access.ConfigAttribute>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAllConfigAttributes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Collection<org.springframework.security.access.ConfigAttribute>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getMethodMapSize",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBeanClassLoader",
+      "parameters": [
+        "java.lang.ClassLoader"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "methodMap",
+      "type": "java.util.Map<org.springframework.security.access.method.MapBasedMethodSecurityMetadataSource.RegisteredMethod,java.util.List<org.springframework.security.access.ConfigAttribute>>",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

@@ -1,0 +1,642 @@
+{
+  "name": "org.aspectj.weaver.patterns.PatternParser",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "checkEof",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "eat",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "eatIdentifier",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeEat",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeEatAdjacent",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeEatIdentifier",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeEatIdentifier",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParseAnnotationPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.AnnotationTypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParsePerClause",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.PerClause",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParseSimpleTypeVariableList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String[]",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParseSingleAnnotationPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.AnnotationTypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParseTypeParameterList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePatternList",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "maybeParseTypeVariableList",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypeVariablePatternList",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "moreToParse",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAnnotationNameOrVarTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ExactAnnotationTypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAnnotationNameValuePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAnnotationPointcut",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseAnnotationValues",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.Map<java.lang.String,java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArgumentsAnnotationPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.AnnotationPatternList",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseArgumentsPattern",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePatternList",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseCompoundFieldSignaturePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ISignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseCompoundMethodOrConstructorSignaturePattern",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ISignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDeclare",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Declare",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDeclareAnnotation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Declare",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDeclareAtField",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.DeclareAnnotation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDeclareAtMethod",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.DeclareAnnotation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDeclareAtType",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.DeclareAnnotation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDominates",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.DeclarePrecedence",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDottedIdentifier",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<java.lang.String>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseDottedNamePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.aspectj.weaver.patterns.NamePattern>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseFieldSignaturePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.SignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseGenericsWildcardTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseHasFieldTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseHasMethodTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseIdentifier",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseIsTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseMaybeParenthesizedFieldSignaturePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ISignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseMaybeParenthesizedMethodOrConstructorSignaturePattern",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ISignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseMethodOrConstructorSignaturePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.SignaturePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseModifiersPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ModifiersPattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseNamePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.NamePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseOptionalThrowsPattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.ThrowsPattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parsePointcut",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parsePointcut",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parsePossibleStringSequence",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseSinglePointcut",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.Pointcut",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseSingleTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseSingleTypePattern",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseStringLiteral",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseTypePattern",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseTypePattern",
+      "parameters": [
+        "boolean",
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "parseTypeVariable",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.aspectj.weaver.patterns.TypeVariablePattern",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "peek",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPointcutDesignatorHandlers",
+      "parameters": [
+        "java.util.Set<org.aspectj.weaver.tools.PointcutDesignatorHandler>",
+        "org.aspectj.weaver.World"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

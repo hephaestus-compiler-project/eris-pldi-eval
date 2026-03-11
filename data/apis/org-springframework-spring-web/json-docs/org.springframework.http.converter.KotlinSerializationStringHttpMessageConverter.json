@@ -1,0 +1,49 @@
+{
+  "name": "org.springframework.http.converter.KotlinSerializationStringHttpMessageConverter",
+  "type_parameters": [
+    "T extends kotlinx.serialization.StringFormat"
+  ],
+  "implements": [],
+  "inherits": [
+    "org.springframework.http.converter.AbstractKotlinSerializationHttpMessageConverter<T>"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "readInternal",
+      "parameters": [
+        "kotlinx.serialization.KSerializer<java.lang.Object>",
+        "T",
+        "org.springframework.http.HttpInputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "writeInternal",
+      "parameters": [
+        "java.lang.Object",
+        "kotlinx.serialization.KSerializer<java.lang.Object>",
+        "T",
+        "org.springframework.http.HttpOutputMessage"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

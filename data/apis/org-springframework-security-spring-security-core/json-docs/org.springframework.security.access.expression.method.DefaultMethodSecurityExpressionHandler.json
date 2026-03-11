@@ -1,0 +1,181 @@
+{
+  "name": "org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler",
+  "type_parameters": [],
+  "implements": [
+    "org.springframework.security.access.expression.method.MethodSecurityExpressionHandler"
+  ],
+  "inherits": [
+    "org.springframework.security.access.expression.AbstractSecurityExpressionHandler<org.aopalliance.intercept.MethodInvocation>"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "createEvaluationContext",
+      "parameters": [
+        "java.util.function.Supplier<org.springframework.security.core.Authentication>",
+        "org.aopalliance.intercept.MethodInvocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.EvaluationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createEvaluationContextInternal",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "org.aopalliance.intercept.MethodInvocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.expression.spel.support.StandardEvaluationContext",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSecurityExpressionRoot",
+      "parameters": [
+        "org.springframework.security.core.Authentication",
+        "org.aopalliance.intercept.MethodInvocation"
+      ],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.access.expression.method.MethodSecurityExpressionOperations",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "filter",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.expression.Expression",
+        "org.springframework.expression.EvaluationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.Object",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getDefaultRolePrefix",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getParameterNameDiscoverer",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.core.ParameterNameDiscoverer",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTrustResolver",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.springframework.security.authentication.AuthenticationTrustResolver",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setDefaultRolePrefix",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setParameterNameDiscoverer",
+      "parameters": [
+        "org.springframework.core.ParameterNameDiscoverer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPermissionCacheOptimizer",
+      "parameters": [
+        "org.springframework.security.access.PermissionCacheOptimizer"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setReturnObject",
+      "parameters": [
+        "java.lang.Object",
+        "org.springframework.expression.EvaluationContext"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTrustResolver",
+      "parameters": [
+        "org.springframework.security.authentication.AuthenticationTrustResolver"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "logger",
+      "type": "org.apache.commons.logging.Log",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

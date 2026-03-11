@@ -1,0 +1,90 @@
+{
+  "name": "org.postgresql.replication.fluent.AbstractStreamBuilder",
+  "type_parameters": [
+    "T extends org.postgresql.replication.fluent.ChainedCommonStreamBuilder<T>"
+  ],
+  "implements": [
+    "org.postgresql.replication.fluent.ChainedCommonStreamBuilder<T>"
+  ],
+  "inherits": [
+    "java.lang.Object"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "withSlotName",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withStatusInterval",
+      "parameters": [
+        "int",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "self",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "withStartPosition",
+      "parameters": [
+        "org.postgresql.replication.LogSequenceNumber"
+      ],
+      "type_parameters": [],
+      "return_type": "T",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "startPosition",
+      "type": "org.postgresql.replication.LogSequenceNumber",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "slotName",
+      "type": "@Nullable java.lang.String",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "statusIntervalMs",
+      "type": "int",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

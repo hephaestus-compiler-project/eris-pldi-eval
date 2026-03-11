@@ -1,0 +1,127 @@
+{
+  "name": "ch.qos.logback.core.model.processor.DefaultProcessor",
+  "type_parameters": [],
+  "implements": [],
+  "inherits": [
+    "ch.qos.logback.core.spi.ContextAwareBase"
+  ],
+  "class_type": 0,
+  "methods": [
+    {
+      "name": "addAnalyser",
+      "parameters": [
+        "java.lang.Class<? extends ch.qos.logback.core.model.Model>",
+        "java.util.function.Supplier<ch.qos.logback.core.model.processor.ModelHandlerBase>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "addHandler",
+      "parameters": [
+        "java.lang.Class<? extends ch.qos.logback.core.model.Model>",
+        "ch.qos.logback.core.model.ModelHandlerFactoryMethod"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "analyseDependencies",
+      "parameters": [
+        "ch.qos.logback.core.model.Model"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPhaseOneFilter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "ch.qos.logback.core.model.processor.ChainedModelFilter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getPhaseTwoFilter",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "ch.qos.logback.core.model.processor.ChainedModelFilter",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "mainTraverse",
+      "parameters": [
+        "ch.qos.logback.core.model.Model",
+        "ch.qos.logback.core.model.processor.ModelFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "process",
+      "parameters": [
+        "ch.qos.logback.core.model.Model"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "secondPhaseTraverse",
+      "parameters": [
+        "ch.qos.logback.core.model.Model",
+        "ch.qos.logback.core.model.processor.ModelFilter"
+      ],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "mic",
+      "type": "ch.qos.logback.core.model.processor.ModelInterpretationContext",
+      "is_static": false,
+      "access_mod": "protected"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}

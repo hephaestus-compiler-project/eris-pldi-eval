@@ -1,0 +1,698 @@
+{
+  "name": "org.apache.poi.xddf.usermodel.chart.XDDFChart",
+  "type_parameters": [],
+  "implements": [
+    "org.apache.poi.xddf.usermodel.text.TextContainer"
+  ],
+  "inherits": [
+    "org.apache.poi.ooxml.POIXMLDocumentPart"
+  ],
+  "class_type": 2,
+  "methods": [
+    {
+      "name": "clearChartSeries",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createCategoryAxis",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.AxisPosition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFCategoryAxis",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createDateAxis",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.AxisPosition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFDateAxis",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createSeriesAxis",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.AxisPosition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFSeriesAxis",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteLegend",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "displayBlanksAs",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.DisplayBlanks"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedParagraphProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraphProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "formatRange",
+      "parameters": [
+        "org.apache.poi.ss.util.CellRangeAddress"
+      ],
+      "type_parameters": [],
+      "return_type": "java.lang.String",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChartFactory",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ooxml.POIXMLFactory",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChartRelation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ooxml.POIXMLRelation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChartWorkbookRelation",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ooxml.POIXMLRelation",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCTChartSpace",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.chart.CTChartSpace",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getFormattedTitle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.text.XDDFTextBody",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrAddManualLayout",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFManualLayout",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrAddView3D",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFView3D",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTitleOverlay",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.lang.Boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "importContent",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.XDDFChart"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "isPlotOnlyVisibleCells",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "boolean",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "removeTitle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "saveWorkbook",
+      "parameters": [
+        "org.apache.poi.xssf.usermodel.XSSFWorkbook"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setBackWall",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setExternalId",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setPlotOnlyVisibleCells",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSideWall",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTitleText",
+      "parameters": [
+        "java.lang.String"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setWorkbook",
+      "parameters": [
+        "org.apache.poi.xssf.usermodel.XSSFWorkbook"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "clear",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "commit",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createData",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.ChartTypes",
+        "org.apache.poi.xddf.usermodel.chart.XDDFChartAxis",
+        "org.apache.poi.xddf.usermodel.chart.XDDFValueAxis"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFChartData",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createRelationshipInChart",
+      "parameters": [
+        "org.apache.poi.ooxml.POIXMLRelation",
+        "org.apache.poi.ooxml.POIXMLFactory",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.openxml4j.opc.PackageRelationship",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "createValueAxis",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.AxisPosition"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFValueAxis",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "deleteShapeProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "fillSheet",
+      "parameters": [
+        "org.apache.poi.xssf.usermodel.XSSFSheet",
+        "org.apache.poi.xddf.usermodel.chart.XDDFDataSource<?>",
+        "org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource<?>"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "findDefinedRunProperty",
+      "parameters": [
+        "java.util.function.Predicate<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties>",
+        "java.util.function.Function<org.openxmlformats.schemas.drawingml.x2006.main.CTTextCharacterProperties,R>"
+      ],
+      "type_parameters": [
+        "R"
+      ],
+      "return_type": "java.util.Optional<R>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getAxes",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<? extends org.apache.poi.xddf.usermodel.chart.XDDFChartAxis>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChartIndex",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "int",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getChartSeries",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "java.util.List<org.apache.poi.xddf.usermodel.chart.XDDFChartData>",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCTChart",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.chart.CTChart",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getCTPlotArea",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrAddLegend",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFChartLegend",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getOrAddShapeProperties",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.XDDFShapeProperties",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getTitle",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xddf.usermodel.chart.XDDFTitle",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "getWorkbook",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.xssf.usermodel.XSSFWorkbook",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "incrementSeriesCount",
+      "parameters": [],
+      "type_parameters": [],
+      "return_type": "long",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "protected",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "plot",
+      "parameters": [
+        "org.apache.poi.xddf.usermodel.chart.XDDFChartData"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "replaceReferences",
+      "parameters": [
+        "org.apache.poi.xssf.usermodel.XSSFSheet"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setAutoTitleDeleted",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setChartIndex",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setFloor",
+      "parameters": [
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setSheetTitle",
+      "parameters": [
+        "java.lang.String",
+        "int"
+      ],
+      "type_parameters": [],
+      "return_type": "org.apache.poi.ss.util.CellReference",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setTitleOverlay",
+      "parameters": [
+        "boolean"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    },
+    {
+      "name": "setValueRange",
+      "parameters": [
+        "int",
+        "java.lang.Double",
+        "java.lang.Double",
+        "java.lang.Double",
+        "java.lang.Double"
+      ],
+      "type_parameters": [],
+      "return_type": "void",
+      "is_static": false,
+      "is_constructor": false,
+      "access_mod": "public",
+      "throws": [],
+      "is_default": false
+    }
+  ],
+  "fields": [
+    {
+      "name": "chartSpace",
+      "type": "org.openxmlformats.schemas.drawingml.x2006.chart.CTChartSpace",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_WIDTH",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_Y",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "axes",
+      "type": "java.util.List<org.apache.poi.xddf.usermodel.chart.XDDFChartAxis>",
+      "is_static": false,
+      "access_mod": "protected"
+    },
+    {
+      "name": "DEFAULT_HEIGHT",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    },
+    {
+      "name": "DEFAULT_X",
+      "type": "int",
+      "is_static": true,
+      "access_mod": "public"
+    }
+  ],
+  "functional_interface": false,
+  "parent": null,
+  "access_mod": "public",
+  "language": "java"
+}
