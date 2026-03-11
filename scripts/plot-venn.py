@@ -37,6 +37,7 @@ plt.rcParams['font.size'] = 22
 plt.rcParams['font.monospace'] = 'Inconsolata Medium'
 plt.rcParams['figure.figsize'] = (6, 5)
 plt.rcParams['axes.labelsize'] = 22
+plt.rcParams['pdf.fonttype'] = 42
 
 print(bugs)
 venn3([
