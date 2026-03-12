@@ -5,6 +5,7 @@ import json
 import pandas as pd
 import seaborn as sns
 import matplotlib.pylab as plt
+import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument("filename")
@@ -15,8 +16,6 @@ args = parser.parse_args()
 
 plt.style.use('default')
 sns.set(style="whitegrid")
-plt.rcParams['font.family'] = 'Ubuntu'
-plt.rcParams['font.serif'] = 'Ubuntu'
 plt.rcParams['font.monospace'] = 'Inconsolata Medium'
 plt.rcParams['font.size'] = 19
 plt.rcParams['axes.labelsize'] = 26
@@ -69,10 +68,10 @@ for seed in not_errors:
     errors[seed] = (0, count)
 
 programs = sum([x[1] for x in errors.values()])
-print(programs)
-print("Seeds", len(errors))
-print("Alerts", sum(x[0] for x in errors.values()))
-print("Non seeds", sum(1 for v in errors.values() if not v[0]))
+print(f"Seeds: {len(errors)}")
+print(f"Number of variants: {programs}")
+print(f"Alerts: {sum(x[0] for x in errors.values())}")
+print(f"Non bug-triggering seeds: {sum(1 for v in errors.values() if not v[0])}")
 
 framedata = []
 rate = []
@@ -87,9 +86,10 @@ for seed, values in errors.items():
     else:
         rate.append(0)
 
-print(sorted(rate))
-import numpy as np
-print(np.median(rate))
+print(f"Bug-triggering rate (mean): {np.mean(rate)}")
+print(f"Bug-triggering rate (median): {np.median(rate)}")
+print(f"Bug-triggering rate (min): {np.min(rate)}")
+print(f"Bug-triggering rate (max): {np.max(rate)}")
 
 framedata = sorted(framedata, key=lambda x: x["Non-bug-triggering variants"])
 

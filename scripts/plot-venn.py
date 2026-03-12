@@ -1,11 +1,16 @@
+import argparse
 import json
-import sys
 
 import seaborn as sns
 from matplotlib import pylab as plt
 from matplotlib_venn import venn3
 
-with open(sys.argv[1]) as f:
+parser = argparse.ArgumentParser()
+parser.add_argument("input", help="JSON file with bugs.")
+parser.add_argument("--output", default="venn.pdf", help="Path of the output figure.")
+args = parser.parse_args()
+
+with open(args.input) as f:
     bug_set = json.load(f)
 
 bugs = {
@@ -47,5 +52,5 @@ venn3([
        ],
       ("Hephaestus", "Thalia",
        "Eris"))
-plt.savefig('venn.pdf', format='pdf', bbox_inches='tight',
+plt.savefig(args.output, format='pdf', bbox_inches='tight',
             pad_inches=0)

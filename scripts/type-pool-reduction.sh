@@ -1,3 +1,5 @@
+#! /bin/bash
+
 basedir=$(dirname "$0")
 libpath=$1
 
@@ -15,7 +17,7 @@ run()
     --max-depth 2 --generator api  --dry-run --name test-reduction \
     --api-doc-path $libpath/json-docs \
     --max-conditional-depth 2 --language java"
-  echo "$base_args" | xargs ./thalia.py > /dev/null
+  echo "$base_args" | xargs eris > /dev/null
   logfile=bugs/test-reduction/logs/api-generator
 
   types=$(grep "Number of types:" "$logfile" | head -1 | cut -d: -f2)
@@ -36,6 +38,6 @@ for lib in $libpath/*; do
 done | python -c "
 import sys, statistics
 data = [float(x) for x in sys.stdin]
-print(f'Mean:   {statistics.mean(data):.4f}')
-print(f'Median: {statistics.median(data):.4f}')
+print(f'Type pool reduction rate (mean):   {statistics.mean(data):.4f}')
+print(f'Type pool reduction rate (median): {statistics.median(data):.4f}')
 "

@@ -1,10 +1,9 @@
 # Artifact for "Enumerating Ill-Typed Programs for Testing Type Analyzers (PLDI'26)"
 
-This artifact is for the conditionally accepted  PLDI'26 paper titled
+This artifact accompanies the PLDI'26 paper
 "Enumerating Ill-Typed Programs for Testing Type Analyzers".
 
-An archived version of the artifact is also available on Zenodo.
-See XXX.
+An archived version of the artifact is also available on Zenodo (see XXX).
 
 # Table of Contents
 
@@ -14,70 +13,70 @@ See XXX.
 - [Getting Started](#getting-started)
   * [Usage](#usage)
   * [Run Tests](#run-tests)
-  * [Example: Testing the Groovy compiler](#example-testing-the-groovy-compiler-using-the-api-of-its-standard-library)
-  * [Example: Testing the Java Checker Framework](#example-testing-the-groovy-compiler-using-the-api-of-a-third-party-library)
+  * [Example: Testing the Groovy Compiler](#example-testing-the-groovy-compiler)
+  * [Example: Testing the Java Checker Framework](#example-testing-the-java-checker-framework)
 - [Step by Step Instructions](#step-by-step-instructions)
+  * [Reproducing the Figures](#reproducing-the-figures)
+  * [Reproducing the Statistics](#reproducing-the-statistics)
 
 # Overview
 
 The artifact contains the instructions and scripts to re-run the evaluation
-described in our paper. The artifact has the following structure:
+described in our paper. It has the following structure:
 
-* `scripts/`: This directory contains the scripts needed to re-run the
-experiments and re-produce the figures and tables presented in our paper.
-* `data/`: This is the directory that contains the pre-computed results of our
-evaluation.
-* `data/apis`: A directory that contains the API specification from popular Java libraries.
-* `data/runs`: Computed data from previous evaluation runs of our approach.
-* `eris/`: Contains the source code of our tool
-(provided as a git submodule) used for evaluating the soundness of
-type analyzers. The name of our tool is `eris`.
-* `installation_scripts/`: Contains helper scripts used to install all
-dependencies (e.g., compiler versions from [SDKMAN](https://sdkman.io/)).
-* `figures/`: This directory will be used to save the figures of our paper.
-* `Dockerfile`: The Dockerfile used to create a Docker image of our artifact.
-  This image contains all data and dependencies.
+* `scripts/`: Scripts for re-running experiments and reproducing the figures
+  and tables presented in our paper.
+* `data/`: Pre-computed results of our evaluation.
+  * `data/apis/`: API specifications from popular Java libraries.
+  * `data/bugs.json`: The bugs found by `eris` during our evaluation.
+  * `data/runs/`: Output data from the evaluation runs.
+    * `data/runs/bug-triggering-variants/`: Fuzzing data for the
+      bug-triggering variants experiment (JCF and Groovy).
+    * `data/runs/type-isomorphism/`: Fuzzing logs for the type isomorphism
+      experiment.
+* `eris/`: Source code of our tool (provided as a git submodule).
+  The tool is named `eris`.
+* `installation_scripts/`: Helper scripts for installing dependencies
+  (e.g., compiler versions via [SDKMAN](https://sdkman.io/)).
+* `figures/`: Output directory where reproduced figures are saved.
+* `Dockerfile`: Used to build the Docker image of the artifact.
+  The image bundles all data and dependencies.
 
 `eris` is available as open-source software under the
-GNU General Public License v3.0, and can also be reached through the following
-repository: https://github.com/hephaestus-compiler-project/eris.
+GNU General Public License v3.0 at:
+https://github.com/hephaestus-compiler-project/eris.
 
-Inside the `eris` directory, there are the following directories:
+The `eris/` directory contains:
 
-* `src/`: The source code of `eris` written in Python.
-* `tests/`: Contains the tests of `eris`.
-* `example-apis/`: Example inputs of `eris`. Our tool
-takes as input an API specification in JSON.
-* `deployment/`: Contains configuration and scripts to install and run
-`eris` on a server.
+* `src/`: The source code of `eris`, written in Python.
+* `tests/`: The test suite of `eris`.
+* `example-apis/`: Example API specifications in JSON format (the input
+  format of `eris`).
+* `deployment/`: Configuration and scripts for running `eris` on a server.
 
 # Requirements
 
-See [REQUIREMENTS.md](./REQUIREMENTS.md)
+See [REQUIREMENTS.md](./REQUIREMENTS.md).
 
 # Setup
 
-See [INSTALL.md](./INSTALL.md)
+See [INSTALL.md](./INSTALL.md).
 
 
 # Getting Started
 
-To get started with our `eris` tool,
-we use the Docker image (namely `eris-eval`) built by
-the instructions from the [Setup](#Setup) guide.
-The image contains all the
-required environments for running our evaluation
-(i.e., it includes installations of the corresponding type analyzers,
-as well as any other tool needed for processing the results).
+To get started, we use the Docker image (`eris-eval`) built by following the
+[Setup](#setup) guide. The image contains all required environments for
+running the evaluation (i.e., installations of the relevant type analyzers
+and all tools needed for processing results).
 
-You can enter a new container by using the following command:
+Start a new container with:
 
-```
+```bash
 docker run -ti --rm eris-eval
 ```
 
 ## Usage
-
 
 ```
 eris@e0456a9b520e:~$ eris --help
@@ -134,8 +133,7 @@ options:
   --batch BATCH         Number of programs to generate before invoking the
                         compiler
   -b BUGS, --bugs BUGS  Set bug directory (default:
-                        /home/thodoris/postdoc/projects/eris-pldi-
-                        eval/eris/bugs)
+                        /home/eris/bugs)
   -n NAME, --name NAME  Set name of this testing instance (default: random
                         string)
   -T [{TypeErasure} ...], --transformation-types [{TypeErasure} ...]
@@ -157,9 +155,7 @@ options:
                         from the last and go back until the transformation
                         introduces the error
   -F LOG_FILE, --log-file LOG_FILE
-                        Set log file (default:
-                        /home/thodoris/postdoc/projects/eris-pldi-
-                        eval/eris/logs)
+                        Set log file (default: /home/eris/logs)
   -L, --log             Keep logs for each transformation (bugs/session/logs)
   -N, --dry-run         Do not compile the programs
   --language {kotlin,groovy,java,scala}
@@ -172,7 +168,7 @@ options:
                         Use only correctness-preserving transformations
   --timeout TIMEOUT     Timeout for transformations (in seconds)
   --cast-numbers        Cast numeric constants to their actual type (this
-                        option is used to avoid re-occrrence of a specific
+                        option is used to avoid re-occurrence of a specific
                         Groovy bug)
   --disable-function-references
                         Disable function references
@@ -203,8 +199,7 @@ options:
                         Extra compiler options for invoking the compiler
   --seeds SEEDS         Directory of seeds
   --ignore-locations-with-unknown-target-type
-                        Disegard locations whose expected type is uknown
-                        (omitted)
+                        Disregard locations whose expected type is unknown
   --disable-location-cache
                         Disable cache for locations. Every location is now
                         considered distinct.
@@ -217,16 +212,16 @@ options:
 
 ## Run Tests
 
-To run `eris` tests, execute the following commands:
+To run the `eris` test suite:
 
 ```bash
-# Enter eris directory
+# Enter the eris directory
 eris@e0456a9b520e:~$ cd eris
 # Run tests
 eris@e0456a9b520e:~/eris$ python -m pytest
 ```
 
-The output of the previous command should be similar to the following:
+The output should look similar to:
 
 ```
 tests/test_api_graph.py::test1 PASSED                                                   [  0%]
@@ -240,19 +235,17 @@ tests/test_use_analysis.py::test_program8 PASSED                                
 ```
 
 
-## Example: Testing the Groovy compiler
+## Example: Testing the Groovy Compiler
 
 **NOTE:** At each run, `eris` generates random programs.
-Therefore, you should expect to get different results at each run:
-some randomly generated programs might trigger unfixed compiler bugs.
+Therefore, you should expect different results at each run:
+some randomly generated programs might trigger unfixed bugs
+in type analyzers.
 
-In this example,
-we use `eris` to generate 30 ill-typed variants from a set of
-well-typed Groovy seed programs.
-To do so,
-run the following command.
+In this example, we use `eris` to generate 30 ill-typed variants from a set
+of well-typed Groovy seed programs. Run the following command:
 
-```
+```bash
 eris@e0456a9b520e:~/eris$ eris --language groovy \
   --transformations 0  \
   --batch 1 -i 30 -P \
@@ -265,7 +258,7 @@ eris@e0456a9b520e:~/eris$ eris --language groovy \
   --error-enumerator type
 ```
 
-The expected outcome is something similar to:
+The expected output is similar to:
 
 ```
 stop_cond             iterations (30)
@@ -281,21 +274,18 @@ Test Programs Passed 30 / 30 ✔          Test Programs Failed 0 / 30 ✘
 Total faults: 0
 ```
 
-**Inputs**: The inputs of the aforementioned command instruct `eris` to
-generate 30 (`-i 30`) Groovy (`--language programs`) by injecting type
-errors (`--error-enumerator type`) into a provided set of well-typed
-seed programs (`--seeds /home/erirs/example-seeds/groovy-seeds`).
-The option `--keep-all` makes `eris` to store every generated program
-into the file system.
+**Inputs**: The command instructs `eris` to generate 30 (`-i 30`) Groovy
+programs (`--language groovy`) by injecting type errors
+(`--error-enumerator type`) into a provided set of well-typed seed programs
+(`--seeds /home/eris/example-seeds/groovy-seeds`).
+The `--keep-all` flag makes `eris` store every generated program on disk.
 
-**Outputs:** During this run,
-`eris` stores every output into a `bugs/groovy-session` directory
+**Outputs:** `eris` stores all output in `bugs/groovy-session/`
 (specified by the `--name groovy-session` option).
-Among other things,
-the `bugs/groovy-session/` directory contains two files:
-`stats.json` and `faults.json` (see more details later).
+This directory contains, among other things, two files:
+`stats.json` and `faults.json`.
 
-`stats.json` contains the following details about the testing session.
+`stats.json` contains statistics about the testing session:
 
 ```json
 {
@@ -322,14 +312,11 @@ the `bugs/groovy-session/` directory contains two files:
 }
 ```
 
-###  Logging
+### Logging
 
-The `-L` option allows you to log all the type mismatches
-injected by `eris`.
-The resulting log file can be found
-at `bugs/groovy-session/logs/api-generator`.
-In our previous example,
-the contents of this file look like:
+The `-L` flag enables logging of all type mismatches injected by `eris`.
+The resulting log is saved at `bugs/groovy-session/logs/api-generator`.
+Its contents look like:
 
 ```
 Built API with the following statistics:
@@ -373,11 +360,14 @@ Enumerating error program 3 for skeleton 3
 ...
 ```
 
-Indeed, if produce the diff between the seed program and the
-ill-typed variant produced by `eris`,
-we get:
+For example,
+by examining the above log file, we observe that `eris` generated
+two variants by injecting two type errors into the well-typed
+seed program located at `example-seeds/groovy-seeds/iter_14`.
 
-``` diff
+Taking the diff between the seed program and the first ill-typed variant:
+
+```diff
 eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy bugs/groovy-session/generator/iter_1/Main.groovy
 27c27
 <     Integer[] fracking = new Integer[]{-85, 49, 28};
@@ -385,8 +375,8 @@ eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy
 >     Integer[] fracking = new Integer[0][0];
 ```
 
-And we verify that the generated ill-typed variant is correctly rejected by
-the `groovyc` type analyzer.
+We can verify that the generated ill-typed variant is correctly rejected
+by the `groovyc` type analyzer:
 
 ```
 eris@d55f523ab2da:~$ groovyc --compile-static bugs/groovy-session/generator/iter_1/Main.groovy
@@ -399,11 +389,9 @@ bugs/groovy-session/generator/iter_1/Main.groovy: 27: [Static type checking] - C
 1 error
 ```
 
-By examining the logs,
-the second variant generated by `eris` creates another ill-typed variant 
-that contains the type mismatch:
-expected type: `Integer[]` vs. actual type: `java.security.cert.X509CRL[]`,
-which is also successfully rejected by the `groovyc` type checker.
+The second variant contains the type mismatch
+`Integer[]` vs. `java.security.cert.X509CRL[]`, which is also correctly
+rejected by `groovyc`:
 
 ```diff
 eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy bugs/groovy-session/generator/iter_2/Main.groovy
@@ -413,11 +401,8 @@ eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy
 >     Integer[] fracking = new java.security.cert.X509CRL[0];
 ```
 
-Notably,
-if any of the variants generated by `eris` is not rejected by the type checker
-(let's imagine that variant `2` does that),
-`eris` will record it in the `faults.json` file,
-which would have a format like that:
+If any variant is not rejected by the type checker, `eris` records it in
+`faults.json`, with a format like:
 
 ```json
 {
@@ -434,16 +419,365 @@ which would have a format like that:
 ```
 
 
-Congratulations, you have completed the Getting Started guide of our artifact!
-You can not proceed with the
-[Step by Step Instructions](#step-by-step-instructions) guide.
-Notably,
-in [Running Eris on More Type Analyzers][#running-eris-on-more-type-analyzers],
-you will find more examples on hot to use `eris`.
+See [Testing Other Type Analyzers with Eris](#testing-other-type-analyzers-with-eris)
+for examples of running `eris` on the Java Checker Framework (JCF)
+and other type analyzers.
 
 
+## Discovered bugs
 
-# Step By Step Instructions
+We provide a JSON file (`data/bugs.json` in the root directory of the artifact)
+that contains detailed information about
+the bugs identified by `eris` during our testing efforts.
+Each entry in the file corresponds to a distinct bug
+and includes the following fields:
 
-**NOTE**: Remember to run all the subsequent `docker run` commands
-from the root directory of the artifact (i.e., `eris-pldi-eval/`).
+```json
+{
+  "date": "2025-10-27 13:54:53+00:00",
+  "language": "Java",
+  "compiler": "jcf",
+  "version": "",
+  "bugid": "7341",
+  "title": "false negative when indexing an array that is followed by instanceof ",
+  "links": {
+    "issuetracker": "https://github.com/typetools/checker-framework/issues/7341",
+    "fix": ""
+  },
+  "oracle": "",
+  "mutator": "nullability",
+  "severity": "",
+  "reporter": "theosotr",
+  "status": "Closed",
+  "resolution": "Fixed",
+  "resolutiondate": "None",
+  "symptom": "Unexpected Runtime Behavior",
+  "bugtype": "",
+  "resolvedin": "None",
+  "test": [
+    "import java.util.*;",
+    "import org.checkerframework.checker.nullness.qual.*;",
+    "public class Test {",
+    "  static public void main(String[] args) {",
+    "      List<List<? extends Number>> lists = new ArrayList<>();",
+    "      List<? super List<? extends Number>> y = lists;",
+    "      // This assignment is not null-safe",
+    "      List<? super @Nullable List<? extends Number>> x = y;",
+    "      x.add(null);",
+    "      lists.get(0).toString();",
+    "  }",
+    "}"
+  ],
+  "chars": {
+    "characteristics": [
+  	  "Array",
+  	  "Boxing/Unboxing"
+    ],
+    "impact": "Null pointer dereference",
+    "rootcause": "Type checking of AST nodes",
+    "fix": "check omission",
+    "detectable": [
+  	"eris",
+  	"hephaestus"
+    ]
+  },
+  "errormsg": [
+    "Exception in thread \"main\" java.lang.NullPointerException: Cannot invoke \"Object.toString()\" because the return value of \"java.util.List.get(int)\" is null",
+    "        at Test.main(Test.java:12)"
+  ],
+  "comment": ""
+}
+```
+
+Congratulations, you have completed the Getting Started guide!
+You can now proceed to the
+[Step by Step Instructions](#step-by-step-instructions).
+
+# Step by Step Instructions
+
+**NOTE**: Run all `docker run` commands
+from the root directory of the
+artifact (i.e., `eris-pldi-eval/`).
+
+To validate the main results presented in the paper,
+first create a new Docker
+container by running:
+
+```
+docker run -ti --rm \
+  -v $(pwd)/data:/home/eris/data \
+  -v $(pwd)/scripts:/home/eris/eval-scripts \
+  -v $(pwd)/figures:/home/eris/eval-figures \
+  -v $(pwd)/new-results:/home/eris/new-results \
+  eris-eval
+```
+
+Note that we mount four _local volumes_ inside the newly created container.
+The first volume (`data/`) contains the data collected during our evaluation,
+including the bugs discovered by `eris`.
+The second volume (`eval-scripts/`) includes
+all necessary scripts to reproduce
+and validate the results of the paper.
+The third volume (`eval-figures/`) is used to save the figures of our paper.
+Finally,
+the last volume (`new-results/`) mounts an empty directory where
+you can store the results if you decide to re-run our experiments.
+
+## RQ1: Bug-Finding Capability (Section 5.2)
+
+For the first research question,
+we examine the `database/bugs.json` file
+to reproduce the entire Table 2.
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/process_bugs.py data/bugs.json
+                                  Table 2a                                  
+============================================================================
+Status                    groovyc   JCF       kotlinc   dotty     Total     
+----------------------------------------------------------------------------
+Confirmed                 17        10        3         0         30        
+Fixed                     21        9         10        6         46        
+Wont fix                  1         0         2         1         4         
+Duplicate                 1         1         0         0         2         
+----------------------------------------------------------------------------
+Total                     40        20        15        7         82        
+
+                                  Table 2b                                  
+============================================================================
+Symptoms                  groovyc   JCF       kotlinc   dotty     Total     
+----------------------------------------------------------------------------
+Soundness                 32        12        3         4         51        
+Crash                     6         8         12        3         29        
+Completeness              2         0         0         0         2         
+
+                                  Table 2c                                  
+============================================================================
+Error type                groovyc   JCF       kotlinc   dotty     Total     
+----------------------------------------------------------------------------
+No error                  6         7         4         1         18        
+Type error                24        1         10        2         37        
+Null pointer dereference  0         12        0         4         16        
+Access violation          9         0         0         0         9         
+Reassignment of var       1         0         1         0         2  
+```
+
+
+## RQ2: Bug Characteristics (Section 5.3)
+
+For the second research question,
+we examine `data/bugs.json` to compute the distribution of
+bugs' root causes and impact by reproducing Figures 10 and 11.
+To reproduce Figure 10,
+run:
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/plot-category-distribution.py \
+  --input data/bugs.json \
+  --output eval-figures/impact.pdf \
+  --category impact
+Impact distribution (total: 64):
+  Runtime type error: 20
+  Null pointer dereference: 15
+  Compiler crash (e.g., backend): 13
+  Use of missing/illegal member: 9
+  Other: 5
+  Illegal bytecode: 2
+
+```
+
+The generated figure is available at `figures/impact.pdf` in your host machine.
+
+Now,
+to reproduce Figure 11,
+run:
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/plot-category-distribution.py --input data/bugs.json --output eval-figures/rootcauses.pdf --category rootcause
+Root cause distribution (total: 46):
+  Type checking of AST nodes: 13
+  Type inference/Type comparison: 12
+  Control-flow analysis: 9
+  SAM resolution/inference: 7
+  Method resolution: 4
+  Other: 1
+```
+
+The above command reproduces Figure 11,
+which can be found at `data/rootcauses.pdf` in your host machine.
+
+## RQ3: Importance of Type Recovery and Isomorphic Type Shapes (Section 5.4)
+
+### Bug-Triggering Variants
+
+To reproduce Figures 13a and 13b that capture
+the bug-triggering variants per seed,
+run the following two commands.
+
+Command 1 (Figure 13a):
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/plot-bug-triggering-variants.py \
+  data/runs/bug-triggering-variants/groovy/logs \
+  data/runs/bug-triggering-variants/groovy/faults.json \
+  --groovy \
+  --output eval-figures/groovy-variants.pdf
+Seeds: 16
+Number of variants: 48836
+Alerts: 242
+Non bug-triggering seeds: 7
+Bug-triggering rate (mean): 0.8025031880806186
+Bug-triggering rate (median): 0.04634445490348649
+Bug-triggering rate (min): 0.0
+Bug-triggering rate (max): 8.727895037079293
+```
+
+Command 2 (Figure 13b): 
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/plot-bug-triggering-variants.py \
+  data/runs/bug-triggering-variants/jcf/logs \
+  data/runs/bug-triggering-variants/jcf/faults.json  \
+  --output eval-figures/jcf-variants.pdf
+Seeds: 135
+Number of variants: 19547
+Alerts: 30
+Non bug-triggering seeds: 119
+Bug-triggering rate (mean): 0.1618056840068163
+Bug-triggering rate (median): 0.0
+Bug-triggering rate (min): 0.0
+Bug-triggering rate (max): 3.0303030303030303
+```
+
+In your host machine,
+the generated figures can be found at:
+ * `figures/groovy-variants.pdf` (Figure 13a)
+ * `figures/jcf-variants.pdf` (Figure 13b)
+
+To reproduce Figure 13c,
+run:
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/plot-bug-evolution.py \
+  data/runs/bug-triggering-variants/ eval-figures/evolution.pdf
+```
+
+The generated figure can be found at `figures/evolution.pdf`.
+
+### Importance of Type Recovery
+
+To estimate the importance of type recovery
+(Section 5.4, paragraph: "Importance of type recovery"),
+we use 1,098 Java seed programs found
+at `/home/eris/java-seeds/` inside the artifact,
+and then use `eris` to enumerate the locations
+where faults can be safely injected.
+To do so,
+our experiment uses two modes:
+one with type recovery enabled,
+and one with type recovery disabled.
+To run the experiment
+and compute the impact of type recovery,
+run the following command
+(estimated running time: 10--15 minutes).
+
+```
+eris@afa4de3612b7:~$ ./eval-scripts/type-recovery-impact.sh \
+  /home/eris/java-seeds
+Computing affected locations w/ type recovery (bear with us...)
+Computing affected locations w/o type recovery (bear with us...)
+Seeds:                                      1098
+Total locations:                            158557
+Examined locations (w/o type recovery):     119829
+Examined locations (w/ type recovery):      86316
+Change in examined locations:               -28.0%
+```
+
+### Importance of Type Shape Isomorphism
+
+To estimate the impact of type shape isomorphism,
+we perform two experiments.
+
+**Experiment 1 (Type pool reduction rate):**
+In the first experiment,
+we estimate the reduction rate in the type pool size
+performed by type shape isomorphism in the types of various
+APIs from popular Java libraries.
+Run (estimated running time: 5 minutes):
+
+```
+eris@afa4de3612b7:~$ ./eval-scripts/type-pool-reduction.sh data/apis/
+Type pool reduction rate (mean):   84.4140
+Type pool reduction rate (median): 84.0000
+```
+
+
+**Experiment 2 (Variant reduction rate):**
+In the second experiment,
+we use 85 well-typed seed programs
+(note: the paper mentions 100 seed programs,
+but it is actually 85)
+and enumerate their ill-typed variants
+with and without type shape isomorphism.
+You can reproduce the results mentioned in the paper
+(Section 5.4, paragraph: "Effectiveness of isomorphic type shapes")
+using the pre-computed data found
+at `data/runs/type-isomorphism`.
+
+```
+eris@afa4de3612b7:~$ python eval-scripts/count-variants.py data/runs/type-isomorphism/reduced.logs data/runs/type-isomorphism/full.logs        
+Seeds:                                       85
+
+Total variants (w/ type isomorphism):        714989
+Total variants (w/o type isomorphism):       10263193
+
+Median variants/seed (w/ type isomorphism):  5016.0
+Median variants/seed (w/o type isomorphism): 65285.0
+
+Variant ratio (full/type isomorphism):
+  Mean:                          13.02x
+  Median:                        12.63x
+```
+
+**(OPTIONAL) Re-computing experiment 2 (Variant reduction rate):***
+To fully re-compute the data from experiment 2 can take 2--3 days.
+Therefore,
+you may re-compute the data for a smaller dataset.
+To do so,
+use 5 seed programs located at `data/smaller-seeds`
+and re-compute the experiment as follows.
+
+```
+eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh \
+  data/new-seeds/generator/
+Computing affected locations w/ type isomorphism (bear with us...)
+Computing affected locations w/o type isomorphism (bear with us...)
+Seeds:                                       3
+
+Total variants (w/ type isomorphism):        15645
+Total variants (w/o type isomorphism):       91750
+
+Median variants/seed (w/ type isomorphism):  5273.0
+Median variants/seed (w/o type isomorphism): 15245.0
+
+Variant ratio (full/type isomorphism):
+  Mean:                          7.90x
+  Median:                        7.54x
+  Min:                           1.13x
+  Max:                           15.03x
+```
+
+## RQ4: Comparison with the State of the Art (Section 5.5)
+
+Figure 14 shows the overlap of bugs detected by `eris`
+and other existing tools.
+To reproduce it,
+run:
+
+```bash
+eris@afa4de3612b7:~$ python eris-pldi-eval/scripts/plot-venn.py \
+  data/bugs.json --output figures/venn.pdf
+```
+
+The figure can be found at `figures/venn.pdf`.
+
+Congratulations on completing the instructions of our artifact! :-)

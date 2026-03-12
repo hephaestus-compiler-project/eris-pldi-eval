@@ -35,8 +35,8 @@ assert locations_b == locations_e, f"Total locations mismatch: {locations_b} vs 
 
 pct_change = (examined_e - examined_b) / examined_b * 100
 
-print(f"Seeds:                                 {skeletons_b}")
-print(f"Total locations:                       {locations_b}")
-print(f"Examined locations (baseline):         {examined_b}")
-print(f"Examined locations (extended):         {examined_e}")
-print(f"Change in examined locations:          {pct_change:+.1f}%")
+print(f"Seeds:                                      {skeletons_b}")
+print(f"Total locations:                            {locations_b}")
+print(f"Examined locations (w/o type recovery):     {examined_b}")
+print(f"Examined locations (w/ type recovery):      {examined_e}")
+print(f"Change in examined locations:               {pct_change:+.1f}%")
