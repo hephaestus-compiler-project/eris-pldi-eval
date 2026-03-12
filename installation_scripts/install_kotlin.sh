@@ -4,4 +4,4 @@
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install kotlin 1.8.20 < /dev/null
+sdk install kotlin 2.0.10 < /dev/null
