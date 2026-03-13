@@ -14,10 +14,12 @@ An archived version of the artifact is also available on Zenodo (see XXX).
   * [Usage](#usage)
   * [Run Tests](#run-tests)
   * [Example: Testing the Groovy Compiler](#example-testing-the-groovy-compiler)
-  * [Example: Testing the Java Checker Framework](#example-testing-the-java-checker-framework)
+  * [Discovered Bugs](#discovered-bugs)
 - [Step by Step Instructions](#step-by-step-instructions)
-  * [Reproducing the Figures](#reproducing-the-figures)
-  * [Reproducing the Statistics](#reproducing-the-statistics)
+  * [RQ1: Bug-Finding Capability (Section 5.2)](#rq1-bug-finding-capability-section-52)
+  * [RQ2: Bug Characteristics (Section 5.3)](#rq2-bug-characteristics-section-53)
+  * [RQ3: Importance of Type Recovery and Isomorphic Type Shapes (Section 5.4)](#rq3-importance-of-type-recovery-and-isomorphic-type-shapes-section-54)
+  * [RQ4: Comparison with the State of the Art (Section 5.5)](#rq4-comparison-with-the-state-of-the-art-section-55)
 
 # Overview
 
@@ -424,7 +426,7 @@ for examples of running `eris` on the Java Checker Framework (JCF)
 and other type analyzers.
 
 
-## Discovered bugs
+## Discovered Bugs
 
 We provide a JSON file (`data/bugs.json` in the root directory of the artifact)
 that contains detailed information about
