@@ -36,8 +36,6 @@ for bug in bug_set:
 
 plt.style.use('ggplot')
 sns.set(style="whitegrid")
-plt.rcParams['font.family'] = 'Ubuntu'
-plt.rcParams['font.serif'] = 'Ubuntu'
 plt.rcParams['font.size'] = 22
 plt.rcParams['font.monospace'] = 'Inconsolata Medium'
 plt.rcParams['figure.figsize'] = (6, 5)

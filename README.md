@@ -746,24 +746,22 @@ To do so,
 use 5 seed programs located at `data/smaller-seeds`
 and re-compute the experiment as follows.
 
-```
-eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh \
-  data/new-seeds/generator/
+```eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh data/new-seeds/generator/
 Computing affected locations w/ type isomorphism (bear with us...)
 Computing affected locations w/o type isomorphism (bear with us...)
-Seeds:                                       3
+Seeds:                                       5
 
-Total variants (w/ type isomorphism):        15645
-Total variants (w/o type isomorphism):       91750
+Total variants (w/ type isomorphism):        20413
+Total variants (w/o type isomorphism):       154265
 
-Median variants/seed (w/ type isomorphism):  5273.0
-Median variants/seed (w/o type isomorphism): 15245.0
+Median variants/seed (w/ type isomorphism):  2196.0
+Median variants/seed (w/o type isomorphism): 16568.0
 
 Variant ratio (full/type isomorphism):
-  Mean:                          7.90x
+  Mean:                          7.58x
   Median:                        7.54x
-  Min:                           1.13x
-  Max:                           15.03x
+  Min:                           7.48x
+  Max:                           7.81x
 ```
 
 ## RQ4: Comparison with the State of the Art (Section 5.5)
@@ -774,10 +772,12 @@ To reproduce it,
 run:
 
 ```bash
-eris@afa4de3612b7:~$ python eris-pldi-eval/scripts/plot-venn.py \
-  data/bugs.json --output figures/venn.pdf
+eris@afa4de3612b7:~$ python eval-scripts/plot-venn.py \
+  data/bugs.json --output eval-figures/venn.pdf
 ```
 
-The figure can be found at `figures/venn.pdf`.
+The figure can be found at `figures/venn.pdf` in your host machine.
+Note that the figure is slightly different from the one in the paper
+and we will update it in the revised paper.
 
 Congratulations on completing the instructions of our artifact! :-)
