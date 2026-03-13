@@ -129,13 +129,12 @@ options:
   --enable-expression-cache
                         Re-use expressions that yield certain types
   --path-search-strategy {shortest,ksimple}
-                        Stategy for enumerating paths between two nodes
+                        Strategy for enumerating paths between two nodes
   -t TRANSFORMATIONS, --transformations TRANSFORMATIONS
                         Number of transformations in each round
   --batch BATCH         Number of programs to generate before invoking the
                         compiler
-  -b BUGS, --bugs BUGS  Set bug directory (default:
-                        /home/eris/bugs)
+  -b BUGS, --bugs BUGS  Set bug directory (default: /home/eris/bugs)
   -n NAME, --name NAME  Set name of this testing instance (default: random
                         string)
   -T [{TypeErasure} ...], --transformation-types [{TypeErasure} ...]
@@ -248,7 +247,7 @@ In this example, we use `eris` to generate 30 ill-typed variants from a set
 of well-typed Groovy seed programs. Run the following command:
 
 ```bash
-eris@e0456a9b520e:~/eris$ eris --language groovy \
+eris@e0456a9b520e:~$ eris --language groovy \
   --transformations 0  \
   --batch 1 -i 30 -P \
   --max-depth 2 \
@@ -362,10 +361,9 @@ Enumerating error program 3 for skeleton 3
 ...
 ```
 
-For example,
-by examining the above log file, we observe that `eris` generated
-two variants by injecting two type errors into the well-typed
-seed program located at `example-seeds/groovy-seeds/iter_14`.
+By examining the log, we observe that `eris` generated two variants by
+injecting two type errors into the well-typed seed program located at
+`example-seeds/groovy-seeds/iter_14`.
 
 Taking the diff between the seed program and the first ill-typed variant:
 
@@ -420,19 +418,16 @@ If any variant is not rejected by the type checker, `eris` records it in
 }
 ```
 
-
-See [Testing Other Type Analyzers with Eris](#testing-other-type-analyzers-with-eris)
-for examples of running `eris` on the Java Checker Framework (JCF)
-and other type analyzers.
+Congratulations, you have completed the Getting Started guide!
+You can now proceed to the
+[Step by Step Instructions](#step-by-step-instructions).
 
 
 ## Discovered Bugs
 
-We provide a JSON file (`data/bugs.json` in the root directory of the artifact)
-that contains detailed information about
-the bugs identified by `eris` during our testing efforts.
-Each entry in the file corresponds to a distinct bug
-and includes the following fields:
+We provide a JSON file (`data/bugs.json`) that contains detailed information
+about the bugs identified by `eris` during our testing efforts.
+Each entry corresponds to a distinct bug and includes the following fields:
 
 ```json
 {
@@ -472,15 +467,15 @@ and includes the following fields:
   ],
   "chars": {
     "characteristics": [
-  	  "Array",
-  	  "Boxing/Unboxing"
+      "Array",
+      "Boxing/Unboxing"
     ],
     "impact": "Null pointer dereference",
     "rootcause": "Type checking of AST nodes",
     "fix": "check omission",
     "detectable": [
-  	"eris",
-  	"hephaestus"
+      "eris",
+      "hephaestus"
     ]
   },
   "errormsg": [
@@ -491,21 +486,18 @@ and includes the following fields:
 }
 ```
 
-Congratulations, you have completed the Getting Started guide!
-You can now proceed to the
-[Step by Step Instructions](#step-by-step-instructions).
-
 # Step by Step Instructions
 
-**NOTE**: Run all `docker run` commands
-from the root directory of the
-artifact (i.e., `eris-pldi-eval/`).
-
 To validate the main results presented in the paper,
-first create a new Docker
-container by running:
+first create the output directories on your host machine:
 
+```bash
+mkdir -p figures new-results
 ```
+
+Then start a new Docker container with the following volumes mounted:
+
+```bash
 docker run -ti --rm \
   -v $(pwd)/data:/home/eris/data \
   -v $(pwd)/scripts:/home/eris/eval-scripts \
@@ -514,63 +506,57 @@ docker run -ti --rm \
   eris-eval
 ```
 
-Note that we mount four _local volumes_ inside the newly created container.
-The first volume (`data/`) contains the data collected during our evaluation,
-including the bugs discovered by `eris`.
-The second volume (`eval-scripts/`) includes
-all necessary scripts to reproduce
-and validate the results of the paper.
-The third volume (`eval-figures/`) is used to save the figures of our paper.
-Finally,
-the last volume (`new-results/`) mounts an empty directory where
-you can store the results if you decide to re-run our experiments.
+This mounts four local directories inside the container:
+
+| Host path      | Container path              | Purpose                                      |
+|----------------|-----------------------------|----------------------------------------------|
+| `data/`        | `/home/eris/data`           | Pre-computed evaluation data and bug database |
+| `scripts/`     | `/home/eris/eval-scripts`   | Scripts to reproduce results                 |
+| `figures/`     | `/home/eris/eval-figures`   | Output directory for reproduced figures      |
+| `new-results/` | `/home/eris/new-results`    | Output directory if re-running experiments   |
+
+All commands in the sections below are run **inside** this container.
 
 ## RQ1: Bug-Finding Capability (Section 5.2)
 
-For the first research question,
-we examine the `database/bugs.json` file
-to reproduce the entire Table 2.
+To reproduce Table 2, run:
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/process_bugs.py data/bugs.json
-                                  Table 2a                                  
+                                  Table 2a
 ============================================================================
-Status                    groovyc   JCF       kotlinc   dotty     Total     
+Status                    groovyc   JCF       kotlinc   dotty     Total
 ----------------------------------------------------------------------------
-Confirmed                 17        10        3         0         30        
-Fixed                     21        9         10        6         46        
-Wont fix                  1         0         2         1         4         
-Duplicate                 1         1         0         0         2         
+Confirmed                 17        10        3         0         30
+Fixed                     21        9         10        6         46
+Wont fix                  1         0         2         1         4
+Duplicate                 1         1         0         0         2
 ----------------------------------------------------------------------------
-Total                     40        20        15        7         82        
+Total                     40        20        15        7         82
 
-                                  Table 2b                                  
+                                  Table 2b
 ============================================================================
-Symptoms                  groovyc   JCF       kotlinc   dotty     Total     
+Symptoms                  groovyc   JCF       kotlinc   dotty     Total
 ----------------------------------------------------------------------------
-Soundness                 32        12        3         4         51        
-Crash                     6         8         12        3         29        
-Completeness              2         0         0         0         2         
+Soundness                 32        12        3         4         51
+Crash                     6         8         12        3         29
+Completeness              2         0         0         0         2
 
-                                  Table 2c                                  
+                                  Table 2c
 ============================================================================
-Error type                groovyc   JCF       kotlinc   dotty     Total     
+Error type                groovyc   JCF       kotlinc   dotty     Total
 ----------------------------------------------------------------------------
-No error                  6         7         4         1         18        
-Type error                24        1         10        2         37        
-Null pointer dereference  0         12        0         4         16        
-Access violation          9         0         0         0         9         
-Reassignment of var       1         0         1         0         2  
+No error                  6         7         4         1         18
+Type error                24        1         10        2         37
+Null pointer dereference  0         12        0         4         16
+Access violation          9         0         0         0         9
+Reassignment of var       1         0         1         0         2
 ```
 
 
 ## RQ2: Bug Characteristics (Section 5.3)
 
-For the second research question,
-we examine `data/bugs.json` to compute the distribution of
-bugs' root causes and impact by reproducing Figures 10 and 11.
-To reproduce Figure 10,
-run:
+To reproduce Figure 10 (bug impact distribution), run:
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/plot-category-distribution.py \
@@ -584,17 +570,17 @@ Impact distribution (total: 64):
   Use of missing/illegal member: 9
   Other: 5
   Illegal bytecode: 2
-
 ```
 
-The generated figure is available at `figures/impact.pdf` in your host machine.
+The generated figure is saved at `figures/impact.pdf` on your host machine.
 
-Now,
-to reproduce Figure 11,
-run:
+To reproduce Figure 11 (bug root cause distribution), run:
 
 ```
-eris@afa4de3612b7:~$ python eval-scripts/plot-category-distribution.py --input data/bugs.json --output eval-figures/rootcauses.pdf --category rootcause
+eris@afa4de3612b7:~$ python eval-scripts/plot-category-distribution.py \
+  --input data/bugs.json \
+  --output eval-figures/rootcauses.pdf \
+  --category rootcause
 Root cause distribution (total: 46):
   Type checking of AST nodes: 13
   Type inference/Type comparison: 12
@@ -604,18 +590,13 @@ Root cause distribution (total: 46):
   Other: 1
 ```
 
-The above command reproduces Figure 11,
-which can be found at `data/rootcauses.pdf` in your host machine.
+The generated figure is saved at `figures/rootcauses.pdf` on your host machine.
 
 ## RQ3: Importance of Type Recovery and Isomorphic Type Shapes (Section 5.4)
 
 ### Bug-Triggering Variants
 
-To reproduce Figures 13a and 13b that capture
-the bug-triggering variants per seed,
-run the following two commands.
-
-Command 1 (Figure 13a):
+To reproduce Figure 13a (Groovy bug-triggering variants per seed), run:
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/plot-bug-triggering-variants.py \
@@ -633,12 +614,12 @@ Bug-triggering rate (min): 0.0
 Bug-triggering rate (max): 8.727895037079293
 ```
 
-Command 2 (Figure 13b): 
+To reproduce Figure 13b (JCF bug-triggering variants per seed), run:
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/plot-bug-triggering-variants.py \
   data/runs/bug-triggering-variants/jcf/logs \
-  data/runs/bug-triggering-variants/jcf/faults.json  \
+  data/runs/bug-triggering-variants/jcf/faults.json \
   --output eval-figures/jcf-variants.pdf
 Seeds: 135
 Number of variants: 19547
@@ -650,37 +631,30 @@ Bug-triggering rate (min): 0.0
 Bug-triggering rate (max): 3.0303030303030303
 ```
 
-In your host machine,
-the generated figures can be found at:
- * `figures/groovy-variants.pdf` (Figure 13a)
- * `figures/jcf-variants.pdf` (Figure 13b)
+The generated figures are saved on your host machine at:
+* `figures/groovy-variants.pdf` (Figure 13a)
+* `figures/jcf-variants.pdf` (Figure 13b)
 
-To reproduce Figure 13c,
-run:
+To reproduce Figure 13c (bug detection over time), run:
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/plot-bug-evolution.py \
   data/runs/bug-triggering-variants/ eval-figures/evolution.pdf
 ```
 
-The generated figure can be found at `figures/evolution.pdf`.
+The generated figure is saved at `figures/evolution.pdf` on your host machine.
 
 ### Importance of Type Recovery
 
 To estimate the importance of type recovery
 (Section 5.4, paragraph: "Importance of type recovery"),
-we use 1,098 Java seed programs found
-at `/home/eris/java-seeds/` inside the artifact,
-and then use `eris` to enumerate the locations
-where faults can be safely injected.
-To do so,
-our experiment uses two modes:
-one with type recovery enabled,
-and one with type recovery disabled.
-To run the experiment
-and compute the impact of type recovery,
-run the following command
-(estimated running time: 10--15 minutes).
+we use 1,098 Java seed programs found at `/home/eris/java-seeds/` inside the
+container, and run `eris` to count the locations where faults can be
+safely injected (without enumerating the corresponding variants).
+Counting these locations is done via two modes:
+one with type recovery enabled, and one with it disabled (baseline).
+
+Run the following command (estimated running time: 10--15 minutes):
 
 ```
 eris@afa4de3612b7:~$ ./eval-scripts/type-recovery-impact.sh \
@@ -696,14 +670,11 @@ Change in examined locations:               -28.0%
 
 ### Importance of Type Shape Isomorphism
 
-To estimate the impact of type shape isomorphism,
-we perform two experiments.
+To estimate the impact of type shape isomorphism, we perform two experiments.
 
 **Experiment 1 (Type pool reduction rate):**
-In the first experiment,
-we estimate the reduction rate in the type pool size
-performed by type shape isomorphism in the types of various
-APIs from popular Java libraries.
+We estimate the reduction in type pool size achieved by type shape isomorphism
+across the APIs of popular Java libraries.
 Run (estimated running time: 5 minutes):
 
 ```
@@ -712,21 +683,16 @@ Type pool reduction rate (mean):   84.4140
 Type pool reduction rate (median): 84.0000
 ```
 
-
 **Experiment 2 (Variant reduction rate):**
-In the second experiment,
-we use 85 well-typed seed programs
-(note: the paper mentions 100 seed programs,
-but it is actually 85)
-and enumerate their ill-typed variants
-with and without type shape isomorphism.
-You can reproduce the results mentioned in the paper
-(Section 5.4, paragraph: "Effectiveness of isomorphic type shapes")
-using the pre-computed data found
-at `data/runs/type-isomorphism`.
+We enumerate ill-typed variants for 85 well-typed seed programs with and
+without type shape isomorphism.
+The pre-computed data for this experiment is available at
+`data/runs/type-isomorphism/`.
 
 ```
-eris@afa4de3612b7:~$ python eval-scripts/count-variants.py data/runs/type-isomorphism/reduced.logs data/runs/type-isomorphism/full.logs        
+eris@afa4de3612b7:~$ python eval-scripts/count-variants.py \
+  data/runs/type-isomorphism/reduced.logs \
+  data/runs/type-isomorphism/full.logs
 Seeds:                                       85
 
 Total variants (w/ type isomorphism):        714989
@@ -740,15 +706,14 @@ Variant ratio (full/type isomorphism):
   Median:                        12.63x
 ```
 
-**(OPTIONAL) Re-computing experiment 2 (Variant reduction rate):***
-To fully re-compute the data from experiment 2 can take 2--3 days.
-Therefore,
-you may re-compute the data for a smaller dataset.
-To do so,
-use 5 seed programs located at `data/smaller-seeds`
-and re-compute the experiment as follows.
+**(OPTIONAL) Re-running Experiment 2:**
+Fully re-running this experiment takes 2--3 days.
+To verify the setup with a smaller dataset, use the 5 seed programs located at
+`data/new-seeds/generator/`:
 
-```eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh data/new-seeds/generator/
+```
+eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh \
+  data/new-seeds/generator/
 Computing affected locations w/ type isomorphism (bear with us...)
 Computing affected locations w/o type isomorphism (bear with us...)
 Seeds:                                       5
@@ -768,18 +733,14 @@ Variant ratio (full/type isomorphism):
 
 ## RQ4: Comparison with the State of the Art (Section 5.5)
 
-Figure 14 shows the overlap of bugs detected by `eris`
-and other existing tools.
-To reproduce it,
-run:
+Figure 14 shows the overlap of bugs detected by `eris` and other existing
+tools. To reproduce it, run:
 
-```bash
+```
 eris@afa4de3612b7:~$ python eval-scripts/plot-venn.py \
   data/bugs.json --output eval-figures/venn.pdf
 ```
 
-The figure can be found at `figures/venn.pdf` in your host machine.
-Note that the figure is slightly different from the one in the paper
-and we will update it in the revised paper.
+The generated figure is saved at `figures/venn.pdf` on your host machine.
 
-Congratulations on completing the instructions of our artifact! :-)
+Congratulations on completing the artifact evaluation! :-)
