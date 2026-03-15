@@ -20,7 +20,7 @@ An archived version of the artifact is also available on Zenodo.
   * [RQ2: Bug Characteristics (Section 5.3)](#rq2-bug-characteristics-section-53)
   * [RQ3: Importance of Type Recovery and Isomorphic Type Shapes (Section 5.4)](#rq3-importance-of-type-recovery-and-isomorphic-type-shapes-section-54)
   * [RQ4: Comparison with the State of the Art (Section 5.5)](#rq4-comparison-with-the-state-of-the-art-section-55)
-- [Running Eris](#running-eris)
+- [Running Eris (Optional)](#running-eris-optional)
 
 # Overview
 
@@ -360,7 +360,8 @@ injecting two type errors into the well-typed seed program located at
 `example-seeds/groovy-seeds/iter_1`.
 
 Taking the diff between the seed program and the first ill-typed variant
-and notice the corresponding line:
+and notice the corresponding line (notably the other lines have been changed
+due to the renaming of the package of the program):
 
 ```diff
 eris@d55f523ab2da:~$ diff --color \
@@ -495,23 +496,7 @@ eris@46e496bd70e7:~$ exit
 
 # Step by Step Instructions
 
-Before proceeding with the instructions of the artifact,
-download the following data from Zenodo,
-which contain 1098 Java seed programs used for
-reproducing the results of the paper.
-
-**Note***:
-If you have fetched the artifact from Zenodo rather than GitHub,
-this data is already in your system.
-Therefore, you don't have to run the following commands.
-
-```bash
-wget -O "java-seeds.zip" ""
-unzip java-seeds.zip -d data
-```
-
-
-Then start a new Docker container with the following volumes mounted
+Start a new Docker container with the following volumes mounted
 (run the command from the root directory of the artifact):
 
 ```bash
@@ -664,8 +649,7 @@ The generated figure is saved at `figures/evolution.pdf` on your host machine.
 To estimate the importance of type recovery
 (Section 5.4, paragraph: "Importance of type recovery"),
 we use 1,098 Java seed programs found at `/home/eris/data/java-seeds/` inside the
-container (this is the data that you downloaded at the beginning of
-the [Step by Step Instructions](#step-by-step-instructions) guide),
+container,
 and run `eris` to count the locations where faults can be
 safely injected (without enumerating the corresponding variants).
 Counting these locations is done via two modes:
@@ -765,7 +749,7 @@ We will fix this issue in the revised paper.
 
 Congratulations on completing the artifact evaluation! :-)
 
-## Running Eris
+## Running Eris (Optional)
 
 This section describes how to run `eris` on scenarios beyond those covered
 by the evaluation above.
@@ -801,7 +785,7 @@ eris@307c327ef73e:~$ eris --language groovy \
   --max-depth 6 \
   --generator base \
   --keep-all \
-  --name groovy-seeds \
+  --name groovy-seeds-base \
   --dry-run
 ```
 
@@ -834,6 +818,7 @@ eris@307c327ef73e:~$ eris --language groovy \
 
 Each of the 30 generated variants makes a method `private` and then calls
 it from outside its class; `groovyc` should reject all of them.
+They can be found at `bugs/groovy-variants/generator`.
 
 ### Testing Type Analyzers with Eris
 
