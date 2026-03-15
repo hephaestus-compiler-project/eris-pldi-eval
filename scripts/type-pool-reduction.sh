@@ -18,7 +18,7 @@ run()
     --api-doc-path $libpath/json-docs \
     --max-conditional-depth 2 --language java"
   echo "$base_args" | xargs eris > /dev/null
-  logfile=bugs/test-reduction/logs/api-generator
+  logfile=bugs/test-reduction/logs/generation.logs
 
   types=$(grep "Number of types:" "$logfile" | head -1 | cut -d: -f2)
   reduced=$(grep "Reduced size of type pool:" "$logfile" | head -1 | cut -d: -f2)

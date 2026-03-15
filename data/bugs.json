@@ -25,16 +25,16 @@
       "import org.checkerframework.checker.nullness.qual.*;",
       "public class Test {",
       "  static public void main(String[] args) {",
-      "      List<List<? extends Number>> lists = new ArrayList<>();",
-      "      List<? super List<? extends Number>> y = lists;",
-      "      // This assignment is not null-safe",
-      "      List<? super @Nullable List<? extends Number>> x = y;",
-      "      x.add(null);",
-      "      lists.get(0).toString();",
+      "      Object[] x = new Object[]{\"a\"};",
+      "      Integer index = null;",
+      "      if (x[index] instanceof String) {}",
       "  }",
       "}"
     ],
     "chars": {
+      "category": [
+          "Location sensitive"
+      ],
       "characteristics": [
           "Array",
           "Boxing/Unboxing"

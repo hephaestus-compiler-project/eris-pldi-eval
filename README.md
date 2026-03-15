@@ -3,7 +3,7 @@
 This artifact accompanies the PLDI'26 paper
 "Enumerating Ill-Typed Programs for Testing Type Analyzers".
 
-An archived version of the artifact is also available on Zenodo (see XXX).
+An archived version of the artifact is also available on Zenodo.
 
 # Table of Contents
 
@@ -20,6 +20,7 @@ An archived version of the artifact is also available on Zenodo (see XXX).
   * [RQ2: Bug Characteristics (Section 5.3)](#rq2-bug-characteristics-section-53)
   * [RQ3: Importance of Type Recovery and Isomorphic Type Shapes (Section 5.4)](#rq3-importance-of-type-recovery-and-isomorphic-type-shapes-section-54)
   * [RQ4: Comparison with the State of the Art (Section 5.5)](#rq4-comparison-with-the-state-of-the-art-section-55)
+- [Running Eris](#running-eris)
 
 # Overview
 
@@ -31,6 +32,7 @@ described in our paper. It has the following structure:
 * `data/`: Pre-computed results of our evaluation.
   * `data/apis/`: API specifications from popular Java libraries.
   * `data/bugs.json`: The bugs found by `eris` during our evaluation.
+  * `data/example-seeds/`: Example seed programs used by `eris`.
   * `data/runs/`: Output data from the evaluation runs.
     * `data/runs/bug-triggering-variants/`: Fuzzing data for the
       bug-triggering variants experiment (JCF and Groovy).
@@ -100,10 +102,11 @@ usage: eris.py [-h] [-g {base,api,api-decl,cfg}] [--api-doc-path API_DOC_PATH]
                [--disable-parameterized-functions] [--disable-sam]
                [--local-variable-prob LOCAL_VARIABLE_PROB]
                [--error-filter-patterns ERROR_FILTER_PATTERNS]
-               [--error-enumerator {type,flow-type}]
-               [--max-cfg-nodes MAX_CFG_NODES] [--use-nullable-types]
-               [--extra-compiler-option flag value] [--seeds SEEDS]
-               [--ignore-locations-with-unknown-target-type]
+               [--error-enumerator {accessibility,type,flow-type,final-var}]
+               [--max-cfg-nodes MAX_CFG_NODES]
+               [--max-cfg-local-vars MAX_CFG_LOCAL_VARS]
+               [--use-nullable-types] [--extra-compiler-option flag value]
+               [--seeds SEEDS] [--ignore-locations-with-unknown-target-type]
                [--disable-location-cache] [--disable-enumeration]
                [--disable-type-isomorphism]
 
@@ -129,12 +132,14 @@ options:
   --enable-expression-cache
                         Re-use expressions that yield certain types
   --path-search-strategy {shortest,ksimple}
-                        Strategy for enumerating paths between two nodes
+                        Stategy for enumerating paths between two nodes
   -t TRANSFORMATIONS, --transformations TRANSFORMATIONS
                         Number of transformations in each round
   --batch BATCH         Number of programs to generate before invoking the
                         compiler
-  -b BUGS, --bugs BUGS  Set bug directory (default: /home/eris/bugs)
+  -b BUGS, --bugs BUGS  Set bug directory (default:
+                        /home/thodoris/postdoc/projects/eris-pldi-
+                        eval/eris/bugs)
   -n NAME, --name NAME  Set name of this testing instance (default: random
                         string)
   -T [{TypeErasure} ...], --transformation-types [{TypeErasure} ...]
@@ -156,7 +161,9 @@ options:
                         from the last and go back until the transformation
                         introduces the error
   -F LOG_FILE, --log-file LOG_FILE
-                        Set log file (default: /home/eris/logs)
+                        Set log file (default:
+                        /home/thodoris/postdoc/projects/eris-pldi-
+                        eval/eris/logs)
   -L, --log             Keep logs for each transformation (bugs/session/logs)
   -N, --dry-run         Do not compile the programs
   --language {kotlin,groovy,java,scala}
@@ -169,7 +176,7 @@ options:
                         Use only correctness-preserving transformations
   --timeout TIMEOUT     Timeout for transformations (in seconds)
   --cast-numbers        Cast numeric constants to their actual type (this
-                        option is used to avoid re-occurrence of a specific
+                        option is used to avoid re-occrrence of a specific
                         Groovy bug)
   --disable-function-references
                         Disable function references
@@ -188,19 +195,23 @@ options:
   --error-filter-patterns ERROR_FILTER_PATTERNS
                         A file containing regular expressions for filtering
                         compiler error messages
-  --error-enumerator {type,flow-type}
+  --error-enumerator {accessibility,type,flow-type,final-var}
                         Select a strategy for enumerating errors in a given
                         program
   --max-cfg-nodes MAX_CFG_NODES
                         Maximum nodes in CFG graph (only applicable when
                         --generator cfg)
+  --max-cfg-local-vars MAX_CFG_LOCAL_VARS
+                        Maximum local variables per CFG block (only applicable
+                        when --generator cfg)
   --use-nullable-types  Use nullable types in the generated programs and
                         enumerators
   --extra-compiler-option flag value
                         Extra compiler options for invoking the compiler
   --seeds SEEDS         Directory of seeds
   --ignore-locations-with-unknown-target-type
-                        Disregard locations whose expected type is unknown
+                        Disegard locations whose expected type is uknown
+                        (omitted)
   --disable-location-cache
                         Disable cache for locations. Every location is now
                         considered distinct.
@@ -232,7 +243,7 @@ tests/test_use_analysis.py::test_program6 PASSED                                
 tests/test_use_analysis.py::test_program7 PASSED                                        [ 99%]
 tests/test_use_analysis.py::test_program8 PASSED                                        [100%]
 
-===================================== 266 passed in 2.02s =====================================
+===================================== 343 passed in 2.02s =====================================
 ```
 
 
@@ -256,7 +267,7 @@ eris@e0456a9b520e:~$ eris --language groovy \
   --api-doc-path /home/eris/eris/example-apis/java-stdlib/json-docs \
   --keep-all \
   --name groovy-session \
-  --error-enumerator type
+  --error-enumerator type -L
 ```
 
 The expected output is similar to:
@@ -316,28 +327,11 @@ This directory contains, among other things, two files:
 ### Logging
 
 The `-L` flag enables logging of all type mismatches injected by `eris`.
-The resulting log is saved at `bugs/groovy-session/logs/api-generator`.
+The resulting log is saved at `bugs/groovy-session/logs/error-enumeration.logs`.
 Its contents look like:
 
 ```
-Built API with the following statistics:
-        Number of nodes:13181
-        Number of edges:19722
-        Number of methods:9664
-        Number of polymorphic methods:425
-        Number of fields:1068
-        Number of constructors:1144
-        Number of types:1115
-        Reduced size of type pool:146
-        Number of type constructors:146
-        Avg inheritance chain size:4.18
-        Avg API signature size:2.43
-
-Metadata for skeleton 1: locations: 2 examined locations: 2
-No error added to skeleton 1
-Metadata for skeleton 2: locations: 0 examined locations: 0
-No error added to skeleton 2
-Enumerating error program 1 for skeleton 3
+Enumerating error program 1 for skeleton 1
 
 API namespace: iter_14
 Added type error using TypeErrorEnumerator:
@@ -347,7 +341,7 @@ Added type error using TypeErrorEnumerator:
  - New expression new Integer[0][0]
  - Receiver location: False
 
-Enumerating error program 2 for skeleton 3
+Enumerating error program 1 for skeleton 1
 
 API namespace: iter_14
 Added type error using TypeErrorEnumerator:
@@ -363,12 +357,15 @@ Enumerating error program 3 for skeleton 3
 
 By examining the log, we observe that `eris` generated two variants by
 injecting two type errors into the well-typed seed program located at
-`example-seeds/groovy-seeds/iter_14`.
+`example-seeds/groovy-seeds/iter_1`.
 
-Taking the diff between the seed program and the first ill-typed variant:
+Taking the diff between the seed program and the first ill-typed variant
+and notice the corresponding line:
 
 ```diff
-eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy bugs/groovy-session/generator/iter_1/Main.groovy
+eris@d55f523ab2da:~$ diff --color \
+  /home/eris/example-seeds/groovy-seeds/iter_1/Main.groovy \
+  bugs/groovy-session/generator/iter_1/Main.groovy
 27c27
 <     Integer[] fracking = new Integer[]{-85, 49, 28};
 ---
@@ -394,7 +391,9 @@ The second variant contains the type mismatch
 rejected by `groovyc`:
 
 ```diff
-eris@d55f523ab2da:~$ diff --color example-seeds/groovy-seeds/iter_14/Main.groovy bugs/groovy-session/generator/iter_2/Main.groovy
+eris@d55f523ab2da:~$ diff --color \
+  /home/eris/example-seeds/groovy-seeds/iter_1/Main.groovy \
+  bugs/groovy-session/generator/iter_2/Main.groovy
 27c27
 <     Integer[] fracking = new Integer[]{-85, 49, 28};
 ---
@@ -418,14 +417,12 @@ If any variant is not rejected by the type checker, `eris` records it in
 }
 ```
 
-Congratulations, you have completed the Getting Started guide!
-You can now proceed to the
-[Step by Step Instructions](#step-by-step-instructions).
 
 
 ## Discovered Bugs
 
-We provide a JSON file (`data/bugs.json`) that contains detailed information
+We provide a JSON file (`data/bugs.json` in the root directory of the artifact)
+that contains detailed information
 about the bugs identified by `eris` during our testing efforts.
 Each entry corresponds to a distinct bug and includes the following fields:
 
@@ -486,23 +483,42 @@ Each entry corresponds to a distinct bug and includes the following fields:
 }
 ```
 
-# Step by Step Instructions
+Congratulations, you have completed the Getting Started guide!
+You can now proceed to the
+[Step by Step Instructions](#step-by-step-instructions).
 
-To validate the main results presented in the paper,
-first create the output directories on your host machine:
+Exit the container by running:
 
-```bash
-mkdir -p figures new-results
+```
+eris@46e496bd70e7:~$ exit
 ```
 
-Then start a new Docker container with the following volumes mounted:
+# Step by Step Instructions
+
+Before proceeding with the instructions of the artifact,
+download the following data from Zenodo,
+which contain 1098 Java seed programs used for
+reproducing the results of the paper.
+
+**Note***:
+If you have fetched the artifact from Zenodo rather than GitHub,
+this data is already in your system.
+Therefore, you don't have to run the following commands.
+
+```bash
+wget -O "java-seeds.zip" ""
+unzip java-seeds.zip -d data
+```
+
+
+Then start a new Docker container with the following volumes mounted
+(run the command from the root directory of the artifact):
 
 ```bash
 docker run -ti --rm \
   -v $(pwd)/data:/home/eris/data \
   -v $(pwd)/scripts:/home/eris/eval-scripts \
   -v $(pwd)/figures:/home/eris/eval-figures \
-  -v $(pwd)/new-results:/home/eris/new-results \
   eris-eval
 ```
 
@@ -513,7 +529,6 @@ This mounts four local directories inside the container:
 | `data/`        | `/home/eris/data`           | Pre-computed evaluation data and bug database |
 | `scripts/`     | `/home/eris/eval-scripts`   | Scripts to reproduce results                 |
 | `figures/`     | `/home/eris/eval-figures`   | Output directory for reproduced figures      |
-| `new-results/` | `/home/eris/new-results`    | Output directory if re-running experiments   |
 
 All commands in the sections below are run **inside** this container.
 
@@ -648,29 +663,32 @@ The generated figure is saved at `figures/evolution.pdf` on your host machine.
 
 To estimate the importance of type recovery
 (Section 5.4, paragraph: "Importance of type recovery"),
-we use 1,098 Java seed programs found at `/home/eris/java-seeds/` inside the
-container, and run `eris` to count the locations where faults can be
+we use 1,098 Java seed programs found at `/home/eris/data/java-seeds/` inside the
+container (this is the data that you downloaded at the beginning of
+the [Step by Step Instructions](#step-by-step-instructions) guide),
+and run `eris` to count the locations where faults can be
 safely injected (without enumerating the corresponding variants).
 Counting these locations is done via two modes:
 one with type recovery enabled, and one with it disabled (baseline).
 
-Run the following command (estimated running time: 10--15 minutes):
+Run the following command (estimated running time: 15--20 minutes):
 
 ```
 eris@afa4de3612b7:~$ ./eval-scripts/type-recovery-impact.sh \
-  /home/eris/java-seeds
+  /home/eris/data/java-seeds
 Computing affected locations w/ type recovery (bear with us...)
 Computing affected locations w/o type recovery (bear with us...)
 Seeds:                                      1098
 Total locations:                            158557
 Examined locations (w/o type recovery):     119829
-Examined locations (w/ type recovery):      86316
+Examined locations (w/ type recovery):      86334
 Change in examined locations:               -28.0%
 ```
 
 ### Importance of Type Shape Isomorphism
 
-To estimate the impact of type shape isomorphism, we perform two experiments.
+To estimate the impact of type shape isomorphism, we perform two experiments
+(Section 5.4, paragraph: "Effectiveness of isomorphic type shapes").
 
 **Experiment 1 (Type pool reduction rate):**
 We estimate the reduction in type pool size achieved by type shape isomorphism
@@ -678,7 +696,7 @@ across the APIs of popular Java libraries.
 Run (estimated running time: 5 minutes):
 
 ```
-eris@afa4de3612b7:~$ ./eval-scripts/type-pool-reduction.sh data/apis/
+eris@afa4de3612b7:~$ ./eval-scripts/type-pool-reduction.sh /home/eris/data/apis/
 Type pool reduction rate (mean):   84.4140
 Type pool reduction rate (median): 84.0000
 ```
@@ -691,8 +709,8 @@ The pre-computed data for this experiment is available at
 
 ```
 eris@afa4de3612b7:~$ python eval-scripts/count-variants.py \
-  data/runs/type-isomorphism/reduced.logs \
-  data/runs/type-isomorphism/full.logs
+  /home/eris/data/runs/type-isomorphism/reduced.logs \
+  /home/eris/data/runs/type-isomorphism/full.logs
 Seeds:                                       85
 
 Total variants (w/ type isomorphism):        714989
@@ -709,11 +727,11 @@ Variant ratio (full/type isomorphism):
 **(OPTIONAL) Re-running Experiment 2:**
 Fully re-running this experiment takes 2--3 days.
 To verify the setup with a smaller dataset, use the 5 seed programs located at
-`data/new-seeds/generator/`:
+`data/example-seeds/java-seeds`:
 
 ```
 eris@afa4de3612b7:~$ ./eval-scripts/type-isomorphism-impact.sh \
-  data/new-seeds/generator/
+  /home/eris/data/example-seeds/java-seeds/
 Computing affected locations w/ type isomorphism (bear with us...)
 Computing affected locations w/o type isomorphism (bear with us...)
 Seeds:                                       5
@@ -742,5 +760,132 @@ eris@afa4de3612b7:~$ python eval-scripts/plot-venn.py \
 ```
 
 The generated figure is saved at `figures/venn.pdf` on your host machine.
+Note that this figure is different from the one in the paper.
+We will fix this issue in the revised paper.
 
 Congratulations on completing the artifact evaluation! :-)
+
+## Running Eris
+
+This section describes how to run `eris` on scenarios beyond those covered
+by the evaluation above.
+
+### Generating Seed Programs
+
+`eris` includes several generators for producing well-typed seed programs.
+The following command uses the `api-decl` generator to synthesize 30 Groovy
+programs that implement randomly selected Java standard library APIs:
+
+```bash
+eris@307c327ef73e:~$ eris --language groovy \
+  --transformations 0 \
+  --batch 1 -i 30 -P \
+  --max-depth 2 \
+  --generator api-decl \
+  --api-doc-path /home/eris/eris/example-apis/java-stdlib/json-docs \
+  --keep-all \
+  --name groovy-seeds \
+  --dry-run
+```
+
+The `--dry-run` flag skips compilation, so only the program files are written.
+The generated programs are saved in `bugs/groovy-seeds/generator/`.
+
+Alternatively, the `base` generator synthesizes programs entirely from
+scratch without relying on any API:
+
+```bash
+eris@307c327ef73e:~$ eris --language groovy \
+  --transformations 0 \
+  --batch 1 -i 30 -P \
+  --max-depth 6 \
+  --generator base \
+  --keep-all \
+  --name groovy-seeds \
+  --dry-run
+```
+
+### Injecting Different Types of Errors
+
+`eris` supports four error injection strategies, selectable via
+`--error-enumerator`:
+
+| Strategy | Description |
+|----------|-------------|
+| `type` | Replaces an expression with one of an incompatible type |
+| `accessibility` | Makes a method `private` or `protected` and calls it from outside its class |
+| `flow-type` | Injects flow-sensitive type errors |
+| `final-var` | Attempts to reassign an immutable variable |
+
+The following command injects method accessibility errors into the seeds
+generated above:
+
+```bash
+eris@307c327ef73e:~$ eris --language groovy \
+  --transformations 0 \
+  --batch 1 -i 30 -P \
+  --max-depth 6 \
+  --generator base \
+  --seeds bugs/groovy-seeds/generator \
+  --error-enumerator accessibility \
+  --keep-all \
+  --name groovy-variants -L
+```
+
+Each of the 30 generated variants makes a method `private` and then calls
+it from outside its class; `groovyc` should reject all of them.
+
+### Testing Type Analyzers with Eris
+
+`eris` can test the soundness of four type analyzers:
+`groovyc`, JCF (the Java Checker Framework), `kotlinc`, and `scalac`.
+
+The example below tests JCF using the seed programs in
+`data/example-seeds/jcf-seeds`.
+The `--use-nullable-types` flag enables nullable type annotations and
+automatically adds the required JCF import to each generated program.
+The `--extra-compiler-option` flags pass JCF's annotation processor to
+`javac` to invoke JCF on the generated variant.
+
+```bash
+eris@307c327ef73e:~$ eris --language java \
+  -t 0 -i 30 -P --batch 1 \
+  --generator api-decl \
+  --api-doc-path /home/eris/eris/example-apis/java-stdlib/json-docs \
+  --max-depth 2 \
+  --name jcf-variants \
+  --keep-all \
+  --seeds data/example-seeds/jcf-seeds \
+  --error-enumerator type -L \
+  --use-nullable-types \
+  --extra-compiler-option "\-processor" "org.checkerframework.checker.nullness.NullnessChecker" \
+  --extra-compiler-option "\-cp" "/home/eris/checker-framework-3.42.0/checker/dist/checker.jar" \
+  --extra-compiler-option "\-Aignorejdkastub" ""
+```
+
+The injected errors are logged at `bugs/jcf-variants/logs/error-enumeration.logs`:
+
+```
+Enumerating error program 1 for skeleton 1
+
+API namespace: iter_1
+Added type error using TypeErrorEnumerator:
+ - Expected type: java.util.concurrent.Callable<java.time.temporal.TemporalAccessor>
+ - Actual type: java.util.concurrent.@Nullable Callable<java.time.temporal.TemporalAccessor>
+ - Previous expression Main.<java.util.concurrent.Callable<java.time.temporal.TemporalAccessor>>bottom()
+ - New expression (java.util.concurrent.Callable<java.time.temporal.TemporalAccessor>) null
+ - Receiver location: True
+
+Enumerating error program 2 for skeleton 1
+
+API namespace: iter_1
+Added type error using TypeErrorEnumerator:
+ - Expected type: java.util.concurrent.Callable<java.time.temporal.TemporalAccessor>
+ - Actual type: java.util.concurrent.Callable<java.time.temporal.@Nullable TemporalAccessor>
+ - Previous expression Main.<java.util.concurrent.Callable<java.time.temporal.TemporalAccessor>>bottom()
+ - New expression (Main.<java.util.function.DoubleFunction<java.util.concurrent.Callable<java.time.temporal.@Nullable TemporalAccessor>>>bottom()).apply((Main.<java.util.concurrent.Callable<Double>>bottom()).call())
+ - Receiver location: True
+...
+```
+
+The generated variants are saved at `bugs/jcf-variants/generator/`.
