@@ -1,9 +1,10 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19033618.svg)](https://doi.org/10.5281/zenodo.19033618)
+
 # Artifact for "Enumerating Ill-Typed Programs for Testing Type Analyzers (PLDI'26)"
 
 This artifact accompanies the PLDI'26 paper
 "Enumerating Ill-Typed Programs for Testing Type Analyzers".
 
-An archived version of the artifact is also available on Zenodo.
 
 # Table of Contents
 
@@ -496,7 +497,25 @@ eris@46e496bd70e7:~$ exit
 
 # Step by Step Instructions
 
-Start a new Docker container with the following volumes mounted
+Before proceeding with the instructions of the artifact,
+download the following data from Zenodo
+(run the following `wget` command from the root directory
+of the artifact),
+which contain 1098 Java seed programs used for
+reproducing the results of the paper.
+
+**Note***:
+If you have fetched the artifact from Zenodo rather than GitHub,
+this data is already in your system.
+Therefore, you don't have to run the following commands.
+
+```bash
+wget -O "java-seeds.zip" "https://zenodo.org/records/19033618/files/java-seeds.zip?download=1"
+unzip java-seeds.zip -d data
+```
+
+
+Then start a new Docker container with the following volumes mounted
 (run the command from the root directory of the artifact):
 
 ```bash
