@@ -75,5 +75,5 @@ RUN sudo chown -R eris:eris ${HOME}/eris
 # Install and run eris
 RUN cd ${HOME}/eris/ && python -m pytest && pip install . && echo "export PATH=\"$PATH:/home/eris/.local/bin\"" >> ${HOME}/.bashrc
 
-ADD ./data/seeds/ /home/eris/example-seeds
+ADD ./data/example-seeds/ /home/eris/example-seeds
 RUN echo "source .sdkman/bin/sdkman-init.sh" >> ${HOME}/.bashrc
