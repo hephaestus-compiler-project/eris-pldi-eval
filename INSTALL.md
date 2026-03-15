@@ -13,7 +13,7 @@ We provide a `Dockerfile` to build an image that contain:
 
 * An installation of Python (version 3.10.12).
 * An installation of [SDKMAN](https://sdkman.io/).
-* An installation of `kotlinc` version 1.9.0.
+* An installation of `kotlinc` version 2.0.10.
 * An installation of `groovyc` version 5.0.4.
 * An installation of `scalac` version 3.4.1.
 * An installation of `jcf` version 3.42.0.
