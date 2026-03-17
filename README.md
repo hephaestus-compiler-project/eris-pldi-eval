@@ -2,7 +2,7 @@
 
 # Artifact for "Enumerating Ill-Typed Programs for Testing Type Analyzers (PLDI'26)"
 
-This artifact accompanies the PLDI'26 paper
+This artifact accompanies the conditionally accepted PLDI'26 paper
 "Enumerating Ill-Typed Programs for Testing Type Analyzers".
 
 
